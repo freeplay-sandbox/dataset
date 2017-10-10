@@ -1,74 +1,70 @@
 compression: none
-duration: 1695.306743
+duration: 1645.049918
 end: 1497432879.054456
 indexed: true
-messages: 1234702
-path: /media/slemaignan/DoRoThy1/freeplay_sandox/data/2017-06-14-100555273347/freeplay.bag
-size: 15358503978
-start: 1497431183.747713
+messages: 1202083
+path: /media/slemaignan/PInSoRo-backup2/freeplay_sandbox/data/2017-06-14-100555273347/freeplay.bag
+size: 14925067260
+start: 1497431234.004538
 topics:
-- messages: 1
-  topic: /footprints
-  type: visualization_msgs/MarkerArray
-- frequency: 1.0021
-  messages: 389
+- frequency: 1.0042
+  messages: 388
   topic: /sandtray/background/image/compressed
   type: sensor_msgs/CompressedImage
-- connections: 8
-  frequency: 873.2675
-  messages: 655088
+- frequency: 873.0858
+  messages: 639019
   topic: /tf
   type: tf2_msgs/TFMessage
-- frequency: 1.0305
-  messages: 368
+- frequency: 1.0317
+  messages: 367
   topic: /zones
   type: visualization_msgs/MarkerArray
-- frequency: 25.1514
-  messages: 47087
+- frequency: 25.1526
+  messages: 45697
   topic: camera_purple/audio
   type: audio_common_msgs/AudioData
-- frequency: 30.0093
-  messages: 50218
+- frequency: 30.0142
+  messages: 48798
   topic: camera_purple/depth/camera_info
   type: sensor_msgs/CameraInfo
-- frequency: 29.9861
-  messages: 50218
+- frequency: 29.9902
+  messages: 48798
   topic: camera_purple/depth/image_raw/compressedDepth
   type: sensor_msgs/CompressedImage
 - frequency: 29.9552
-  messages: 50566
+  messages: 49123
   topic: camera_purple/rgb/camera_info
   type: sensor_msgs/CameraInfo
-- frequency: 29.9136
-  messages: 50566
+- frequency: 29.9127
+  messages: 49123
   topic: camera_purple/rgb/image_raw/compressed
   type: sensor_msgs/CompressedImage
-- frequency: 25.1502
-  messages: 47087
+- frequency: 25.1511
+  messages: 45697
   topic: camera_yellow/audio
   type: audio_common_msgs/AudioData
-- frequency: 30.0588
-  messages: 43443
+- frequency: 30.0769
+  messages: 42123
   topic: camera_yellow/depth/camera_info
   type: sensor_msgs/CameraInfo
-- frequency: 30.0441
-  messages: 43443
+- frequency: 30.0571
+  messages: 42123
   topic: camera_yellow/depth/image_raw/compressedDepth
   type: sensor_msgs/CompressedImage
-- frequency: 30.0142
-  messages: 50662
+- frequency: 30.0215
+  messages: 49313
   topic: camera_yellow/rgb/camera_info
   type: sensor_msgs/CameraInfo
-- frequency: 29.9863
-  messages: 50663
+- frequency: 29.9945
+  messages: 49314
   topic: camera_yellow/rgb/image_raw/compressed
   type: sensor_msgs/CompressedImage
-- frequency: 29.5536
-  messages: 47452
+- frequency: 29.5513
+  messages: 46100
   topic: env_camera/qhd/camera_info
   type: sensor_msgs/CameraInfo
-- frequency: 29.5479
-  messages: 47451
+- frequency: 29.5453
+  messages: 46100
   topic: env_camera/qhd/image_color/compressed
   type: sensor_msgs/CompressedImage
 types:
