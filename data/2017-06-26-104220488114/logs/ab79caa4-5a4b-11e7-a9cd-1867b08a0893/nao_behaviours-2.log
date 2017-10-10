@@ -1,0 +1,58 @@
+[rospy.client][INFO] 2017-06-26 10:40:03,686: init_node, name[/nao_behaviours], pid[9650]
+[xmlrpc][INFO] 2017-06-26 10:40:03,687: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:40:03,687: Started XML-RPC server [http://sandtray-hrilab:42650/]
+[rospy.init][INFO] 2017-06-26 10:40:03,687: ROS Slave URI: [http://sandtray-hrilab:42650/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:03,687: _ready: http://sandtray-hrilab:42650/
+[rospy.registration][INFO] 2017-06-26 10:40:03,688: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:40:03,688: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:40:03,788: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:40:03,788: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:40:03,791: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:40:03,792: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-26 10:40:08,804: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2017-06-26 10:40:08,804: signal_shutdown [atexit]
+[rospy.internal][INFO] 2017-06-26 10:40:08,807: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:08,807: atexit
+[rospy.client][INFO] 2017-06-26 10:40:23,236: init_node, name[/nao_behaviours], pid[10990]
+[xmlrpc][INFO] 2017-06-26 10:40:23,236: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:40:23,236: Started XML-RPC server [http://sandtray-hrilab:39378/]
+[rospy.init][INFO] 2017-06-26 10:40:23,237: ROS Slave URI: [http://sandtray-hrilab:39378/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:23,237: _ready: http://sandtray-hrilab:39378/
+[rospy.registration][INFO] 2017-06-26 10:40:23,238: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:40:23,238: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:40:23,337: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:40:23,337: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:40:23,340: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:40:23,341: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2017-06-26 10:40:28,372: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:28,377: signal-2
+[rospy.core][INFO] 2017-06-26 10:40:28,992: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-26 10:40:28,992: signal_shutdown [atexit]
+[rospy.client][INFO] 2017-06-26 10:40:38,609: init_node, name[/nao_behaviours], pid[11364]
+[xmlrpc][INFO] 2017-06-26 10:40:38,609: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:40:38,609: Started XML-RPC server [http://sandtray-hrilab:35212/]
+[rospy.init][INFO] 2017-06-26 10:40:38,610: ROS Slave URI: [http://sandtray-hrilab:35212/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:38,610: _ready: http://sandtray-hrilab:35212/
+[rospy.registration][INFO] 2017-06-26 10:40:38,612: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:40:38,612: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:40:38,710: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:40:38,710: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:40:38,713: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:40:38,715: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2017-06-26 10:40:43,733: signal_shutdown [atexit]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:43,736: atexit
+[rospy.client][INFO] 2017-06-26 10:40:59,829: init_node, name[/nao_behaviours], pid[11557]
+[xmlrpc][INFO] 2017-06-26 10:40:59,830: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2017-06-26 10:40:59,830: ROS Slave URI: [http://sandtray-hrilab:39927/]
+[xmlrpc][INFO] 2017-06-26 10:40:59,830: Started XML-RPC server [http://sandtray-hrilab:39927/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:59,831: _ready: http://sandtray-hrilab:39927/
+[rospy.registration][INFO] 2017-06-26 10:40:59,832: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:40:59,832: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:40:59,931: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:40:59,931: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:40:59,933: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:40:59,935: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2017-06-26 10:41:04,961: signal_shutdown [atexit]
+[rospy.internal][INFO] 2017-06-26 10:41:04,964: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:04,965: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2017-06-26 10:41:04,966: atexit

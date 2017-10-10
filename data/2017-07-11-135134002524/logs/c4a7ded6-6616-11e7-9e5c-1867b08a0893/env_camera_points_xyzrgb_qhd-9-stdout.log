@@ -1,0 +1,8 @@
+[0m[ INFO] [1499778064.359943506]: Loading nodelet /env_camera_points_xyzrgb_qhd of type depth_image_proc/point_cloud_xyzrgb to manager env_camera with the following remappings:[0m
+[0m[ INFO] [1499778064.359989790]: /depth_registered/image_rect -> /env_camera/qhd/image_depth_rect[0m
+[0m[ INFO] [1499778064.360004510]: /depth_registered/points -> /env_camera/qhd/points[0m
+[0m[ INFO] [1499778064.360014307]: /rgb/camera_info -> /env_camera/qhd/camera_info[0m
+[0m[ INFO] [1499778064.360023104]: /rgb/image_rect_color -> /env_camera/qhd/image_color_rect[0m
+[0m[ INFO] [1499778064.370902691]: waitForService: Service [/env_camera/load_nodelet] has not been advertised, waiting...[0m
+[0m[ INFO] [1499778064.392185201]: waitForService: Service [/env_camera/load_nodelet] is now available.[0m
+[0m[ INFO] [1499778515.249706229]: Unloading nodelet /env_camera_points_xyzrgb_qhd from manager env_camera[0m

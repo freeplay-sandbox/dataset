@@ -1,0 +1,47 @@
+[rospy.client][INFO] 2017-06-01 10:27:44,454: init_node, name[/move_sandbox_items], pid[3579]
+[xmlrpc][INFO] 2017-06-01 10:27:44,455: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-01 10:27:44,455: Started XML-RPC server [http://sandtray-hrilab:42789/]
+[rospy.init][INFO] 2017-06-01 10:27:44,455: ROS Slave URI: [http://sandtray-hrilab:42789/]
+[rospy.impl.masterslave][INFO] 2017-06-01 10:27:44,455: _ready: http://sandtray-hrilab:42789/
+[rospy.registration][INFO] 2017-06-01 10:27:44,456: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-01 10:27:44,456: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-01 10:27:44,556: registered with master
+[rospy.rosout][INFO] 2017-06-01 10:27:44,556: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-01 10:27:44,558: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-01 10:27:44,559: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-01 10:27:44,572: topic[/tf] adding connection to [http://sandtray-hrilab:42565/], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,573: topic[/tf] adding connection to [http://sandtray-hrilab:44447/], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,574: topic[/tf] adding connection to [http://sandtray-hrilab:44974/], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,576: topic[/tf] adding connection to [http://sandtray-hrilab:41079/], count 2
+[rospy.internal][INFO] 2017-06-01 10:27:44,579: topic[/tf] adding connection to [http://sandtray-hrilab:39643/], count 4
+[rospy.internal][INFO] 2017-06-01 10:27:44,797: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,809: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.core][INFO] 2017-06-01 10:27:45,019: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-01 10:27:45,032: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-06-01 10:27:45,032: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-01 10:27:45,033: topic[/tf] removing connection to http://sandtray-hrilab:42565/
+[rospy.internal][WARNING] 2017-06-01 10:27:45,033: Unknown error initiating TCP/IP socket to sandtray-hrilab:34673 (http://sandtray-hrilab:42565/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-06-01 10:27:45,033: topic[/tf] removing connection to http://sandtray-hrilab:44447/
+[rospy.internal][WARNING] 2017-06-01 10:27:45,034: Unknown error initiating TCP/IP socket to sandtray-hrilab:44557 (http://sandtray-hrilab:44447/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2017-06-01 10:27:45,034: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2017-06-01 10:27:45,034: topic[/tf] removing connection to http://sandtray-hrilab:44974/
+[rospy.internal][INFO] 2017-06-01 10:27:45,035: topic[/tf] removing connection to http://sandtray-hrilab:41079/
+[rospy.internal][INFO] 2017-06-01 10:27:45,035: topic[/tf] removing connection to http://sandtray-hrilab:39643/
+[rospy.impl.masterslave][INFO] 2017-06-01 10:27:45,035: signal-2
+[rospy.core][INFO] 2017-06-01 10:27:45,195: signal_shutdown [atexit]

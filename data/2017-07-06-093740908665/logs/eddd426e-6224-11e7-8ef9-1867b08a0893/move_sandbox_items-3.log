@@ -1,0 +1,87 @@
+[rospy.client][INFO] 2017-07-06 09:37:42,021: init_node, name[/move_sandbox_items], pid[5166]
+[xmlrpc][INFO] 2017-07-06 09:37:42,021: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-06 09:37:42,021: Started XML-RPC server [http://sandtray-hrilab:38033/]
+[rospy.init][INFO] 2017-07-06 09:37:42,022: ROS Slave URI: [http://sandtray-hrilab:38033/]
+[rospy.impl.masterslave][INFO] 2017-07-06 09:37:42,022: _ready: http://sandtray-hrilab:38033/
+[rospy.registration][INFO] 2017-07-06 09:37:42,023: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-06 09:37:42,023: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-06 09:37:42,122: registered with master
+[rospy.rosout][INFO] 2017-07-06 09:37:42,122: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-06 09:37:42,124: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-06 09:37:42,125: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-07-06 09:37:42,139: topic[/tf] adding connection to [http://sandtray-hrilab:38157/], count 0
+[rospy.internal][INFO] 2017-07-06 09:37:42,141: topic[/tf] adding connection to [http://sandtray-hrilab:41815/], count 1
+[rospy.internal][INFO] 2017-07-06 09:37:42,142: topic[/tf] adding connection to [http://sandtray-hrilab:41880/], count 1
+[rospy.internal][INFO] 2017-07-06 09:37:42,144: topic[/tf] adding connection to [http://sandtray-hrilab:42859/], count 3
+[rospy.internal][INFO] 2017-07-06 09:37:42,144: topic[/tf] adding connection to [http://sandtray-hrilab:33221/], count 3
+[rospy.internal][INFO] 2017-07-06 09:37:42,250: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.internal][INFO] 2017-07-06 09:37:42,349: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][WARNING] 2017-07-06 09:39:33,679: Unknown error initiating TCP/IP socket to sandtray-hrilab:49075 (http://sandtray-hrilab:41815/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-06 09:39:33,679: topic[/tf] removing connection to http://sandtray-hrilab:41815/
+[rospy.internal][INFO] 2017-07-06 09:41:11,155: topic[/tf] adding connection to [http://sandtray-hrilab:34200/], count 4
+[rospy.internal][INFO] 2017-07-06 09:41:12,159: topic[/tf] adding connection to [http://sandtray-hrilab:40624/], count 5
+[rospy.internal][WARNING] 2017-07-06 09:46:01,099: Unknown error initiating TCP/IP socket to sandtray-hrilab:56855 (http://sandtray-hrilab:40624/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-06 09:46:01,099: topic[/tf] removing connection to http://sandtray-hrilab:40624/
+[rospy.internal][WARNING] 2017-07-06 09:46:01,100: Unknown error initiating TCP/IP socket to sandtray-hrilab:57449 (http://sandtray-hrilab:34200/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-06 09:46:01,100: topic[/tf] removing connection to http://sandtray-hrilab:34200/
+[rospy.internal][INFO] 2017-07-06 09:46:22,286: topic[/tf] adding connection to [http://sandtray-hrilab:34485/], count 4
+[rospy.internal][INFO] 2017-07-06 09:46:23,201: topic[/tf] adding connection to [http://sandtray-hrilab:34005/], count 5
+[rospy.internal][WARNING] 2017-07-06 10:08:44,433: Unknown error initiating TCP/IP socket to sandtray-hrilab:37644 (http://sandtray-hrilab:34485/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-06 10:08:44,433: topic[/tf] removing connection to http://sandtray-hrilab:34485/
+[rospy.internal][WARNING] 2017-07-06 10:08:44,439: Unknown error initiating TCP/IP socket to sandtray-hrilab:37964 (http://sandtray-hrilab:34005/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-06 10:08:44,439: topic[/tf] removing connection to http://sandtray-hrilab:34005/
+[rospy.core][INFO] 2017-07-06 10:08:53,878: signal_shutdown [signal-15]
+[rospy.internal][WARNING] 2017-07-06 10:08:53,879: Unknown error initiating TCP/IP socket to sandtray-hrilab:59317 (http://sandtray-hrilab:33221/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-06 10:08:53,879: topic[/tf] removing connection to http://sandtray-hrilab:33221/
+[rospy.internal][INFO] 2017-07-06 10:08:53,885: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-07-06 10:08:53,886: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-06 10:08:53,886: topic[/tf] removing connection to http://sandtray-hrilab:38157/
+[rospy.internal][INFO] 2017-07-06 10:08:53,886: topic[/tf] removing connection to http://sandtray-hrilab:41880/
+[rospy.internal][INFO] 2017-07-06 10:08:53,886: topic[/tf] removing connection to http://sandtray-hrilab:42859/
+[rospy.impl.masterslave][INFO] 2017-07-06 10:08:53,887: signal-15
+[rospy.core][INFO] 2017-07-06 10:08:53,941: signal_shutdown [signal-2]
+[rospy.core][INFO] 2017-07-06 10:08:53,964: signal_shutdown [atexit]

@@ -1,0 +1,179 @@
+[rospy.client][INFO] 2017-06-22 14:16:21,940: init_node, name[/nao_behaviours], pid[23400]
+[xmlrpc][INFO] 2017-06-22 14:16:21,941: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-22 14:16:21,941: Started XML-RPC server [http://sandtray-hrilab:43949/]
+[rospy.init][INFO] 2017-06-22 14:16:21,941: ROS Slave URI: [http://sandtray-hrilab:43949/]
+[rospy.impl.masterslave][INFO] 2017-06-22 14:16:21,941: _ready: http://sandtray-hrilab:43949/
+[rospy.registration][INFO] 2017-06-22 14:16:21,942: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-22 14:16:21,942: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-22 14:16:22,041: registered with master
+[rospy.rosout][INFO] 2017-06-22 14:16:22,042: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-22 14:16:22,044: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-22 14:16:22,045: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-22 14:16:23,080: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-22 14:16:26,566: topic[/speech] adding connection to [/naoqi_driver_node], count 0
+[rosout][WARNING] 2017-06-22 14:16:44,483: Waiting for frame /odom to be published...
+[rospy.internal][INFO] 2017-06-22 14:16:44,489: topic[/tf] adding connection to [http://sandtray-hrilab:45609/], count 0
+[rospy.internal][INFO] 2017-06-22 14:16:44,494: topic[/tf] adding connection to [http://sandtray-hrilab:43580/], count 1
+[rospy.internal][INFO] 2017-06-22 14:16:44,499: topic[/tf] adding connection to [http://sandtray-hrilab:34152/], count 2
+[rospy.internal][INFO] 2017-06-22 14:16:44,501: topic[/tf] adding connection to [http://sandtray-hrilab:36662/], count 3
+[rospy.internal][INFO] 2017-06-22 14:16:44,502: topic[/tf] adding connection to [http://sandtray-hrilab:43265/], count 3
+[rospy.internal][INFO] 2017-06-22 14:16:44,506: topic[/tf] adding connection to [http://sandtray-hrilab:44654/], count 5
+[rospy.internal][INFO] 2017-06-22 14:16:44,507: topic[/tf] adding connection to [http://sandtray-hrilab:35213/], count 6
+[rospy.internal][INFO] 2017-06-22 14:16:44,513: topic[/tf] adding connection to [http://192.168.2.104:33631/], count 7
+[rosout][WARNING] 2017-06-22 14:16:44,984: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:45,485: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:45,986: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:46,487: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:46,988: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:47,489: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:47,990: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:48,491: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:48,992: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:49,493: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:49,994: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:50,495: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:50,996: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:51,497: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:51,998: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:52,499: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:53,000: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:53,501: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:54,002: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:54,504: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:55,004: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:55,505: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:56,006: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:56,507: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:57,008: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:57,509: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:58,010: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:58,511: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:59,012: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:16:59,513: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:00,014: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:00,515: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:01,016: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:01,517: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:02,018: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:02,519: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:03,020: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:03,521: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:04,022: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:04,523: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:05,024: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:05,524: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:06,025: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:06,526: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:07,027: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:07,528: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:08,029: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:08,530: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:09,031: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:09,532: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:10,034: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:10,535: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:11,036: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:11,537: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:12,038: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:12,539: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:13,041: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:13,542: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:14,042: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:14,543: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:15,044: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:15,545: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:16,046: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:16,547: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:17,048: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:17,549: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:18,050: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:18,551: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:19,052: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:19,553: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:20,054: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:20,555: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:21,056: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:21,557: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:22,058: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:22,559: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:23,060: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:23,561: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:24,062: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:24,563: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:25,064: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:25,566: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:26,067: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:26,568: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:27,068: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:27,569: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:28,070: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:28,571: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:29,072: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:29,573: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:30,074: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:30,575: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:31,076: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:31,576: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:32,078: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:32,579: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:33,080: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:33,581: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:34,082: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:34,583: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:35,084: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:35,585: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:36,086: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:36,587: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:37,088: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:37,589: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:38,090: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:38,591: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:39,092: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:39,593: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:40,095: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:40,596: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:41,097: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:41,598: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:42,098: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:42,599: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:43,100: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:43,602: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:44,103: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:44,604: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-22 14:17:45,105: No transform robot->sandtray. Robot not yet localised!
+[rosout][INFO] 2017-06-22 14:17:45,606: Ok! Starting robot behaviours.
+[rospy.internal][INFO] 2017-06-22 14:17:45,647: topic[/poses] adding connection to [http://sandtray-hrilab:33850/], count 0
+[rospy.core][INFO] 2017-06-22 14:41:43,220: signal_shutdown [signal-15]
+[rospy.internal][WARNING] 2017-06-22 14:41:43,224: Unknown error initiating TCP/IP socket to sandtray-hrilab:60268 (http://sandtray-hrilab:43265/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-22 14:41:43,224: topic[/tf] removing connection to http://sandtray-hrilab:43265/
+[rospy.internal][INFO] 2017-06-22 14:41:43,231: topic[/speech] removing connection to /naoqi_driver_node
+[rospy.internal][INFO] 2017-06-22 14:41:43,231: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-22 14:41:43,232: topic[/poses] removing connection to http://sandtray-hrilab:33850/
+[rospy.internal][INFO] 2017-06-22 14:41:43,232: topic[/tf] removing connection to http://sandtray-hrilab:45609/
+[rospy.internal][WARNING] 2017-06-22 14:41:43,232: Unknown error initiating TCP/IP socket to sandtray-hrilab:42547 (http://sandtray-hrilab:45609/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://sandtray-hrilab:43580/
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://sandtray-hrilab:34152/
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://sandtray-hrilab:36662/
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://sandtray-hrilab:44654/
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://sandtray-hrilab:35213/
+[rospy.internal][INFO] 2017-06-22 14:41:43,233: topic[/tf] removing connection to http://192.168.2.104:33631/
+[rospy.impl.masterslave][INFO] 2017-06-22 14:41:43,234: signal-15
+[rospy.core][INFO] 2017-06-22 14:41:43,362: signal_shutdown [signal-2]
+[rospy.internal][WARNING] 2017-06-22 14:41:43,383: Unknown error initiating TCP/IP socket to sandtray-hrilab:37675 (http://sandtray-hrilab:33850/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.core][INFO] 2017-06-22 14:41:47,282: signal_shutdown [atexit]

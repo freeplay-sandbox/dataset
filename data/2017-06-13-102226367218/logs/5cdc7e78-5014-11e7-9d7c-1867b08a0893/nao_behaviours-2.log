@@ -1,0 +1,66 @@
+[rospy.client][INFO] 2017-06-13 10:31:42,713: init_node, name[/nao_behaviours], pid[6512]
+[xmlrpc][INFO] 2017-06-13 10:31:42,714: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-13 10:31:42,714: Started XML-RPC server [http://sandtray-hrilab:36125/]
+[rospy.impl.masterslave][INFO] 2017-06-13 10:31:42,714: _ready: http://sandtray-hrilab:36125/
+[rospy.init][INFO] 2017-06-13 10:31:42,714: ROS Slave URI: [http://sandtray-hrilab:36125/]
+[rospy.registration][INFO] 2017-06-13 10:31:42,715: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-13 10:31:42,715: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-13 10:31:42,815: registered with master
+[rospy.rosout][INFO] 2017-06-13 10:31:42,815: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-13 10:31:42,819: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-13 10:31:42,823: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-13 10:31:43,666: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:49,537: topic[/speech] adding connection to [/naoqi_driver_node], count 0
+[rosout][WARNING] 2017-06-13 10:32:04,274: Waiting for frame /odom to be published...
+[rospy.internal][INFO] 2017-06-13 10:32:04,289: topic[/tf] adding connection to [http://sandtray-hrilab:39543/], count 0
+[rospy.internal][INFO] 2017-06-13 10:32:04,292: topic[/tf] adding connection to [http://sandtray-hrilab:33888/], count 1
+[rospy.internal][INFO] 2017-06-13 10:32:04,295: topic[/tf] adding connection to [http://sandtray-hrilab:37546/], count 2
+[rospy.internal][INFO] 2017-06-13 10:32:04,298: topic[/tf] adding connection to [http://sandtray-hrilab:33182/], count 3
+[rospy.internal][INFO] 2017-06-13 10:32:04,299: topic[/tf] adding connection to [http://sandtray-hrilab:39898/], count 4
+[rospy.internal][INFO] 2017-06-13 10:32:04,299: topic[/tf] adding connection to [http://sandtray-hrilab:37024/], count 4
+[rospy.internal][INFO] 2017-06-13 10:32:04,302: topic[/tf] adding connection to [http://sandtray-hrilab:37227/], count 5
+[rospy.internal][INFO] 2017-06-13 10:32:04,306: topic[/tf] adding connection to [http://192.168.2.104:38738/], count 7
+[rosout][WARNING] 2017-06-13 10:32:04,775: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:05,276: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:05,777: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:06,278: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:06,779: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:07,280: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:07,781: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:08,282: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:08,783: No transform robot->sandtray. Robot not yet localised!
+[rosout][WARNING] 2017-06-13 10:32:09,284: No transform robot->sandtray. Robot not yet localised!
+[rosout][INFO] 2017-06-13 10:32:09,785: Ok! Starting robot behaviours.
+[rospy.internal][INFO] 2017-06-13 10:32:09,802: topic[/poses] adding connection to [http://sandtray-hrilab:42055/], count 0
+[rospy.internal][WARNING] 2017-06-13 10:41:46,789: Unknown error initiating TCP/IP socket to sandtray-hrilab:35122 (http://sandtray-hrilab:33182/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-13 10:41:46,789: topic[/tf] removing connection to http://sandtray-hrilab:33182/
+[rospy.core][INFO] 2017-06-13 10:41:47,466: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-13 10:41:47,471: topic[/speech] removing connection to /naoqi_driver_node
+[rospy.internal][INFO] 2017-06-13 10:41:47,472: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-13 10:41:47,472: topic[/poses] removing connection to http://sandtray-hrilab:42055/
+[rospy.internal][INFO] 2017-06-13 10:41:47,472: topic[/tf] removing connection to http://sandtray-hrilab:39543/
+[rospy.internal][INFO] 2017-06-13 10:41:47,473: topic[/tf] removing connection to http://sandtray-hrilab:33888/
+[rospy.internal][WARNING] 2017-06-13 10:41:47,473: Unknown error initiating TCP/IP socket to sandtray-hrilab:37247 (http://sandtray-hrilab:39543/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-06-13 10:41:47,473: topic[/tf] removing connection to http://sandtray-hrilab:37546/
+[rospy.internal][WARNING] 2017-06-13 10:41:47,473: Unknown error initiating TCP/IP socket to sandtray-hrilab:39891 (http://sandtray-hrilab:37546/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-06-13 10:41:47,473: topic[/tf] removing connection to http://sandtray-hrilab:39898/
+[rospy.internal][INFO] 2017-06-13 10:41:47,474: topic[/tf] removing connection to http://sandtray-hrilab:37024/
+[rospy.internal][INFO] 2017-06-13 10:41:47,474: topic[/tf] removing connection to http://sandtray-hrilab:37227/
+[rospy.internal][INFO] 2017-06-13 10:41:47,474: topic[/tf] removing connection to http://192.168.2.104:38738/
+[rospy.impl.masterslave][INFO] 2017-06-13 10:41:47,474: signal-2
+[rospy.core][INFO] 2017-06-13 10:41:47,638: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-13 10:41:56,639: signal_shutdown [atexit]

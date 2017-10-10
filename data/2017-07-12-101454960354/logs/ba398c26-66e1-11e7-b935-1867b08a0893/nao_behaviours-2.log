@@ -1,0 +1,61 @@
+[rospy.client][INFO] 2017-07-12 10:21:33,871: init_node, name[/nao_behaviours], pid[5523]
+[xmlrpc][INFO] 2017-07-12 10:21:33,872: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-12 10:21:33,872: Started XML-RPC server [http://sandtray-hrilab:38804/]
+[rospy.init][INFO] 2017-07-12 10:21:33,872: ROS Slave URI: [http://sandtray-hrilab:38804/]
+[rospy.impl.masterslave][INFO] 2017-07-12 10:21:33,872: _ready: http://sandtray-hrilab:38804/
+[rospy.registration][INFO] 2017-07-12 10:21:33,873: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-12 10:21:33,873: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-12 10:21:33,973: registered with master
+[rospy.rosout][INFO] 2017-07-12 10:21:33,973: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-12 10:21:33,975: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-12 10:21:33,976: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-07-12 10:21:34,664: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-07-12 10:21:38,862: topic[/speech] adding connection to [/naoqi_driver_node], count 0
+[rosout][WARNING] 2017-07-12 10:21:56,045: Waiting for frame /odom to be published...
+[rospy.internal][INFO] 2017-07-12 10:21:56,072: topic[/tf] adding connection to [http://sandtray-hrilab:40863/], count 0
+[rospy.internal][INFO] 2017-07-12 10:21:56,072: topic[/tf] adding connection to [http://sandtray-hrilab:39270/], count 0
+[rospy.internal][INFO] 2017-07-12 10:21:56,075: topic[/tf] adding connection to [http://sandtray-hrilab:37640/], count 1
+[rospy.internal][INFO] 2017-07-12 10:21:56,077: topic[/tf] adding connection to [http://sandtray-hrilab:35795/], count 3
+[rospy.internal][INFO] 2017-07-12 10:21:56,077: topic[/tf] adding connection to [http://sandtray-hrilab:41862/], count 4
+[rospy.internal][INFO] 2017-07-12 10:21:56,078: topic[/tf] adding connection to [http://sandtray-hrilab:46644/], count 4
+[rospy.internal][INFO] 2017-07-12 10:21:56,081: topic[/tf] adding connection to [http://192.168.2.103:41190/], count 6
+[rospy.internal][INFO] 2017-07-12 10:21:56,081: topic[/tf] adding connection to [http://sandtray-hrilab:32845/], count 6
+[rosout][INFO] 2017-07-12 10:21:56,546: Ok! Starting robot behaviours.
+[rospy.internal][INFO] 2017-07-12 10:21:56,582: topic[/poses] adding connection to [http://sandtray-hrilab:39905/], count 0
+[rospy.core][INFO] 2017-07-12 10:42:33,991: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-07-12 10:42:33,996: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-07-12 10:42:33,999: topic[/speech] removing connection to /naoqi_driver_node
+[rospy.internal][INFO] 2017-07-12 10:42:33,999: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-12 10:42:33,999: topic[/poses] removing connection to http://sandtray-hrilab:39905/
+[rospy.internal][WARNING] 2017-07-12 10:42:34,000: Unknown error initiating TCP/IP socket to sandtray-hrilab:55652 (http://sandtray-hrilab:41862/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-12 10:42:34,001: topic[/tf] removing connection to http://sandtray-hrilab:41862/
+[rospy.internal][INFO] 2017-07-12 10:42:34,002: topic[/tf] removing connection to http://sandtray-hrilab:40863/
+[rospy.internal][INFO] 2017-07-12 10:42:34,002: topic[/tf] removing connection to http://sandtray-hrilab:39270/
+[rospy.internal][INFO] 2017-07-12 10:42:34,003: topic[/tf] removing connection to http://sandtray-hrilab:37640/
+[rospy.internal][WARNING] 2017-07-12 10:42:34,003: Unknown error initiating TCP/IP socket to sandtray-hrilab:42758 (http://sandtray-hrilab:37640/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-07-12 10:42:34,004: topic[/tf] removing connection to http://sandtray-hrilab:35795/
+[rospy.internal][INFO] 2017-07-12 10:42:34,004: topic[/tf] removing connection to http://sandtray-hrilab:46644/
+[rospy.internal][INFO] 2017-07-12 10:42:34,004: topic[/tf] removing connection to http://192.168.2.103:41190/
+[rospy.internal][WARNING] 2017-07-12 10:42:34,005: Unknown error initiating TCP/IP socket to sandtray-hrilab:36782 (http://sandtray-hrilab:35795/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-07-12 10:42:34,006: topic[/tf] removing connection to http://sandtray-hrilab:32845/
+[rospy.impl.masterslave][INFO] 2017-07-12 10:42:34,007: signal-15
+[rospy.internal][WARNING] 2017-07-12 10:42:34,006: Unknown error initiating TCP/IP socket to sandtray-hrilab:35259 (http://sandtray-hrilab:46644/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.core][INFO] 2017-07-12 10:42:38,164: signal_shutdown [atexit]

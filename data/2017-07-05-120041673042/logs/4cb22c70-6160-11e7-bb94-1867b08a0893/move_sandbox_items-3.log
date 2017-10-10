@@ -1,0 +1,1133 @@
+[rospy.client][INFO] 2017-07-05 12:00:42,620: init_node, name[/move_sandbox_items], pid[18625]
+[xmlrpc][INFO] 2017-07-05 12:00:42,620: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-05 12:00:42,621: Started XML-RPC server [http://sandtray-hrilab:43912/]
+[rospy.init][INFO] 2017-07-05 12:00:42,621: ROS Slave URI: [http://sandtray-hrilab:43912/]
+[rospy.impl.masterslave][INFO] 2017-07-05 12:00:42,621: _ready: http://sandtray-hrilab:43912/
+[rospy.registration][INFO] 2017-07-05 12:00:42,622: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-05 12:00:42,622: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-05 12:00:42,721: registered with master
+[rospy.rosout][INFO] 2017-07-05 12:00:42,722: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-05 12:00:42,724: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-05 12:00:42,725: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-07-05 12:00:42,738: topic[/tf] adding connection to [http://sandtray-hrilab:36952/], count 0
+[rospy.internal][INFO] 2017-07-05 12:00:42,743: topic[/tf] adding connection to [http://sandtray-hrilab:40842/], count 1
+[rospy.internal][INFO] 2017-07-05 12:00:42,743: topic[/tf] adding connection to [http://sandtray-hrilab:45808/], count 1
+[rospy.internal][INFO] 2017-07-05 12:00:42,744: topic[/tf] adding connection to [http://sandtray-hrilab:34979/], count 3
+[rospy.internal][INFO] 2017-07-05 12:00:42,746: topic[/tf] adding connection to [http://sandtray-hrilab:35497/], count 3
+[rospy.internal][INFO] 2017-07-05 12:00:42,923: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.internal][INFO] 2017-07-05 12:00:42,961: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][WARNING] 2017-07-05 12:02:08,164: Unknown error initiating TCP/IP socket to sandtray-hrilab:39488 (http://sandtray-hrilab:40842/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-05 12:02:08,164: topic[/tf] removing connection to http://sandtray-hrilab:40842/
+[rospy.internal][INFO] 2017-07-05 12:03:14,626: topic[/tf] adding connection to [http://sandtray-hrilab:33409/], count 4
+[rospy.internal][INFO] 2017-07-05 12:03:15,628: topic[/tf] adding connection to [http://sandtray-hrilab:35070/], count 5
+[rospy.internal][WARNING] 2017-07-05 12:07:29,477: Unknown error initiating TCP/IP socket to sandtray-hrilab:46798 (http://sandtray-hrilab:35070/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 12:07:29,477: topic[/tf] removing connection to http://sandtray-hrilab:35070/
+[rospy.internal][WARNING] 2017-07-05 12:07:29,921: Unknown error initiating TCP/IP socket to sandtray-hrilab:57400 (http://sandtray-hrilab:33409/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-05 12:07:29,921: topic[/tf] removing connection to http://sandtray-hrilab:33409/
+[rospy.internal][INFO] 2017-07-05 12:08:03,650: topic[/tf] adding connection to [http://sandtray-hrilab:44262/], count 4
+[rospy.internal][INFO] 2017-07-05 12:08:03,914: topic[/tf] adding connection to [http://sandtray-hrilab:45088/], count 5
+[rospy.internal][INFO] 2017-07-05 12:08:04,453: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-07-05 12:08:04,459: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-07-05 12:08:04,460: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-07-05 12:08:04,530: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:34487/], count 0
+[rospy.internal][INFO] 2017-07-05 12:08:04,531: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:34487/], count 0
+[rosout][INFO] 2017-07-05 12:08:04,571: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:08:04,572: Moving lion to 0.06,-0.05
+[rosout][INFO] 2017-07-05 12:08:04,572: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:04,649: Received trajectory! As requested, waiting -0.001737822s before starting...
+[rosout][INFO] 2017-07-05 12:08:04,649: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:04,650: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:04,651: Done 0%
+[rosout][INFO] 2017-07-05 12:08:04,752: Done 7%
+[rosout][INFO] 2017-07-05 12:08:04,852: Done 15%
+[rospy.internal][INFO] 2017-07-05 12:08:04,946: topic[/tf] adding connection to [http://sandtray-hrilab:45161/], count 6
+[rosout][INFO] 2017-07-05 12:08:04,953: Done 23%
+[rosout][INFO] 2017-07-05 12:08:05,054: Done 30%
+[rosout][INFO] 2017-07-05 12:08:05,155: Done 38%
+[rosout][INFO] 2017-07-05 12:08:05,256: Done 46%
+[rospy.internal][INFO] 2017-07-05 12:08:05,261: topic[/tf] adding connection to [http://192.168.2.101:43667/], count 7
+[rosout][INFO] 2017-07-05 12:08:05,357: Done 53%
+[rosout][INFO] 2017-07-05 12:08:05,458: Done 61%
+[rosout][INFO] 2017-07-05 12:08:05,559: Done 69%
+[rosout][INFO] 2017-07-05 12:08:05,661: Done 76%
+[rosout][INFO] 2017-07-05 12:08:05,762: Done 84%
+[rosout][INFO] 2017-07-05 12:08:05,863: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:08:08,168: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:08:08,169: Moving giraffe to 0.02,-0.19
+[rosout][INFO] 2017-07-05 12:08:08,172: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:08,248: Received trajectory! As requested, waiting -0.000888531s before starting...
+[rosout][INFO] 2017-07-05 12:08:08,248: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:08,249: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:08,250: Done 0%
+[rosout][INFO] 2017-07-05 12:08:08,350: Done 3%
+[rosout][INFO] 2017-07-05 12:08:08,452: Done 6%
+[rosout][INFO] 2017-07-05 12:08:08,553: Done 9%
+[rosout][INFO] 2017-07-05 12:08:08,657: Done 12%
+[rosout][INFO] 2017-07-05 12:08:08,758: Done 15%
+[rosout][INFO] 2017-07-05 12:08:08,861: Done 18%
+[rosout][INFO] 2017-07-05 12:08:08,962: Done 21%
+[rosout][INFO] 2017-07-05 12:08:09,063: Done 25%
+[rosout][INFO] 2017-07-05 12:08:09,163: Done 28%
+[rosout][INFO] 2017-07-05 12:08:09,265: Done 31%
+[rosout][INFO] 2017-07-05 12:08:09,375: Done 34%
+[rosout][INFO] 2017-07-05 12:08:09,476: Done 37%
+[rosout][INFO] 2017-07-05 12:08:09,577: Done 40%
+[rosout][INFO] 2017-07-05 12:08:09,678: Done 43%
+[rosout][INFO] 2017-07-05 12:08:09,780: Done 46%
+[rosout][INFO] 2017-07-05 12:08:09,881: Done 50%
+[rosout][INFO] 2017-07-05 12:08:09,985: Done 53%
+[rosout][INFO] 2017-07-05 12:08:10,091: Done 56%
+[rosout][INFO] 2017-07-05 12:08:10,192: Done 59%
+[rosout][INFO] 2017-07-05 12:08:10,293: Done 62%
+[rosout][INFO] 2017-07-05 12:08:10,394: Done 65%
+[rosout][INFO] 2017-07-05 12:08:10,495: Done 68%
+[rosout][INFO] 2017-07-05 12:08:10,596: Done 71%
+[rosout][INFO] 2017-07-05 12:08:10,697: Done 75%
+[rosout][INFO] 2017-07-05 12:08:10,798: Done 78%
+[rosout][INFO] 2017-07-05 12:08:10,899: Done 81%
+[rosout][INFO] 2017-07-05 12:08:11,000: Done 84%
+[rosout][INFO] 2017-07-05 12:08:11,101: Done 87%
+[rosout][INFO] 2017-07-05 12:08:11,203: Done 90%
+[rosout][INFO] 2017-07-05 12:08:11,304: Done 93%
+[rosout][INFO] 2017-07-05 12:08:11,405: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:08:12,908: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-07-05 12:08:12,909: Moving crocodile to -0.05,-0.03
+[rosout][INFO] 2017-07-05 12:08:12,909: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:13,048: Received trajectory! As requested, waiting -0.000666718s before starting...
+[rosout][INFO] 2017-07-05 12:08:13,048: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:13,048: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:13,049: Done 0%
+[rosout][INFO] 2017-07-05 12:08:13,156: Done 9%
+[rosout][INFO] 2017-07-05 12:08:13,258: Done 18%
+[rosout][INFO] 2017-07-05 12:08:13,359: Done 27%
+[rosout][INFO] 2017-07-05 12:08:13,466: Done 36%
+[rosout][INFO] 2017-07-05 12:08:13,568: Done 45%
+[rosout][INFO] 2017-07-05 12:08:13,669: Done 54%
+[rosout][INFO] 2017-07-05 12:08:13,770: Done 63%
+[rosout][INFO] 2017-07-05 12:08:13,871: Done 72%
+[rosout][INFO] 2017-07-05 12:08:13,972: Done 81%
+[rosout][INFO] 2017-07-05 12:08:14,076: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:08:15,952: /move_sandbox_items: Received a request to move zebra to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:08:15,952: Moving zebra to -0.08,-0.15
+[rosout][INFO] 2017-07-05 12:08:15,953: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:16,048: Received trajectory! As requested, waiting -0.001125398s before starting...
+[rosout][INFO] 2017-07-05 12:08:16,049: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:16,049: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:16,050: Done 0%
+[rosout][INFO] 2017-07-05 12:08:16,153: Done 2%
+[rosout][INFO] 2017-07-05 12:08:16,254: Done 5%
+[rosout][INFO] 2017-07-05 12:08:16,355: Done 8%
+[rosout][INFO] 2017-07-05 12:08:16,456: Done 11%
+[rosout][INFO] 2017-07-05 12:08:16,557: Done 14%
+[rosout][INFO] 2017-07-05 12:08:16,658: Done 17%
+[rosout][INFO] 2017-07-05 12:08:16,759: Done 20%
+[rosout][INFO] 2017-07-05 12:08:16,860: Done 23%
+[rosout][INFO] 2017-07-05 12:08:16,961: Done 26%
+[rosout][INFO] 2017-07-05 12:08:17,061: Done 29%
+[rosout][INFO] 2017-07-05 12:08:17,162: Done 32%
+[rosout][INFO] 2017-07-05 12:08:17,263: Done 35%
+[rosout][INFO] 2017-07-05 12:08:17,364: Done 38%
+[rosout][INFO] 2017-07-05 12:08:17,465: Done 41%
+[rosout][INFO] 2017-07-05 12:08:17,566: Done 44%
+[rosout][INFO] 2017-07-05 12:08:17,667: Done 47%
+[rosout][INFO] 2017-07-05 12:08:17,768: Done 50%
+[rosout][INFO] 2017-07-05 12:08:17,869: Done 52%
+[rosout][INFO] 2017-07-05 12:08:17,970: Done 55%
+[rosout][INFO] 2017-07-05 12:08:18,071: Done 58%
+[rosout][INFO] 2017-07-05 12:08:18,173: Done 61%
+[rosout][INFO] 2017-07-05 12:08:18,276: Done 64%
+[rosout][INFO] 2017-07-05 12:08:18,377: Done 67%
+[rosout][INFO] 2017-07-05 12:08:18,478: Done 70%
+[rosout][INFO] 2017-07-05 12:08:18,579: Done 73%
+[rosout][INFO] 2017-07-05 12:08:18,680: Done 76%
+[rosout][INFO] 2017-07-05 12:08:18,781: Done 79%
+[rosout][INFO] 2017-07-05 12:08:18,882: Done 82%
+[rosout][INFO] 2017-07-05 12:08:18,984: Done 85%
+[rosout][INFO] 2017-07-05 12:08:19,085: Done 88%
+[rosout][INFO] 2017-07-05 12:08:19,186: Done 91%
+[rosout][INFO] 2017-07-05 12:08:19,287: Done 94%
+[rosout][INFO] 2017-07-05 12:08:19,388: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:08:20,908: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:08:20,908: Moving elephant to 0.16,-0.06
+[rosout][INFO] 2017-07-05 12:08:20,909: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:21,080: Received trajectory! As requested, waiting -0.032452189s before starting...
+[rosout][INFO] 2017-07-05 12:08:21,080: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:21,080: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:21,081: Done 0%
+[rosout][INFO] 2017-07-05 12:08:21,182: Done 2%
+[rosout][INFO] 2017-07-05 12:08:21,283: Done 4%
+[rosout][INFO] 2017-07-05 12:08:21,386: Done 7%
+[rosout][INFO] 2017-07-05 12:08:21,487: Done 9%
+[rosout][INFO] 2017-07-05 12:08:21,588: Done 11%
+[rosout][INFO] 2017-07-05 12:08:21,689: Done 14%
+[rosout][INFO] 2017-07-05 12:08:21,793: Done 16%
+[rosout][INFO] 2017-07-05 12:08:21,894: Done 19%
+[rosout][INFO] 2017-07-05 12:08:21,994: Done 21%
+[rosout][INFO] 2017-07-05 12:08:22,095: Done 23%
+[rosout][INFO] 2017-07-05 12:08:22,196: Done 26%
+[rosout][INFO] 2017-07-05 12:08:22,297: Done 28%
+[rosout][INFO] 2017-07-05 12:08:22,398: Done 30%
+[rosout][INFO] 2017-07-05 12:08:22,499: Done 33%
+[rosout][INFO] 2017-07-05 12:08:22,600: Done 35%
+[rosout][INFO] 2017-07-05 12:08:22,701: Done 38%
+[rosout][INFO] 2017-07-05 12:08:22,802: Done 40%
+[rosout][INFO] 2017-07-05 12:08:22,903: Done 42%
+[rosout][INFO] 2017-07-05 12:08:23,004: Done 45%
+[rosout][INFO] 2017-07-05 12:08:23,105: Done 47%
+[rosout][INFO] 2017-07-05 12:08:23,206: Done 50%
+[rosout][INFO] 2017-07-05 12:08:23,307: Done 52%
+[rosout][INFO] 2017-07-05 12:08:23,409: Done 54%
+[rosout][INFO] 2017-07-05 12:08:23,510: Done 57%
+[rosout][INFO] 2017-07-05 12:08:23,611: Done 59%
+[rosout][INFO] 2017-07-05 12:08:23,713: Done 61%
+[rosout][INFO] 2017-07-05 12:08:23,814: Done 64%
+[rosout][INFO] 2017-07-05 12:08:23,915: Done 66%
+[rosout][INFO] 2017-07-05 12:08:24,016: Done 69%
+[rosout][INFO] 2017-07-05 12:08:24,118: Done 71%
+[rosout][INFO] 2017-07-05 12:08:24,220: Done 73%
+[rosout][INFO] 2017-07-05 12:08:24,321: Done 76%
+[rosout][INFO] 2017-07-05 12:08:24,422: Done 78%
+[rosout][INFO] 2017-07-05 12:08:24,523: Done 80%
+[rosout][INFO] 2017-07-05 12:08:24,624: Done 83%
+[rosout][INFO] 2017-07-05 12:08:24,724: Done 85%
+[rosout][INFO] 2017-07-05 12:08:24,825: Done 88%
+[rosout][INFO] 2017-07-05 12:08:24,926: Done 90%
+[rosout][INFO] 2017-07-05 12:08:25,027: Done 92%
+[rosout][INFO] 2017-07-05 12:08:25,128: Done 95%
+[rosout][INFO] 2017-07-05 12:08:25,229: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:08:26,797: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:08:26,797: Moving lion to 0.02,-0.14
+[rosout][INFO] 2017-07-05 12:08:26,798: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:08:26,868: Received trajectory! As requested, waiting -0.021101314s before starting...
+[rosout][INFO] 2017-07-05 12:08:26,869: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:08:26,869: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:08:26,870: Done 0%
+[rospy.internal][INFO] 2017-07-05 12:08:26,934: topic[/poses] adding connection to [/nao_behaviours], count 1
+[rosout][INFO] 2017-07-05 12:08:26,970: Done 3%
+[rosout][INFO] 2017-07-05 12:08:27,071: Done 6%
+[rosout][INFO] 2017-07-05 12:08:27,173: Done 9%
+[rosout][INFO] 2017-07-05 12:08:27,274: Done 12%
+[rosout][INFO] 2017-07-05 12:08:27,375: Done 15%
+[rosout][INFO] 2017-07-05 12:08:27,476: Done 18%
+[rosout][INFO] 2017-07-05 12:08:27,577: Done 21%
+[rosout][INFO] 2017-07-05 12:08:27,679: Done 25%
+[rosout][INFO] 2017-07-05 12:08:27,780: Done 28%
+[rosout][INFO] 2017-07-05 12:08:27,881: Done 31%
+[rosout][INFO] 2017-07-05 12:08:27,982: Done 34%
+[rosout][INFO] 2017-07-05 12:08:28,083: Done 37%
+[rosout][INFO] 2017-07-05 12:08:28,185: Done 40%
+[rosout][INFO] 2017-07-05 12:08:28,286: Done 43%
+[rosout][INFO] 2017-07-05 12:08:28,387: Done 46%
+[rosout][INFO] 2017-07-05 12:08:28,488: Done 50%
+[rosout][INFO] 2017-07-05 12:08:28,589: Done 53%
+[rosout][INFO] 2017-07-05 12:08:28,690: Done 56%
+[rosout][INFO] 2017-07-05 12:08:28,791: Done 59%
+[rosout][INFO] 2017-07-05 12:08:28,895: Done 62%
+[rosout][INFO] 2017-07-05 12:08:28,996: Done 65%
+[rosout][INFO] 2017-07-05 12:08:29,099: Done 68%
+[rosout][INFO] 2017-07-05 12:08:29,200: Done 71%
+[rosout][INFO] 2017-07-05 12:08:29,301: Done 75%
+[rosout][INFO] 2017-07-05 12:08:29,402: Done 78%
+[rosout][INFO] 2017-07-05 12:08:29,503: Done 81%
+[rosout][INFO] 2017-07-05 12:08:29,604: Done 84%
+[rosout][INFO] 2017-07-05 12:08:29,705: Done 87%
+[rosout][INFO] 2017-07-05 12:08:29,807: Done 90%
+[rosout][INFO] 2017-07-05 12:08:29,908: Done 93%
+[rosout][INFO] 2017-07-05 12:08:30,009: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:10:13,561: /move_sandbox_items: Received a request to move giraffe to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:10:13,562: Moving giraffe to -0.02,0.16
+[rosout][INFO] 2017-07-05 12:10:13,562: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:10:13,675: Received trajectory! As requested, waiting -0.027844349s before starting...
+[rosout][INFO] 2017-07-05 12:10:13,676: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:10:13,676: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:10:13,676: Done 0%
+[rosout][INFO] 2017-07-05 12:10:13,783: Done 2%
+[rosout][INFO] 2017-07-05 12:10:13,885: Done 5%
+[rosout][INFO] 2017-07-05 12:10:13,986: Done 7%
+[rosout][INFO] 2017-07-05 12:10:14,087: Done 10%
+[rosout][INFO] 2017-07-05 12:10:14,188: Done 13%
+[rosout][INFO] 2017-07-05 12:10:14,289: Done 15%
+[rosout][INFO] 2017-07-05 12:10:14,390: Done 18%
+[rosout][INFO] 2017-07-05 12:10:14,491: Done 21%
+[rosout][INFO] 2017-07-05 12:10:14,593: Done 23%
+[rosout][INFO] 2017-07-05 12:10:14,694: Done 26%
+[rosout][INFO] 2017-07-05 12:10:14,795: Done 28%
+[rosout][INFO] 2017-07-05 12:10:14,899: Done 31%
+[rosout][INFO] 2017-07-05 12:10:14,999: Done 34%
+[rosout][INFO] 2017-07-05 12:10:15,102: Done 36%
+[rosout][INFO] 2017-07-05 12:10:15,203: Done 39%
+[rosout][INFO] 2017-07-05 12:10:15,304: Done 42%
+[rosout][INFO] 2017-07-05 12:10:15,405: Done 44%
+[rosout][INFO] 2017-07-05 12:10:15,509: Done 47%
+[rosout][INFO] 2017-07-05 12:10:15,610: Done 50%
+[rosout][INFO] 2017-07-05 12:10:15,712: Done 52%
+[rosout][INFO] 2017-07-05 12:10:15,813: Done 55%
+[rosout][INFO] 2017-07-05 12:10:15,914: Done 57%
+[rosout][INFO] 2017-07-05 12:10:16,015: Done 60%
+[rosout][INFO] 2017-07-05 12:10:16,116: Done 63%
+[rosout][INFO] 2017-07-05 12:10:16,220: Done 65%
+[rosout][INFO] 2017-07-05 12:10:16,321: Done 68%
+[rosout][INFO] 2017-07-05 12:10:16,422: Done 71%
+[rosout][INFO] 2017-07-05 12:10:16,523: Done 73%
+[rosout][INFO] 2017-07-05 12:10:16,624: Done 76%
+[rosout][INFO] 2017-07-05 12:10:16,725: Done 78%
+[rosout][INFO] 2017-07-05 12:10:16,827: Done 81%
+[rosout][INFO] 2017-07-05 12:10:16,927: Done 84%
+[rosout][INFO] 2017-07-05 12:10:17,028: Done 86%
+[rosout][INFO] 2017-07-05 12:10:17,140: Done 89%
+[rosout][INFO] 2017-07-05 12:10:17,241: Done 92%
+[rosout][INFO] 2017-07-05 12:10:17,342: Done 94%
+[rosout][INFO] 2017-07-05 12:10:17,443: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:12:29,178: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:12:29,179: Moving elephant to -0.03,-0.06
+[rosout][INFO] 2017-07-05 12:12:29,179: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:12:29,248: Received trajectory! As requested, waiting -0.000446181s before starting...
+[rosout][INFO] 2017-07-05 12:12:29,248: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:12:29,248: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:12:29,249: Done 0%
+[rosout][INFO] 2017-07-05 12:12:29,350: Done 7%
+[rosout][INFO] 2017-07-05 12:12:29,451: Done 14%
+[rosout][INFO] 2017-07-05 12:12:29,552: Done 21%
+[rosout][INFO] 2017-07-05 12:12:29,653: Done 28%
+[rosout][INFO] 2017-07-05 12:12:29,761: Done 35%
+[rosout][INFO] 2017-07-05 12:12:29,862: Done 42%
+[rosout][INFO] 2017-07-05 12:12:29,963: Done 50%
+[rosout][INFO] 2017-07-05 12:12:30,064: Done 57%
+[rosout][INFO] 2017-07-05 12:12:30,165: Done 64%
+[rosout][INFO] 2017-07-05 12:12:30,266: Done 71%
+[rosout][INFO] 2017-07-05 12:12:30,367: Done 78%
+[rosout][INFO] 2017-07-05 12:12:30,468: Done 85%
+[rosout][INFO] 2017-07-05 12:12:30,570: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:12:56,866: /move_sandbox_items: Received a request to move girl to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:12:56,867: Moving girl to 0.00,0.06
+[rosout][INFO] 2017-07-05 12:12:56,867: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:12:57,048: Received trajectory! As requested, waiting -0.000635148s before starting...
+[rosout][INFO] 2017-07-05 12:12:57,049: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:12:57,050: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:12:57,051: Done 0%
+[rosout][INFO] 2017-07-05 12:12:57,152: Done 7%
+[rosout][INFO] 2017-07-05 12:12:57,253: Done 14%
+[rosout][INFO] 2017-07-05 12:12:57,354: Done 21%
+[rosout][INFO] 2017-07-05 12:12:57,455: Done 28%
+[rosout][INFO] 2017-07-05 12:12:57,556: Done 35%
+[rosout][INFO] 2017-07-05 12:12:57,657: Done 42%
+[rosout][INFO] 2017-07-05 12:12:57,758: Done 50%
+[rosout][INFO] 2017-07-05 12:12:57,859: Done 57%
+[rosout][INFO] 2017-07-05 12:12:57,960: Done 64%
+[rosout][INFO] 2017-07-05 12:12:58,061: Done 71%
+[rosout][INFO] 2017-07-05 12:12:58,163: Done 78%
+[rosout][INFO] 2017-07-05 12:12:58,264: Done 85%
+[rosout][INFO] 2017-07-05 12:12:58,365: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:14,460: /move_sandbox_items: Received a request to move boy to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:14,460: Moving boy to -0.13,-0.11
+[rosout][INFO] 2017-07-05 12:13:14,461: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:14,648: Received trajectory! As requested, waiting -0.001002732s before starting...
+[rosout][INFO] 2017-07-05 12:13:14,649: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:14,649: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:14,650: Done 0%
+[rosout][INFO] 2017-07-05 12:13:14,752: Done 2%
+[rosout][INFO] 2017-07-05 12:13:14,853: Done 5%
+[rosout][INFO] 2017-07-05 12:13:14,954: Done 8%
+[rosout][INFO] 2017-07-05 12:13:15,055: Done 11%
+[rosout][INFO] 2017-07-05 12:13:15,157: Done 14%
+[rosout][INFO] 2017-07-05 12:13:15,258: Done 17%
+[rosout][INFO] 2017-07-05 12:13:15,359: Done 20%
+[rosout][INFO] 2017-07-05 12:13:15,460: Done 23%
+[rosout][INFO] 2017-07-05 12:13:15,561: Done 26%
+[rosout][INFO] 2017-07-05 12:13:15,663: Done 29%
+[rosout][INFO] 2017-07-05 12:13:15,764: Done 32%
+[rosout][INFO] 2017-07-05 12:13:15,865: Done 35%
+[rosout][INFO] 2017-07-05 12:13:15,966: Done 38%
+[rosout][INFO] 2017-07-05 12:13:16,067: Done 41%
+[rosout][INFO] 2017-07-05 12:13:16,168: Done 44%
+[rosout][INFO] 2017-07-05 12:13:16,269: Done 47%
+[rosout][INFO] 2017-07-05 12:13:16,370: Done 50%
+[rosout][INFO] 2017-07-05 12:13:16,471: Done 52%
+[rosout][INFO] 2017-07-05 12:13:16,572: Done 55%
+[rosout][INFO] 2017-07-05 12:13:16,673: Done 58%
+[rosout][INFO] 2017-07-05 12:13:16,774: Done 61%
+[rosout][INFO] 2017-07-05 12:13:16,876: Done 64%
+[rosout][INFO] 2017-07-05 12:13:16,977: Done 67%
+[rosout][INFO] 2017-07-05 12:13:17,078: Done 70%
+[rosout][INFO] 2017-07-05 12:13:17,180: Done 73%
+[rosout][INFO] 2017-07-05 12:13:17,281: Done 76%
+[rosout][INFO] 2017-07-05 12:13:17,382: Done 79%
+[rosout][INFO] 2017-07-05 12:13:17,485: Done 82%
+[rosout][INFO] 2017-07-05 12:13:17,586: Done 85%
+[rosout][INFO] 2017-07-05 12:13:17,687: Done 88%
+[rosout][INFO] 2017-07-05 12:13:17,787: Done 91%
+[rosout][INFO] 2017-07-05 12:13:17,889: Done 94%
+[rosout][INFO] 2017-07-05 12:13:17,990: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:20,759: /move_sandbox_items: Received a request to move boy to 0.06, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:20,760: Moving boy to -0.25,0.01
+[rosout][INFO] 2017-07-05 12:13:20,760: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:20,848: Received trajectory! As requested, waiting -0.000971606s before starting...
+[rosout][INFO] 2017-07-05 12:13:20,849: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:20,849: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:20,850: Done 0%
+[rosout][INFO] 2017-07-05 12:13:20,951: Done 1%
+[rosout][INFO] 2017-07-05 12:13:21,052: Done 3%
+[rosout][INFO] 2017-07-05 12:13:21,155: Done 5%
+[rosout][INFO] 2017-07-05 12:13:21,256: Done 7%
+[rosout][INFO] 2017-07-05 12:13:21,357: Done 9%
+[rosout][INFO] 2017-07-05 12:13:21,458: Done 11%
+[rosout][INFO] 2017-07-05 12:13:21,559: Done 13%
+[rosout][INFO] 2017-07-05 12:13:21,660: Done 15%
+[rosout][INFO] 2017-07-05 12:13:21,761: Done 17%
+[rosout][INFO] 2017-07-05 12:13:21,862: Done 19%
+[rosout][INFO] 2017-07-05 12:13:21,963: Done 21%
+[rosout][INFO] 2017-07-05 12:13:22,066: Done 23%
+[rosout][INFO] 2017-07-05 12:13:22,167: Done 25%
+[rosout][INFO] 2017-07-05 12:13:22,268: Done 27%
+[rosout][INFO] 2017-07-05 12:13:22,369: Done 29%
+[rosout][INFO] 2017-07-05 12:13:22,470: Done 31%
+[rosout][INFO] 2017-07-05 12:13:22,571: Done 33%
+[rosout][INFO] 2017-07-05 12:13:22,672: Done 35%
+[rosout][INFO] 2017-07-05 12:13:22,773: Done 37%
+[rosout][INFO] 2017-07-05 12:13:22,874: Done 39%
+[rosout][INFO] 2017-07-05 12:13:22,975: Done 41%
+[rosout][INFO] 2017-07-05 12:13:23,076: Done 43%
+[rosout][INFO] 2017-07-05 12:13:23,177: Done 45%
+[rosout][INFO] 2017-07-05 12:13:23,278: Done 47%
+[rosout][INFO] 2017-07-05 12:13:23,380: Done 49%
+[rosout][INFO] 2017-07-05 12:13:23,481: Done 50%
+[rosout][INFO] 2017-07-05 12:13:23,582: Done 52%
+[rosout][INFO] 2017-07-05 12:13:23,684: Done 54%
+[rosout][INFO] 2017-07-05 12:13:23,785: Done 56%
+[rosout][INFO] 2017-07-05 12:13:23,886: Done 58%
+[rosout][INFO] 2017-07-05 12:13:23,987: Done 60%
+[rosout][INFO] 2017-07-05 12:13:24,088: Done 62%
+[rosout][INFO] 2017-07-05 12:13:24,190: Done 64%
+[rosout][INFO] 2017-07-05 12:13:24,293: Done 66%
+[rosout][INFO] 2017-07-05 12:13:24,394: Done 68%
+[rosout][INFO] 2017-07-05 12:13:24,495: Done 70%
+[rosout][INFO] 2017-07-05 12:13:24,596: Done 72%
+[rosout][INFO] 2017-07-05 12:13:24,698: Done 74%
+[rosout][INFO] 2017-07-05 12:13:24,799: Done 76%
+[rosout][INFO] 2017-07-05 12:13:24,900: Done 78%
+[rosout][INFO] 2017-07-05 12:13:25,001: Done 80%
+[rosout][INFO] 2017-07-05 12:13:25,102: Done 82%
+[rosout][INFO] 2017-07-05 12:13:25,203: Done 84%
+[rosout][INFO] 2017-07-05 12:13:25,304: Done 86%
+[rosout][INFO] 2017-07-05 12:13:25,405: Done 88%
+[rosout][INFO] 2017-07-05 12:13:25,506: Done 90%
+[rosout][INFO] 2017-07-05 12:13:25,607: Done 92%
+[rosout][INFO] 2017-07-05 12:13:25,708: Done 94%
+[rosout][INFO] 2017-07-05 12:13:25,809: Done 96%
+[rosout][INFO] 2017-07-05 12:13:25,910: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:27,633: /move_sandbox_items: Received a request to move boy to 0.20, -0.10. Let's do that
+[rosout][INFO] 2017-07-05 12:13:27,634: Moving boy to -0.03,0.00
+[rosout][INFO] 2017-07-05 12:13:27,634: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:27,648: Received trajectory! As requested, waiting -0.000297112s before starting...
+[rosout][INFO] 2017-07-05 12:13:27,648: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:27,648: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:27,649: Done 0%
+[rosout][INFO] 2017-07-05 12:13:27,751: Done 12%
+[rosout][INFO] 2017-07-05 12:13:27,852: Done 25%
+[rosout][INFO] 2017-07-05 12:13:27,959: Done 37%
+[rosout][INFO] 2017-07-05 12:13:28,060: Done 50%
+[rosout][INFO] 2017-07-05 12:13:28,161: Done 62%
+[rosout][INFO] 2017-07-05 12:13:28,262: Done 75%
+[rosout][INFO] 2017-07-05 12:13:28,363: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:31,111: /move_sandbox_items: Received a request to move boy to 0.06, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:31,111: Moving boy to 0.30,-0.01
+[rosout][INFO] 2017-07-05 12:13:31,112: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:31,249: Received trajectory! As requested, waiting -0.001474393s before starting...
+[rosout][INFO] 2017-07-05 12:13:31,249: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:31,250: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:31,251: Done 0%
+[rosout][INFO] 2017-07-05 12:13:31,352: Done 1%
+[rosout][INFO] 2017-07-05 12:13:31,453: Done 3%
+[rosout][INFO] 2017-07-05 12:13:31,554: Done 5%
+[rosout][INFO] 2017-07-05 12:13:31,655: Done 6%
+[rosout][INFO] 2017-07-05 12:13:31,756: Done 8%
+[rosout][INFO] 2017-07-05 12:13:31,858: Done 10%
+[rosout][INFO] 2017-07-05 12:13:31,960: Done 11%
+[rosout][INFO] 2017-07-05 12:13:32,061: Done 13%
+[rosout][INFO] 2017-07-05 12:13:32,162: Done 15%
+[rosout][INFO] 2017-07-05 12:13:32,263: Done 16%
+[rosout][INFO] 2017-07-05 12:13:32,364: Done 18%
+[rosout][INFO] 2017-07-05 12:13:32,465: Done 20%
+[rosout][INFO] 2017-07-05 12:13:32,569: Done 21%
+[rosout][INFO] 2017-07-05 12:13:32,678: Done 23%
+[rosout][INFO] 2017-07-05 12:13:32,785: Done 25%
+[rosout][INFO] 2017-07-05 12:13:32,886: Done 26%
+[rosout][INFO] 2017-07-05 12:13:32,987: Done 28%
+[rosout][INFO] 2017-07-05 12:13:33,088: Done 30%
+[rosout][INFO] 2017-07-05 12:13:33,189: Done 31%
+[rosout][INFO] 2017-07-05 12:13:33,290: Done 33%
+[rosout][INFO] 2017-07-05 12:13:33,391: Done 35%
+[rosout][INFO] 2017-07-05 12:13:33,493: Done 36%
+[rosout][INFO] 2017-07-05 12:13:33,595: Done 38%
+[rosout][INFO] 2017-07-05 12:13:33,696: Done 40%
+[rosout][INFO] 2017-07-05 12:13:33,797: Done 41%
+[rosout][INFO] 2017-07-05 12:13:33,899: Done 43%
+[rosout][INFO] 2017-07-05 12:13:34,000: Done 45%
+[rosout][INFO] 2017-07-05 12:13:34,101: Done 46%
+[rosout][INFO] 2017-07-05 12:13:34,202: Done 48%
+[rosout][INFO] 2017-07-05 12:13:34,303: Done 50%
+[rosout][INFO] 2017-07-05 12:13:34,404: Done 51%
+[rosout][INFO] 2017-07-05 12:13:34,505: Done 53%
+[rosout][INFO] 2017-07-05 12:13:34,606: Done 55%
+[rosout][INFO] 2017-07-05 12:13:34,707: Done 56%
+[rosout][INFO] 2017-07-05 12:13:34,810: Done 58%
+[rosout][INFO] 2017-07-05 12:13:34,911: Done 60%
+[rosout][INFO] 2017-07-05 12:13:35,012: Done 61%
+[rosout][INFO] 2017-07-05 12:13:35,113: Done 63%
+[rosout][INFO] 2017-07-05 12:13:35,215: Done 65%
+[rosout][INFO] 2017-07-05 12:13:35,316: Done 66%
+[rosout][INFO] 2017-07-05 12:13:35,418: Done 68%
+[rosout][INFO] 2017-07-05 12:13:35,525: Done 70%
+[rosout][INFO] 2017-07-05 12:13:35,637: Done 71%
+[rosout][INFO] 2017-07-05 12:13:35,739: Done 73%
+[rosout][INFO] 2017-07-05 12:13:35,840: Done 75%
+[rosout][INFO] 2017-07-05 12:13:35,942: Done 76%
+[rosout][INFO] 2017-07-05 12:13:36,043: Done 78%
+[rosout][INFO] 2017-07-05 12:13:36,144: Done 80%
+[rosout][INFO] 2017-07-05 12:13:36,246: Done 81%
+[rosout][INFO] 2017-07-05 12:13:36,347: Done 83%
+[rosout][INFO] 2017-07-05 12:13:36,449: Done 85%
+[rosout][INFO] 2017-07-05 12:13:36,554: Done 86%
+[rosout][INFO] 2017-07-05 12:13:36,655: Done 88%
+[rosout][INFO] 2017-07-05 12:13:36,756: Done 90%
+[rosout][INFO] 2017-07-05 12:13:36,857: Done 91%
+[rosout][INFO] 2017-07-05 12:13:36,958: Done 93%
+[rosout][INFO] 2017-07-05 12:13:37,060: Done 95%
+[rosout][INFO] 2017-07-05 12:13:37,161: Done 96%
+[rosout][INFO] 2017-07-05 12:13:37,263: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:40,110: /move_sandbox_items: Received a request to move boy to 0.06, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:40,110: Moving boy to -0.07,0.03
+[rosout][INFO] 2017-07-05 12:13:40,111: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:40,248: Received trajectory! As requested, waiting -0.000407537s before starting...
+[rosout][INFO] 2017-07-05 12:13:40,248: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:40,249: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:40,249: Done 0%
+[rosout][INFO] 2017-07-05 12:13:40,350: Done 6%
+[rosout][INFO] 2017-07-05 12:13:40,451: Done 13%
+[rosout][INFO] 2017-07-05 12:13:40,552: Done 20%
+[rosout][INFO] 2017-07-05 12:13:40,653: Done 26%
+[rosout][INFO] 2017-07-05 12:13:40,754: Done 33%
+[rosout][INFO] 2017-07-05 12:13:40,856: Done 40%
+[rosout][INFO] 2017-07-05 12:13:40,957: Done 46%
+[rosout][INFO] 2017-07-05 12:13:41,058: Done 53%
+[rosout][INFO] 2017-07-05 12:13:41,159: Done 60%
+[rosout][INFO] 2017-07-05 12:13:41,260: Done 66%
+[rosout][INFO] 2017-07-05 12:13:41,361: Done 73%
+[rosout][INFO] 2017-07-05 12:13:41,462: Done 80%
+[rosout][INFO] 2017-07-05 12:13:41,564: Done 86%
+[rosout][INFO] 2017-07-05 12:13:41,665: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:43,874: /move_sandbox_items: Received a request to move boy to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:43,875: Moving boy to -0.15,0.11
+[rosout][INFO] 2017-07-05 12:13:43,875: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:44,048: Received trajectory! As requested, waiting -0.000779885s before starting...
+[rosout][INFO] 2017-07-05 12:13:44,048: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:44,049: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:44,049: Done 0%
+[rosout][INFO] 2017-07-05 12:13:44,151: Done 2%
+[rosout][INFO] 2017-07-05 12:13:44,252: Done 5%
+[rosout][INFO] 2017-07-05 12:13:44,354: Done 8%
+[rosout][INFO] 2017-07-05 12:13:44,456: Done 11%
+[rosout][INFO] 2017-07-05 12:13:44,557: Done 13%
+[rosout][INFO] 2017-07-05 12:13:44,658: Done 16%
+[rosout][INFO] 2017-07-05 12:13:44,759: Done 19%
+[rosout][INFO] 2017-07-05 12:13:44,860: Done 22%
+[rosout][INFO] 2017-07-05 12:13:44,963: Done 25%
+[rosout][INFO] 2017-07-05 12:13:45,064: Done 27%
+[rosout][INFO] 2017-07-05 12:13:45,165: Done 30%
+[rosout][INFO] 2017-07-05 12:13:45,266: Done 33%
+[rosout][INFO] 2017-07-05 12:13:45,367: Done 36%
+[rosout][INFO] 2017-07-05 12:13:45,468: Done 38%
+[rosout][INFO] 2017-07-05 12:13:45,569: Done 41%
+[rosout][INFO] 2017-07-05 12:13:45,670: Done 44%
+[rosout][INFO] 2017-07-05 12:13:45,772: Done 47%
+[rosout][INFO] 2017-07-05 12:13:45,877: Done 50%
+[rosout][INFO] 2017-07-05 12:13:45,979: Done 52%
+[rosout][INFO] 2017-07-05 12:13:46,080: Done 55%
+[rosout][INFO] 2017-07-05 12:13:46,181: Done 58%
+[rosout][INFO] 2017-07-05 12:13:46,282: Done 61%
+[rosout][INFO] 2017-07-05 12:13:46,383: Done 63%
+[rosout][INFO] 2017-07-05 12:13:46,484: Done 66%
+[rosout][INFO] 2017-07-05 12:13:46,585: Done 69%
+[rosout][INFO] 2017-07-05 12:13:46,687: Done 72%
+[rosout][INFO] 2017-07-05 12:13:46,788: Done 75%
+[rosout][INFO] 2017-07-05 12:13:46,889: Done 77%
+[rosout][INFO] 2017-07-05 12:13:46,990: Done 80%
+[rosout][INFO] 2017-07-05 12:13:47,091: Done 83%
+[rosout][INFO] 2017-07-05 12:13:47,193: Done 86%
+[rosout][INFO] 2017-07-05 12:13:47,294: Done 88%
+[rosout][INFO] 2017-07-05 12:13:47,395: Done 91%
+[rosout][INFO] 2017-07-05 12:13:47,498: Done 94%
+[rosout][INFO] 2017-07-05 12:13:47,599: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:50,314: /move_sandbox_items: Received a request to move girl to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:13:50,315: Moving girl to -0.06,0.04
+[rosout][INFO] 2017-07-05 12:13:50,315: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:50,448: Received trajectory! As requested, waiting -0.000422958s before starting...
+[rosout][INFO] 2017-07-05 12:13:50,448: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:50,448: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:50,449: Done 0%
+[rosout][INFO] 2017-07-05 12:13:50,550: Done 6%
+[rosout][INFO] 2017-07-05 12:13:50,651: Done 12%
+[rosout][INFO] 2017-07-05 12:13:50,752: Done 18%
+[rosout][INFO] 2017-07-05 12:13:50,853: Done 25%
+[rosout][INFO] 2017-07-05 12:13:50,954: Done 31%
+[rosout][INFO] 2017-07-05 12:13:51,055: Done 37%
+[rosout][INFO] 2017-07-05 12:13:51,156: Done 43%
+[rosout][INFO] 2017-07-05 12:13:51,257: Done 50%
+[rosout][INFO] 2017-07-05 12:13:51,359: Done 56%
+[rosout][INFO] 2017-07-05 12:13:51,460: Done 62%
+[rosout][INFO] 2017-07-05 12:13:51,561: Done 68%
+[rosout][INFO] 2017-07-05 12:13:51,662: Done 75%
+[rosout][INFO] 2017-07-05 12:13:51,763: Done 81%
+[rosout][INFO] 2017-07-05 12:13:51,866: Done 87%
+[rosout][INFO] 2017-07-05 12:13:51,967: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:13:54,304: /move_sandbox_items: Received a request to move boy to 0.06, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:13:54,305: Moving boy to -0.32,0.20
+[rosout][INFO] 2017-07-05 12:13:54,306: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:13:54,449: Received trajectory! As requested, waiting -0.001565892s before starting...
+[rosout][INFO] 2017-07-05 12:13:54,450: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:13:54,450: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:13:54,450: Done 0%
+[rosout][INFO] 2017-07-05 12:13:54,551: Done 1%
+[rosout][INFO] 2017-07-05 12:13:54,652: Done 2%
+[rosout][INFO] 2017-07-05 12:13:54,753: Done 3%
+[rosout][INFO] 2017-07-05 12:13:54,855: Done 5%
+[rosout][INFO] 2017-07-05 12:13:54,956: Done 6%
+[rosout][INFO] 2017-07-05 12:13:55,057: Done 7%
+[rosout][INFO] 2017-07-05 12:13:55,159: Done 9%
+[rosout][INFO] 2017-07-05 12:13:55,260: Done 10%
+[rosout][INFO] 2017-07-05 12:13:55,361: Done 11%
+[rosout][INFO] 2017-07-05 12:13:55,462: Done 13%
+[rosout][INFO] 2017-07-05 12:13:55,563: Done 14%
+[rosout][INFO] 2017-07-05 12:13:55,665: Done 15%
+[rosout][INFO] 2017-07-05 12:13:55,766: Done 17%
+[rosout][INFO] 2017-07-05 12:13:55,868: Done 18%
+[rosout][INFO] 2017-07-05 12:13:55,969: Done 19%
+[rosout][INFO] 2017-07-05 12:13:56,069: Done 21%
+[rosout][INFO] 2017-07-05 12:13:56,170: Done 22%
+[rosout][INFO] 2017-07-05 12:13:56,271: Done 23%
+[rosout][INFO] 2017-07-05 12:13:56,372: Done 25%
+[rosout][INFO] 2017-07-05 12:13:56,474: Done 26%
+[rosout][INFO] 2017-07-05 12:13:56,575: Done 27%
+[rosout][INFO] 2017-07-05 12:13:56,676: Done 28%
+[rosout][INFO] 2017-07-05 12:13:56,777: Done 30%
+[rosout][INFO] 2017-07-05 12:13:56,880: Done 31%
+[rosout][INFO] 2017-07-05 12:13:56,981: Done 32%
+[rosout][INFO] 2017-07-05 12:13:57,083: Done 34%
+[rosout][INFO] 2017-07-05 12:13:57,184: Done 35%
+[rosout][INFO] 2017-07-05 12:13:57,285: Done 36%
+[rosout][INFO] 2017-07-05 12:13:57,386: Done 38%
+[rosout][INFO] 2017-07-05 12:13:57,487: Done 39%
+[rosout][INFO] 2017-07-05 12:13:57,588: Done 40%
+[rosout][INFO] 2017-07-05 12:13:57,689: Done 42%
+[rosout][INFO] 2017-07-05 12:13:57,790: Done 43%
+[rosout][INFO] 2017-07-05 12:13:57,892: Done 44%
+[rosout][INFO] 2017-07-05 12:13:57,993: Done 46%
+[rosout][INFO] 2017-07-05 12:13:58,094: Done 47%
+[rosout][INFO] 2017-07-05 12:13:58,195: Done 48%
+[rosout][INFO] 2017-07-05 12:13:58,296: Done 50%
+[rosout][INFO] 2017-07-05 12:13:58,396: Done 51%
+[rosout][INFO] 2017-07-05 12:13:58,497: Done 52%
+[rosout][INFO] 2017-07-05 12:13:58,598: Done 53%
+[rosout][INFO] 2017-07-05 12:13:58,699: Done 55%
+[rosout][INFO] 2017-07-05 12:13:58,801: Done 56%
+[rosout][INFO] 2017-07-05 12:13:58,905: Done 57%
+[rosout][INFO] 2017-07-05 12:13:59,006: Done 59%
+[rosout][INFO] 2017-07-05 12:13:59,107: Done 60%
+[rosout][INFO] 2017-07-05 12:13:59,209: Done 61%
+[rosout][INFO] 2017-07-05 12:13:59,311: Done 63%
+[rosout][INFO] 2017-07-05 12:13:59,412: Done 64%
+[rosout][INFO] 2017-07-05 12:13:59,513: Done 65%
+[rosout][INFO] 2017-07-05 12:13:59,615: Done 67%
+[rosout][INFO] 2017-07-05 12:13:59,719: Done 68%
+[rosout][INFO] 2017-07-05 12:13:59,820: Done 69%
+[rosout][INFO] 2017-07-05 12:13:59,922: Done 71%
+[rosout][INFO] 2017-07-05 12:14:00,023: Done 72%
+[rosout][INFO] 2017-07-05 12:14:00,124: Done 73%
+[rosout][INFO] 2017-07-05 12:14:00,225: Done 75%
+[rosout][INFO] 2017-07-05 12:14:00,326: Done 76%
+[rosout][INFO] 2017-07-05 12:14:00,427: Done 77%
+[rosout][INFO] 2017-07-05 12:14:00,528: Done 78%
+[rosout][INFO] 2017-07-05 12:14:00,629: Done 80%
+[rosout][INFO] 2017-07-05 12:14:00,730: Done 81%
+[rosout][INFO] 2017-07-05 12:14:00,831: Done 82%
+[rosout][INFO] 2017-07-05 12:14:00,932: Done 84%
+[rosout][INFO] 2017-07-05 12:14:01,034: Done 85%
+[rosout][INFO] 2017-07-05 12:14:01,138: Done 86%
+[rosout][INFO] 2017-07-05 12:14:01,239: Done 88%
+[rosout][INFO] 2017-07-05 12:14:01,340: Done 89%
+[rosout][INFO] 2017-07-05 12:14:01,441: Done 90%
+[rosout][INFO] 2017-07-05 12:14:01,542: Done 92%
+[rosout][INFO] 2017-07-05 12:14:01,643: Done 93%
+[rosout][INFO] 2017-07-05 12:14:01,744: Done 94%
+[rosout][INFO] 2017-07-05 12:14:01,846: Done 96%
+[rosout][INFO] 2017-07-05 12:14:01,947: Done 97%
+[rosout][INFO] 2017-07-05 12:14:02,049: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:14:04,165: /move_sandbox_items: Received a request to move crocodile to 0.27, -0.15. Let's do that
+[rosout][INFO] 2017-07-05 12:14:04,166: Moving crocodile to 0.15,-0.07
+[rosout][INFO] 2017-07-05 12:14:04,166: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:14:04,248: Received trajectory! As requested, waiting -0.000898131s before starting...
+[rosout][INFO] 2017-07-05 12:14:04,249: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:14:04,249: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:14:04,250: Done 0%
+[rosout][INFO] 2017-07-05 12:14:04,351: Done 3%
+[rosout][INFO] 2017-07-05 12:14:04,452: Done 6%
+[rosout][INFO] 2017-07-05 12:14:04,555: Done 9%
+[rosout][INFO] 2017-07-05 12:14:04,656: Done 12%
+[rosout][INFO] 2017-07-05 12:14:04,757: Done 16%
+[rosout][INFO] 2017-07-05 12:14:04,858: Done 19%
+[rosout][INFO] 2017-07-05 12:14:04,959: Done 22%
+[rosout][INFO] 2017-07-05 12:14:05,060: Done 25%
+[rosout][INFO] 2017-07-05 12:14:05,161: Done 29%
+[rosout][INFO] 2017-07-05 12:14:05,262: Done 32%
+[rosout][INFO] 2017-07-05 12:14:05,363: Done 35%
+[rosout][INFO] 2017-07-05 12:14:05,464: Done 38%
+[rosout][INFO] 2017-07-05 12:14:05,565: Done 41%
+[rosout][INFO] 2017-07-05 12:14:05,667: Done 45%
+[rosout][INFO] 2017-07-05 12:14:05,769: Done 48%
+[rosout][INFO] 2017-07-05 12:14:05,870: Done 51%
+[rosout][INFO] 2017-07-05 12:14:05,971: Done 54%
+[rosout][INFO] 2017-07-05 12:14:06,072: Done 58%
+[rosout][INFO] 2017-07-05 12:14:06,173: Done 61%
+[rosout][INFO] 2017-07-05 12:14:06,274: Done 64%
+[rosout][INFO] 2017-07-05 12:14:06,375: Done 67%
+[rosout][INFO] 2017-07-05 12:14:06,476: Done 70%
+[rosout][INFO] 2017-07-05 12:14:06,577: Done 74%
+[rosout][INFO] 2017-07-05 12:14:06,678: Done 77%
+[rosout][INFO] 2017-07-05 12:14:06,780: Done 80%
+[rosout][INFO] 2017-07-05 12:14:06,881: Done 83%
+[rosout][INFO] 2017-07-05 12:14:06,982: Done 87%
+[rosout][INFO] 2017-07-05 12:14:07,083: Done 90%
+[rosout][INFO] 2017-07-05 12:14:07,184: Done 93%
+[rosout][INFO] 2017-07-05 12:14:07,285: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:14:10,257: /move_sandbox_items: Received a request to move crocodile to 0.27, -0.15. Let's do that
+[rosout][INFO] 2017-07-05 12:14:10,258: Moving crocodile to 0.06,-0.02
+[rosout][INFO] 2017-07-05 12:14:10,258: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:14:10,448: Received trajectory! As requested, waiting -0.000350535s before starting...
+[rosout][INFO] 2017-07-05 12:14:10,448: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:14:10,449: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:14:10,449: Done 0%
+[rosout][INFO] 2017-07-05 12:14:10,551: Done 11%
+[rosout][INFO] 2017-07-05 12:14:10,652: Done 22%
+[rosout][INFO] 2017-07-05 12:14:10,755: Done 33%
+[rosout][INFO] 2017-07-05 12:14:10,856: Done 44%
+[rosout][INFO] 2017-07-05 12:14:10,957: Done 55%
+[rosout][INFO] 2017-07-05 12:14:11,058: Done 66%
+[rosout][INFO] 2017-07-05 12:14:11,159: Done 77%
+[rosout][INFO] 2017-07-05 12:14:11,260: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:15:31,716: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:15:31,717: Moving elephant to 0.01,-0.07
+[rosout][INFO] 2017-07-05 12:15:31,717: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:15:31,849: Received trajectory! As requested, waiting -0.000910171s before starting...
+[rosout][INFO] 2017-07-05 12:15:31,850: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:15:31,850: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:15:31,851: Done 0%
+[rosout][INFO] 2017-07-05 12:15:31,952: Done 8%
+[rosout][INFO] 2017-07-05 12:15:32,053: Done 16%
+[rosout][INFO] 2017-07-05 12:15:32,154: Done 25%
+[rosout][INFO] 2017-07-05 12:15:32,255: Done 33%
+[rosout][INFO] 2017-07-05 12:15:32,356: Done 41%
+[rosout][INFO] 2017-07-05 12:15:32,458: Done 50%
+[rosout][INFO] 2017-07-05 12:15:32,559: Done 58%
+[rosout][INFO] 2017-07-05 12:15:32,660: Done 66%
+[rosout][INFO] 2017-07-05 12:15:32,761: Done 75%
+[rosout][INFO] 2017-07-05 12:15:32,862: Done 83%
+[rosout][INFO] 2017-07-05 12:15:32,964: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:15:35,199: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:15:35,200: Moving lion to 0.12,0.07
+[rosout][INFO] 2017-07-05 12:15:35,201: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:15:35,248: Received trajectory! As requested, waiting -0.000715762s before starting...
+[rosout][INFO] 2017-07-05 12:15:35,249: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:15:35,249: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:15:35,250: Done 0%
+[rosout][INFO] 2017-07-05 12:15:35,350: Done 4%
+[rosout][INFO] 2017-07-05 12:15:35,452: Done 8%
+[rosout][INFO] 2017-07-05 12:15:35,553: Done 13%
+[rosout][INFO] 2017-07-05 12:15:35,654: Done 17%
+[rosout][INFO] 2017-07-05 12:15:35,755: Done 21%
+[rosout][INFO] 2017-07-05 12:15:35,856: Done 26%
+[rosout][INFO] 2017-07-05 12:15:35,957: Done 30%
+[rosout][INFO] 2017-07-05 12:15:36,058: Done 34%
+[rosout][INFO] 2017-07-05 12:15:36,159: Done 39%
+[rosout][INFO] 2017-07-05 12:15:36,260: Done 43%
+[rosout][INFO] 2017-07-05 12:15:36,361: Done 47%
+[rosout][INFO] 2017-07-05 12:15:36,462: Done 52%
+[rosout][INFO] 2017-07-05 12:15:36,563: Done 56%
+[rosout][INFO] 2017-07-05 12:15:36,664: Done 60%
+[rosout][INFO] 2017-07-05 12:15:36,765: Done 65%
+[rosout][INFO] 2017-07-05 12:15:36,866: Done 69%
+[rosout][INFO] 2017-07-05 12:15:36,967: Done 73%
+[rosout][INFO] 2017-07-05 12:15:37,068: Done 78%
+[rosout][INFO] 2017-07-05 12:15:37,170: Done 82%
+[rosout][INFO] 2017-07-05 12:15:37,271: Done 86%
+[rosout][INFO] 2017-07-05 12:15:37,372: Done 91%
+[rosout][INFO] 2017-07-05 12:15:37,473: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:15:57,853: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[rosout][INFO] 2017-07-05 12:15:57,854: Moving elephant to -0.04,0.04
+[rosout][INFO] 2017-07-05 12:15:57,855: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:15:58,048: Received trajectory! As requested, waiting -0.000552095s before starting...
+[rosout][INFO] 2017-07-05 12:15:58,048: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:15:58,049: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:15:58,049: Done 0%
+[rosout][INFO] 2017-07-05 12:15:58,150: Done 7%
+[rosout][INFO] 2017-07-05 12:15:58,251: Done 15%
+[rosout][INFO] 2017-07-05 12:15:58,352: Done 23%
+[rosout][INFO] 2017-07-05 12:15:58,453: Done 30%
+[rosout][INFO] 2017-07-05 12:15:58,554: Done 38%
+[rosout][INFO] 2017-07-05 12:15:58,655: Done 46%
+[rosout][INFO] 2017-07-05 12:15:58,756: Done 53%
+[rosout][INFO] 2017-07-05 12:15:58,857: Done 61%
+[rosout][INFO] 2017-07-05 12:15:58,958: Done 69%
+[rosout][INFO] 2017-07-05 12:15:59,059: Done 76%
+[rosout][INFO] 2017-07-05 12:15:59,161: Done 84%
+[rosout][INFO] 2017-07-05 12:15:59,262: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:16:02,338: /move_sandbox_items: Received a request to move ball to 0.06, -0.06. Let's do that
+[rosout][INFO] 2017-07-05 12:16:02,339: Moving ball to 0.30,0.16
+[rosout][INFO] 2017-07-05 12:16:02,340: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:16:02,450: Received trajectory! As requested, waiting -0.001872117s before starting...
+[rosout][INFO] 2017-07-05 12:16:02,450: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:16:02,450: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:16:02,451: Done 0%
+[rosout][INFO] 2017-07-05 12:16:02,552: Done 1%
+[rosout][INFO] 2017-07-05 12:16:02,653: Done 2%
+[rosout][INFO] 2017-07-05 12:16:02,754: Done 4%
+[rosout][INFO] 2017-07-05 12:16:02,855: Done 5%
+[rosout][INFO] 2017-07-05 12:16:02,956: Done 7%
+[rosout][INFO] 2017-07-05 12:16:03,057: Done 8%
+[rosout][INFO] 2017-07-05 12:16:03,158: Done 10%
+[rosout][INFO] 2017-07-05 12:16:03,259: Done 11%
+[rosout][INFO] 2017-07-05 12:16:03,361: Done 13%
+[rosout][INFO] 2017-07-05 12:16:03,462: Done 14%
+[rosout][INFO] 2017-07-05 12:16:03,562: Done 16%
+[rosout][INFO] 2017-07-05 12:16:03,663: Done 17%
+[rosout][INFO] 2017-07-05 12:16:03,764: Done 19%
+[rosout][INFO] 2017-07-05 12:16:03,865: Done 20%
+[rosout][INFO] 2017-07-05 12:16:03,966: Done 22%
+[rosout][INFO] 2017-07-05 12:16:04,067: Done 23%
+[rosout][INFO] 2017-07-05 12:16:04,169: Done 25%
+[rosout][INFO] 2017-07-05 12:16:04,270: Done 26%
+[rosout][INFO] 2017-07-05 12:16:04,371: Done 28%
+[rosout][INFO] 2017-07-05 12:16:04,472: Done 29%
+[rosout][INFO] 2017-07-05 12:16:04,573: Done 31%
+[rosout][INFO] 2017-07-05 12:16:04,674: Done 32%
+[rosout][INFO] 2017-07-05 12:16:04,776: Done 34%
+[rosout][INFO] 2017-07-05 12:16:04,878: Done 35%
+[rosout][INFO] 2017-07-05 12:16:04,980: Done 37%
+[rosout][INFO] 2017-07-05 12:16:05,081: Done 38%
+[rosout][INFO] 2017-07-05 12:16:05,182: Done 40%
+[rosout][INFO] 2017-07-05 12:16:05,285: Done 41%
+[rosout][INFO] 2017-07-05 12:16:05,386: Done 43%
+[rosout][INFO] 2017-07-05 12:16:05,487: Done 44%
+[rosout][INFO] 2017-07-05 12:16:05,588: Done 46%
+[rosout][INFO] 2017-07-05 12:16:05,689: Done 47%
+[rosout][INFO] 2017-07-05 12:16:05,790: Done 49%
+[rosout][INFO] 2017-07-05 12:16:05,891: Done 50%
+[rosout][INFO] 2017-07-05 12:16:05,992: Done 52%
+[rosout][INFO] 2017-07-05 12:16:06,093: Done 53%
+[rosout][INFO] 2017-07-05 12:16:06,194: Done 55%
+[rosout][INFO] 2017-07-05 12:16:06,295: Done 56%
+[rosout][INFO] 2017-07-05 12:16:06,396: Done 58%
+[rosout][INFO] 2017-07-05 12:16:06,497: Done 59%
+[rosout][INFO] 2017-07-05 12:16:06,598: Done 61%
+[rosout][INFO] 2017-07-05 12:16:06,699: Done 62%
+[rosout][INFO] 2017-07-05 12:16:06,800: Done 64%
+[rosout][INFO] 2017-07-05 12:16:06,901: Done 65%
+[rosout][INFO] 2017-07-05 12:16:07,002: Done 67%
+[rosout][INFO] 2017-07-05 12:16:07,103: Done 68%
+[rosout][INFO] 2017-07-05 12:16:07,204: Done 70%
+[rosout][INFO] 2017-07-05 12:16:07,305: Done 71%
+[rosout][INFO] 2017-07-05 12:16:07,406: Done 73%
+[rosout][INFO] 2017-07-05 12:16:07,508: Done 74%
+[rosout][INFO] 2017-07-05 12:16:07,614: Done 76%
+[rosout][INFO] 2017-07-05 12:16:07,716: Done 77%
+[rosout][INFO] 2017-07-05 12:16:07,817: Done 79%
+[rosout][INFO] 2017-07-05 12:16:07,920: Done 80%
+[rosout][INFO] 2017-07-05 12:16:08,021: Done 82%
+[rosout][INFO] 2017-07-05 12:16:08,122: Done 83%
+[rosout][INFO] 2017-07-05 12:16:08,224: Done 85%
+[rosout][INFO] 2017-07-05 12:16:08,325: Done 86%
+[rosout][INFO] 2017-07-05 12:16:08,426: Done 88%
+[rosout][INFO] 2017-07-05 12:16:08,527: Done 89%
+[rosout][INFO] 2017-07-05 12:16:08,628: Done 91%
+[rosout][INFO] 2017-07-05 12:16:08,729: Done 92%
+[rosout][INFO] 2017-07-05 12:16:08,830: Done 94%
+[rosout][INFO] 2017-07-05 12:16:08,931: Done 95%
+[rosout][INFO] 2017-07-05 12:16:09,034: Done 97%
+[rosout][INFO] 2017-07-05 12:16:09,136: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:16:12,716: /move_sandbox_items: Received a request to move hippo to 0.28, -0.15. Let's do that
+[rosout][INFO] 2017-07-05 12:16:12,717: Moving hippo to -0.04,0.01
+[rosout][INFO] 2017-07-05 12:16:12,718: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:16:12,848: Received trajectory! As requested, waiting -0.000429082s before starting...
+[rosout][INFO] 2017-07-05 12:16:12,849: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:16:12,849: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:16:12,850: Done 0%
+[rosout][INFO] 2017-07-05 12:16:12,951: Done 12%
+[rosout][INFO] 2017-07-05 12:16:13,051: Done 25%
+[rosout][INFO] 2017-07-05 12:16:13,152: Done 37%
+[rosout][INFO] 2017-07-05 12:16:13,253: Done 50%
+[rosout][INFO] 2017-07-05 12:16:13,354: Done 62%
+[rosout][INFO] 2017-07-05 12:16:13,455: Done 75%
+[rosout][INFO] 2017-07-05 12:16:13,557: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:16:15,024: /move_sandbox_items: Received a request to move hippo to 0.29, -0.02. Let's do that
+[rosout][INFO] 2017-07-05 12:16:15,024: Moving hippo to 0.08,-0.26
+[rosout][INFO] 2017-07-05 12:16:15,025: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:16:15,049: Received trajectory! As requested, waiting -0.001375476s before starting...
+[rosout][INFO] 2017-07-05 12:16:15,050: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:16:15,050: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:16:15,050: Done 0%
+[rosout][INFO] 2017-07-05 12:16:15,152: Done 1%
+[rosout][INFO] 2017-07-05 12:16:15,253: Done 3%
+[rosout][INFO] 2017-07-05 12:16:15,354: Done 5%
+[rosout][INFO] 2017-07-05 12:16:15,455: Done 7%
+[rosout][INFO] 2017-07-05 12:16:15,556: Done 9%
+[rosout][INFO] 2017-07-05 12:16:15,657: Done 10%
+[rosout][INFO] 2017-07-05 12:16:15,758: Done 12%
+[rosout][INFO] 2017-07-05 12:16:15,859: Done 14%
+[rosout][INFO] 2017-07-05 12:16:15,961: Done 16%
+[rosout][INFO] 2017-07-05 12:16:16,062: Done 18%
+[rosout][INFO] 2017-07-05 12:16:16,163: Done 20%
+[rosout][INFO] 2017-07-05 12:16:16,264: Done 21%
+[rosout][INFO] 2017-07-05 12:16:16,365: Done 23%
+[rosout][INFO] 2017-07-05 12:16:16,466: Done 25%
+[rosout][INFO] 2017-07-05 12:16:16,567: Done 27%
+[rosout][INFO] 2017-07-05 12:16:16,668: Done 29%
+[rosout][INFO] 2017-07-05 12:16:16,769: Done 30%
+[rosout][INFO] 2017-07-05 12:16:16,871: Done 32%
+[rosout][INFO] 2017-07-05 12:16:16,971: Done 34%
+[rosout][INFO] 2017-07-05 12:16:17,073: Done 36%
+[rosout][INFO] 2017-07-05 12:16:17,178: Done 38%
+[rosout][INFO] 2017-07-05 12:16:17,279: Done 40%
+[rosout][INFO] 2017-07-05 12:16:17,380: Done 41%
+[rosout][INFO] 2017-07-05 12:16:17,481: Done 43%
+[rosout][INFO] 2017-07-05 12:16:17,583: Done 45%
+[rosout][INFO] 2017-07-05 12:16:17,684: Done 47%
+[rosout][INFO] 2017-07-05 12:16:17,785: Done 49%
+[rosout][INFO] 2017-07-05 12:16:17,886: Done 50%
+[rosout][INFO] 2017-07-05 12:16:17,987: Done 52%
+[rosout][INFO] 2017-07-05 12:16:18,088: Done 54%
+[rosout][INFO] 2017-07-05 12:16:18,190: Done 56%
+[rosout][INFO] 2017-07-05 12:16:18,291: Done 58%
+[rosout][INFO] 2017-07-05 12:16:18,392: Done 60%
+[rosout][INFO] 2017-07-05 12:16:18,493: Done 61%
+[rosout][INFO] 2017-07-05 12:16:18,595: Done 63%
+[rosout][INFO] 2017-07-05 12:16:18,696: Done 65%
+[rosout][INFO] 2017-07-05 12:16:18,797: Done 67%
+[rosout][INFO] 2017-07-05 12:16:18,898: Done 69%
+[rosout][INFO] 2017-07-05 12:16:18,999: Done 70%
+[rosout][INFO] 2017-07-05 12:16:19,100: Done 72%
+[rosout][INFO] 2017-07-05 12:16:19,201: Done 74%
+[rosout][INFO] 2017-07-05 12:16:19,302: Done 76%
+[rosout][INFO] 2017-07-05 12:16:19,403: Done 78%
+[rosout][INFO] 2017-07-05 12:16:19,504: Done 80%
+[rosout][INFO] 2017-07-05 12:16:19,605: Done 81%
+[rosout][INFO] 2017-07-05 12:16:19,706: Done 83%
+[rosout][INFO] 2017-07-05 12:16:19,807: Done 85%
+[rosout][INFO] 2017-07-05 12:16:19,908: Done 87%
+[rosout][INFO] 2017-07-05 12:16:20,009: Done 89%
+[rosout][INFO] 2017-07-05 12:16:20,110: Done 90%
+[rosout][INFO] 2017-07-05 12:16:20,211: Done 92%
+[rosout][INFO] 2017-07-05 12:16:20,312: Done 94%
+[rosout][INFO] 2017-07-05 12:16:20,414: Done 96%
+[rosout][INFO] 2017-07-05 12:16:20,515: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:19:07,710: /move_sandbox_items: Received a request to move hippo to 0.29, -0.02. Let's do that
+[rosout][INFO] 2017-07-05 12:19:07,715: Moving hippo to 0.02,-0.07
+[rosout][INFO] 2017-07-05 12:19:07,715: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:19:07,848: Received trajectory! As requested, waiting -0.00051396s before starting...
+[rosout][INFO] 2017-07-05 12:19:07,849: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:19:07,849: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:19:07,850: Done 0%
+[rosout][INFO] 2017-07-05 12:19:07,951: Done 7%
+[rosout][INFO] 2017-07-05 12:19:08,052: Done 14%
+[rosout][INFO] 2017-07-05 12:19:08,154: Done 21%
+[rosout][INFO] 2017-07-05 12:19:08,259: Done 28%
+[rosout][INFO] 2017-07-05 12:19:08,363: Done 35%
+[rosout][INFO] 2017-07-05 12:19:08,464: Done 42%
+[rosout][INFO] 2017-07-05 12:19:08,567: Done 50%
+[rosout][INFO] 2017-07-05 12:19:08,668: Done 57%
+[rosout][INFO] 2017-07-05 12:19:08,769: Done 64%
+[rosout][INFO] 2017-07-05 12:19:08,870: Done 71%
+[rosout][INFO] 2017-07-05 12:19:08,972: Done 78%
+[rosout][INFO] 2017-07-05 12:19:09,074: Done 85%
+[rosout][INFO] 2017-07-05 12:19:09,176: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-07-05 12:19:10,545: /move_sandbox_items: Received a request to move hippo to 0.28, -0.15. Let's do that
+[rosout][INFO] 2017-07-05 12:19:10,546: Moving hippo to 0.02,0.14
+[rosout][INFO] 2017-07-05 12:19:10,547: Requesting a plan...
+[rosout][INFO] 2017-07-05 12:19:10,648: Received trajectory! As requested, waiting -0.000740124s before starting...
+[rosout][INFO] 2017-07-05 12:19:10,648: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-07-05 12:19:10,649: Starting to play trajectory!
+[rosout][INFO] 2017-07-05 12:19:10,649: Done 0%
+[rosout][INFO] 2017-07-05 12:19:10,750: Done 3%
+[rosout][INFO] 2017-07-05 12:19:10,851: Done 6%
+[rosout][INFO] 2017-07-05 12:19:10,953: Done 10%
+[rosout][INFO] 2017-07-05 12:19:11,054: Done 13%
+[rosout][INFO] 2017-07-05 12:19:11,155: Done 16%
+[rosout][INFO] 2017-07-05 12:19:11,256: Done 20%
+[rosout][INFO] 2017-07-05 12:19:11,357: Done 23%
+[rosout][INFO] 2017-07-05 12:19:11,458: Done 26%
+[rosout][INFO] 2017-07-05 12:19:11,559: Done 30%
+[rosout][INFO] 2017-07-05 12:19:11,660: Done 33%
+[rosout][INFO] 2017-07-05 12:19:11,761: Done 36%
+[rosout][INFO] 2017-07-05 12:19:11,862: Done 40%
+[rosout][INFO] 2017-07-05 12:19:11,964: Done 43%
+[rosout][INFO] 2017-07-05 12:19:12,066: Done 46%
+[rosout][INFO] 2017-07-05 12:19:12,167: Done 50%
+[rosout][INFO] 2017-07-05 12:19:12,268: Done 53%
+[rosout][INFO] 2017-07-05 12:19:12,369: Done 56%
+[rosout][INFO] 2017-07-05 12:19:12,470: Done 60%
+[rosout][INFO] 2017-07-05 12:19:12,571: Done 63%
+[rosout][INFO] 2017-07-05 12:19:12,672: Done 66%
+[rosout][INFO] 2017-07-05 12:19:12,774: Done 70%
+[rosout][INFO] 2017-07-05 12:19:12,875: Done 73%
+[rosout][INFO] 2017-07-05 12:19:12,977: Done 76%
+[rosout][INFO] 2017-07-05 12:19:13,078: Done 80%
+[rosout][INFO] 2017-07-05 12:19:13,179: Done 83%
+[rosout][INFO] 2017-07-05 12:19:13,281: Done 86%
+[rosout][INFO] 2017-07-05 12:19:13,382: Done 90%
+[rosout][INFO] 2017-07-05 12:19:13,484: Done 93%
+[rosout][INFO] 2017-07-05 12:19:13,585: /move_sandbox_items: Succeeded
+[rospy.internal][WARNING] 2017-07-05 12:19:41,468: Unknown error initiating TCP/IP socket to sandtray-hrilab:58248 (http://sandtray-hrilab:44262/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 12:19:41,468: topic[/tf] removing connection to http://sandtray-hrilab:44262/
+[rospy.internal][ERROR] 2017-07-05 12:19:41,472: Unable to initiate TCP/IP socket to sandtray-hrilab:33140 (http://sandtray-hrilab:34487/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2017-07-05 12:19:41,472: Unable to initiate TCP/IP socket to sandtray-hrilab:33140 (http://sandtray-hrilab:34487/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rosout][WARNING] 2017-07-05 12:19:41,620: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2017-07-05 12:19:41,620: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rosout][WARNING] 2017-07-05 12:19:41,620: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2017-07-05 12:19:41,621: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2017-07-05 12:19:41,754: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rospy.internal][WARNING] 2017-07-05 12:19:41,768: Unknown error initiating TCP/IP socket to 192.168.2.101:53360 (http://192.168.2.101:43667/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-05 12:19:41,768: topic[/tf] removing connection to http://192.168.2.101:43667/
+[rospy.internal][INFO] 2017-07-05 12:19:41,796: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-07-05 12:19:41,796: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-07-05 12:19:42,298: topic[/poses] removing connection to /nao_behaviours
+[rospy.internal][WARNING] 2017-07-05 12:19:42,473: Unknown error initiating TCP/IP socket to sandtray-hrilab:33140 (http://sandtray-hrilab:34487/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 12:19:42,473: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:34487/
+[rospy.internal][WARNING] 2017-07-05 12:19:42,474: Unknown error initiating TCP/IP socket to sandtray-hrilab:33140 (http://sandtray-hrilab:34487/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 12:19:42,474: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:34487/
+[rospy.internal][WARNING] 2017-07-05 12:19:52,011: Unknown error initiating TCP/IP socket to sandtray-hrilab:40640 (http://sandtray-hrilab:45161/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-05 12:19:52,011: topic[/tf] removing connection to http://sandtray-hrilab:45161/
+[rospy.internal][WARNING] 2017-07-05 12:19:52,123: Unknown error initiating TCP/IP socket to sandtray-hrilab:48065 (http://sandtray-hrilab:45088/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-07-05 12:19:52,123: topic[/tf] removing connection to http://sandtray-hrilab:45088/
+[rospy.core][INFO] 2017-07-05 12:20:00,847: signal_shutdown [signal-15]
+[rospy.internal][WARNING] 2017-07-05 12:20:00,848: Unknown error initiating TCP/IP socket to sandtray-hrilab:53639 (http://sandtray-hrilab:45808/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 12:20:00,848: topic[/tf] removing connection to http://sandtray-hrilab:45808/
+[rospy.internal][INFO] 2017-07-05 12:20:00,855: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-07-05 12:20:00,855: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-05 12:20:00,855: topic[/tf] removing connection to http://sandtray-hrilab:36952/
+[rospy.internal][WARNING] 2017-07-05 12:20:00,855: Unknown error initiating TCP/IP socket to sandtray-hrilab:33598 (http://sandtray-hrilab:36952/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2017-07-05 12:20:00,856: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2017-07-05 12:20:00,856: topic[/tf] removing connection to http://sandtray-hrilab:34979/
+[rospy.internal][INFO] 2017-07-05 12:20:00,856: topic[/tf] removing connection to http://sandtray-hrilab:35497/
+[rospy.impl.masterslave][INFO] 2017-07-05 12:20:00,856: signal-15
+[rospy.core][INFO] 2017-07-05 12:20:00,904: signal_shutdown [signal-2]
+[rospy.core][INFO] 2017-07-05 12:20:00,954: signal_shutdown [atexit]

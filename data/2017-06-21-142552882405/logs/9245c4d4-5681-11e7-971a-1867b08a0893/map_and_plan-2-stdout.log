@@ -1,0 +1,500 @@
+[0m[ INFO] [1498051632.753407967]: playground_map_and_plan is ready. Waiting for footprints on /footprints + TF updates[0m
+Got footprint for /zebra: (-0.0169137,0.00985825), (-0.00531572,0.016817), (0.00396263,0.00521907), (0.013241,-0.000579897), (0.0103415,-0.0156572), (-0.00531572,-0.0156572), (-0.0169137,0.00985825), 
+Got footprint for /elephant: (-0.0220085,0.0130249), (0.00961165,0.0169569), (0.0233738,0.00221177), (0.0184587,-0.0158101), (-0.00365898,-0.0158101), (-0.0257767,-0.000573422), (-0.0220085,0.0130249), 
+Got footprint for /ball: (0.0118125,0), (0.00826875,-0.00826875), (0,-0.0118125), (-0.00826875,-0.00826875), (-0.0118125,0), (-0.00826875,0.00826875), (0,0.0118125), (0.00826875,0.00826875), (0.0118125,0), 
+Got footprint for /lion: (-0.00110714,0.0147321), (0.0106429,0.00885714), (0.0156429,-0.00539286), (0.00426786,-0.0181429), (-0.00760714,-0.0152679), (-0.0123571,0.00385714), (-0.00948214,0.0113571), (-0.00110714,0.0147321), 
+Got footprint for /giraffe: (-0.00374656,0.0275573), (0.0135929,-0.0018578), (0.0117351,-0.0226032), (-0.00421101,-0.0221388), (-0.0173704,0.0190424), (-0.00374656,0.0275573), 
+Got footprint for /caravan: (-0.0307125,0.0175219), (0.023625,0.00975938), (0.0435375,-0.00492187), (0.0342563,-0.0120094), (-0.0307125,-0.0120094), (-0.0399938,0.00165938), (-0.0307125,0.0175219), 
+Got footprint for /crocodile: (-0.00304826,0.0129501), (0.00406434,0.017134), (0.0160581,0.0174129), (0.0171738,-0.012711), (-0.00765053,-0.0155003), (-0.0136474,-0.0115953), (-0.0129501,-0.00769038), (-0.00304826,0.0129501), 
+Got footprint for /hippo: (-0.00336986,0.0166949), (0.0256469,0.00573647), (0.0231774,-0.014174), (-0.00336986,-0.014174), (-0.0181869,-0.00460461), (-0.0238977,0.0105212), (-0.00336986,0.0166949), 
+Got footprint for /boy: (0.016875,0), (0.0118125,-0.0118125), (0,-0.016875), (-0.0118125,-0.0118125), (-0.016875,0), (-0.0118125,0.0118125), (0,0.016875), (0.0118125,0.0118125), (0.016875,0), 
+Got footprint for /girl: (0.016875,0), (0.0118125,-0.0118125), (0,-0.016875), (-0.0118125,-0.0118125), (-0.016875,0), (-0.0118125,0.0118125), (0,0.016875), (0.0118125,0.0118125), (0.016875,0), 
+[0m[ INFO] [1498051693.953825562]: Got a planning request for caravan[0m
+[0m[ INFO] [1498051693.953863148]: Updating occupancy map...[0m
+[0m[ INFO] [1498051693.954079626]: Planing...[0m
+[0m[ INFO] [1498051693.954121547]: Planning from caravan (0.123457, -0.0318664) to (0.479934, -0.118702)[0m
+Starting A*...done.
+Publishing path (72 points)
+[0m[ INFO] [1498051693.954544992]: Done![0m
+[0m[ INFO] [1498051702.953800603]: Got a planning request for caravan[0m
+[0m[ INFO] [1498051702.953833503]: Updating occupancy map...[0m
+[0m[ INFO] [1498051702.954051896]: Planing...[0m
+[0m[ INFO] [1498051702.954097190]: Planning from caravan (0.472597, -0.117709) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (12 points)
+[0m[ INFO] [1498051702.954194641]: Done![0m
+[0m[ INFO] [1498051705.553786091]: Got a planning request for zebra[0m
+[0m[ INFO] [1498051705.553817678]: Updating occupancy map...[0m
+[0m[ INFO] [1498051705.554015915]: Planing...[0m
+[0m[ INFO] [1498051705.554048325]: Planning from zebra (0.0411072, -0.05038) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (29 points)
+[0m[ INFO] [1498051705.554273054]: Done![0m
+[0m[ INFO] [1498051710.553714273]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051710.553742903]: Updating occupancy map...[0m
+[0m[ INFO] [1498051710.553930624]: Planing...[0m
+[0m[ INFO] [1498051710.553969739]: Planning from crocodile (0.560751, -0.157638) to (0.566818, -0.180966)[0m
+Starting A*...done.
+Publishing path (6 points)
+[0m[ INFO] [1498051710.554039990]: Done![0m
+[0m[ INFO] [1498051712.953806920]: Got a planning request for girl[0m
+[0m[ INFO] [1498051712.953838411]: Updating occupancy map...[0m
+[0m[ INFO] [1498051712.954045648]: Planing...[0m
+[0m[ INFO] [1498051712.954078624]: Planning from girl (0.0158682, -0.0893522) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (29 points)
+[0m[ INFO] [1498051712.992737571]: Done![0m
+[0m[ INFO] [1498051717.153851075]: Got a planning request for lion[0m
+[0m[ INFO] [1498051717.153887379]: Updating occupancy map...[0m
+[0m[ INFO] [1498051717.154128350]: Planing...[0m
+[0m[ INFO] [1498051717.154201041]: Planning from lion (0.11865, -0.0133354) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (83 points)
+[0m[ INFO] [1498051717.187035029]: Done![0m
+[0m[ INFO] [1498051727.353807689]: Got a planning request for hippo[0m
+[0m[ INFO] [1498051727.353838369]: Updating occupancy map...[0m
+[0m[ INFO] [1498051727.354060386]: Planing...[0m
+[0m[ INFO] [1498051727.354096709]: Planning from hippo (0.334932, -0.089824) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (14 points)
+[0m[ INFO] [1498051727.354199286]: Done![0m
+[0m[ INFO] [1498051731.153810871]: Got a planning request for girl[0m
+[0m[ INFO] [1498051731.153841059]: Updating occupancy map...[0m
+[0m[ INFO] [1498051731.154051189]: Planing...[0m
+[0m[ INFO] [1498051731.154084360]: Planning from girl (0.0166022, -0.159049) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (108 points)
+[0m[ INFO] [1498051731.189824312]: Done![0m
+[0m[ INFO] [1498051786.353863305]: Got a planning request for caravan[0m
+[0m[ INFO] [1498051786.353898735]: Updating occupancy map...[0m
+[0m[ INFO] [1498051786.354142017]: Planing...[0m
+[0m[ INFO] [1498051786.354190429]: Planning from caravan (0.324461, -0.0634413) to (0.397446, -0.0932209)[0m
+Starting A*...done.
+Publishing path (16 points)
+[0m[ INFO] [1498051786.354289549]: Done![0m
+[0m[ INFO] [1498051793.553860907]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051793.553890676]: Updating occupancy map...[0m
+[0m[ INFO] [1498051793.554132561]: Planing...[0m
+[0m[ INFO] [1498051793.554175009]: Planning from crocodile (0.318186, -0.0867959) to (0.287863, -0.0204602)[0m
+Starting A*...done.
+Publishing path (14 points)
+[0m[ INFO] [1498051793.588269029]: Done![0m
+[0m[ INFO] [1498051797.353726174]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051797.353770250]: Updating occupancy map...[0m
+[0m[ INFO] [1498051797.353909553]: Planing...[0m
+[0m[ INFO] [1498051797.353940580]: Planning from crocodile (0.384487, -0.0248266) to (0.285915, -0.0285997)[0m
+Starting A*...done.
+Publishing path (20 points)
+[0m[ INFO] [1498051797.354024342]: Done![0m
+[0m[ INFO] [1498051801.353748943]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051801.353770432]: Updating occupancy map...[0m
+[0m[ INFO] [1498051801.353943870]: Planing...[0m
+[0m[ INFO] [1498051801.353972345]: Planning from crocodile (0.326517, -0.0113657) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498051801.367742825]: Done![0m
+[0m[ INFO] [1498051804.753755778]: Got a planning request for hippo[0m
+[0m[ INFO] [1498051804.753810681]: Updating occupancy map...[0m
+[0m[ INFO] [1498051804.754061925]: Planing...[0m
+[0m[ INFO] [1498051804.754123110]: Planning from hippo (0.439005, -0.0623068) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (40 points)
+[0m[ INFO] [1498051804.773389799]: Done![0m
+[0m[ INFO] [1498051810.953799838]: Got a planning request for hippo[0m
+[0m[ INFO] [1498051810.953831380]: Updating occupancy map...[0m
+[0m[ INFO] [1498051810.954045574]: Planing...[0m
+[0m[ INFO] [1498051810.954087376]: Planning from hippo (0.287452, -0.0474623) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1498051810.981629557]: Done![0m
+[0m[ INFO] [1498051813.953810592]: Got a planning request for zebra[0m
+[0m[ INFO] [1498051813.953842956]: Updating occupancy map...[0m
+[0m[ INFO] [1498051813.954061278]: Planing...[0m
+[0m[ INFO] [1498051813.954094287]: Planning from zebra (0.117314, -0.0291329) to (0.390667, -0.0734792)[0m
+Starting A*...done.
+Publishing path (56 points)
+[0m[ INFO] [1498051813.954639609]: Done![0m
+[0m[ INFO] [1498051821.953834592]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051821.953863167]: Updating occupancy map...[0m
+[0m[ INFO] [1498051821.954118648]: Planing...[0m
+[0m[ INFO] [1498051821.954157048]: Planning from crocodile (0.24969, -0.0139814) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498051821.954251751]: Done![0m
+[0m[ INFO] [1498051824.953873053]: Got a planning request for boy[0m
+[0m[ INFO] [1498051824.953909435]: Updating occupancy map...[0m
+[0m[ INFO] [1498051824.954173696]: Planing...[0m
+[0m[ INFO] [1498051824.954215146]: Planning from boy (0.176461, -0.0194824) to (0.390667, -0.0734792)[0m
+Starting A*...done.
+Publishing path (44 points)
+[0m[ INFO] [1498051824.954405359]: Done![0m
+[0m[ INFO] [1498051841.753761547]: Got a planning request for ball[0m
+[0m[ INFO] [1498051841.753790541]: Updating occupancy map...[0m
+[0m[ INFO] [1498051841.754026886]: Planing...[0m
+[0m[ INFO] [1498051841.754071779]: Planning from ball (0.141301, -0.0308253) to (0.391856, -0.0728944)[0m
+Starting A*...done.
+Publishing path (57 points)
+[0m[ INFO] [1498051841.781433257]: Done![0m
+[0m[ INFO] [1498051909.753877727]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498051909.753912694]: Updating occupancy map...[0m
+[0m[ INFO] [1498051909.754200021]: Planing...[0m
+[0m[ INFO] [1498051909.754239308]: Planning from crocodile (0.284407, -0.0261209) to (0.307946, -0.0602679)[0m
+Starting A*...done.
+Publishing path (8 points)
+[0m[ INFO] [1498051909.754311968]: Done![0m
+[0m[ INFO] [1498051913.353894075]: Got a planning request for ball[0m
+[0m[ INFO] [1498051913.353922940]: Updating occupancy map...[0m
+[0m[ INFO] [1498051913.354235661]: Planing...[0m
+[0m[ INFO] [1498051913.354270489]: Planning from ball (0.392118, -0.0692217) to (0.309236, -0.0859028)[0m
+Starting A*...done.
+Publishing path (20 points)
+[0m[ INFO] [1498051913.361931560]: Done![0m
+[0m[ INFO] [1498051920.953864753]: Got a planning request for ball[0m
+[0m[ INFO] [1498051920.953892972]: Updating occupancy map...[0m
+[0m[ INFO] [1498051920.954158563]: Planing...[0m
+[0m[ INFO] [1498051920.954199084]: Planning from ball (0.30914, -0.0872745) to (0.354306, -0.0795486)[0m
+Starting A*...done.
+Publishing path (10 points)
+[0m[ INFO] [1498051920.954282328]: Done![0m
+[0m[ INFO] [1498051986.153921582]: Got a planning request for ball[0m
+[0m[ INFO] [1498051986.153963353]: Updating occupancy map...[0m
+[0m[ INFO] [1498051986.154239713]: Planing...[0m
+[0m[ INFO] [1498051986.154288290]: Planning from ball (0.321239, -0.0570723) to (0.397788, -0.0706625)[0m
+Starting A*...done.
+Publishing path (16 points)
+[0m[ INFO] [1498051986.154396158]: Done![0m
+[0m[ INFO] [1498051989.553838633]: Got a planning request for ball[0m
+[0m[ INFO] [1498051989.553867369]: Updating occupancy map...[0m
+[0m[ INFO] [1498051989.554108712]: Planing...[0m
+[0m[ INFO] [1498051989.554145085]: Planning from ball (0.392683, -0.0706758) to (0.376629, -0.0472545)[0m
+Starting A*...done.
+Publishing path (6 points)
+[0m[ INFO] [1498051989.554211443]: Done![0m
+[0m[ INFO] [1498052009.353763300]: Got a planning request for caravan[0m
+[0m[ INFO] [1498052009.353788110]: Updating occupancy map...[0m
+[0m[ INFO] [1498052009.353967630]: Planing...[0m
+[0m[ INFO] [1498052009.354004833]: Planning from caravan (0.270495, -0.0364189) to (0.295482, -0.088107)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1498052009.354073229]: Done![0m
+[0m[ INFO] [1498052012.553789923]: Got a planning request for boy[0m
+[0m[ INFO] [1498052012.553816232]: Updating occupancy map...[0m
+[0m[ INFO] [1498052012.553988289]: Planing...[0m
+[0m[ INFO] [1498052012.554033686]: Planning from boy (0.32999, -0.0768235) to (0.301927, -0.0879167)[0m
+Starting A*...done.
+Publishing path (6 points)
+[0m[ INFO] [1498052012.579995872]: Done![0m
+[0m[ INFO] [1498052024.353899640]: Got a planning request for boy[0m
+[0m[ INFO] [1498052024.353936502]: Updating occupancy map...[0m
+[0m[ INFO] [1498052024.354225017]: Planing...[0m
+[0m[ INFO] [1498052024.354267362]: Planning from boy (0.319813, -0.0729192) to (0.301729, -0.086179)[0m
+Starting A*...done.
+Publishing path (4 points)
+[0m[ INFO] [1498052024.354354278]: Done![0m
+[0m[ INFO] [1498052027.953896952]: Got a planning request for caravan[0m
+[0m[ INFO] [1498052027.953926318]: Updating occupancy map...[0m
+[0m[ INFO] [1498052027.954228471]: Planing...[0m
+[0m[ INFO] [1498052027.954265504]: Planning from caravan (0.265717, -0.041069) to (0.374348, -0.104969)[0m
+Starting A*...done.
+Publishing path (22 points)
+[0m[ INFO] [1498052027.954393222]: Done![0m
+[0m[ INFO] [1498052037.153871583]: Got a planning request for lion[0m
+[0m[ INFO] [1498052037.153906128]: Updating occupancy map...[0m
+[0m[ INFO] [1498052037.154156778]: Planing...[0m
+[0m[ INFO] [1498052037.154203929]: Planning from lion (0.426662, -0.0601949) to (0.302054, -0.0839286)[0m
+Starting A*...done.
+Publishing path (26 points)
+[0m[ INFO] [1498052037.154424903]: Done![0m
+[0m[ INFO] [1498052041.153846182]: Got a planning request for lion[0m
+[0m[ INFO] [1498052041.153878018]: Updating occupancy map...[0m
+[0m[ INFO] [1498052041.154125863]: Planing...[0m
+[0m[ INFO] [1498052041.154160718]: Planning from lion (0.302482, -0.0700236) to (0.301616, -0.0830682)[0m
+Starting A*...done.
+Publishing path (3 points)
+[0m[ INFO] [1498052041.154214900]: Done![0m
+[0m[ INFO] [1498052043.753852657]: Got a planning request for lion[0m
+[0m[ INFO] [1498052043.753880455]: Updating occupancy map...[0m
+[0m[ INFO] [1498052043.754138430]: Planing...[0m
+[0m[ INFO] [1498052043.754174497]: Planning from lion (0.31254, -0.0705157) to (0.302054, -0.0839286)[0m
+Starting A*...done.
+Publishing path (3 points)
+[0m[ INFO] [1498052043.756874464]: Done![0m
+[0m[ INFO] [1498052046.353871011]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052046.353910187]: Updating occupancy map...[0m
+[0m[ INFO] [1498052046.354190358]: Planing...[0m
+[0m[ INFO] [1498052046.354241034]: Planning from elephant (0.291693, -0.0622084) to (0.375071, -0.0461404)[0m
+Starting A*...done.
+Publishing path (18 points)
+[0m[ INFO] [1498052046.354372719]: Done![0m
+[0m[ INFO] [1498052050.353809357]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052050.353841676]: Updating occupancy map...[0m
+[0m[ INFO] [1498052050.354063192]: Planing...[0m
+[0m[ INFO] [1498052050.354100694]: Planning from elephant (0.36261, -0.027749) to (0.376629, -0.0472545)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1498052050.354167020]: Done![0m
+[0m[ INFO] [1498052052.753724126]: Got a planning request for lion[0m
+[0m[ INFO] [1498052052.753755179]: Updating occupancy map...[0m
+[0m[ INFO] [1498052052.753945675]: Planing...[0m
+[0m[ INFO] [1498052052.753985263]: Planning from lion (0.328958, -0.0808544) to (0.302054, -0.0839286)[0m
+Starting A*...done.
+Publishing path (6 points)
+[0m[ INFO] [1498052052.754061021]: Done![0m
+[0m[ INFO] [1498052054.953835028]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052054.953873460]: Updating occupancy map...[0m
+[0m[ INFO] [1498052054.954107572]: Planing...[0m
+[0m[ INFO] [1498052054.954148764]: Planning from elephant (0.324213, -0.0544317) to (0.376634, -0.0472594)[0m
+Starting A*...done.
+Publishing path (12 points)
+[0m[ INFO] [1498052054.954246195]: Done![0m
+[0m[ INFO] [1498052065.953763660]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052065.953788766]: Updating occupancy map...[0m
+[0m[ INFO] [1498052065.954010636]: Planing...[0m
+[0m[ INFO] [1498052065.954035772]: Planning from elephant (0.353224, -0.0234123) to (0.37206, -0.0487576)[0m
+Starting A*...done.
+Publishing path (6 points)
+[0m[ INFO] [1498052065.954091064]: Done![0m
+[0m[ INFO] [1498052080.553864870]: Got a planning request for lion[0m
+[0m[ INFO] [1498052080.553893804]: Updating occupancy map...[0m
+[0m[ INFO] [1498052080.554165051]: Planing...[0m
+[0m[ INFO] [1498052080.554200737]: Planning from lion (0.316619, -0.0536319) to (0.310054, -0.0743796)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1498052080.554262281]: Done![0m
+[0m[ INFO] [1498052082.553762668]: Got a planning request for lion[0m
+[0m[ INFO] [1498052082.553789230]: Updating occupancy map...[0m
+[0m[ INFO] [1498052082.553976060]: Planing...[0m
+[0m[ INFO] [1498052082.554011344]: Planning from lion (0.312817, -0.0713752) to (0.309236, -0.0859028)[0m
+Starting A*...done.
+Publishing path (4 points)
+[0m[ INFO] [1498052082.554080882]: Done![0m
+[0m[ INFO] [1498052085.153906219]: Got a planning request for lion[0m
+[0m[ INFO] [1498052085.153943666]: Updating occupancy map...[0m
+[0m[ INFO] [1498052085.154234438]: Planing...[0m
+[0m[ INFO] [1498052085.154276954]: Planning from lion (0.289465, -0.0819639) to (0.309236, -0.0859028)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1498052085.154348204]: Done![0m
+[0m[ INFO] [1498052127.954036472]: Got a planning request for lion[0m
+[0m[ INFO] [1498052127.954067227]: Updating occupancy map...[0m
+[0m[ INFO] [1498052127.954448937]: Planing...[0m
+[0m[ INFO] [1498052127.954496220]: Planning from lion (0.313127, -0.0774865) to (0.309732, -0.0855804)[0m
+Starting A*...done.
+Publishing path (3 points)
+[0m[ INFO] [1498052127.954568760]: Done![0m
+[0m[ INFO] [1498052148.153871252]: Got a planning request for lion[0m
+[0m[ INFO] [1498052148.153902734]: Updating occupancy map...[0m
+[0m[ INFO] [1498052148.154163098]: Planing...[0m
+[0m[ INFO] [1498052148.154204795]: Planning from lion (0.321204, -0.0758196) to (0.313111, -0.0816146)[0m
+Starting A*...done.
+Publishing path (3 points)
+[0m[ INFO] [1498052148.154778700]: Done![0m
+[0m[ INFO] [1498052150.953755149]: Got a planning request for lion[0m
+[0m[ INFO] [1498052150.953800740]: Updating occupancy map...[0m
+[0m[ INFO] [1498052150.953968862]: Planing...[0m
+[0m[ INFO] [1498052150.954006514]: Planning from lion (0.464429, -0.0587663) to (0.339808, -0.0639942)[0m
+Starting A*...done.
+Publishing path (29 points)
+[0m[ INFO] [1498052150.981200918]: Done![0m
+[0m[ INFO] [1498052155.353752678]: Got a planning request for zebra[0m
+[0m[ INFO] [1498052155.353778124]: Updating occupancy map...[0m
+[0m[ INFO] [1498052155.353975022]: Planing...[0m
+[0m[ INFO] [1498052155.354013872]: Planning from zebra (0.290057, -0.0455716) to (0.218103, -0.061317)[0m
+Starting A*...done.
+Publishing path (16 points)
+[0m[ INFO] [1498052155.354118627]: Done![0m
+[0m[ INFO] [1498052158.553793201]: Got a planning request for lion[0m
+[0m[ INFO] [1498052158.553875506]: Updating occupancy map...[0m
+[0m[ INFO] [1498052158.554092042]: Planing...[0m
+[0m[ INFO] [1498052158.554132672]: Planning from lion (0.354799, -0.0300399) to (0.310208, -0.0858681)[0m
+Starting A*...done.
+Publishing path (12 points)
+[0m[ INFO] [1498052158.577458824]: Done![0m
+[0m[ INFO] [1498052169.753809996]: Got a planning request for zebra[0m
+[0m[ INFO] [1498052169.753830841]: Updating occupancy map...[0m
+[0m[ INFO] [1498052169.754019779]: Planing...[0m
+[0m[ INFO] [1498052169.754045738]: Planning from zebra (0.276722, -0.055474) to (0.318874, -0.0732857)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1498052169.760781515]: Done![0m
+[0m[ INFO] [1498052258.753874422]: Got a planning request for girl[0m
+[0m[ INFO] [1498052258.753907768]: Updating occupancy map...[0m
+[0m[ INFO] [1498052258.754140828]: Planing...[0m
+[0m[ INFO] [1498052258.754188571]: Planning from girl (0.342943, -0.0635659) to (0.310208, -0.0858681)[0m
+Starting A*...done.
+Publishing path (7 points)
+[0m[ INFO] [1498052258.754263237]: Done![0m
+[0m[ INFO] [1498052317.153833625]: Got a planning request for lion[0m
+[0m[ INFO] [1498052317.153870824]: Updating occupancy map...[0m
+[0m[ INFO] [1498052317.154099969]: Planing...[0m
+[0m[ INFO] [1498052317.154142462]: Planning from lion (0.375753, -0.0911743) to (0.387388, 0.0202467)[0m
+Starting A*...done.
+Publishing path (23 points)
+[0m[ INFO] [1498052317.175693343]: Done![0m
+[0m[ INFO] [1498052321.553710192]: Got a planning request for lion[0m
+[0m[ INFO] [1498052321.553766109]: Updating occupancy map...[0m
+[0m[ INFO] [1498052321.553955726]: Planing...[0m
+[0m[ INFO] [1498052321.553990284]: Planning from lion (0.137143, -0.0135567) to (0.324985, 0.0362763)[0m
+Starting A*...done.
+Publishing path (38 points)
+[0m[ INFO] [1498052321.595432578]: Done![0m
+[0m[ INFO] [1498052327.153975185]: Got a planning request for zebra[0m
+[0m[ INFO] [1498052327.154007699]: Updating occupancy map...[0m
+[0m[ INFO] [1498052327.154371961]: Planing...[0m
+[0m[ INFO] [1498052327.154415154]: Planning from zebra (0.222253, -0.0307507) to (0.392857, -0.0727143)[0m
+Starting A*...done.
+Publishing path (49 points)
+[0m[ INFO] [1498052327.155438680]: Done![0m
+[0m[ INFO] [1498052333.953744445]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052333.953770693]: Updating occupancy map...[0m
+[0m[ INFO] [1498052333.953990034]: Planing...[0m
+[0m[ INFO] [1498052333.954025098]: Planning from elephant (0.356727, -0.0476506) to (0.392857, -0.0727143)[0m
+Starting A*...done.
+Publishing path (12 points)
+[0m[ INFO] [1498052333.992574226]: Done![0m
+[0m[ INFO] [1498052337.553715953]: Got a planning request for lion[0m
+[0m[ INFO] [1498052337.553742151]: Updating occupancy map...[0m
+[0m[ INFO] [1498052337.553880655]: Planing...[0m
+[0m[ INFO] [1498052337.553919733]: Planning from lion (0.293377, -0.0144899) to (0.310208, -0.0858681)[0m
+Starting A*...done.
+Publishing path (36 points)
+[0m[ INFO] [1498052337.562114568]: Done![0m
+[0m[ INFO] [1498052342.753821404]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052342.753854723]: Updating occupancy map...[0m
+[0m[ INFO] [1498052342.754068552]: Planing...[0m
+[0m[ INFO] [1498052342.754129896]: Planning from hippo (0.161268, -0.0269321) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (27 points)
+[0m[ INFO] [1498052342.754348855]: Done![0m
+[0m[ INFO] [1498052347.953851120]: Got a planning request for elephant[0m
+[0m[ INFO] [1498052347.953883758]: Updating occupancy map...[0m
+[0m[ INFO] [1498052347.954134900]: Planing...[0m
+[0m[ INFO] [1498052347.954169686]: Planning from elephant (0.42021, -0.0234177) to (0.397377, -0.07118)[0m
+Starting A*...done.
+Publishing path (20 points)
+[0m[ INFO] [1498052347.981276130]: Done![0m
+[0m[ INFO] [1498052352.153725377]: Got a planning request for giraffe[0m
+[0m[ INFO] [1498052352.153755040]: Updating occupancy map...[0m
+[0m[ INFO] [1498052352.153923763]: Planing...[0m
+[0m[ INFO] [1498052352.153964236]: Planning from giraffe (0.407808, -0.0211669) to (0.392848, -0.0727107)[0m
+Starting A*...done.
+Publishing path (12 points)
+[0m[ INFO] [1498052352.195730500]: Done![0m
+[0m[ INFO] [1498052355.153889926]: Got a planning request for lion[0m
+[0m[ INFO] [1498052355.153944497]: Updating occupancy map...[0m
+[0m[ INFO] [1498052355.154208234]: Planing...[0m
+[0m[ INFO] [1498052355.154260179]: Planning from lion (0.347533, -0.0129289) to (0.310208, -0.0858681)[0m
+Starting A*...done.
+Publishing path (23 points)
+[0m[ INFO] [1498052355.199048698]: Done![0m
+[0m[ INFO] [1498052359.553825673]: Got a planning request for boy[0m
+[0m[ INFO] [1498052359.553868526]: Updating occupancy map...[0m
+[0m[ INFO] [1498052359.554080927]: Planing...[0m
+[0m[ INFO] [1498052359.554114100]: Planning from boy (0.243967, -0.0169467) to (0.392857, -0.0727143)[0m
+Starting A*...done.
+Publishing path (55 points)
+[0m[ INFO] [1498052359.588954350]: Done![0m
+[0m[ INFO] [1498052367.553970154]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052367.554001240]: Updating occupancy map...[0m
+[0m[ INFO] [1498052367.554324337]: Planing...[0m
+[0m[ INFO] [1498052367.554367675]: Planning from hippo (0.277615, -0.0458535) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498052367.588889260]: Done![0m
+[0m[ INFO] [1498052385.153950275]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498052385.153979962]: Updating occupancy map...[0m
+[0m[ INFO] [1498052385.154258614]: Planing...[0m
+[0m[ INFO] [1498052385.154303773]: Planning from crocodile (0.32965, -0.0131749) to (0.286411, -0.027227)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498052385.154382639]: Done![0m
+[0m[ INFO] [1498052389.753876317]: Got a planning request for giraffe[0m
+[0m[ INFO] [1498052389.753906033]: Updating occupancy map...[0m
+[0m[ INFO] [1498052389.754191507]: Planing...[0m
+[0m[ INFO] [1498052389.754228373]: Planning from giraffe (0.418551, -0.0425234) to (0.388375, -0.0615245)[0m
+Starting A*...done.
+Publishing path (7 points)
+[0m[ INFO] [1498052389.788114237]: Done![0m
+[0m[ INFO] [1498052395.953833238]: Got a planning request for zebra[0m
+[0m[ INFO] [1498052395.953873058]: Updating occupancy map...[0m
+[0m[ INFO] [1498052395.954102356]: Planing...[0m
+[0m[ INFO] [1498052395.954151874]: Planning from zebra (0.400377, -0.0608274) to (0.392857, -0.0727143)[0m
+Starting A*...done.
+Publishing path (3 points)
+[0m[ INFO] [1498052395.954225011]: Done![0m
+[0m[ INFO] [1498052398.153827866]: Got a planning request for boy[0m
+[0m[ INFO] [1498052398.153874686]: Updating occupancy map...[0m
+[0m[ INFO] [1498052398.154084207]: Planing...[0m
+[0m[ INFO] [1498052398.154126000]: Planning from boy (0.350454, -0.0775234) to (0.392857, -0.0727179)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498052398.154709415]: Done![0m
+[0m[ INFO] [1498052400.553716200]: Got a planning request for zebra[0m
+[0m[ INFO] [1498052400.553744239]: Updating occupancy map...[0m
+[0m[ INFO] [1498052400.553931070]: Planing...[0m
+[0m[ INFO] [1498052400.553971602]: Planning from zebra (0.414039, -0.0522304) to (0.392872, -0.0727124)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1498052400.594604146]: Done![0m
+[0m[ INFO] [1498052402.953870852]: Got a planning request for giraffe[0m
+[0m[ INFO] [1498052402.953899441]: Updating occupancy map...[0m
+[0m[ INFO] [1498052402.954164014]: Planing...[0m
+[0m[ INFO] [1498052402.954208045]: Planning from giraffe (0.342388, -0.056625) to (0.392857, -0.0727143)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1498052402.992203595]: Done![0m
+[0m[ INFO] [1498052406.353771815]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052406.353797750]: Updating occupancy map...[0m
+[0m[ INFO] [1498052406.354043706]: Planing...[0m
+[0m[ INFO] [1498052406.354083650]: Planning from hippo (0.29285, -0.052853) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (15 points)
+[0m[ INFO] [1498052406.381652338]: Done![0m
+[0m[ INFO] [1498052410.153826120]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498052410.153861531]: Updating occupancy map...[0m
+[0m[ INFO] [1498052410.154126258]: Planing...[0m
+[0m[ INFO] [1498052410.154185307]: Planning from crocodile (0.335323, -0.0121149) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1498052410.197557678]: Done![0m
+[0m[ INFO] [1498052413.553751532]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052413.553778726]: Updating occupancy map...[0m
+[0m[ INFO] [1498052413.553906929]: Planing...[0m
+[0m[ INFO] [1498052413.553946052]: Planning from hippo (0.253649, -0.0437559) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (16 points)
+[0m[ INFO] [1498052413.581216484]: Done![0m
+[0m[ INFO] [1498052416.553883765]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498052416.553925248]: Updating occupancy map...[0m
+[0m[ INFO] [1498052416.554190778]: Planing...[0m
+[0m[ INFO] [1498052416.554247188]: Planning from crocodile (0.326828, -0.0115784) to (0.285103, -0.0246154)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498052416.587605498]: Done![0m
+[0m[ INFO] [1498052419.353872749]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052419.353910522]: Updating occupancy map...[0m
+[0m[ INFO] [1498052419.354179194]: Planing...[0m
+[0m[ INFO] [1498052419.354220712]: Planning from hippo (0.258424, -0.0480004) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (17 points)
+[0m[ INFO] [1498052419.386779087]: Done![0m
+[0m[ INFO] [1498052423.153889787]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498052423.153918538]: Updating occupancy map...[0m
+[0m[ INFO] [1498052423.154197118]: Planing...[0m
+[0m[ INFO] [1498052423.154232526]: Planning from crocodile (0.327237, -0.0109465) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1498052423.185662090]: Done![0m
+[0m[ INFO] [1498052426.353914541]: Got a planning request for hippo[0m
+[0m[ INFO] [1498052426.353946214]: Updating occupancy map...[0m
+[0m[ INFO] [1498052426.354257125]: Planing...[0m
+[0m[ INFO] [1498052426.354310397]: Planning from hippo (0.254876, -0.0424054) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (16 points)
+[0m[ INFO] [1498052426.386097031]: Done![0m
+[0m[ INFO] [1498052430.153937463]: Got a planning request for crocodile[0m
+[0m[ INFO] [1498052430.153966866]: Updating occupancy map...[0m
+[0m[ INFO] [1498052430.154278253]: Planing...[0m
+[0m[ INFO] [1498052430.154312547]: Planning from crocodile (0.324446, -0.0115534) to (0.285096, -0.0246154)[0m
+Starting A*...done.
+Publishing path (22 points)

@@ -1,0 +1,2643 @@
+[INFO] [1497346303.396953]: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[INFO] [1497346303.398220]: Moving hippo to 0.04,0.01
+[INFO] [1497346303.398552]: Requesting a plan...
+[INFO] [1497346303.599577]: Received trajectory! As requested, waiting -0.018298019s before starting...
+[INFO] [1497346303.599995]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346303.600315]: Starting to play trajectory!
+[INFO] [1497346303.600842]: Done 0%
+[INFO] [1497346303.701639]: Done 12%
+[INFO] [1497346303.802507]: Done 25%
+[INFO] [1497346303.903454]: Done 37%
+[INFO] [1497346304.004346]: Done 50%
+[INFO] [1497346304.105338]: Done 62%
+[INFO] [1497346304.206355]: Done 75%
+[INFO] [1497346304.307435]: /move_sandbox_items: Succeeded
+[INFO] [1497346306.743810]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346306.744507]: Moving elephant to -0.13,0.12
+[INFO] [1497346306.744843]: Requesting a plan...
+[INFO] [1497346306.782497]: Received trajectory! As requested, waiting -0.000761846s before starting...
+[INFO] [1497346306.782868]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346306.783109]: Starting to play trajectory!
+[INFO] [1497346306.783439]: Done 0%
+[INFO] [1497346306.884175]: Done 2%
+[INFO] [1497346306.985189]: Done 5%
+[INFO] [1497346307.086162]: Done 8%
+[INFO] [1497346307.187034]: Done 11%
+[INFO] [1497346307.288073]: Done 14%
+[INFO] [1497346307.389061]: Done 17%
+[INFO] [1497346307.489962]: Done 20%
+[INFO] [1497346307.590934]: Done 23%
+[INFO] [1497346307.691958]: Done 26%
+[INFO] [1497346307.793121]: Done 29%
+[INFO] [1497346307.894455]: Done 32%
+[INFO] [1497346307.995464]: Done 35%
+[INFO] [1497346308.096367]: Done 38%
+[INFO] [1497346308.197422]: Done 41%
+[INFO] [1497346308.298441]: Done 44%
+[INFO] [1497346308.399542]: Done 47%
+[INFO] [1497346308.500767]: Done 50%
+[INFO] [1497346308.601770]: Done 52%
+[INFO] [1497346308.702634]: Done 55%
+[INFO] [1497346308.803627]: Done 58%
+[INFO] [1497346308.904635]: Done 61%
+[INFO] [1497346309.005708]: Done 64%
+[INFO] [1497346309.106775]: Done 67%
+[INFO] [1497346309.207704]: Done 70%
+[INFO] [1497346309.308681]: Done 73%
+[INFO] [1497346309.409743]: Done 76%
+[INFO] [1497346309.510798]: Done 79%
+[INFO] [1497346309.612047]: Done 82%
+[INFO] [1497346309.713112]: Done 85%
+[INFO] [1497346309.814036]: Done 88%
+[INFO] [1497346309.914964]: Done 91%
+[INFO] [1497346310.016422]: Done 94%
+[INFO] [1497346310.117613]: /move_sandbox_items: Succeeded
+[INFO] [1497346311.721075]: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[INFO] [1497346311.721865]: Moving crocodile to -0.04,0.06
+[INFO] [1497346311.722153]: Requesting a plan...
+[INFO] [1497346311.813247]: Received trajectory! As requested, waiting -0.031683989s before starting...
+[INFO] [1497346311.813728]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346311.814085]: Starting to play trajectory!
+[INFO] [1497346311.814686]: Done 0%
+[INFO] [1497346311.915670]: Done 6%
+[INFO] [1497346312.019051]: Done 12%
+[INFO] [1497346312.120249]: Done 18%
+[INFO] [1497346312.221245]: Done 25%
+[INFO] [1497346312.322286]: Done 31%
+[INFO] [1497346312.423325]: Done 37%
+[INFO] [1497346312.524525]: Done 43%
+[INFO] [1497346312.626213]: Done 50%
+[INFO] [1497346312.727931]: Done 56%
+[INFO] [1497346312.829004]: Done 62%
+[INFO] [1497346312.930329]: Done 68%
+[INFO] [1497346313.031603]: Done 75%
+[INFO] [1497346313.132597]: Done 81%
+[INFO] [1497346313.233600]: Done 87%
+[INFO] [1497346313.335015]: /move_sandbox_items: Succeeded
+[INFO] [1497346315.706061]: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[INFO] [1497346315.706905]: Moving hippo to 0.01,0.03
+[INFO] [1497346315.707336]: Requesting a plan...
+[INFO] [1497346315.807581]: Received trajectory! As requested, waiting -0.026281297s before starting...
+[INFO] [1497346315.808012]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346315.808331]: Starting to play trajectory!
+[INFO] [1497346315.808807]: Done 0%
+[INFO] [1497346315.909722]: Done 7%
+[INFO] [1497346316.010763]: Done 15%
+[INFO] [1497346316.111790]: Done 23%
+[INFO] [1497346316.212779]: Done 30%
+[INFO] [1497346316.313713]: Done 38%
+[INFO] [1497346316.414655]: Done 46%
+[INFO] [1497346316.515848]: Done 53%
+[INFO] [1497346316.617315]: Done 61%
+[INFO] [1497346316.718450]: Done 69%
+[INFO] [1497346316.819565]: Done 76%
+[INFO] [1497346316.920578]: Done 84%
+[INFO] [1497346317.022365]: /move_sandbox_items: Succeeded
+[INFO] [1497346318.859741]: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[INFO] [1497346318.860431]: Moving crocodile to 0.05,0.01
+[INFO] [1497346318.860992]: Requesting a plan...
+[INFO] [1497346319.004705]: Received trajectory! As requested, waiting -0.023236062s before starting...
+[INFO] [1497346319.005462]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346319.005742]: Starting to play trajectory!
+[INFO] [1497346319.006121]: Done 0%
+[INFO] [1497346319.106938]: Done 10%
+[INFO] [1497346319.207799]: Done 20%
+[INFO] [1497346319.308722]: Done 30%
+[INFO] [1497346319.409735]: Done 40%
+[INFO] [1497346319.510645]: Done 50%
+[INFO] [1497346319.611725]: Done 60%
+[INFO] [1497346319.712770]: Done 70%
+[INFO] [1497346319.813729]: Done 80%
+[INFO] [1497346319.914811]: /move_sandbox_items: Succeeded
+[INFO] [1497346322.320431]: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[INFO] [1497346322.321058]: Moving hippo to -0.01,0.03
+[INFO] [1497346322.321288]: Requesting a plan...
+[INFO] [1497346322.410735]: Received trajectory! As requested, waiting -0.029061516s before starting...
+[INFO] [1497346322.411150]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346322.411422]: Starting to play trajectory!
+[INFO] [1497346322.411881]: Done 0%
+[INFO] [1497346322.512810]: Done 5%
+[INFO] [1497346322.613786]: Done 10%
+[INFO] [1497346322.714802]: Done 15%
+[INFO] [1497346322.816039]: Done 21%
+[INFO] [1497346322.917146]: Done 26%
+[INFO] [1497346323.018118]: Done 31%
+[INFO] [1497346323.119082]: Done 36%
+[INFO] [1497346323.220209]: Done 42%
+[INFO] [1497346323.321390]: Done 47%
+[INFO] [1497346323.422512]: Done 52%
+[INFO] [1497346323.523900]: Done 57%
+[INFO] [1497346323.625021]: Done 63%
+[INFO] [1497346323.726048]: Done 68%
+[INFO] [1497346323.827089]: Done 73%
+[INFO] [1497346323.928285]: Done 78%
+[INFO] [1497346324.029343]: Done 84%
+[INFO] [1497346324.130650]: Done 89%
+[INFO] [1497346324.232005]: /move_sandbox_items: Succeeded
+[INFO] [1497346325.635389]: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[INFO] [1497346325.636054]: Moving crocodile to 0.05,-0.03
+[INFO] [1497346325.636353]: Requesting a plan...
+[INFO] [1497346325.816389]: Received trajectory! As requested, waiting -0.034967657s before starting...
+[INFO] [1497346325.816896]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346325.817288]: Starting to play trajectory!
+[INFO] [1497346325.817827]: Done 0%
+[INFO] [1497346325.918696]: Done 5%
+[INFO] [1497346326.019716]: Done 11%
+[INFO] [1497346326.121135]: Done 16%
+[INFO] [1497346326.222437]: Done 22%
+[INFO] [1497346326.323347]: Done 27%
+[INFO] [1497346326.424311]: Done 33%
+[INFO] [1497346326.525221]: Done 38%
+[INFO] [1497346326.626031]: Done 44%
+[INFO] [1497346326.727081]: Done 50%
+[INFO] [1497346326.828251]: Done 55%
+[INFO] [1497346326.929210]: Done 61%
+[INFO] [1497346327.030101]: Done 66%
+[INFO] [1497346327.130992]: Done 72%
+[INFO] [1497346327.232049]: Done 77%
+[INFO] [1497346327.333015]: Done 83%
+[INFO] [1497346327.433856]: Done 88%
+[INFO] [1497346327.534915]: /move_sandbox_items: Succeeded
+[INFO] [1497346328.938200]: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[INFO] [1497346328.938942]: Moving hippo to -0.04,-0.01
+[INFO] [1497346328.939240]: Requesting a plan...
+[INFO] [1497346329.000501]: Received trajectory! As requested, waiting -0.0190224s before starting...
+[INFO] [1497346329.000950]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346329.001291]: Starting to play trajectory!
+[INFO] [1497346329.001763]: Done 0%
+[INFO] [1497346329.102619]: Done 4%
+[INFO] [1497346329.203593]: Done 9%
+[INFO] [1497346329.304609]: Done 14%
+[INFO] [1497346329.405582]: Done 19%
+[INFO] [1497346329.506519]: Done 23%
+[INFO] [1497346329.609141]: Done 28%
+[INFO] [1497346329.710401]: Done 33%
+[INFO] [1497346329.811535]: Done 38%
+[INFO] [1497346329.912535]: Done 42%
+[INFO] [1497346330.013463]: Done 47%
+[INFO] [1497346330.114408]: Done 52%
+[INFO] [1497346330.215346]: Done 57%
+[INFO] [1497346330.316660]: Done 61%
+[INFO] [1497346330.419276]: Done 66%
+[INFO] [1497346330.520834]: Done 71%
+[INFO] [1497346330.621950]: Done 76%
+[INFO] [1497346330.723037]: Done 80%
+[INFO] [1497346330.824350]: Done 85%
+[INFO] [1497346330.925629]: Done 90%
+[INFO] [1497346331.026818]: /move_sandbox_items: Succeeded
+[INFO] [1497346371.565806]: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[INFO] [1497346371.566583]: Moving lion to 0.03,0.19
+[INFO] [1497346371.566891]: Requesting a plan...
+[INFO] [1497346371.582290]: Received trajectory! As requested, waiting -0.000834817s before starting...
+[INFO] [1497346371.582908]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346371.583291]: Starting to play trajectory!
+[INFO] [1497346371.584068]: Done 0%
+[INFO] [1497346371.685133]: Done 3%
+[INFO] [1497346371.786181]: Done 6%
+[INFO] [1497346371.887170]: Done 9%
+[INFO] [1497346371.988043]: Done 12%
+[INFO] [1497346372.088880]: Done 16%
+[INFO] [1497346372.189782]: Done 19%
+[INFO] [1497346372.290737]: Done 22%
+[INFO] [1497346372.391683]: Done 25%
+[INFO] [1497346372.492650]: Done 29%
+[INFO] [1497346372.593878]: Done 32%
+[INFO] [1497346372.694764]: Done 35%
+[INFO] [1497346372.795802]: Done 38%
+[INFO] [1497346372.897240]: Done 41%
+[INFO] [1497346372.998263]: Done 45%
+[INFO] [1497346373.099155]: Done 48%
+[INFO] [1497346373.200126]: Done 51%
+[INFO] [1497346373.300923]: Done 54%
+[INFO] [1497346373.401912]: Done 58%
+[INFO] [1497346373.502976]: Done 61%
+[INFO] [1497346373.604166]: Done 64%
+[INFO] [1497346373.705253]: Done 67%
+[INFO] [1497346373.806202]: Done 70%
+[INFO] [1497346373.907155]: Done 74%
+[INFO] [1497346374.008042]: Done 77%
+[INFO] [1497346374.108951]: Done 80%
+[INFO] [1497346374.210149]: Done 83%
+[INFO] [1497346374.311076]: Done 87%
+[INFO] [1497346374.411987]: Done 90%
+[INFO] [1497346374.513216]: Done 93%
+[INFO] [1497346374.614584]: /move_sandbox_items: Succeeded
+[INFO] [1497346388.142941]: /move_sandbox_items: Received a request to move ball to 0.20, -0.10. Let's do that
+[INFO] [1497346388.143682]: Moving ball to -0.11,0.10
+[INFO] [1497346388.144313]: Requesting a plan...
+[INFO] [1497346388.181873]: Received trajectory! As requested, waiting -0.000579876s before starting...
+[INFO] [1497346388.182229]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346388.182425]: Starting to play trajectory!
+[INFO] [1497346388.182932]: Done 0%
+[INFO] [1497346388.286694]: Done 3%
+[INFO] [1497346388.387694]: Done 7%
+[INFO] [1497346388.488822]: Done 10%
+[INFO] [1497346388.589842]: Done 14%
+[INFO] [1497346388.691520]: Done 17%
+[INFO] [1497346388.792627]: Done 21%
+[INFO] [1497346388.893740]: Done 25%
+[INFO] [1497346388.994891]: Done 28%
+[INFO] [1497346389.096074]: Done 32%
+[INFO] [1497346389.197067]: Done 35%
+[INFO] [1497346389.298262]: Done 39%
+[INFO] [1497346389.399424]: Done 42%
+[INFO] [1497346389.500411]: Done 46%
+[INFO] [1497346389.601554]: Done 50%
+[INFO] [1497346389.702861]: Done 53%
+[INFO] [1497346389.803957]: Done 57%
+[INFO] [1497346389.905103]: Done 60%
+[INFO] [1497346390.006177]: Done 64%
+[INFO] [1497346390.107323]: Done 67%
+[INFO] [1497346390.208526]: Done 71%
+[INFO] [1497346390.310479]: Done 75%
+[INFO] [1497346390.411417]: Done 78%
+[INFO] [1497346390.513061]: Done 82%
+[INFO] [1497346390.614094]: Done 85%
+[INFO] [1497346390.715047]: Done 89%
+[INFO] [1497346390.816667]: Done 92%
+[INFO] [1497346390.918894]: /move_sandbox_items: Succeeded
+[INFO] [1497346407.523090]: /move_sandbox_items: Received a request to move caravan to 0.39, -0.07. Let's do that
+[INFO] [1497346407.523909]: Moving caravan to -0.07,0.06
+[INFO] [1497346407.524208]: Requesting a plan...
+[INFO] [1497346407.619436]: Received trajectory! As requested, waiting -0.037578924s before starting...
+[INFO] [1497346407.619909]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346407.620246]: Starting to play trajectory!
+[INFO] [1497346407.620722]: Done 0%
+[INFO] [1497346407.721922]: Done 3%
+[INFO] [1497346407.822748]: Done 7%
+[INFO] [1497346407.926988]: Done 10%
+[INFO] [1497346408.028056]: Done 14%
+[INFO] [1497346408.129087]: Done 17%
+[INFO] [1497346408.230174]: Done 21%
+[INFO] [1497346408.331625]: Done 25%
+[INFO] [1497346408.432705]: Done 28%
+[INFO] [1497346408.534197]: Done 32%
+[INFO] [1497346408.635387]: Done 35%
+[INFO] [1497346408.736405]: Done 39%
+[INFO] [1497346408.838201]: Done 42%
+[INFO] [1497346408.939348]: Done 46%
+[INFO] [1497346409.040343]: Done 50%
+[INFO] [1497346409.141333]: Done 53%
+[INFO] [1497346409.242385]: Done 57%
+[INFO] [1497346409.343447]: Done 60%
+[INFO] [1497346409.445983]: Done 64%
+[INFO] [1497346409.547373]: Done 67%
+[INFO] [1497346409.648428]: Done 71%
+[INFO] [1497346409.749848]: Done 75%
+[INFO] [1497346409.851109]: Done 78%
+[INFO] [1497346409.952159]: Done 82%
+[INFO] [1497346410.053230]: Done 85%
+[INFO] [1497346410.154349]: Done 89%
+[INFO] [1497346410.255475]: Done 92%
+[INFO] [1497346410.356990]: /move_sandbox_items: Succeeded
+[INFO] [1497346412.861743]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346412.862534]: Moving elephant to -0.03,-0.05
+[INFO] [1497346412.862863]: Requesting a plan...
+[INFO] [1497346413.017286]: Received trajectory! As requested, waiting -0.034990267s before starting...
+[INFO] [1497346413.017661]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346413.017943]: Starting to play trajectory!
+[INFO] [1497346413.018451]: Done 0%
+[INFO] [1497346413.119345]: Done 9%
+[INFO] [1497346413.220279]: Done 18%
+[INFO] [1497346413.321199]: Done 27%
+[INFO] [1497346413.422250]: Done 36%
+[INFO] [1497346413.523310]: Done 45%
+[INFO] [1497346413.624367]: Done 54%
+[INFO] [1497346413.725395]: Done 63%
+[INFO] [1497346413.826313]: Done 72%
+[INFO] [1497346413.927281]: Done 81%
+[INFO] [1497346414.030922]: /move_sandbox_items: Succeeded
+[INFO] [1497346417.737834]: /move_sandbox_items: Received a request to move zebra to 0.39, -0.07. Let's do that
+[INFO] [1497346417.738644]: Moving zebra to -0.01,0.09
+[INFO] [1497346417.738945]: Requesting a plan...
+[INFO] [1497346417.817254]: Received trajectory! As requested, waiting -0.035822231s before starting...
+[INFO] [1497346417.817758]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346417.818111]: Starting to play trajectory!
+[INFO] [1497346417.818833]: Done 0%
+[INFO] [1497346417.919681]: Done 3%
+[INFO] [1497346418.020553]: Done 6%
+[INFO] [1497346418.121476]: Done 9%
+[INFO] [1497346418.222690]: Done 12%
+[INFO] [1497346418.323803]: Done 16%
+[INFO] [1497346418.426007]: Done 19%
+[INFO] [1497346418.526986]: Done 22%
+[INFO] [1497346418.628096]: Done 25%
+[INFO] [1497346418.729356]: Done 29%
+[INFO] [1497346418.830486]: Done 32%
+[INFO] [1497346418.931511]: Done 35%
+[INFO] [1497346419.032553]: Done 38%
+[INFO] [1497346419.133687]: Done 41%
+[INFO] [1497346419.234743]: Done 45%
+[INFO] [1497346419.335787]: Done 48%
+[INFO] [1497346419.436833]: Done 51%
+[INFO] [1497346419.537849]: Done 54%
+[INFO] [1497346419.639019]: Done 58%
+[INFO] [1497346419.740168]: Done 61%
+[INFO] [1497346419.841359]: Done 64%
+[INFO] [1497346419.942414]: Done 67%
+[INFO] [1497346420.043858]: Done 70%
+[INFO] [1497346420.144935]: Done 74%
+[INFO] [1497346420.246196]: Done 77%
+[INFO] [1497346420.347470]: Done 80%
+[INFO] [1497346420.448454]: Done 83%
+[INFO] [1497346420.549417]: Done 87%
+[INFO] [1497346420.650422]: Done 90%
+[INFO] [1497346420.751428]: Done 93%
+[INFO] [1497346420.852609]: /move_sandbox_items: Succeeded
+[INFO] [1497346422.856790]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346422.857546]: Moving elephant to 0.03,-0.03
+[INFO] [1497346422.858013]: Requesting a plan...
+[INFO] [1497346423.015031]: Received trajectory! As requested, waiting -0.033208571s before starting...
+[INFO] [1497346423.015458]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346423.015811]: Starting to play trajectory!
+[INFO] [1497346423.016299]: Done 0%
+[INFO] [1497346423.117043]: Done 4%
+[INFO] [1497346423.218103]: Done 8%
+[INFO] [1497346423.319088]: Done 12%
+[INFO] [1497346423.420300]: Done 16%
+[INFO] [1497346423.521605]: Done 20%
+[INFO] [1497346423.622700]: Done 24%
+[INFO] [1497346423.723946]: Done 28%
+[INFO] [1497346423.825156]: Done 32%
+[INFO] [1497346423.926266]: Done 36%
+[INFO] [1497346424.027366]: Done 40%
+[INFO] [1497346424.128409]: Done 44%
+[INFO] [1497346424.229457]: Done 48%
+[INFO] [1497346424.330585]: Done 52%
+[INFO] [1497346424.431597]: Done 56%
+[INFO] [1497346424.532521]: Done 60%
+[INFO] [1497346424.633590]: Done 64%
+[INFO] [1497346424.734565]: Done 68%
+[INFO] [1497346424.835569]: Done 72%
+[INFO] [1497346424.936757]: Done 76%
+[INFO] [1497346425.037968]: Done 80%
+[INFO] [1497346425.139138]: Done 84%
+[INFO] [1497346425.240239]: Done 88%
+[INFO] [1497346425.341187]: Done 92%
+[INFO] [1497346425.442286]: /move_sandbox_items: Succeeded
+[INFO] [1497346427.646453]: /move_sandbox_items: Received a request to move zebra to 0.49, -0.06. Let's do that
+[INFO] [1497346427.647120]: Moving zebra to -0.04,-0.03
+[INFO] [1497346427.647381]: Requesting a plan...
+[INFO] [1497346427.785435]: Received trajectory! As requested, waiting -0.003763583s before starting...
+[INFO] [1497346427.785837]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346427.786157]: Starting to play trajectory!
+[INFO] [1497346427.786585]: Done 0%
+[INFO] [1497346427.888811]: Done 7%
+[INFO] [1497346427.989924]: Done 15%
+[INFO] [1497346428.090888]: Done 23%
+[INFO] [1497346428.193014]: Done 30%
+[INFO] [1497346428.294051]: Done 38%
+[INFO] [1497346428.394922]: Done 46%
+[INFO] [1497346428.496185]: Done 53%
+[INFO] [1497346428.597287]: Done 61%
+[INFO] [1497346428.698731]: Done 69%
+[INFO] [1497346428.799566]: Done 76%
+[INFO] [1497346428.900435]: Done 84%
+[INFO] [1497346429.001597]: /move_sandbox_items: Succeeded
+[INFO] [1497346430.407412]: /move_sandbox_items: Received a request to move caravan to 0.49, -0.06. Let's do that
+[INFO] [1497346430.408079]: Moving caravan to 0.12,-0.06
+[INFO] [1497346430.408394]: Requesting a plan...
+[INFO] [1497346430.605167]: Received trajectory! As requested, waiting -0.023654586s before starting...
+[INFO] [1497346430.605610]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346430.606259]: Starting to play trajectory!
+[INFO] [1497346430.606808]: Done 0%
+[INFO] [1497346430.707700]: Done 3%
+[INFO] [1497346430.808710]: Done 7%
+[INFO] [1497346430.910123]: Done 10%
+[INFO] [1497346431.011153]: Done 14%
+[INFO] [1497346431.112270]: Done 17%
+[INFO] [1497346431.213251]: Done 21%
+[INFO] [1497346431.314293]: Done 25%
+[INFO] [1497346431.415365]: Done 28%
+[INFO] [1497346431.516313]: Done 32%
+[INFO] [1497346431.617427]: Done 35%
+[INFO] [1497346431.718697]: Done 39%
+[INFO] [1497346431.819641]: Done 42%
+[INFO] [1497346431.920905]: Done 46%
+[INFO] [1497346432.021969]: Done 50%
+[INFO] [1497346432.123069]: Done 53%
+[INFO] [1497346432.224109]: Done 57%
+[INFO] [1497346432.325212]: Done 60%
+[INFO] [1497346432.426281]: Done 64%
+[INFO] [1497346432.527331]: Done 67%
+[INFO] [1497346432.628583]: Done 71%
+[INFO] [1497346432.729780]: Done 75%
+[INFO] [1497346432.830863]: Done 78%
+[INFO] [1497346432.931940]: Done 82%
+[INFO] [1497346433.033088]: Done 85%
+[INFO] [1497346433.134147]: Done 89%
+[INFO] [1497346433.235163]: Done 92%
+[INFO] [1497346433.336590]: /move_sandbox_items: Succeeded
+[INFO] [1497346447.625507]: /move_sandbox_items: Received a request to move giraffe to 0.49, -0.06. Let's do that
+[INFO] [1497346447.626219]: Moving giraffe to 0.09,-0.19
+[INFO] [1497346447.626489]: Requesting a plan...
+[INFO] [1497346447.782425]: Received trajectory! As requested, waiting -0.000971997s before starting...
+[INFO] [1497346447.782844]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346447.783122]: Starting to play trajectory!
+[INFO] [1497346447.783702]: Done 0%
+[INFO] [1497346447.885082]: Done 2%
+[INFO] [1497346447.986226]: Done 5%
+[INFO] [1497346448.087430]: Done 8%
+[INFO] [1497346448.189310]: Done 10%
+[INFO] [1497346448.290458]: Done 13%
+[INFO] [1497346448.391545]: Done 16%
+[INFO] [1497346448.492457]: Done 18%
+[INFO] [1497346448.594173]: Done 21%
+[INFO] [1497346448.695281]: Done 24%
+[INFO] [1497346448.796257]: Done 27%
+[INFO] [1497346448.897218]: Done 29%
+[INFO] [1497346448.998607]: Done 32%
+[INFO] [1497346449.099672]: Done 35%
+[INFO] [1497346449.200850]: Done 37%
+[INFO] [1497346449.301945]: Done 40%
+[INFO] [1497346449.402878]: Done 43%
+[INFO] [1497346449.503889]: Done 45%
+[INFO] [1497346449.604868]: Done 48%
+[INFO] [1497346449.705814]: Done 51%
+[INFO] [1497346449.807000]: Done 54%
+[INFO] [1497346449.908222]: Done 56%
+[INFO] [1497346450.010352]: Done 59%
+[INFO] [1497346450.111458]: Done 62%
+[INFO] [1497346450.212721]: Done 64%
+[INFO] [1497346450.313899]: Done 67%
+[INFO] [1497346450.415199]: Done 70%
+[INFO] [1497346450.518233]: Done 72%
+[INFO] [1497346450.619213]: Done 75%
+[INFO] [1497346450.720274]: Done 78%
+[INFO] [1497346450.821441]: Done 81%
+[INFO] [1497346450.922539]: Done 83%
+[INFO] [1497346451.023500]: Done 86%
+[INFO] [1497346451.124545]: Done 89%
+[INFO] [1497346451.225665]: Done 91%
+[INFO] [1497346451.326653]: Done 94%
+[INFO] [1497346451.427831]: /move_sandbox_items: Succeeded
+[INFO] [1497346461.847237]: /move_sandbox_items: Received a request to move girl to 0.49, -0.06. Let's do that
+[INFO] [1497346461.847972]: Moving girl to -0.32,0.15
+[INFO] [1497346461.849032]: Requesting a plan...
+[INFO] [1497346461.983416]: Received trajectory! As requested, waiting -0.001826282s before starting...
+[INFO] [1497346461.983880]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346461.984432]: Starting to play trajectory!
+[INFO] [1497346461.985301]: Done 0%
+[INFO] [1497346462.086645]: Done 1%
+[INFO] [1497346462.187698]: Done 2%
+[INFO] [1497346462.288808]: Done 4%
+[INFO] [1497346462.390441]: Done 5%
+[INFO] [1497346462.491517]: Done 6%
+[INFO] [1497346462.592961]: Done 8%
+[INFO] [1497346462.694175]: Done 9%
+[INFO] [1497346462.795216]: Done 11%
+[INFO] [1497346462.897029]: Done 12%
+[INFO] [1497346462.998250]: Done 13%
+[INFO] [1497346463.099161]: Done 15%
+[INFO] [1497346463.200180]: Done 16%
+[INFO] [1497346463.301400]: Done 18%
+[INFO] [1497346463.402385]: Done 19%
+[INFO] [1497346463.503375]: Done 20%
+[INFO] [1497346463.605240]: Done 22%
+[INFO] [1497346463.706233]: Done 23%
+[INFO] [1497346463.807064]: Done 25%
+[INFO] [1497346463.907884]: Done 26%
+[INFO] [1497346464.008766]: Done 27%
+[INFO] [1497346464.109789]: Done 29%
+[INFO] [1497346464.211198]: Done 30%
+[INFO] [1497346464.312859]: Done 31%
+[INFO] [1497346464.414088]: Done 33%
+[INFO] [1497346464.515063]: Done 34%
+[INFO] [1497346464.616052]: Done 36%
+[INFO] [1497346464.717032]: Done 37%
+[INFO] [1497346464.817848]: Done 38%
+[INFO] [1497346464.918586]: Done 40%
+[INFO] [1497346465.019515]: Done 41%
+[INFO] [1497346465.120471]: Done 43%
+[INFO] [1497346465.222022]: Done 44%
+[INFO] [1497346465.323117]: Done 45%
+[INFO] [1497346465.424181]: Done 47%
+[INFO] [1497346465.525357]: Done 48%
+[INFO] [1497346465.627063]: Done 50%
+[INFO] [1497346465.728895]: Done 51%
+[INFO] [1497346465.829923]: Done 52%
+[INFO] [1497346465.930920]: Done 54%
+[INFO] [1497346466.031946]: Done 55%
+[INFO] [1497346466.132864]: Done 56%
+[INFO] [1497346466.234015]: Done 58%
+[INFO] [1497346466.334824]: Done 59%
+[INFO] [1497346466.435702]: Done 61%
+[INFO] [1497346466.537038]: Done 62%
+[INFO] [1497346466.640028]: Done 63%
+[INFO] [1497346466.741238]: Done 65%
+[INFO] [1497346466.842322]: Done 66%
+[INFO] [1497346466.943380]: Done 68%
+[INFO] [1497346467.044326]: Done 69%
+[INFO] [1497346467.145343]: Done 70%
+[INFO] [1497346467.246338]: Done 72%
+[INFO] [1497346467.347645]: Done 73%
+[INFO] [1497346467.448669]: Done 75%
+[INFO] [1497346467.549842]: Done 76%
+[INFO] [1497346467.650841]: Done 77%
+[INFO] [1497346467.751882]: Done 79%
+[INFO] [1497346467.853623]: Done 80%
+[INFO] [1497346467.954747]: Done 81%
+[INFO] [1497346468.055873]: Done 83%
+[INFO] [1497346468.157583]: Done 84%
+[INFO] [1497346468.258500]: Done 86%
+[INFO] [1497346468.359685]: Done 87%
+[INFO] [1497346468.460900]: Done 88%
+[INFO] [1497346468.561930]: Done 90%
+[INFO] [1497346468.662886]: Done 91%
+[INFO] [1497346468.763853]: Done 93%
+[INFO] [1497346468.865112]: Done 94%
+[INFO] [1497346468.966148]: Done 95%
+[INFO] [1497346469.067400]: Done 97%
+[INFO] [1497346469.168360]: /move_sandbox_items: Succeeded
+[INFO] [1497346471.773506]: /move_sandbox_items: Received a request to move ball to 0.39, -0.07. Let's do that
+[INFO] [1497346471.774239]: Moving ball to 0.03,0.04
+[INFO] [1497346471.774538]: Requesting a plan...
+[INFO] [1497346471.782456]: Received trajectory! As requested, waiting -0.00075882s before starting...
+[INFO] [1497346471.783167]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346471.783521]: Starting to play trajectory!
+[INFO] [1497346471.784212]: Done 0%
+[INFO] [1497346471.885209]: Done 8%
+[INFO] [1497346471.986076]: Done 16%
+[INFO] [1497346472.087152]: Done 25%
+[INFO] [1497346472.188397]: Done 33%
+[INFO] [1497346472.289545]: Done 41%
+[INFO] [1497346472.390595]: Done 50%
+[INFO] [1497346472.491579]: Done 58%
+[INFO] [1497346472.592697]: Done 66%
+[INFO] [1497346472.693621]: Done 75%
+[INFO] [1497346472.794736]: Done 83%
+[INFO] [1497346472.895921]: /move_sandbox_items: Succeeded
+[INFO] [1497346474.162310]: /move_sandbox_items: Received a request to move boy to 0.06, -0.06. Let's do that
+[INFO] [1497346474.162893]: Moving boy to 0.31,0.04
+[INFO] [1497346474.163114]: Requesting a plan...
+[INFO] [1497346474.182823]: Received trajectory! As requested, waiting -0.001451309s before starting...
+[INFO] [1497346474.183281]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346474.183729]: Starting to play trajectory!
+[INFO] [1497346474.184344]: Done 0%
+[INFO] [1497346474.285280]: Done 1%
+[INFO] [1497346474.386357]: Done 3%
+[INFO] [1497346474.487495]: Done 4%
+[INFO] [1497346474.588950]: Done 6%
+[INFO] [1497346474.690338]: Done 8%
+[INFO] [1497346474.791617]: Done 9%
+[INFO] [1497346474.892839]: Done 11%
+[INFO] [1497346474.994022]: Done 12%
+[INFO] [1497346475.094909]: Done 14%
+[INFO] [1497346475.195729]: Done 16%
+[INFO] [1497346475.296943]: Done 17%
+[INFO] [1497346475.398140]: Done 19%
+[INFO] [1497346475.499187]: Done 20%
+[INFO] [1497346475.600145]: Done 22%
+[INFO] [1497346475.701091]: Done 24%
+[INFO] [1497346475.802072]: Done 25%
+[INFO] [1497346475.902964]: Done 27%
+[INFO] [1497346476.004257]: Done 29%
+[INFO] [1497346476.105225]: Done 30%
+[INFO] [1497346476.206292]: Done 32%
+[INFO] [1497346476.307353]: Done 33%
+[INFO] [1497346476.408339]: Done 35%
+[INFO] [1497346476.509353]: Done 37%
+[INFO] [1497346476.610553]: Done 38%
+[INFO] [1497346476.711526]: Done 40%
+[INFO] [1497346476.812897]: Done 41%
+[INFO] [1497346476.914209]: Done 43%
+[INFO] [1497346477.015691]: Done 45%
+[INFO] [1497346477.117797]: Done 46%
+[INFO] [1497346477.219307]: Done 48%
+[INFO] [1497346477.320256]: Done 50%
+[INFO] [1497346477.421210]: Done 51%
+[INFO] [1497346477.522268]: Done 53%
+[INFO] [1497346477.623393]: Done 54%
+[INFO] [1497346477.724317]: Done 56%
+[INFO] [1497346477.825684]: Done 58%
+[INFO] [1497346477.926781]: Done 59%
+[INFO] [1497346478.027820]: Done 61%
+[INFO] [1497346478.129533]: Done 62%
+[INFO] [1497346478.230413]: Done 64%
+[INFO] [1497346478.331493]: Done 66%
+[INFO] [1497346478.432835]: Done 67%
+[INFO] [1497346478.534147]: Done 69%
+[INFO] [1497346478.635083]: Done 70%
+[INFO] [1497346478.736203]: Done 72%
+[INFO] [1497346478.837494]: Done 74%
+[INFO] [1497346478.939195]: Done 75%
+[INFO] [1497346479.040094]: Done 77%
+[INFO] [1497346479.141104]: Done 79%
+[INFO] [1497346479.242450]: Done 80%
+[INFO] [1497346479.343467]: Done 82%
+[INFO] [1497346479.444564]: Done 83%
+[INFO] [1497346479.545621]: Done 85%
+[INFO] [1497346479.648487]: Done 87%
+[INFO] [1497346479.749708]: Done 88%
+[INFO] [1497346479.850684]: Done 90%
+[INFO] [1497346479.952076]: Done 91%
+[INFO] [1497346480.053219]: Done 93%
+[INFO] [1497346480.154190]: Done 95%
+[INFO] [1497346480.255276]: Done 96%
+[INFO] [1497346480.356361]: /move_sandbox_items: Succeeded
+[INFO] [1497346483.125010]: /move_sandbox_items: Received a request to move crocodile to 0.28, -0.15. Let's do that
+[INFO] [1497346483.126327]: Moving crocodile to -0.07,-0.04
+[INFO] [1497346483.126643]: Requesting a plan...
+[INFO] [1497346483.185965]: Received trajectory! As requested, waiting -0.00420612s before starting...
+[INFO] [1497346483.187144]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346483.187668]: Starting to play trajectory!
+[INFO] [1497346483.188373]: Done 0%
+[INFO] [1497346483.289360]: Done 7%
+[INFO] [1497346483.390390]: Done 15%
+[INFO] [1497346483.491867]: Done 23%
+[INFO] [1497346483.592861]: Done 30%
+[INFO] [1497346483.693919]: Done 38%
+[INFO] [1497346483.795005]: Done 46%
+[INFO] [1497346483.896130]: Done 53%
+[INFO] [1497346483.997003]: Done 61%
+[INFO] [1497346484.097884]: Done 69%
+[INFO] [1497346484.198632]: Done 76%
+[INFO] [1497346484.299607]: Done 84%
+[INFO] [1497346484.400789]: /move_sandbox_items: Succeeded
+[INFO] [1497346488.810212]: /move_sandbox_items: Received a request to move hippo to 0.28, -0.15. Let's do that
+[INFO] [1497346488.810942]: Moving hippo to -0.02,0.09
+[INFO] [1497346488.811210]: Requesting a plan...
+[INFO] [1497346488.982538]: Received trajectory! As requested, waiting -0.000627212s before starting...
+[INFO] [1497346488.982909]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346488.983179]: Starting to play trajectory!
+[INFO] [1497346488.983556]: Done 0%
+[INFO] [1497346489.084341]: Done 5%
+[INFO] [1497346489.185930]: Done 10%
+[INFO] [1497346489.376724]: Done 15%
+[INFO] [1497346489.477856]: Done 21%
+[INFO] [1497346489.579559]: Done 26%
+[INFO] [1497346489.680504]: Done 31%
+[INFO] [1497346489.781571]: Done 36%
+[INFO] [1497346489.882526]: Done 42%
+[INFO] [1497346489.983490]: Done 47%
+[INFO] [1497346490.084398]: Done 52%
+[INFO] [1497346490.185485]: Done 57%
+[INFO] [1497346490.287049]: Done 63%
+[INFO] [1497346490.388064]: Done 68%
+[INFO] [1497346490.489308]: Done 73%
+[INFO] [1497346490.590950]: Done 78%
+[INFO] [1497346490.692166]: Done 84%
+[INFO] [1497346490.793239]: Done 89%
+[INFO] [1497346490.895296]: /move_sandbox_items: Succeeded
+[INFO] [1497346496.007488]: /move_sandbox_items: Received a request to move caravan to 0.49, -0.06. Let's do that
+[INFO] [1497346496.008346]: Moving caravan to 0.08,0.01
+[INFO] [1497346496.008616]: Requesting a plan...
+[INFO] [1497346496.181913]: Received trajectory! As requested, waiting -0.000507705s before starting...
+[INFO] [1497346496.182343]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346496.182626]: Starting to play trajectory!
+[INFO] [1497346496.183024]: Done 0%
+[INFO] [1497346496.283720]: Done 5%
+[INFO] [1497346496.387629]: Done 11%
+[INFO] [1497346496.488971]: Done 17%
+[INFO] [1497346496.590473]: Done 23%
+[INFO] [1497346496.691579]: Done 29%
+[INFO] [1497346496.793219]: Done 35%
+[INFO] [1497346496.894044]: Done 41%
+[INFO] [1497346496.995300]: Done 47%
+[INFO] [1497346497.096560]: Done 52%
+[INFO] [1497346497.197657]: Done 58%
+[INFO] [1497346497.298749]: Done 64%
+[INFO] [1497346497.399737]: Done 70%
+[INFO] [1497346497.501098]: Done 76%
+[INFO] [1497346497.602100]: Done 82%
+[INFO] [1497346497.703264]: Done 88%
+[INFO] [1497346497.804274]: /move_sandbox_items: Succeeded
+[INFO] [1497346500.071867]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346500.072748]: Moving elephant to 0.06,0.02
+[INFO] [1497346500.072965]: Requesting a plan...
+[INFO] [1497346500.182137]: Received trajectory! As requested, waiting -0.000421336s before starting...
+[INFO] [1497346500.182523]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346500.182769]: Starting to play trajectory!
+[INFO] [1497346500.183212]: Done 0%
+[INFO] [1497346500.284586]: Done 8%
+[INFO] [1497346500.385841]: Done 16%
+[INFO] [1497346500.487036]: Done 25%
+[INFO] [1497346500.588402]: Done 33%
+[INFO] [1497346500.689584]: Done 41%
+[INFO] [1497346500.790627]: Done 50%
+[INFO] [1497346500.891664]: Done 58%
+[INFO] [1497346500.992768]: Done 66%
+[INFO] [1497346501.093940]: Done 75%
+[INFO] [1497346501.195006]: Done 83%
+[INFO] [1497346501.296096]: /move_sandbox_items: Succeeded
+[INFO] [1497346506.504470]: /move_sandbox_items: Received a request to move hippo to 0.12, -0.25. Let's do that
+[INFO] [1497346506.505425]: Moving hippo to 0.05,-0.08
+[INFO] [1497346506.505965]: Requesting a plan...
+[INFO] [1497346506.582135]: Received trajectory! As requested, waiting -0.000626265s before starting...
+[INFO] [1497346506.582616]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346506.582958]: Starting to play trajectory!
+[INFO] [1497346506.583450]: Done 0%
+[INFO] [1497346506.684592]: Done 5%
+[INFO] [1497346506.785628]: Done 10%
+[INFO] [1497346506.886609]: Done 15%
+[INFO] [1497346506.987694]: Done 21%
+[INFO] [1497346507.088795]: Done 26%
+[INFO] [1497346507.189917]: Done 31%
+[INFO] [1497346507.290845]: Done 36%
+[INFO] [1497346507.392368]: Done 42%
+[INFO] [1497346507.496633]: Done 47%
+[INFO] [1497346507.597856]: Done 52%
+[INFO] [1497346507.700053]: Done 57%
+[INFO] [1497346507.802229]: Done 63%
+[INFO] [1497346507.903613]: Done 68%
+[INFO] [1497346508.004486]: Done 73%
+[INFO] [1497346508.105333]: Done 78%
+[INFO] [1497346508.206300]: Done 84%
+[INFO] [1497346508.307393]: Done 89%
+[INFO] [1497346508.409975]: /move_sandbox_items: Succeeded
+[INFO] [1497346513.988721]: /move_sandbox_items: Received a request to move ball to 0.49, -0.06. Let's do that
+[INFO] [1497346513.989477]: Moving ball to -0.04,-0.18
+[INFO] [1497346513.989848]: Requesting a plan...
+[INFO] [1497346514.182990]: Received trajectory! As requested, waiting -0.001427611s before starting...
+[INFO] [1497346514.183466]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346514.183763]: Starting to play trajectory!
+[INFO] [1497346514.184291]: Done 0%
+[INFO] [1497346514.285114]: Done 2%
+[INFO] [1497346514.386127]: Done 5%
+[INFO] [1497346514.487256]: Done 8%
+[INFO] [1497346514.588789]: Done 11%
+[INFO] [1497346514.689708]: Done 14%
+[INFO] [1497346514.790600]: Done 17%
+[INFO] [1497346514.891500]: Done 20%
+[INFO] [1497346514.992588]: Done 23%
+[INFO] [1497346515.093447]: Done 26%
+[INFO] [1497346515.194336]: Done 29%
+[INFO] [1497346515.295263]: Done 32%
+[INFO] [1497346515.396390]: Done 35%
+[INFO] [1497346515.497549]: Done 38%
+[INFO] [1497346515.598853]: Done 41%
+[INFO] [1497346515.699825]: Done 44%
+[INFO] [1497346515.801297]: Done 47%
+[INFO] [1497346515.902262]: Done 50%
+[INFO] [1497346516.003267]: Done 52%
+[INFO] [1497346516.104487]: Done 55%
+[INFO] [1497346516.205532]: Done 58%
+[INFO] [1497346516.306716]: Done 61%
+[INFO] [1497346516.407828]: Done 64%
+[INFO] [1497346516.508740]: Done 67%
+[INFO] [1497346516.609936]: Done 70%
+[INFO] [1497346516.711268]: Done 73%
+[INFO] [1497346516.812461]: Done 76%
+[INFO] [1497346516.913522]: Done 79%
+[INFO] [1497346517.014706]: Done 82%
+[INFO] [1497346517.115801]: Done 85%
+[INFO] [1497346517.217483]: Done 88%
+[INFO] [1497346517.318671]: Done 91%
+[INFO] [1497346517.420214]: Done 94%
+[INFO] [1497346517.521482]: /move_sandbox_items: Succeeded
+[INFO] [1497346522.241525]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346522.242260]: Moving elephant to 0.03,-0.09
+[INFO] [1497346522.242728]: Requesting a plan...
+[INFO] [1497346522.382266]: Received trajectory! As requested, waiting -0.00078954s before starting...
+[INFO] [1497346522.382662]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346522.382954]: Starting to play trajectory!
+[INFO] [1497346522.383356]: Done 0%
+[INFO] [1497346522.484237]: Done 5%
+[INFO] [1497346522.585445]: Done 11%
+[INFO] [1497346522.687532]: Done 17%
+[INFO] [1497346522.788900]: Done 23%
+[INFO] [1497346522.890265]: Done 29%
+[INFO] [1497346522.991547]: Done 35%
+[INFO] [1497346523.093003]: Done 41%
+[INFO] [1497346523.194591]: Done 47%
+[INFO] [1497346523.295965]: Done 52%
+[INFO] [1497346523.397254]: Done 58%
+[INFO] [1497346523.498431]: Done 64%
+[INFO] [1497346523.599443]: Done 70%
+[INFO] [1497346523.700643]: Done 76%
+[INFO] [1497346523.801692]: Done 82%
+[INFO] [1497346523.902857]: Done 88%
+[INFO] [1497346524.004026]: /move_sandbox_items: Succeeded
+[INFO] [1497346525.707524]: /move_sandbox_items: Received a request to move crocodile to 0.28, -0.15. Let's do that
+[INFO] [1497346525.708409]: Moving crocodile to -0.03,0.03
+[INFO] [1497346525.708820]: Requesting a plan...
+[INFO] [1497346525.781963]: Received trajectory! As requested, waiting -0.000446653s before starting...
+[INFO] [1497346525.782486]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346525.782802]: Starting to play trajectory!
+[INFO] [1497346525.783418]: Done 0%
+[INFO] [1497346525.884466]: Done 14%
+[INFO] [1497346525.985446]: Done 28%
+[INFO] [1497346526.086546]: Done 42%
+[INFO] [1497346526.187853]: Done 57%
+[INFO] [1497346526.288883]: Done 71%
+[INFO] [1497346526.389929]: /move_sandbox_items: Succeeded
+[INFO] [1497346536.172031]: /move_sandbox_items: Received a request to move zebra to 0.49, -0.06. Let's do that
+[INFO] [1497346536.173029]: Moving zebra to -0.24,0.13
+[INFO] [1497346536.173314]: Requesting a plan...
+[INFO] [1497346536.221875]: Received trajectory! As requested, waiting -0.040095071s before starting...
+[INFO] [1497346536.222728]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346536.223004]: Starting to play trajectory!
+[INFO] [1497346536.223573]: Done 0%
+[INFO] [1497346536.324461]: Done 1%
+[INFO] [1497346536.425535]: Done 2%
+[INFO] [1497346536.526504]: Done 4%
+[INFO] [1497346536.627555]: Done 5%
+[INFO] [1497346536.728696]: Done 7%
+[INFO] [1497346536.829864]: Done 8%
+[INFO] [1497346536.930872]: Done 10%
+[INFO] [1497346537.031779]: Done 11%
+[INFO] [1497346537.132974]: Done 13%
+[INFO] [1497346537.233945]: Done 14%
+[INFO] [1497346537.335077]: Done 16%
+[INFO] [1497346537.436654]: Done 17%
+[INFO] [1497346537.538472]: Done 19%
+[INFO] [1497346537.639518]: Done 20%
+[INFO] [1497346537.740619]: Done 22%
+[INFO] [1497346537.841784]: Done 23%
+[INFO] [1497346537.942835]: Done 25%
+[INFO] [1497346538.043662]: Done 26%
+[INFO] [1497346538.144523]: Done 28%
+[INFO] [1497346538.245716]: Done 29%
+[INFO] [1497346538.347209]: Done 31%
+[INFO] [1497346538.448361]: Done 32%
+[INFO] [1497346538.549540]: Done 34%
+[INFO] [1497346538.650875]: Done 35%
+[INFO] [1497346538.752579]: Done 37%
+[INFO] [1497346538.853699]: Done 38%
+[INFO] [1497346538.954995]: Done 40%
+[INFO] [1497346539.056091]: Done 41%
+[INFO] [1497346539.157382]: Done 43%
+[INFO] [1497346539.258378]: Done 44%
+[INFO] [1497346539.359664]: Done 46%
+[INFO] [1497346539.460803]: Done 47%
+[INFO] [1497346539.562123]: Done 49%
+[INFO] [1497346539.663101]: Done 50%
+[INFO] [1497346539.764195]: Done 52%
+[INFO] [1497346539.865090]: Done 53%
+[INFO] [1497346539.965934]: Done 55%
+[INFO] [1497346540.066772]: Done 56%
+[INFO] [1497346540.167779]: Done 58%
+[INFO] [1497346540.268748]: Done 59%
+[INFO] [1497346540.370099]: Done 61%
+[INFO] [1497346540.473255]: Done 62%
+[INFO] [1497346540.574246]: Done 64%
+[INFO] [1497346540.677054]: Done 65%
+[INFO] [1497346540.778456]: Done 67%
+[INFO] [1497346540.879238]: Done 68%
+[INFO] [1497346540.980224]: Done 70%
+[INFO] [1497346541.081337]: Done 71%
+[INFO] [1497346541.182340]: Done 73%
+[INFO] [1497346541.283400]: Done 74%
+[INFO] [1497346541.384432]: Done 76%
+[INFO] [1497346541.485679]: Done 77%
+[INFO] [1497346541.586595]: Done 79%
+[INFO] [1497346541.687603]: Done 80%
+[INFO] [1497346541.788844]: Done 82%
+[INFO] [1497346541.889966]: Done 83%
+[INFO] [1497346541.991179]: Done 85%
+[INFO] [1497346542.092244]: Done 86%
+[INFO] [1497346542.197511]: Done 88%
+[INFO] [1497346542.298956]: Done 89%
+[INFO] [1497346542.399966]: Done 91%
+[INFO] [1497346542.501701]: Done 92%
+[INFO] [1497346542.603169]: Done 94%
+[INFO] [1497346542.704188]: Done 95%
+[INFO] [1497346542.805349]: Done 97%
+[INFO] [1497346542.906635]: /move_sandbox_items: Succeeded
+[INFO] [1497346545.010663]: /move_sandbox_items: Received a request to move crocodile to 0.29, -0.02. Let's do that
+[INFO] [1497346545.011483]: Moving crocodile to -0.11,-0.19
+[INFO] [1497346545.011800]: Requesting a plan...
+[INFO] [1497346545.182978]: Received trajectory! As requested, waiting -0.001414888s before starting...
+[INFO] [1497346545.186433]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346545.186814]: Starting to play trajectory!
+[INFO] [1497346545.187305]: Done 0%
+[INFO] [1497346545.288941]: Done 2%
+[INFO] [1497346545.390377]: Done 4%
+[INFO] [1497346545.491529]: Done 6%
+[INFO] [1497346545.592636]: Done 8%
+[INFO] [1497346545.693705]: Done 11%
+[INFO] [1497346545.794818]: Done 13%
+[INFO] [1497346545.895944]: Done 15%
+[INFO] [1497346545.996984]: Done 17%
+[INFO] [1497346546.098174]: Done 20%
+[INFO] [1497346546.199426]: Done 22%
+[INFO] [1497346546.300599]: Done 24%
+[INFO] [1497346546.401583]: Done 26%
+[INFO] [1497346546.502704]: Done 28%
+[INFO] [1497346546.603826]: Done 31%
+[INFO] [1497346546.705101]: Done 33%
+[INFO] [1497346546.806015]: Done 35%
+[INFO] [1497346546.907230]: Done 37%
+[INFO] [1497346547.008143]: Done 40%
+[INFO] [1497346547.109030]: Done 42%
+[INFO] [1497346547.209851]: Done 44%
+[INFO] [1497346547.310686]: Done 46%
+[INFO] [1497346547.411518]: Done 48%
+[INFO] [1497346547.512561]: Done 51%
+[INFO] [1497346547.613544]: Done 53%
+[INFO] [1497346547.714709]: Done 55%
+[INFO] [1497346547.815617]: Done 57%
+[INFO] [1497346547.916809]: Done 60%
+[INFO] [1497346548.018625]: Done 62%
+[INFO] [1497346548.119696]: Done 64%
+[INFO] [1497346548.220663]: Done 66%
+[INFO] [1497346548.321767]: Done 68%
+[INFO] [1497346548.422973]: Done 71%
+[INFO] [1497346548.524069]: Done 73%
+[INFO] [1497346548.625174]: Done 75%
+[INFO] [1497346548.726422]: Done 77%
+[INFO] [1497346548.827579]: Done 80%
+[INFO] [1497346548.928653]: Done 82%
+[INFO] [1497346549.029766]: Done 84%
+[INFO] [1497346549.130983]: Done 86%
+[INFO] [1497346549.232019]: Done 88%
+[INFO] [1497346549.333475]: Done 91%
+[INFO] [1497346549.434487]: Done 93%
+[INFO] [1497346549.535704]: Done 95%
+[INFO] [1497346549.636925]: /move_sandbox_items: Succeeded
+[INFO] [1497346551.705715]: /move_sandbox_items: Received a request to move girl to 0.00, -0.17. Let's do that
+[INFO] [1497346551.706544]: Moving girl to 0.09,-0.03
+[INFO] [1497346551.706901]: Requesting a plan...
+[INFO] [1497346551.782401]: Received trajectory! As requested, waiting -0.000657178s before starting...
+[INFO] [1497346551.783097]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346551.783468]: Starting to play trajectory!
+[INFO] [1497346551.788173]: Done 0%
+[INFO] [1497346551.889257]: Done 5%
+[INFO] [1497346551.990374]: Done 10%
+[INFO] [1497346552.091957]: Done 15%
+[INFO] [1497346552.193043]: Done 21%
+[INFO] [1497346552.294011]: Done 26%
+[INFO] [1497346552.395123]: Done 31%
+[INFO] [1497346552.496180]: Done 36%
+[INFO] [1497346552.597349]: Done 42%
+[INFO] [1497346552.698551]: Done 47%
+[INFO] [1497346552.799940]: Done 52%
+[INFO] [1497346552.901080]: Done 57%
+[INFO] [1497346553.002393]: Done 63%
+[INFO] [1497346553.103292]: Done 68%
+[INFO] [1497346553.204417]: Done 73%
+[INFO] [1497346553.305507]: Done 78%
+[INFO] [1497346553.406379]: Done 84%
+[INFO] [1497346553.507418]: Done 89%
+[INFO] [1497346553.608905]: /move_sandbox_items: Succeeded
+[INFO] [1497346555.528362]: /move_sandbox_items: Received a request to move girl to 0.06, -0.06. Let's do that
+[INFO] [1497346555.529055]: Moving girl to -0.12,-0.00
+[INFO] [1497346555.529317]: Requesting a plan...
+[INFO] [1497346555.618239]: Received trajectory! As requested, waiting -0.036521077s before starting...
+[INFO] [1497346555.618975]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346555.619335]: Starting to play trajectory!
+[INFO] [1497346555.619953]: Done 0%
+[INFO] [1497346555.721055]: Done 3%
+[INFO] [1497346555.822168]: Done 6%
+[INFO] [1497346555.923353]: Done 10%
+[INFO] [1497346556.024505]: Done 13%
+[INFO] [1497346556.125575]: Done 16%
+[INFO] [1497346556.226851]: Done 20%
+[INFO] [1497346556.328041]: Done 23%
+[INFO] [1497346556.429075]: Done 26%
+[INFO] [1497346556.530155]: Done 30%
+[INFO] [1497346556.631353]: Done 33%
+[INFO] [1497346556.732404]: Done 36%
+[INFO] [1497346556.833684]: Done 40%
+[INFO] [1497346556.934805]: Done 43%
+[INFO] [1497346557.035887]: Done 46%
+[INFO] [1497346557.136998]: Done 50%
+[INFO] [1497346557.238137]: Done 53%
+[INFO] [1497346557.339152]: Done 56%
+[INFO] [1497346557.440136]: Done 60%
+[INFO] [1497346557.541085]: Done 63%
+[INFO] [1497346557.641996]: Done 66%
+[INFO] [1497346557.743035]: Done 70%
+[INFO] [1497346557.844031]: Done 73%
+[INFO] [1497346557.945306]: Done 76%
+[INFO] [1497346558.046359]: Done 80%
+[INFO] [1497346558.147603]: Done 83%
+[INFO] [1497346558.248736]: Done 86%
+[INFO] [1497346558.349703]: Done 90%
+[INFO] [1497346558.450959]: Done 93%
+[INFO] [1497346558.552291]: /move_sandbox_items: Succeeded
+[INFO] [1497346560.264631]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346560.265449]: Moving elephant to 0.03,0.04
+[INFO] [1497346560.265901]: Requesting a plan...
+[INFO] [1497346560.382170]: Received trajectory! As requested, waiting -0.000468998s before starting...
+[INFO] [1497346560.382676]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346560.382989]: Starting to play trajectory!
+[INFO] [1497346560.383539]: Done 0%
+[INFO] [1497346560.484792]: Done 10%
+[INFO] [1497346560.586510]: Done 20%
+[INFO] [1497346560.687677]: Done 30%
+[INFO] [1497346560.788816]: Done 40%
+[INFO] [1497346560.889953]: Done 50%
+[INFO] [1497346560.991117]: Done 60%
+[INFO] [1497346561.092206]: Done 70%
+[INFO] [1497346561.193315]: Done 80%
+[INFO] [1497346561.294876]: /move_sandbox_items: Succeeded
+[INFO] [1497346563.101093]: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[INFO] [1497346563.101760]: Moving lion to 0.00,-0.05
+[INFO] [1497346563.102023]: Requesting a plan...
+[INFO] [1497346563.181923]: Received trajectory! As requested, waiting -0.000458134s before starting...
+[INFO] [1497346563.182315]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346563.182589]: Starting to play trajectory!
+[INFO] [1497346563.183117]: Done 0%
+[INFO] [1497346563.284064]: Done 9%
+[INFO] [1497346563.385202]: Done 18%
+[INFO] [1497346563.486314]: Done 27%
+[INFO] [1497346563.587393]: Done 36%
+[INFO] [1497346563.688640]: Done 45%
+[INFO] [1497346563.789878]: Done 54%
+[INFO] [1497346563.891004]: Done 63%
+[INFO] [1497346563.992113]: Done 72%
+[INFO] [1497346564.093075]: Done 81%
+[INFO] [1497346564.194551]: /move_sandbox_items: Succeeded
+[INFO] [1497346566.267452]: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[INFO] [1497346566.268236]: Moving lion to 0.06,-0.05
+[INFO] [1497346566.268587]: Requesting a plan...
+[INFO] [1497346566.382104]: Received trajectory! As requested, waiting -0.000512402s before starting...
+[INFO] [1497346566.382579]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346566.382939]: Starting to play trajectory!
+[INFO] [1497346566.384123]: Done 0%
+[INFO] [1497346566.485556]: Done 6%
+[INFO] [1497346566.586797]: Done 12%
+[INFO] [1497346566.687845]: Done 18%
+[INFO] [1497346566.789096]: Done 25%
+[INFO] [1497346566.890285]: Done 31%
+[INFO] [1497346566.992660]: Done 37%
+[INFO] [1497346567.094029]: Done 43%
+[INFO] [1497346567.195116]: Done 50%
+[INFO] [1497346567.296174]: Done 56%
+[INFO] [1497346567.397203]: Done 62%
+[INFO] [1497346567.498604]: Done 68%
+[INFO] [1497346567.599528]: Done 75%
+[INFO] [1497346567.700586]: Done 81%
+[INFO] [1497346567.803972]: Done 87%
+[INFO] [1497346567.905371]: /move_sandbox_items: Succeeded
+[INFO] [1497346570.024857]: /move_sandbox_items: Received a request to move elephant to 0.39, -0.07. Let's do that
+[INFO] [1497346570.025618]: Moving elephant to -0.03,0.01
+[INFO] [1497346570.025888]: Requesting a plan...
+[INFO] [1497346570.181869]: Received trajectory! As requested, waiting -0.000349973s before starting...
+[INFO] [1497346570.182236]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346570.182523]: Starting to play trajectory!
+[INFO] [1497346570.183151]: Done 0%
+[INFO] [1497346570.284408]: Done 14%
+[INFO] [1497346570.385637]: Done 28%
+[INFO] [1497346570.486528]: Done 42%
+[INFO] [1497346570.587658]: Done 57%
+[INFO] [1497346570.688720]: Done 71%
+[INFO] [1497346570.789879]: /move_sandbox_items: Succeeded
+[INFO] [1497346572.410526]: /move_sandbox_items: Received a request to move caravan to 0.06, -0.06. Let's do that
+[INFO] [1497346572.411182]: Moving caravan to 0.02,0.40
+[INFO] [1497346572.411478]: Requesting a plan...
+[INFO] [1497346572.627847]: Received trajectory! As requested, waiting -0.046551437s before starting...
+[INFO] [1497346572.628234]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346572.628541]: Starting to play trajectory!
+[INFO] [1497346572.629299]: Done 0%
+[INFO] [1497346572.731406]: Done 1%
+[INFO] [1497346572.832570]: Done 2%
+[INFO] [1497346572.933690]: Done 3%
+[INFO] [1497346573.034834]: Done 4%
+[INFO] [1497346573.135978]: Done 6%
+[INFO] [1497346573.237112]: Done 7%
+[INFO] [1497346573.339410]: Done 8%
+[INFO] [1497346573.441509]: Done 9%
+[INFO] [1497346573.542505]: Done 11%
+[INFO] [1497346573.643552]: Done 12%
+[INFO] [1497346573.744620]: Done 13%
+[INFO] [1497346573.845757]: Done 14%
+[INFO] [1497346573.946948]: Done 16%
+[INFO] [1497346574.048062]: Done 17%
+[INFO] [1497346574.148962]: Done 18%
+[INFO] [1497346574.249987]: Done 19%
+[INFO] [1497346574.350892]: Done 20%
+[INFO] [1497346574.451849]: Done 22%
+[INFO] [1497346574.552909]: Done 23%
+[INFO] [1497346574.654148]: Done 24%
+[INFO] [1497346574.755302]: Done 25%
+[INFO] [1497346574.856809]: Done 27%
+[INFO] [1497346574.959319]: Done 28%
+[INFO] [1497346575.060341]: Done 29%
+[INFO] [1497346575.161793]: Done 30%
+[INFO] [1497346575.262753]: Done 32%
+[INFO] [1497346575.363694]: Done 33%
+[INFO] [1497346575.464638]: Done 34%
+[INFO] [1497346575.567959]: Done 35%
+[INFO] [1497346575.669106]: Done 37%
+[INFO] [1497346575.770138]: Done 38%
+[INFO] [1497346575.871325]: Done 39%
+[INFO] [1497346575.972189]: Done 40%
+[INFO] [1497346576.073377]: Done 41%
+[INFO] [1497346576.174522]: Done 43%
+[INFO] [1497346576.275911]: Done 44%
+[INFO] [1497346576.376960]: Done 45%
+[INFO] [1497346576.478240]: Done 46%
+[INFO] [1497346576.579267]: Done 48%
+[INFO] [1497346576.680221]: Done 49%
+[INFO] [1497346576.781499]: Done 50%
+[INFO] [1497346576.882702]: Done 51%
+[INFO] [1497346576.983672]: Done 53%
+[INFO] [1497346577.084539]: Done 54%
+[INFO] [1497346577.185655]: Done 55%
+[INFO] [1497346577.287049]: Done 56%
+[INFO] [1497346577.388350]: Done 58%
+[INFO] [1497346577.489745]: Done 59%
+[INFO] [1497346577.590946]: Done 60%
+[INFO] [1497346577.692219]: Done 61%
+[INFO] [1497346577.793350]: Done 62%
+[INFO] [1497346577.894390]: Done 64%
+[INFO] [1497346577.995349]: Done 65%
+[INFO] [1497346578.096412]: Done 66%
+[INFO] [1497346578.197836]: Done 67%
+[INFO] [1497346578.298879]: Done 69%
+[INFO] [1497346578.400170]: Done 70%
+[INFO] [1497346578.501283]: Done 71%
+[INFO] [1497346578.602469]: Done 72%
+[INFO] [1497346578.704191]: Done 74%
+[INFO] [1497346578.805280]: Done 75%
+[INFO] [1497346578.906173]: Done 76%
+[INFO] [1497346579.007066]: Done 77%
+[INFO] [1497346579.108278]: Done 79%
+[INFO] [1497346579.209335]: Done 80%
+[INFO] [1497346579.310330]: Done 81%
+[INFO] [1497346579.411272]: Done 82%
+[INFO] [1497346579.512138]: Done 83%
+[INFO] [1497346579.612990]: Done 85%
+[INFO] [1497346579.714216]: Done 86%
+[INFO] [1497346579.815571]: Done 87%
+[INFO] [1497346579.918598]: Done 88%
+[INFO] [1497346580.021526]: Done 90%
+[INFO] [1497346580.122942]: Done 91%
+[INFO] [1497346580.224503]: Done 92%
+[INFO] [1497346580.325864]: Done 93%
+[INFO] [1497346580.426997]: Done 95%
+[INFO] [1497346580.528162]: Done 96%
+[INFO] [1497346580.629853]: Done 97%
+[INFO] [1497346580.730998]: /move_sandbox_items: Succeeded
+[INFO] [1497346582.799809]: /move_sandbox_items: Received a request to move ball to 0.00, -0.17. Let's do that
+[INFO] [1497346582.800723]: Moving ball to 0.08,-0.05
+[INFO] [1497346582.801735]: Requesting a plan...
+[INFO] [1497346582.982091]: Received trajectory! As requested, waiting -0.000611689s before starting...
+[INFO] [1497346582.982537]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346582.982902]: Starting to play trajectory!
+[INFO] [1497346582.983459]: Done 0%
+[INFO] [1497346583.084513]: Done 6%
+[INFO] [1497346583.185571]: Done 12%
+[INFO] [1497346583.286688]: Done 18%
+[INFO] [1497346583.387766]: Done 25%
+[INFO] [1497346583.488929]: Done 31%
+[INFO] [1497346583.593083]: Done 37%
+[INFO] [1497346583.694309]: Done 43%
+[INFO] [1497346583.796285]: Done 50%
+[INFO] [1497346583.898459]: Done 56%
+[INFO] [1497346583.999418]: Done 62%
+[INFO] [1497346584.100532]: Done 68%
+[INFO] [1497346584.201903]: Done 75%
+[INFO] [1497346584.302984]: Done 81%
+[INFO] [1497346584.404094]: Done 87%
+[INFO] [1497346584.505438]: /move_sandbox_items: Succeeded
+[INFO] [1497346586.509830]: /move_sandbox_items: Received a request to move elephant to 0.20, -0.10. Let's do that
+[INFO] [1497346586.510689]: Moving elephant to -0.10,-0.01
+[INFO] [1497346586.510979]: Requesting a plan...
+[INFO] [1497346586.582121]: Received trajectory! As requested, waiting -0.000629432s before starting...
+[INFO] [1497346586.582507]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346586.582788]: Starting to play trajectory!
+[INFO] [1497346586.583328]: Done 0%
+[INFO] [1497346586.684517]: Done 5%
+[INFO] [1497346586.785528]: Done 10%
+[INFO] [1497346586.886795]: Done 15%
+[INFO] [1497346586.987646]: Done 20%
+[INFO] [1497346587.088472]: Done 25%
+[INFO] [1497346587.189677]: Done 30%
+[INFO] [1497346587.290756]: Done 35%
+[INFO] [1497346587.391737]: Done 40%
+[INFO] [1497346587.492868]: Done 45%
+[INFO] [1497346587.593864]: Done 50%
+[INFO] [1497346587.694841]: Done 55%
+[INFO] [1497346587.795739]: Done 60%
+[INFO] [1497346587.896590]: Done 65%
+[INFO] [1497346587.997451]: Done 70%
+[INFO] [1497346588.098280]: Done 75%
+[INFO] [1497346588.199219]: Done 80%
+[INFO] [1497346588.300015]: Done 85%
+[INFO] [1497346588.400995]: Done 90%
+[INFO] [1497346588.502925]: /move_sandbox_items: Succeeded
+[INFO] [1497346590.638681]: /move_sandbox_items: Received a request to move crocodile to 0.29, -0.02. Let's do that
+[INFO] [1497346590.639329]: Moving crocodile to -0.06,-0.01
+[INFO] [1497346590.639526]: Requesting a plan...
+[INFO] [1497346590.781938]: Received trajectory! As requested, waiting -0.000417061s before starting...
+[INFO] [1497346590.782268]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346590.782458]: Starting to play trajectory!
+[INFO] [1497346590.782849]: Done 0%
+[INFO] [1497346590.884362]: Done 7%
+[INFO] [1497346590.985769]: Done 15%
+[INFO] [1497346591.087059]: Done 23%
+[INFO] [1497346591.188236]: Done 30%
+[INFO] [1497346591.289337]: Done 38%
+[INFO] [1497346591.390385]: Done 46%
+[INFO] [1497346591.491473]: Done 53%
+[INFO] [1497346591.592597]: Done 61%
+[INFO] [1497346591.693725]: Done 69%
+[INFO] [1497346591.794772]: Done 76%
+[INFO] [1497346591.895885]: Done 84%
+[INFO] [1497346591.997205]: /move_sandbox_items: Succeeded
+[INFO] [1497346593.716775]: /move_sandbox_items: Received a request to move ball to 0.00, -0.17. Let's do that
+[INFO] [1497346593.717748]: Moving ball to 0.01,-0.01
+[INFO] [1497346593.718075]: Requesting a plan...
+[INFO] [1497346593.781903]: Received trajectory! As requested, waiting -0.000327759s before starting...
+[INFO] [1497346593.782360]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346593.782697]: Starting to play trajectory!
+[INFO] [1497346593.783262]: Done 0%
+[INFO] [1497346593.884139]: Done 25%
+[INFO] [1497346593.985329]: Done 50%
+[INFO] [1497346594.086431]: /move_sandbox_items: Succeeded
+[INFO] [1497346596.294473]: /move_sandbox_items: Received a request to move ball to 0.49, -0.06. Let's do that
+[INFO] [1497346596.295178]: Moving ball to 0.10,0.48
+[INFO] [1497346596.295650]: Requesting a plan...
+[INFO] [1497346596.407492]: Received trajectory! As requested, waiting -0.025862245s before starting...
+[INFO] [1497346596.407838]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346596.408075]: Starting to play trajectory!
+[INFO] [1497346596.408502]: Done 0%
+[INFO] [1497346596.509494]: Done 1%
+[INFO] [1497346596.610570]: Done 2%
+[INFO] [1497346596.711555]: Done 3%
+[INFO] [1497346596.812495]: Done 4%
+[INFO] [1497346596.913542]: Done 5%
+[INFO] [1497346597.014517]: Done 6%
+[INFO] [1497346597.115380]: Done 7%
+[INFO] [1497346597.216575]: Done 8%
+[INFO] [1497346597.317677]: Done 9%
+[INFO] [1497346597.419198]: Done 10%
+[INFO] [1497346597.520217]: Done 11%
+[INFO] [1497346597.621276]: Done 12%
+[INFO] [1497346597.722117]: Done 13%
+[INFO] [1497346597.822958]: Done 14%
+[INFO] [1497346597.923848]: Done 15%
+[INFO] [1497346598.024744]: Done 16%
+[INFO] [1497346598.125762]: Done 17%
+[INFO] [1497346598.226717]: Done 18%
+[INFO] [1497346598.327925]: Done 19%
+[INFO] [1497346598.429073]: Done 20%
+[INFO] [1497346598.530121]: Done 21%
+[INFO] [1497346598.631448]: Done 22%
+[INFO] [1497346598.732525]: Done 23%
+[INFO] [1497346598.833651]: Done 25%
+[INFO] [1497346598.934686]: Done 26%
+[INFO] [1497346599.035695]: Done 27%
+[INFO] [1497346599.137209]: Done 28%
+[INFO] [1497346599.238528]: Done 29%
+[INFO] [1497346599.339480]: Done 30%
+[INFO] [1497346599.441080]: Done 31%
+[INFO] [1497346599.542910]: Done 32%
+[INFO] [1497346599.644214]: Done 33%
+[INFO] [1497346599.745190]: Done 34%
+[INFO] [1497346599.846112]: Done 35%
+[INFO] [1497346599.947115]: Done 36%
+[INFO] [1497346600.048089]: Done 37%
+[INFO] [1497346600.149349]: Done 38%
+[INFO] [1497346600.250438]: Done 39%
+[INFO] [1497346600.351754]: Done 40%
+[INFO] [1497346600.453273]: Done 41%
+[INFO] [1497346600.554361]: Done 42%
+[INFO] [1497346600.655366]: Done 43%
+[INFO] [1497346600.756474]: Done 44%
+[INFO] [1497346600.860052]: Done 45%
+[INFO] [1497346600.961032]: Done 46%
+[INFO] [1497346601.061945]: Done 47%
+[INFO] [1497346601.163151]: Done 48%
+[INFO] [1497346601.264078]: Done 50%
+[INFO] [1497346601.364910]: Done 51%
+[INFO] [1497346601.465897]: Done 52%
+[INFO] [1497346601.567125]: Done 53%
+[INFO] [1497346601.668196]: Done 54%
+[INFO] [1497346601.769401]: Done 55%
+[INFO] [1497346601.870325]: Done 56%
+[INFO] [1497346601.971220]: Done 57%
+[INFO] [1497346602.072031]: Done 58%
+[INFO] [1497346602.172914]: Done 59%
+[INFO] [1497346602.273987]: Done 60%
+[INFO] [1497346602.375098]: Done 61%
+[INFO] [1497346602.476268]: Done 62%
+[INFO] [1497346602.578855]: Done 63%
+[INFO] [1497346602.680180]: Done 64%
+[INFO] [1497346602.781121]: Done 65%
+[INFO] [1497346602.882276]: Done 66%
+[INFO] [1497346602.983291]: Done 67%
+[INFO] [1497346603.084484]: Done 68%
+[INFO] [1497346603.185573]: Done 69%
+[INFO] [1497346603.286617]: Done 70%
+[INFO] [1497346603.387641]: Done 71%
+[INFO] [1497346603.488829]: Done 72%
+[INFO] [1497346603.589795]: Done 73%
+[INFO] [1497346603.690965]: Done 75%
+[INFO] [1497346603.792900]: Done 76%
+[INFO] [1497346603.894214]: Done 77%
+[INFO] [1497346603.995329]: Done 78%
+[INFO] [1497346604.096718]: Done 79%
+[INFO] [1497346604.197740]: Done 80%
+[INFO] [1497346604.298851]: Done 81%
+[INFO] [1497346604.400234]: Done 82%
+[INFO] [1497346604.501208]: Done 83%
+[INFO] [1497346604.602206]: Done 84%
+[INFO] [1497346604.703303]: Done 85%
+[INFO] [1497346604.804283]: Done 86%
+[INFO] [1497346604.905325]: Done 87%
+[INFO] [1497346605.006418]: Done 88%
+[INFO] [1497346605.107684]: Done 89%
+[INFO] [1497346605.208705]: Done 90%
+[INFO] [1497346605.309922]: Done 91%
+[INFO] [1497346605.410948]: Done 92%
+[INFO] [1497346605.512125]: Done 93%
+[INFO] [1497346605.613219]: Done 94%
+[INFO] [1497346605.714231]: Done 95%
+[INFO] [1497346605.815242]: Done 96%
+[INFO] [1497346605.916243]: Done 97%
+[INFO] [1497346606.018020]: /move_sandbox_items: Succeeded
+[INFO] [1497346607.986719]: /move_sandbox_items: Received a request to move giraffe to 0.49, -0.06. Let's do that
+[INFO] [1497346607.987669]: Moving giraffe to 0.42,0.01
+[INFO] [1497346607.987971]: Requesting a plan...
+[INFO] [1497346608.212393]: Received trajectory! As requested, waiting -0.030986493s before starting...
+[INFO] [1497346608.212902]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346608.213217]: Starting to play trajectory!
+[INFO] [1497346608.213671]: Done 0%
+[INFO] [1497346608.315028]: Done 1%
+[INFO] [1497346608.416130]: Done 2%
+[INFO] [1497346608.517757]: Done 3%
+[INFO] [1497346608.618904]: Done 4%
+[INFO] [1497346608.720424]: Done 5%
+[INFO] [1497346608.821724]: Done 6%
+[INFO] [1497346608.923134]: Done 8%
+[INFO] [1497346609.028153]: Done 9%
+[INFO] [1497346609.129292]: Done 10%
+[INFO] [1497346609.230368]: Done 11%
+[INFO] [1497346609.331484]: Done 12%
+[INFO] [1497346609.432554]: Done 13%
+[INFO] [1497346609.533742]: Done 15%
+[INFO] [1497346609.635017]: Done 16%
+[INFO] [1497346609.737167]: Done 17%
+[INFO] [1497346609.838356]: Done 18%
+[INFO] [1497346609.940007]: Done 19%
+[INFO] [1497346610.041069]: Done 20%
+[INFO] [1497346610.142141]: Done 22%
+[INFO] [1497346610.243195]: Done 23%
+[INFO] [1497346610.344248]: Done 24%
+[INFO] [1497346610.445235]: Done 25%
+[INFO] [1497346610.548379]: Done 26%
+[INFO] [1497346610.649774]: Done 27%
+[INFO] [1497346610.750779]: Done 29%
+[INFO] [1497346610.852252]: Done 30%
+[INFO] [1497346610.953563]: Done 31%
+[INFO] [1497346611.054707]: Done 32%
+[INFO] [1497346611.155752]: Done 33%
+[INFO] [1497346611.257283]: Done 34%
+[INFO] [1497346611.358416]: Done 36%
+[INFO] [1497346611.462023]: Done 37%
+[INFO] [1497346611.563340]: Done 38%
+[INFO] [1497346611.664443]: Done 39%
+[INFO] [1497346611.765809]: Done 40%
+[INFO] [1497346611.866996]: Done 41%
+[INFO] [1497346611.968989]: Done 43%
+[INFO] [1497346612.069942]: Done 44%
+[INFO] [1497346612.170914]: Done 45%
+[INFO] [1497346612.272371]: Done 46%
+[INFO] [1497346612.373628]: Done 47%
+[INFO] [1497346612.474608]: Done 48%
+[INFO] [1497346612.575475]: Done 50%
+[INFO] [1497346612.676288]: Done 51%
+[INFO] [1497346612.777162]: Done 52%
+[INFO] [1497346612.878609]: Done 53%
+[INFO] [1497346612.979460]: Done 54%
+[INFO] [1497346613.080352]: Done 55%
+[INFO] [1497346613.181158]: Done 56%
+[INFO] [1497346613.281984]: Done 58%
+[INFO] [1497346613.382927]: Done 59%
+[INFO] [1497346613.483750]: Done 60%
+[INFO] [1497346613.585075]: Done 61%
+[INFO] [1497346613.686148]: Done 62%
+[INFO] [1497346613.787329]: Done 63%
+[INFO] [1497346613.888395]: Done 65%
+[INFO] [1497346613.989646]: Done 66%
+[INFO] [1497346614.090737]: Done 67%
+[INFO] [1497346614.191766]: Done 68%
+[INFO] [1497346614.292700]: Done 69%
+[INFO] [1497346614.393923]: Done 70%
+[INFO] [1497346614.494934]: Done 72%
+[INFO] [1497346614.595913]: Done 73%
+[INFO] [1497346614.696887]: Done 74%
+[INFO] [1497346614.798395]: Done 75%
+[INFO] [1497346614.899587]: Done 76%
+[INFO] [1497346615.000571]: Done 77%
+[INFO] [1497346615.101567]: Done 79%
+[INFO] [1497346615.202618]: Done 80%
+[INFO] [1497346615.303619]: Done 81%
+[INFO] [1497346615.404638]: Done 82%
+[INFO] [1497346615.506088]: Done 83%
+[INFO] [1497346615.606957]: Done 84%
+[INFO] [1497346615.707891]: Done 86%
+[INFO] [1497346615.808844]: Done 87%
+[INFO] [1497346615.909769]: Done 88%
+[INFO] [1497346616.010731]: Done 89%
+[INFO] [1497346616.112069]: Done 90%
+[INFO] [1497346616.212966]: Done 91%
+[INFO] [1497346616.313947]: Done 93%
+[INFO] [1497346616.415072]: Done 94%
+[INFO] [1497346616.516086]: Done 95%
+[INFO] [1497346616.616908]: Done 96%
+[INFO] [1497346616.717857]: Done 97%
+[INFO] [1497346616.819253]: /move_sandbox_items: Succeeded
+[INFO] [1497346621.194414]: /move_sandbox_items: Received a request to move crocodile to 0.28, -0.15. Let's do that
+[INFO] [1497346621.195060]: Moving crocodile to 0.05,-0.02
+[INFO] [1497346621.195336]: Requesting a plan...
+[INFO] [1497346621.382037]: Received trajectory! As requested, waiting -0.000453968s before starting...
+[INFO] [1497346621.382589]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346621.382926]: Starting to play trajectory!
+[INFO] [1497346621.383370]: Done 0%
+[INFO] [1497346621.484343]: Done 10%
+[INFO] [1497346621.585428]: Done 20%
+[INFO] [1497346621.686393]: Done 30%
+[INFO] [1497346621.787473]: Done 40%
+[INFO] [1497346621.888511]: Done 50%
+[INFO] [1497346621.989631]: Done 60%
+[INFO] [1497346622.090738]: Done 70%
+[INFO] [1497346622.191770]: Done 80%
+[INFO] [1497346622.292765]: /move_sandbox_items: Succeeded
+[INFO] [1497346624.160491]: /move_sandbox_items: Received a request to move crocodile to 0.28, -0.15. Let's do that
+[INFO] [1497346624.161288]: Moving crocodile to -0.03,-0.03
+[INFO] [1497346624.161603]: Requesting a plan...
+[INFO] [1497346624.181912]: Received trajectory! As requested, waiting -0.000483059s before starting...
+[INFO] [1497346624.182359]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346624.182642]: Starting to play trajectory!
+[INFO] [1497346624.182979]: Done 0%
+[INFO] [1497346624.284252]: Done 9%
+[INFO] [1497346624.385357]: Done 18%
+[INFO] [1497346624.486457]: Done 27%
+[INFO] [1497346624.587783]: Done 36%
+[INFO] [1497346624.689034]: Done 45%
+[INFO] [1497346624.790452]: Done 54%
+[INFO] [1497346624.891549]: Done 63%
+[INFO] [1497346624.992997]: Done 72%
+[INFO] [1497346625.094349]: Done 81%
+[INFO] [1497346625.195743]: /move_sandbox_items: Succeeded
+[INFO] [1497346627.708387]: /move_sandbox_items: Received a request to move elephant to 0.20, -0.10. Let's do that
+[INFO] [1497346627.709096]: Moving elephant to -0.06,-0.02
+[INFO] [1497346627.709362]: Requesting a plan...
+[INFO] [1497346627.782252]: Received trajectory! As requested, waiting -0.000574893s before starting...
+[INFO] [1497346627.782888]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346627.783223]: Starting to play trajectory!
+[INFO] [1497346627.783777]: Done 0%
+[INFO] [1497346627.885317]: Done 8%
+[INFO] [1497346627.986835]: Done 16%
+[INFO] [1497346628.087870]: Done 25%
+[INFO] [1497346628.188965]: Done 33%
+[INFO] [1497346628.290266]: Done 41%
+[INFO] [1497346628.391473]: Done 50%
+[INFO] [1497346628.492999]: Done 58%
+[INFO] [1497346628.593911]: Done 66%
+[INFO] [1497346628.695172]: Done 75%
+[INFO] [1497346628.796228]: Done 83%
+[INFO] [1497346628.897479]: /move_sandbox_items: Succeeded
+[INFO] [1497346634.609490]: /move_sandbox_items: Received a request to move zebra to 0.49, -0.06. Let's do that
+[INFO] [1497346634.610199]: Moving zebra to -0.04,0.03
+[INFO] [1497346634.610478]: Requesting a plan...
+[INFO] [1497346634.820940]: Received trajectory! As requested, waiting -0.039337405s before starting...
+[INFO] [1497346634.821339]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346634.821665]: Starting to play trajectory!
+[INFO] [1497346634.822201]: Done 0%
+[INFO] [1497346634.923266]: Done 5%
+[INFO] [1497346635.024359]: Done 10%
+[INFO] [1497346635.125381]: Done 15%
+[INFO] [1497346635.226361]: Done 21%
+[INFO] [1497346635.327341]: Done 26%
+[INFO] [1497346635.428391]: Done 31%
+[INFO] [1497346635.529322]: Done 36%
+[INFO] [1497346635.630265]: Done 42%
+[INFO] [1497346635.731361]: Done 47%
+[INFO] [1497346635.832365]: Done 52%
+[INFO] [1497346635.933275]: Done 57%
+[INFO] [1497346636.034205]: Done 63%
+[INFO] [1497346636.135222]: Done 68%
+[INFO] [1497346636.236190]: Done 73%
+[INFO] [1497346636.337513]: Done 78%
+[INFO] [1497346636.438562]: Done 84%
+[INFO] [1497346636.539647]: Done 89%
+[INFO] [1497346636.640600]: /move_sandbox_items: Succeeded
+[INFO] [1497346639.445371]: /move_sandbox_items: Received a request to move ball to 0.49, -0.06. Let's do that
+[INFO] [1497346639.446122]: Moving ball to 0.04,0.03
+[INFO] [1497346639.446419]: Requesting a plan...
+[INFO] [1497346639.610951]: Received trajectory! As requested, waiting -0.029666631s before starting...
+[INFO] [1497346639.611353]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346639.611659]: Starting to play trajectory!
+[INFO] [1497346639.614267]: Done 0%
+[INFO] [1497346639.715245]: Done 6%
+[INFO] [1497346639.816146]: Done 13%
+[INFO] [1497346639.917226]: Done 20%
+[INFO] [1497346640.018546]: Done 26%
+[INFO] [1497346640.119599]: Done 33%
+[INFO] [1497346640.220786]: Done 40%
+[INFO] [1497346640.321752]: Done 46%
+[INFO] [1497346640.422825]: Done 53%
+[INFO] [1497346640.524477]: Done 60%
+[INFO] [1497346640.625790]: Done 66%
+[INFO] [1497346640.726971]: Done 73%
+[INFO] [1497346640.828170]: Done 80%
+[INFO] [1497346640.929347]: Done 86%
+[INFO] [1497346641.030649]: /move_sandbox_items: Succeeded
+[INFO] [1497346644.037368]: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[INFO] [1497346644.038199]: Moving giraffe to 0.07,-0.02
+[INFO] [1497346644.038576]: Requesting a plan...
+[INFO] [1497346644.182266]: Received trajectory! As requested, waiting -0.000686547s before starting...
+[INFO] [1497346644.182736]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346644.183050]: Starting to play trajectory!
+[INFO] [1497346644.183501]: Done 0%
+[INFO] [1497346644.284603]: Done 7%
+[INFO] [1497346644.385617]: Done 14%
+[INFO] [1497346644.486586]: Done 21%
+[INFO] [1497346644.591755]: Done 28%
+[INFO] [1497346644.692977]: Done 35%
+[INFO] [1497346644.794111]: Done 42%
+[INFO] [1497346644.895779]: Done 50%
+[INFO] [1497346644.996874]: Done 57%
+[INFO] [1497346645.098267]: Done 64%
+[INFO] [1497346645.199300]: Done 71%
+[INFO] [1497346645.300252]: Done 78%
+[INFO] [1497346645.401896]: Done 85%
+[INFO] [1497346645.503142]: /move_sandbox_items: Succeeded
+[INFO] [1497346648.009291]: /move_sandbox_items: Received a request to move ball to 0.49, -0.06. Let's do that
+[INFO] [1497346648.009936]: Moving ball to 0.04,0.01
+[INFO] [1497346648.010200]: Requesting a plan...
+[INFO] [1497346648.181607]: Received trajectory! As requested, waiting -0.000364997s before starting...
+[INFO] [1497346648.182061]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346648.182395]: Starting to play trajectory!
+[INFO] [1497346648.182924]: Done 0%
+[INFO] [1497346648.283805]: Done 14%
+[INFO] [1497346648.384832]: Done 28%
+[INFO] [1497346648.485637]: Done 42%
+[INFO] [1497346648.586860]: Done 57%
+[INFO] [1497346648.687923]: Done 71%
+[INFO] [1497346648.789138]: /move_sandbox_items: Succeeded
+[INFO] [1497346668.631079]: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[INFO] [1497346668.631691]: Moving lion to 0.12,0.11
+[INFO] [1497346668.631948]: Requesting a plan...
+[INFO] [1497346668.786364]: Received trajectory! As requested, waiting -0.004659206s before starting...
+[INFO] [1497346668.786931]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346668.787366]: Starting to play trajectory!
+[INFO] [1497346668.787844]: Done 0%
+[INFO] [1497346668.889172]: Done 3%
+[INFO] [1497346668.990373]: Done 7%
+[INFO] [1497346669.091309]: Done 10%
+[INFO] [1497346669.192465]: Done 14%
+[INFO] [1497346669.293475]: Done 17%
+[INFO] [1497346669.394496]: Done 21%
+[INFO] [1497346669.495963]: Done 25%
+[INFO] [1497346669.597308]: Done 28%
+[INFO] [1497346669.698547]: Done 32%
+[INFO] [1497346669.799817]: Done 35%
+[INFO] [1497346669.900784]: Done 39%
+[INFO] [1497346670.001693]: Done 42%
+[INFO] [1497346670.102647]: Done 46%
+[INFO] [1497346670.203742]: Done 50%
+[INFO] [1497346670.304659]: Done 53%
+[INFO] [1497346670.405708]: Done 57%
+[INFO] [1497346670.506594]: Done 60%
+[INFO] [1497346670.607685]: Done 64%
+[INFO] [1497346670.708813]: Done 67%
+[INFO] [1497346670.809993]: Done 71%
+[INFO] [1497346670.911353]: Done 75%
+[INFO] [1497346671.012502]: Done 78%
+[INFO] [1497346671.113683]: Done 82%
+[INFO] [1497346671.214782]: Done 85%
+[INFO] [1497346671.315732]: Done 89%
+[INFO] [1497346671.416799]: Done 92%
+[INFO] [1497346671.518245]: /move_sandbox_items: Succeeded
+[INFO] [1497346674.524436]: /move_sandbox_items: Received a request to move giraffe to 0.49, -0.06. Let's do that
+[INFO] [1497346674.525209]: Moving giraffe to 0.03,0.15
+[INFO] [1497346674.525584]: Requesting a plan...
+[INFO] [1497346674.611949]: Received trajectory! As requested, waiting -0.0304784s before starting...
+[INFO] [1497346674.612381]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346674.612659]: Starting to play trajectory!
+[INFO] [1497346674.613308]: Done 0%
+[INFO] [1497346674.714203]: Done 3%
+[INFO] [1497346674.815247]: Done 6%
+[INFO] [1497346674.916115]: Done 9%
+[INFO] [1497346675.016950]: Done 12%
+[INFO] [1497346675.117832]: Done 15%
+[INFO] [1497346675.218713]: Done 18%
+[INFO] [1497346675.319775]: Done 21%
+[INFO] [1497346675.420811]: Done 25%
+[INFO] [1497346675.522220]: Done 28%
+[INFO] [1497346675.623628]: Done 31%
+[INFO] [1497346675.725484]: Done 34%
+[INFO] [1497346675.826584]: Done 37%
+[INFO] [1497346675.927612]: Done 40%
+[INFO] [1497346676.028653]: Done 43%
+[INFO] [1497346676.129737]: Done 46%
+[INFO] [1497346676.230845]: Done 50%
+[INFO] [1497346676.331940]: Done 53%
+[INFO] [1497346676.433165]: Done 56%
+[INFO] [1497346676.534078]: Done 59%
+[INFO] [1497346676.635191]: Done 62%
+[INFO] [1497346676.736285]: Done 65%
+[INFO] [1497346676.837378]: Done 68%
+[INFO] [1497346676.938611]: Done 71%
+[INFO] [1497346677.039618]: Done 75%
+[INFO] [1497346677.144910]: Done 78%
+[INFO] [1497346677.248175]: Done 81%
+[INFO] [1497346677.349215]: Done 84%
+[INFO] [1497346677.450217]: Done 87%
+[INFO] [1497346677.551209]: Done 90%
+[INFO] [1497346677.652289]: Done 93%
+[INFO] [1497346677.754074]: /move_sandbox_items: Succeeded
+[INFO] [1497346682.827615]: /move_sandbox_items: Received a request to move hippo to 0.12, -0.25. Let's do that
+[INFO] [1497346682.828353]: Moving hippo to -0.09,-0.04
+[INFO] [1497346682.828689]: Requesting a plan...
+[INFO] [1497346682.982288]: Received trajectory! As requested, waiting -0.000607799s before starting...
+[INFO] [1497346682.982679]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346682.982950]: Starting to play trajectory!
+[INFO] [1497346682.983409]: Done 0%
+[INFO] [1497346683.084497]: Done 5%
+[INFO] [1497346683.185684]: Done 10%
+[INFO] [1497346683.286914]: Done 15%
+[INFO] [1497346683.388081]: Done 20%
+[INFO] [1497346683.489010]: Done 25%
+[INFO] [1497346683.589996]: Done 30%
+[INFO] [1497346683.690854]: Done 35%
+[INFO] [1497346683.791675]: Done 40%
+[INFO] [1497346683.893127]: Done 45%
+[INFO] [1497346683.994482]: Done 50%
+[INFO] [1497346684.095383]: Done 55%
+[INFO] [1497346684.196295]: Done 60%
+[INFO] [1497346684.297214]: Done 65%
+[INFO] [1497346684.398910]: Done 70%
+[INFO] [1497346684.500361]: Done 75%
+[INFO] [1497346684.601531]: Done 80%
+[INFO] [1497346684.702533]: Done 85%
+[INFO] [1497346684.803633]: Done 90%
+[INFO] [1497346684.907337]: /move_sandbox_items: Succeeded
+[INFO] [1497346689.519733]: /move_sandbox_items: Received a request to move caravan to 0.06, -0.06. Let's do that
+[INFO] [1497346689.520465]: Moving caravan to 0.00,0.06
+[INFO] [1497346689.520799]: Requesting a plan...
+[INFO] [1497346689.581736]: Received trajectory! As requested, waiting -0.000477104s before starting...
+[INFO] [1497346689.582155]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346689.582657]: Starting to play trajectory!
+[INFO] [1497346689.583334]: Done 0%
+[INFO] [1497346689.685019]: Done 7%
+[INFO] [1497346689.786825]: Done 15%
+[INFO] [1497346689.888492]: Done 23%
+[INFO] [1497346689.990043]: Done 30%
+[INFO] [1497346690.090912]: Done 38%
+[INFO] [1497346690.191724]: Done 46%
+[INFO] [1497346690.292633]: Done 53%
+[INFO] [1497346690.393657]: Done 61%
+[INFO] [1497346690.494551]: Done 69%
+[INFO] [1497346690.595828]: Done 76%
+[INFO] [1497346690.697301]: Done 84%
+[INFO] [1497346690.801038]: /move_sandbox_items: Succeeded
+[INFO] [1497346694.877292]: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[INFO] [1497346694.878009]: Moving giraffe to -0.03,-0.02
+[INFO] [1497346694.878602]: Requesting a plan...
+[INFO] [1497346694.982208]: Received trajectory! As requested, waiting -0.000379433s before starting...
+[INFO] [1497346694.982569]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346694.982793]: Starting to play trajectory!
+[INFO] [1497346694.983201]: Done 0%
+[INFO] [1497346695.084976]: Done 11%
+[INFO] [1497346695.185877]: Done 22%
+[INFO] [1497346695.287191]: Done 33%
+[INFO] [1497346695.388247]: Done 44%
+[INFO] [1497346695.489369]: Done 55%
+[INFO] [1497346695.590402]: Done 66%
+[INFO] [1497346695.691426]: Done 77%
+[INFO] [1497346695.792788]: /move_sandbox_items: Succeeded
+[INFO] [1497346698.529249]: /move_sandbox_items: Received a request to move ball to 0.39, -0.07. Let's do that
+[INFO] [1497346698.529987]: Moving ball to 0.06,0.04
+[INFO] [1497346698.530263]: Requesting a plan...
+[INFO] [1497346698.613858]: Received trajectory! As requested, waiting -0.032575804s before starting...
+[INFO] [1497346698.614231]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346698.614508]: Starting to play trajectory!
+[INFO] [1497346698.615031]: Done 0%
+[INFO] [1497346698.715839]: Done 6%
+[INFO] [1497346698.816715]: Done 12%
+[INFO] [1497346698.917752]: Done 18%
+[INFO] [1497346699.018724]: Done 25%
+[INFO] [1497346699.119651]: Done 31%
+[INFO] [1497346699.220785]: Done 37%
+[INFO] [1497346699.321871]: Done 43%
+[INFO] [1497346699.422748]: Done 50%
+[INFO] [1497346699.523766]: Done 56%
+[INFO] [1497346699.624768]: Done 62%
+[INFO] [1497346699.725586]: Done 68%
+[INFO] [1497346699.826475]: Done 75%
+[INFO] [1497346699.927459]: Done 81%
+[INFO] [1497346700.028354]: Done 87%
+[INFO] [1497346700.129505]: /move_sandbox_items: Succeeded
+[INFO] [1497346712.958489]: /move_sandbox_items: Received a request to move caravan to 0.20, -0.10. Let's do that
+[INFO] [1497346712.959251]: Moving caravan to -0.07,-0.00
+[INFO] [1497346712.959525]: Requesting a plan...
+[INFO] [1497346712.988284]: Received trajectory! As requested, waiting -0.006372177s before starting...
+[INFO] [1497346712.988809]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346712.989134]: Starting to play trajectory!
+[INFO] [1497346712.989798]: Done 0%
+[INFO] [1497346713.091015]: Done 7%
+[INFO] [1497346713.192414]: Done 14%
+[INFO] [1497346713.293595]: Done 21%
+[INFO] [1497346713.394669]: Done 28%
+[INFO] [1497346713.495866]: Done 35%
+[INFO] [1497346713.597825]: Done 42%
+[INFO] [1497346713.698878]: Done 50%
+[INFO] [1497346713.799977]: Done 57%
+[INFO] [1497346713.901051]: Done 64%
+[INFO] [1497346714.002171]: Done 71%
+[INFO] [1497346714.103296]: Done 78%
+[INFO] [1497346714.204210]: Done 85%
+[INFO] [1497346714.305395]: /move_sandbox_items: Succeeded
+[INFO] [1497346719.478546]: /move_sandbox_items: Received a request to move caravan to 0.20, -0.10. Let's do that
+[INFO] [1497346719.479159]: Moving caravan to -0.02,-0.02
+[INFO] [1497346719.479515]: Requesting a plan...
+[INFO] [1497346719.581860]: Received trajectory! As requested, waiting -0.000373861s before starting...
+[INFO] [1497346719.582252]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346719.582532]: Starting to play trajectory!
+[INFO] [1497346719.583155]: Done 0%
+[INFO] [1497346719.684174]: Done 16%
+[INFO] [1497346719.785354]: Done 33%
+[INFO] [1497346719.886542]: Done 50%
+[INFO] [1497346719.987656]: Done 66%
+[INFO] [1497346720.089263]: /move_sandbox_items: Succeeded
+[INFO] [1497346730.207849]: /move_sandbox_items: Received a request to move crocodile to 0.28, -0.15. Let's do that
+[INFO] [1497346730.208650]: Moving crocodile to 0.10,0.04
+[INFO] [1497346730.209034]: Requesting a plan...
+[INFO] [1497346730.381757]: Received trajectory! As requested, waiting -0.000494493s before starting...
+[INFO] [1497346730.382174]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346730.382468]: Starting to play trajectory!
+[INFO] [1497346730.382923]: Done 0%
+[INFO] [1497346730.484051]: Done 4%
+[INFO] [1497346730.585210]: Done 9%
+[INFO] [1497346730.686377]: Done 14%
+[INFO] [1497346730.787451]: Done 19%
+[INFO] [1497346730.888409]: Done 23%
+[INFO] [1497346730.989566]: Done 28%
+[INFO] [1497346731.090679]: Done 33%
+[INFO] [1497346731.191524]: Done 38%
+[INFO] [1497346731.292331]: Done 42%
+[INFO] [1497346731.393220]: Done 47%
+[INFO] [1497346731.494341]: Done 52%
+[INFO] [1497346731.595177]: Done 57%
+[INFO] [1497346731.696255]: Done 61%
+[INFO] [1497346731.797283]: Done 66%
+[INFO] [1497346731.898071]: Done 71%
+[INFO] [1497346731.999326]: Done 76%
+[INFO] [1497346732.103505]: Done 80%
+[INFO] [1497346732.204393]: Done 85%
+[INFO] [1497346732.305536]: Done 90%
+[INFO] [1497346732.406871]: /move_sandbox_items: Succeeded
+[INFO] [1497346734.911567]: /move_sandbox_items: Received a request to move crocodile to 0.29, -0.02. Let's do that
+[INFO] [1497346734.912420]: Moving crocodile to 0.00,-0.06
+[INFO] [1497346734.912715]: Requesting a plan...
+[INFO] [1497346734.982046]: Received trajectory! As requested, waiting -0.000567564s before starting...
+[INFO] [1497346734.982468]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346734.982799]: Starting to play trajectory!
+[INFO] [1497346734.983264]: Done 0%
+[INFO] [1497346735.084120]: Done 8%
+[INFO] [1497346735.185365]: Done 16%
+[INFO] [1497346735.286549]: Done 25%
+[INFO] [1497346735.387658]: Done 33%
+[INFO] [1497346735.488613]: Done 41%
+[INFO] [1497346735.590124]: Done 50%
+[INFO] [1497346735.691472]: Done 58%
+[INFO] [1497346735.792869]: Done 66%
+[INFO] [1497346735.893837]: Done 75%
+[INFO] [1497346735.995221]: Done 83%
+[INFO] [1497346736.096568]: /move_sandbox_items: Succeeded
+[INFO] [1497346739.167985]: /move_sandbox_items: Received a request to move ball to 0.06, -0.06. Let's do that
+[INFO] [1497346739.168712]: Moving ball to 0.10,-0.33
+[INFO] [1497346739.168986]: Requesting a plan...
+[INFO] [1497346739.186967]: Received trajectory! As requested, waiting -0.005457005s before starting...
+[INFO] [1497346739.187751]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346739.188046]: Starting to play trajectory!
+[INFO] [1497346739.188544]: Done 0%
+[INFO] [1497346739.289511]: Done 1%
+[INFO] [1497346739.390587]: Done 2%
+[INFO] [1497346739.491687]: Done 4%
+[INFO] [1497346739.592775]: Done 5%
+[INFO] [1497346739.693710]: Done 7%
+[INFO] [1497346739.794624]: Done 8%
+[INFO] [1497346739.895676]: Done 10%
+[INFO] [1497346739.996539]: Done 11%
+[INFO] [1497346740.097348]: Done 12%
+[INFO] [1497346740.198336]: Done 14%
+[INFO] [1497346740.299468]: Done 15%
+[INFO] [1497346740.400579]: Done 17%
+[INFO] [1497346740.501459]: Done 18%
+[INFO] [1497346740.602402]: Done 20%
+[INFO] [1497346740.703537]: Done 21%
+[INFO] [1497346740.804529]: Done 22%
+[INFO] [1497346740.905525]: Done 24%
+[INFO] [1497346741.006526]: Done 25%
+[INFO] [1497346741.107588]: Done 27%
+[INFO] [1497346741.208563]: Done 28%
+[INFO] [1497346741.310358]: Done 30%
+[INFO] [1497346741.411457]: Done 31%
+[INFO] [1497346741.512390]: Done 32%
+[INFO] [1497346741.617379]: Done 34%
+[INFO] [1497346741.718635]: Done 35%
+[INFO] [1497346741.819671]: Done 37%
+[INFO] [1497346741.920609]: Done 38%
+[INFO] [1497346742.021484]: Done 40%
+[INFO] [1497346742.122823]: Done 41%
+[INFO] [1497346742.224081]: Done 42%
+[INFO] [1497346742.325109]: Done 44%
+[INFO] [1497346742.426190]: Done 45%
+[INFO] [1497346742.527427]: Done 47%
+[INFO] [1497346742.628639]: Done 48%
+[INFO] [1497346742.729781]: Done 50%
+[INFO] [1497346742.830942]: Done 51%
+[INFO] [1497346742.932218]: Done 52%
+[INFO] [1497346743.033543]: Done 54%
+[INFO] [1497346743.134553]: Done 55%
+[INFO] [1497346743.235507]: Done 57%
+[INFO] [1497346743.336583]: Done 58%
+[INFO] [1497346743.438630]: Done 60%
+[INFO] [1497346743.539697]: Done 61%
+[INFO] [1497346743.640657]: Done 62%
+[INFO] [1497346743.741630]: Done 64%
+[INFO] [1497346743.842713]: Done 65%
+[INFO] [1497346743.943721]: Done 67%
+[INFO] [1497346744.044629]: Done 68%
+[INFO] [1497346744.145937]: Done 70%
+[INFO] [1497346744.247538]: Done 71%
+[INFO] [1497346744.348760]: Done 72%
+[INFO] [1497346744.450324]: Done 74%
+[INFO] [1497346744.551628]: Done 75%
+[INFO] [1497346744.652820]: Done 77%
+[INFO] [1497346744.753878]: Done 78%
+[INFO] [1497346744.855143]: Done 80%
+[INFO] [1497346744.956398]: Done 81%
+[INFO] [1497346745.057298]: Done 82%
+[INFO] [1497346745.158692]: Done 84%
+[INFO] [1497346745.259619]: Done 85%
+[INFO] [1497346745.361309]: Done 87%
+[INFO] [1497346745.462582]: Done 88%
+[INFO] [1497346745.563651]: Done 90%
+[INFO] [1497346745.664857]: Done 91%
+[INFO] [1497346745.765960]: Done 92%
+[INFO] [1497346745.867390]: Done 94%
+[INFO] [1497346745.968347]: Done 95%
+[INFO] [1497346746.069147]: Done 97%
+[INFO] [1497346746.170208]: /move_sandbox_items: Succeeded
+[INFO] [1497346755.550435]: /move_sandbox_items: Received a request to move giraffe to 0.49, -0.06. Let's do that
+[INFO] [1497346755.551395]: Moving giraffe to -0.12,-0.27
+[INFO] [1497346755.551720]: Requesting a plan...
+[INFO] [1497346755.582665]: Received trajectory! As requested, waiting -0.001186288s before starting...
+[INFO] [1497346755.583039]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346755.583304]: Starting to play trajectory!
+[INFO] [1497346755.583859]: Done 0%
+[INFO] [1497346755.684849]: Done 2%
+[INFO] [1497346755.785953]: Done 4%
+[INFO] [1497346755.887282]: Done 6%
+[INFO] [1497346755.989684]: Done 8%
+[INFO] [1497346756.090753]: Done 10%
+[INFO] [1497346756.191798]: Done 12%
+[INFO] [1497346756.292819]: Done 14%
+[INFO] [1497346756.394168]: Done 16%
+[INFO] [1497346756.495217]: Done 18%
+[INFO] [1497346756.596326]: Done 20%
+[INFO] [1497346756.697635]: Done 22%
+[INFO] [1497346756.798618]: Done 24%
+[INFO] [1497346756.899523]: Done 26%
+[INFO] [1497346757.000839]: Done 28%
+[INFO] [1497346757.101725]: Done 30%
+[INFO] [1497346757.202776]: Done 32%
+[INFO] [1497346757.303791]: Done 34%
+[INFO] [1497346757.405095]: Done 36%
+[INFO] [1497346757.506091]: Done 38%
+[INFO] [1497346757.607205]: Done 40%
+[INFO] [1497346757.708256]: Done 42%
+[INFO] [1497346757.809765]: Done 44%
+[INFO] [1497346757.912447]: Done 46%
+[INFO] [1497346758.013540]: Done 48%
+[INFO] [1497346758.114522]: Done 51%
+[INFO] [1497346758.215533]: Done 53%
+[INFO] [1497346758.316373]: Done 55%
+[INFO] [1497346758.417363]: Done 57%
+[INFO] [1497346758.518456]: Done 59%
+[INFO] [1497346758.619600]: Done 61%
+[INFO] [1497346758.721058]: Done 63%
+[INFO] [1497346758.822058]: Done 65%
+[INFO] [1497346758.923063]: Done 67%
+[INFO] [1497346759.024303]: Done 69%
+[INFO] [1497346759.125481]: Done 71%
+[INFO] [1497346759.226555]: Done 73%
+[INFO] [1497346759.327562]: Done 75%
+[INFO] [1497346759.428604]: Done 77%
+[INFO] [1497346759.529681]: Done 79%
+[INFO] [1497346759.631311]: Done 81%
+[INFO] [1497346759.732433]: Done 83%
+[INFO] [1497346759.833661]: Done 85%
+[INFO] [1497346759.934612]: Done 87%
+[INFO] [1497346760.035481]: Done 89%
+[INFO] [1497346760.136515]: Done 91%
+[INFO] [1497346760.237825]: Done 93%
+[INFO] [1497346760.338930]: Done 95%
+[INFO] [1497346760.439996]: /move_sandbox_items: Succeeded
+[INFO] [1497346762.047157]: /move_sandbox_items: Received a request to move zebra to 0.49, -0.06. Let's do that
+[INFO] [1497346762.047940]: Moving zebra to -0.00,-0.05
+[INFO] [1497346762.048228]: Requesting a plan...
+[INFO] [1497346762.204436]: Received trajectory! As requested, waiting -0.023084799s before starting...
+[INFO] [1497346762.204817]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346762.205082]: Starting to play trajectory!
+[INFO] [1497346762.205557]: Done 0%
+[INFO] [1497346762.306615]: Done 4%
+[INFO] [1497346762.407482]: Done 9%
+[INFO] [1497346762.508457]: Done 14%
+[INFO] [1497346762.609390]: Done 19%
+[INFO] [1497346762.710662]: Done 23%
+[INFO] [1497346762.811522]: Done 28%
+[INFO] [1497346762.912494]: Done 33%
+[INFO] [1497346763.013902]: Done 38%
+[INFO] [1497346763.116589]: Done 42%
+[INFO] [1497346763.217597]: Done 47%
+[INFO] [1497346763.319103]: Done 52%
+[INFO] [1497346763.422495]: Done 57%
+[INFO] [1497346763.523788]: Done 61%
+[INFO] [1497346763.624769]: Done 66%
+[INFO] [1497346763.725841]: Done 71%
+[INFO] [1497346763.826785]: Done 76%
+[INFO] [1497346763.927811]: Done 80%
+[INFO] [1497346764.028972]: Done 85%
+[INFO] [1497346764.130130]: Done 90%
+[INFO] [1497346764.231417]: /move_sandbox_items: Succeeded
+[INFO] [1497346766.499553]: /move_sandbox_items: Received a request to move lion to 0.50, -0.06. Let's do that
+[INFO] [1497346766.500305]: Moving lion to -0.11,-0.05
+[INFO] [1497346766.500607]: Requesting a plan...
+[INFO] [1497346766.584095]: Received trajectory! As requested, waiting -0.002343159s before starting...
+[INFO] [1497346766.584851]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346766.585225]: Starting to play trajectory!
+[INFO] [1497346766.586142]: Done 0%
+[INFO] [1497346766.687093]: Done 4%
+[INFO] [1497346766.788094]: Done 8%
+[INFO] [1497346766.889068]: Done 12%
+[INFO] [1497346766.990008]: Done 16%
+[INFO] [1497346767.090917]: Done 20%
+[INFO] [1497346767.192335]: Done 25%
+[INFO] [1497346767.293401]: Done 29%
+[INFO] [1497346767.394379]: Done 33%
+[INFO] [1497346767.495570]: Done 37%
+[INFO] [1497346767.596701]: Done 41%
+[INFO] [1497346767.697683]: Done 45%
+[INFO] [1497346767.798635]: Done 50%
+[INFO] [1497346767.899585]: Done 54%
+[INFO] [1497346768.000514]: Done 58%
+[INFO] [1497346768.101596]: Done 62%
+[INFO] [1497346768.202763]: Done 66%
+[INFO] [1497346768.303968]: Done 70%
+[INFO] [1497346768.405123]: Done 75%
+[INFO] [1497346768.506127]: Done 79%
+[INFO] [1497346768.607167]: Done 83%
+[INFO] [1497346768.708266]: Done 87%
+[INFO] [1497346768.809321]: Done 91%
+[INFO] [1497346768.910483]: /move_sandbox_items: Succeeded
+[INFO] [1497346770.214101]: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[INFO] [1497346770.215375]: Moving giraffe to -0.02,0.07
+[INFO] [1497346770.215762]: Requesting a plan...
+[INFO] [1497346770.382050]: Received trajectory! As requested, waiting -0.000420028s before starting...
+[INFO] [1497346770.382695]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346770.383062]: Starting to play trajectory!
+[INFO] [1497346770.383635]: Done 0%
+[INFO] [1497346770.484494]: Done 7%
+[INFO] [1497346770.586093]: Done 14%
+[INFO] [1497346770.687301]: Done 21%
+[INFO] [1497346770.788557]: Done 28%
+[INFO] [1497346770.889786]: Done 35%
+[INFO] [1497346770.991136]: Done 42%
+[INFO] [1497346771.092353]: Done 50%
+[INFO] [1497346771.193464]: Done 57%
+[INFO] [1497346771.294522]: Done 64%
+[INFO] [1497346771.395731]: Done 71%
+[INFO] [1497346771.496847]: Done 78%
+[INFO] [1497346771.597817]: Done 85%
+[INFO] [1497346771.699486]: /move_sandbox_items: Succeeded
+[INFO] [1497346778.142438]: /move_sandbox_items: Received a request to move elephant to 0.20, -0.10. Let's do that
+[INFO] [1497346778.143260]: Moving elephant to -0.04,-0.04
+[INFO] [1497346778.143548]: Requesting a plan...
+[INFO] [1497346778.198867]: Received trajectory! As requested, waiting -0.017570607s before starting...
+[INFO] [1497346778.199308]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346778.199591]: Starting to play trajectory!
+[INFO] [1497346778.199980]: Done 0%
+[INFO] [1497346778.300911]: Done 6%
+[INFO] [1497346778.402803]: Done 12%
+[INFO] [1497346778.504161]: Done 18%
+[INFO] [1497346778.605234]: Done 25%
+[INFO] [1497346778.706196]: Done 31%
+[INFO] [1497346778.807063]: Done 37%
+[INFO] [1497346778.908163]: Done 43%
+[INFO] [1497346779.009213]: Done 50%
+[INFO] [1497346779.110247]: Done 56%
+[INFO] [1497346779.211258]: Done 62%
+[INFO] [1497346779.312332]: Done 68%
+[INFO] [1497346779.413560]: Done 75%
+[INFO] [1497346779.514893]: Done 81%
+[INFO] [1497346779.615950]: Done 87%
+[INFO] [1497346779.716857]: /move_sandbox_items: Succeeded
+[INFO] [1497346781.051062]: /move_sandbox_items: Received a request to move caravan to 0.20, -0.10. Let's do that
+[INFO] [1497346781.051818]: Moving caravan to 0.03,-0.04
+[INFO] [1497346781.052203]: Requesting a plan...
+[INFO] [1497346781.220486]: Received trajectory! As requested, waiting -0.039068916s before starting...
+[INFO] [1497346781.221267]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346781.221652]: Starting to play trajectory!
+[INFO] [1497346781.222347]: Done 0%
+[INFO] [1497346781.323114]: Done 4%
+[INFO] [1497346781.424078]: Done 8%
+[INFO] [1497346781.525067]: Done 12%
+[INFO] [1497346781.625907]: Done 16%
+[INFO] [1497346781.726921]: Done 20%
+[INFO] [1497346781.828655]: Done 25%
+[INFO] [1497346781.930013]: Done 29%
+[INFO] [1497346782.030992]: Done 33%
+[INFO] [1497346782.131834]: Done 37%
+[INFO] [1497346782.232883]: Done 41%
+[INFO] [1497346782.333805]: Done 45%
+[INFO] [1497346782.434819]: Done 50%
+[INFO] [1497346782.535922]: Done 54%
+[INFO] [1497346782.636785]: Done 58%
+[INFO] [1497346782.737595]: Done 62%
+[INFO] [1497346782.838626]: Done 66%
+[INFO] [1497346782.939418]: Done 70%
+[INFO] [1497346783.040251]: Done 75%
+[INFO] [1497346783.141077]: Done 79%
+[INFO] [1497346783.242273]: Done 83%
+[INFO] [1497346783.343317]: Done 87%
+[INFO] [1497346783.444622]: Done 91%
+[INFO] [1497346783.545930]: /move_sandbox_items: Succeeded
+[INFO] [1497346791.762776]: /move_sandbox_items: Received a request to move girl to 0.20, -0.10. Let's do that
+[INFO] [1497346791.763565]: Moving girl to 0.07,-0.08
+[INFO] [1497346791.763856]: Requesting a plan...
+[INFO] [1497346791.845666]: Received trajectory! As requested, waiting -0.064129697s before starting...
+[INFO] [1497346791.846085]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346791.846374]: Starting to play trajectory!
+[INFO] [1497346791.846932]: Done 0%
+[INFO] [1497346791.947952]: Done 2%
+[INFO] [1497346792.048981]: Done 5%
+[INFO] [1497346792.149974]: Done 7%
+[INFO] [1497346792.250938]: Done 10%
+[INFO] [1497346792.352187]: Done 12%
+[INFO] [1497346792.453478]: Done 15%
+[INFO] [1497346792.554348]: Done 17%
+[INFO] [1497346792.655680]: Done 20%
+[INFO] [1497346792.757557]: Done 22%
+[INFO] [1497346792.858647]: Done 25%
+[INFO] [1497346792.959729]: Done 27%
+[INFO] [1497346793.061041]: Done 30%
+[INFO] [1497346793.162099]: Done 32%
+[INFO] [1497346793.263155]: Done 35%
+[INFO] [1497346793.364190]: Done 37%
+[INFO] [1497346793.465221]: Done 40%
+[INFO] [1497346793.566553]: Done 42%
+[INFO] [1497346793.667549]: Done 45%
+[INFO] [1497346793.768536]: Done 47%
+[INFO] [1497346793.869446]: Done 50%
+[INFO] [1497346793.970478]: Done 52%
+[INFO] [1497346794.071595]: Done 55%
+[INFO] [1497346794.172708]: Done 57%
+[INFO] [1497346794.273775]: Done 60%
+[INFO] [1497346794.374848]: Done 62%
+[INFO] [1497346794.475925]: Done 65%
+[INFO] [1497346794.577309]: Done 67%
+[INFO] [1497346794.678443]: Done 70%
+[INFO] [1497346794.779425]: Done 72%
+[INFO] [1497346794.880492]: Done 75%
+[INFO] [1497346794.981727]: Done 77%
+[INFO] [1497346795.082560]: Done 80%
+[INFO] [1497346795.183533]: Done 82%
+[INFO] [1497346795.284480]: Done 85%
+[INFO] [1497346795.385744]: Done 87%
+[INFO] [1497346795.487027]: Done 90%
+[INFO] [1497346795.588841]: Done 92%
+[INFO] [1497346795.690037]: Done 95%
+[INFO] [1497346795.791458]: /move_sandbox_items: Succeeded
+[INFO] [1497346797.095390]: /move_sandbox_items: Received a request to move caravan to 0.50, -0.06. Let's do that
+[INFO] [1497346797.096107]: Moving caravan to -0.30,-0.14
+[INFO] [1497346797.096373]: Requesting a plan...
+[INFO] [1497346797.214957]: Received trajectory! As requested, waiting -0.033461811s before starting...
+[INFO] [1497346797.217742]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346797.218098]: Starting to play trajectory!
+[INFO] [1497346797.219264]: Done 0%
+[INFO] [1497346797.320671]: Done 1%
+[INFO] [1497346797.423019]: Done 2%
+[INFO] [1497346797.524219]: Done 4%
+[INFO] [1497346797.625429]: Done 5%
+[INFO] [1497346797.726699]: Done 6%
+[INFO] [1497346797.828002]: Done 8%
+[INFO] [1497346797.928909]: Done 9%
+[INFO] [1497346798.030165]: Done 10%
+[INFO] [1497346798.131278]: Done 12%
+[INFO] [1497346798.232336]: Done 13%
+[INFO] [1497346798.333711]: Done 14%
+[INFO] [1497346798.434714]: Done 16%
+[INFO] [1497346798.535589]: Done 17%
+[INFO] [1497346798.636790]: Done 18%
+[INFO] [1497346798.738106]: Done 20%
+[INFO] [1497346798.839119]: Done 21%
+[INFO] [1497346798.940252]: Done 22%
+[INFO] [1497346799.041247]: Done 24%
+[INFO] [1497346799.142141]: Done 25%
+[INFO] [1497346799.243023]: Done 27%
+[INFO] [1497346799.344060]: Done 28%
+[INFO] [1497346799.445174]: Done 29%
+[INFO] [1497346799.546289]: Done 31%
+[INFO] [1497346799.647425]: Done 32%
+[INFO] [1497346799.748435]: Done 33%
+[INFO] [1497346799.849456]: Done 35%
+[INFO] [1497346799.950513]: Done 36%
+[INFO] [1497346800.051735]: Done 37%
+[INFO] [1497346800.153035]: Done 39%
+[INFO] [1497346800.253946]: Done 40%
+[INFO] [1497346800.354985]: Done 41%
+[INFO] [1497346800.456007]: Done 43%
+[INFO] [1497346800.557068]: Done 44%
+[INFO] [1497346800.658795]: Done 45%
+[INFO] [1497346800.759739]: Done 47%
+[INFO] [1497346800.860903]: Done 48%
+[INFO] [1497346800.961940]: Done 50%
+[INFO] [1497346801.062890]: Done 51%
+[INFO] [1497346801.163864]: Done 52%
+[INFO] [1497346801.264907]: Done 54%
+[INFO] [1497346801.366120]: Done 55%
+[INFO] [1497346801.467359]: Done 56%
+[INFO] [1497346801.568639]: Done 58%
+[INFO] [1497346801.669475]: Done 59%
+[INFO] [1497346801.770271]: Done 60%
+[INFO] [1497346801.871408]: Done 62%
+[INFO] [1497346801.972436]: Done 63%
+[INFO] [1497346802.073423]: Done 64%
+[INFO] [1497346802.174355]: Done 66%
+[INFO] [1497346802.275427]: Done 67%
+[INFO] [1497346802.376452]: Done 68%
+[INFO] [1497346802.477743]: Done 70%
+[INFO] [1497346802.578943]: Done 71%
+[INFO] [1497346802.679991]: Done 72%
+[INFO] [1497346802.781197]: Done 74%
+[INFO] [1497346802.882199]: Done 75%
+[INFO] [1497346802.983086]: Done 77%
+[INFO] [1497346803.084027]: Done 78%
+[INFO] [1497346803.185285]: Done 79%
+[INFO] [1497346803.286921]: Done 81%
+[INFO] [1497346803.388129]: Done 82%
+[INFO] [1497346803.489251]: Done 83%
+[INFO] [1497346803.590248]: Done 85%
+[INFO] [1497346803.691284]: Done 86%
+[INFO] [1497346803.794839]: Done 87%
+[INFO] [1497346803.896842]: Done 89%
+[INFO] [1497346803.998185]: Done 90%
+[INFO] [1497346804.099487]: Done 91%
+[INFO] [1497346804.200614]: Done 93%
+[INFO] [1497346804.301671]: Done 94%
+[INFO] [1497346804.402907]: Done 95%
+[INFO] [1497346804.503932]: Done 97%
+[INFO] [1497346804.605124]: /move_sandbox_items: Succeeded
+[INFO] [1497346810.953873]: /move_sandbox_items: Received a request to move caravan to 0.50, -0.06. Let's do that
+[INFO] [1497346810.954479]: Moving caravan to -0.15,-0.00
+[INFO] [1497346810.954662]: Requesting a plan...
+[INFO] [1497346810.982654]: Received trajectory! As requested, waiting -0.001002844s before starting...
+[INFO] [1497346810.983171]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346810.983531]: Starting to play trajectory!
+[INFO] [1497346810.984182]: Done 0%
+[INFO] [1497346811.085312]: Done 3%
+[INFO] [1497346811.186517]: Done 7%
+[INFO] [1497346811.287587]: Done 11%
+[INFO] [1497346811.388491]: Done 15%
+[INFO] [1497346811.489689]: Done 19%
+[INFO] [1497346811.591213]: Done 23%
+[INFO] [1497346811.692345]: Done 26%
+[INFO] [1497346811.793328]: Done 30%
+[INFO] [1497346811.894410]: Done 34%
+[INFO] [1497346811.995482]: Done 38%
+[INFO] [1497346812.096487]: Done 42%
+[INFO] [1497346812.197504]: Done 46%
+[INFO] [1497346812.298552]: Done 50%
+[INFO] [1497346812.399469]: Done 53%
+[INFO] [1497346812.500331]: Done 57%
+[INFO] [1497346812.601352]: Done 61%
+[INFO] [1497346812.702360]: Done 65%
+[INFO] [1497346812.803401]: Done 69%
+[INFO] [1497346812.904499]: Done 73%
+[INFO] [1497346813.005651]: Done 76%
+[INFO] [1497346813.107779]: Done 80%
+[INFO] [1497346813.208772]: Done 84%
+[INFO] [1497346813.309817]: Done 88%
+[INFO] [1497346813.411413]: Done 92%
+[INFO] [1497346813.512633]: /move_sandbox_items: Succeeded
+[INFO] [1497346819.027490]: /move_sandbox_items: Received a request to move caravan to 0.39, -0.07. Let's do that
+[INFO] [1497346819.028297]: Moving caravan to 0.02,-0.06
+[INFO] [1497346819.028628]: Requesting a plan...
+[INFO] [1497346819.182015]: Received trajectory! As requested, waiting -0.000386593s before starting...
+[INFO] [1497346819.182490]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346819.182890]: Starting to play trajectory!
+[INFO] [1497346819.183450]: Done 0%
+[INFO] [1497346819.284505]: Done 7%
+[INFO] [1497346819.386291]: Done 14%
+[INFO] [1497346819.487675]: Done 21%
+[INFO] [1497346819.588750]: Done 28%
+[INFO] [1497346819.689787]: Done 35%
+[INFO] [1497346819.790835]: Done 42%
+[INFO] [1497346819.892423]: Done 50%
+[INFO] [1497346819.993529]: Done 57%
+[INFO] [1497346820.094598]: Done 64%
+[INFO] [1497346820.195649]: Done 71%
+[INFO] [1497346820.296848]: Done 78%
+[INFO] [1497346820.397896]: Done 85%
+[INFO] [1497346820.499384]: /move_sandbox_items: Succeeded
+[INFO] [1497346822.503476]: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[INFO] [1497346822.504407]: Moving giraffe to -0.07,-0.03
+[INFO] [1497346822.504857]: Requesting a plan...
+[INFO] [1497346822.589558]: Received trajectory! As requested, waiting -0.008113853s before starting...
+[INFO] [1497346822.590016]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346822.590384]: Starting to play trajectory!
+[INFO] [1497346822.590900]: Done 0%
+[INFO] [1497346822.692614]: Done 6%
+[INFO] [1497346822.793926]: Done 13%
+[INFO] [1497346822.895356]: Done 20%
+[INFO] [1497346822.996589]: Done 26%
+[INFO] [1497346823.097648]: Done 33%
+[INFO] [1497346823.198763]: Done 40%
+[INFO] [1497346823.300019]: Done 46%
+[INFO] [1497346823.401111]: Done 53%
+[INFO] [1497346823.502166]: Done 60%
+[INFO] [1497346823.603038]: Done 66%
+[INFO] [1497346823.704126]: Done 73%
+[INFO] [1497346823.807522]: Done 80%
+[INFO] [1497346823.909249]: Done 86%
+[INFO] [1497346824.010599]: /move_sandbox_items: Succeeded
+[INFO] [1497346826.231193]: /move_sandbox_items: Received a request to move lion to 0.50, -0.06. Let's do that
+[INFO] [1497346826.231877]: Moving lion to 0.05,-0.02
+[INFO] [1497346826.232126]: Requesting a plan...
+[INFO] [1497346826.382065]: Received trajectory! As requested, waiting -0.000491224s before starting...
+[INFO] [1497346826.382530]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346826.382874]: Starting to play trajectory!
+[INFO] [1497346826.383417]: Done 0%
+[INFO] [1497346826.484903]: Done 8%
+[INFO] [1497346826.586562]: Done 16%
+[INFO] [1497346826.688000]: Done 25%
+[INFO] [1497346826.789010]: Done 33%
+[INFO] [1497346826.890179]: Done 41%
+[INFO] [1497346826.992035]: Done 50%
+[INFO] [1497346827.093083]: Done 58%
+[INFO] [1497346827.194080]: Done 66%
+[INFO] [1497346827.295087]: Done 75%
+[INFO] [1497346827.396077]: Done 83%
+[INFO] [1497346827.497223]: /move_sandbox_items: Succeeded
+[INFO] [1497346832.508038]: /move_sandbox_items: Received a request to move ball to 0.06, -0.06. Let's do that
+[INFO] [1497346832.508864]: Moving ball to -0.21,0.12
+[INFO] [1497346832.509162]: Requesting a plan...
+[INFO] [1497346832.582637]: Received trajectory! As requested, waiting -0.000969773s before starting...
+[INFO] [1497346832.583122]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346832.583459]: Starting to play trajectory!
+[INFO] [1497346832.584024]: Done 0%
+[INFO] [1497346832.685136]: Done 2%
+[INFO] [1497346832.786211]: Done 5%
+[INFO] [1497346832.887373]: Done 8%
+[INFO] [1497346832.988260]: Done 11%
+[INFO] [1497346833.089292]: Done 13%
+[INFO] [1497346833.190455]: Done 16%
+[INFO] [1497346833.291544]: Done 19%
+[INFO] [1497346833.393410]: Done 22%
+[INFO] [1497346833.495026]: Done 25%
+[INFO] [1497346833.596275]: Done 27%
+[INFO] [1497346833.697301]: Done 30%
+[INFO] [1497346833.798199]: Done 33%
+[INFO] [1497346833.899047]: Done 36%
+[INFO] [1497346834.000215]: Done 38%
+[INFO] [1497346834.101036]: Done 41%
+[INFO] [1497346834.202141]: Done 44%
+[INFO] [1497346834.303104]: Done 47%
+[INFO] [1497346834.404101]: Done 50%
+[INFO] [1497346834.505028]: Done 52%
+[INFO] [1497346834.605885]: Done 55%
+[INFO] [1497346834.706758]: Done 58%
+[INFO] [1497346834.808536]: Done 61%
+[INFO] [1497346834.909594]: Done 63%
+[INFO] [1497346835.010676]: Done 66%
+[INFO] [1497346835.111535]: Done 69%
+[INFO] [1497346835.212765]: Done 72%
+[INFO] [1497346835.313856]: Done 75%
+[INFO] [1497346835.415664]: Done 77%
+[INFO] [1497346835.516531]: Done 80%
+[INFO] [1497346835.617464]: Done 83%
+[INFO] [1497346835.718390]: Done 86%
+[INFO] [1497346835.819350]: Done 88%
+[INFO] [1497346835.920323]: Done 91%
+[INFO] [1497346836.021197]: Done 94%
+[INFO] [1497346836.122298]: /move_sandbox_items: Succeeded
+[INFO] [1497346847.207666]: /move_sandbox_items: Received a request to move girl to 0.20, -0.10. Let's do that
+[INFO] [1497346847.208238]: Moving girl to 0.00,0.02
+[INFO] [1497346847.208482]: Requesting a plan...
+[INFO] [1497346847.381460]: Received trajectory! As requested, waiting -0.000248859s before starting...
+[INFO] [1497346847.381818]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346847.382135]: Starting to play trajectory!
+[INFO] [1497346847.383054]: Done 0%
+[INFO] [1497346847.483811]: Done 25%
+[INFO] [1497346847.585070]: Done 50%
+[INFO] [1497346847.686218]: /move_sandbox_items: Succeeded
+[INFO] [1497346851.909329]: /move_sandbox_items: Received a request to move ball to 0.20, -0.10. Let's do that
+[INFO] [1497346851.909953]: Moving ball to 0.10,-0.02
+[INFO] [1497346851.910206]: Requesting a plan...
+[INFO] [1497346852.011914]: Received trajectory! As requested, waiting -0.030466435s before starting...
+[INFO] [1497346852.012303]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346852.012593]: Starting to play trajectory!
+[INFO] [1497346852.013197]: Done 0%
+[INFO] [1497346852.114355]: Done 4%
+[INFO] [1497346852.215349]: Done 8%
+[INFO] [1497346852.316958]: Done 12%
+[INFO] [1497346852.418405]: Done 16%
+[INFO] [1497346852.521860]: Done 20%
+[INFO] [1497346852.623482]: Done 25%
+[INFO] [1497346852.724514]: Done 29%
+[INFO] [1497346852.825619]: Done 33%
+[INFO] [1497346852.926660]: Done 37%
+[INFO] [1497346853.027785]: Done 41%
+[INFO] [1497346853.128811]: Done 45%
+[INFO] [1497346853.230066]: Done 50%
+[INFO] [1497346853.331094]: Done 54%
+[INFO] [1497346853.431943]: Done 58%
+[INFO] [1497346853.533027]: Done 62%
+[INFO] [1497346853.634052]: Done 66%
+[INFO] [1497346853.735120]: Done 70%
+[INFO] [1497346853.837154]: Done 75%
+[INFO] [1497346853.938123]: Done 79%
+[INFO] [1497346854.039031]: Done 83%
+[INFO] [1497346854.140124]: Done 87%
+[INFO] [1497346854.241127]: Done 91%
+[INFO] [1497346854.448963]: /move_sandbox_items: Succeeded
+[INFO] [1497346857.757865]: /move_sandbox_items: Received a request to move ball to 0.50, -0.06. Let's do that
+[INFO] [1497346857.758610]: Moving ball to 0.34,0.19
+[INFO] [1497346857.758891]: Requesting a plan...
+[INFO] [1497346857.823379]: Received trajectory! As requested, waiting -0.041847643s before starting...
+[INFO] [1497346857.823761]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346857.824029]: Starting to play trajectory!
+[INFO] [1497346857.824495]: Done 0%
+[INFO] [1497346857.926474]: Done 1%
+[INFO] [1497346858.027502]: Done 2%
+[INFO] [1497346858.128537]: Done 3%
+[INFO] [1497346858.229430]: Done 5%
+[INFO] [1497346858.330738]: Done 6%
+[INFO] [1497346858.431846]: Done 7%
+[INFO] [1497346858.532914]: Done 8%
+[INFO] [1497346858.634043]: Done 10%
+[INFO] [1497346858.738362]: Done 11%
+[INFO] [1497346858.839540]: Done 12%
+[INFO] [1497346858.940590]: Done 13%
+[INFO] [1497346859.041591]: Done 15%
+[INFO] [1497346859.142854]: Done 16%
+[INFO] [1497346859.243959]: Done 17%
+[INFO] [1497346859.345268]: Done 18%
+[INFO] [1497346859.446475]: Done 20%
+[INFO] [1497346859.547593]: Done 21%
+[INFO] [1497346859.648549]: Done 22%
+[INFO] [1497346859.749615]: Done 24%
+[INFO] [1497346859.850711]: Done 25%
+[INFO] [1497346859.951831]: Done 26%
+[INFO] [1497346860.052807]: Done 27%
+[INFO] [1497346860.153880]: Done 29%
+[INFO] [1497346860.254996]: Done 30%
+[INFO] [1497346860.355992]: Done 31%
+[INFO] [1497346860.457091]: Done 32%
+[INFO] [1497346860.558195]: Done 34%
+[INFO] [1497346860.659432]: Done 35%
+[INFO] [1497346860.760385]: Done 36%
+[INFO] [1497346860.861983]: Done 37%
+[INFO] [1497346860.962943]: Done 39%
+[INFO] [1497346861.064070]: Done 40%
+[INFO] [1497346861.165492]: Done 41%
+[INFO] [1497346861.267246]: Done 43%
+[INFO] [1497346861.368187]: Done 44%
+[INFO] [1497346861.469145]: Done 45%
+[INFO] [1497346861.570167]: Done 46%
+[INFO] [1497346861.671158]: Done 48%
+[INFO] [1497346861.772138]: Done 49%
+[INFO] [1497346861.873660]: Done 50%
+[INFO] [1497346861.974653]: Done 51%
+[INFO] [1497346862.075715]: Done 53%
+[INFO] [1497346862.176672]: Done 54%
+[INFO] [1497346862.277783]: Done 55%
+[INFO] [1497346862.379150]: Done 56%
+[INFO] [1497346862.480442]: Done 58%
+[INFO] [1497346862.581446]: Done 59%
+[INFO] [1497346862.682747]: Done 60%
+[INFO] [1497346862.783742]: Done 62%
+[INFO] [1497346862.884783]: Done 63%
+[INFO] [1497346862.985828]: Done 64%
+[INFO] [1497346863.086845]: Done 65%
+[INFO] [1497346863.188005]: Done 67%
+[INFO] [1497346863.289275]: Done 68%
+[INFO] [1497346863.390537]: Done 69%
+[INFO] [1497346863.491838]: Done 70%
+[INFO] [1497346863.593212]: Done 72%
+[INFO] [1497346863.696227]: Done 73%
+[INFO] [1497346863.797393]: Done 74%
+[INFO] [1497346863.898572]: Done 75%
+[INFO] [1497346864.000039]: Done 77%
+[INFO] [1497346864.101220]: Done 78%
+[INFO] [1497346864.202709]: Done 79%
+[INFO] [1497346864.303720]: Done 81%
+[INFO] [1497346864.404915]: Done 82%
+[INFO] [1497346864.505933]: Done 83%
+[INFO] [1497346864.607030]: Done 84%
+[INFO] [1497346864.707930]: Done 86%
+[INFO] [1497346864.809319]: Done 87%
+[INFO] [1497346864.911104]: Done 88%
+[INFO] [1497346865.012211]: Done 89%
+[INFO] [1497346865.113356]: Done 91%
+[INFO] [1497346865.214439]: Done 92%
+[INFO] [1497346865.315451]: Done 93%
+[INFO] [1497346865.416488]: Done 94%
+[INFO] [1497346865.518436]: Done 96%
+[INFO] [1497346865.619765]: Done 97%
+[INFO] [1497346865.722280]: /move_sandbox_items: Succeeded
+[INFO] [1497346867.391859]: /move_sandbox_items: Received a request to move boy to 0.50, -0.06. Let's do that
+[INFO] [1497346867.392555]: Moving boy to -0.00,0.39
+[INFO] [1497346867.392840]: Requesting a plan...
+[INFO] [1497346867.623985]: Received trajectory! As requested, waiting -0.042533976s before starting...
+[INFO] [1497346867.624423]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346867.624786]: Starting to play trajectory!
+[INFO] [1497346867.625306]: Done 0%
+[INFO] [1497346867.726334]: Done 1%
+[INFO] [1497346867.827461]: Done 2%
+[INFO] [1497346867.928700]: Done 3%
+[INFO] [1497346868.029859]: Done 4%
+[INFO] [1497346868.130942]: Done 5%
+[INFO] [1497346868.232168]: Done 6%
+[INFO] [1497346868.333213]: Done 7%
+[INFO] [1497346868.434387]: Done 8%
+[INFO] [1497346868.535458]: Done 9%
+[INFO] [1497346868.636752]: Done 10%
+[INFO] [1497346868.737791]: Done 12%
+[INFO] [1497346868.839726]: Done 13%
+[INFO] [1497346868.940770]: Done 14%
+[INFO] [1497346869.041742]: Done 15%
+[INFO] [1497346869.142753]: Done 16%
+[INFO] [1497346869.243669]: Done 17%
+[INFO] [1497346869.344751]: Done 18%
+[INFO] [1497346869.445652]: Done 19%
+[INFO] [1497346869.546462]: Done 20%
+[INFO] [1497346869.647481]: Done 21%
+[INFO] [1497346869.748584]: Done 23%
+[INFO] [1497346869.849734]: Done 24%
+[INFO] [1497346869.950948]: Done 25%
+[INFO] [1497346870.051987]: Done 26%
+[INFO] [1497346870.153640]: Done 27%
+[INFO] [1497346870.255328]: Done 28%
+[INFO] [1497346870.356465]: Done 29%
+[INFO] [1497346870.457668]: Done 30%
+[INFO] [1497346870.558883]: Done 31%
+[INFO] [1497346870.660099]: Done 32%
+[INFO] [1497346870.761189]: Done 34%
+[INFO] [1497346870.862153]: Done 35%
+[INFO] [1497346870.963142]: Done 36%
+[INFO] [1497346871.066167]: Done 37%
+[INFO] [1497346871.167774]: Done 38%
+[INFO] [1497346871.268731]: Done 39%
+[INFO] [1497346871.369665]: Done 40%
+[INFO] [1497346871.470560]: Done 41%
+[INFO] [1497346871.571459]: Done 42%
+[INFO] [1497346871.674415]: Done 43%
+[INFO] [1497346871.775518]: Done 45%
+[INFO] [1497346871.876612]: Done 46%
+[INFO] [1497346871.977768]: Done 47%
+[INFO] [1497346872.079031]: Done 48%
+[INFO] [1497346872.180173]: Done 49%
+[INFO] [1497346872.281068]: Done 50%
+[INFO] [1497346872.382177]: Done 51%
+[INFO] [1497346872.483265]: Done 52%
+[INFO] [1497346872.584571]: Done 53%
+[INFO] [1497346872.685546]: Done 54%
+[INFO] [1497346872.786590]: Done 56%
+[INFO] [1497346872.887818]: Done 57%
+[INFO] [1497346872.988745]: Done 58%
+[INFO] [1497346873.089895]: Done 59%
+[INFO] [1497346873.190948]: Done 60%
+[INFO] [1497346873.292073]: Done 61%
+[INFO] [1497346873.393106]: Done 62%
+[INFO] [1497346873.494096]: Done 63%
+[INFO] [1497346873.595079]: Done 64%
+[INFO] [1497346873.696484]: Done 65%
+[INFO] [1497346873.797753]: Done 67%
+[INFO] [1497346873.898979]: Done 68%
+[INFO] [1497346874.000019]: Done 69%
+[INFO] [1497346874.101106]: Done 70%
+[INFO] [1497346874.202122]: Done 71%
+[INFO] [1497346874.303546]: Done 72%
+[INFO] [1497346874.404476]: Done 73%
+[INFO] [1497346874.505439]: Done 74%
+[INFO] [1497346874.606422]: Done 75%
+[INFO] [1497346874.707477]: Done 76%
+[INFO] [1497346874.808473]: Done 78%
+[INFO] [1497346874.909500]: Done 79%
+[INFO] [1497346875.010463]: Done 80%
+[INFO] [1497346875.111619]: Done 81%
+[INFO] [1497346875.212602]: Done 82%
+[INFO] [1497346875.313870]: Done 83%
+[INFO] [1497346875.415075]: Done 84%
+[INFO] [1497346875.516186]: Done 85%
+[INFO] [1497346875.617159]: Done 86%
+[INFO] [1497346875.718207]: Done 87%
+[INFO] [1497346875.819185]: Done 89%
+[INFO] [1497346875.920171]: Done 90%
+[INFO] [1497346876.021175]: Done 91%
+[INFO] [1497346876.122161]: Done 92%
+[INFO] [1497346876.223550]: Done 93%
+[INFO] [1497346876.324400]: Done 94%
+[INFO] [1497346876.425722]: Done 95%
+[INFO] [1497346876.526515]: Done 96%
+[INFO] [1497346876.627450]: Done 97%
+[INFO] [1497346876.728968]: /move_sandbox_items: Succeeded
+[INFO] [1497346878.696305]: /move_sandbox_items: Received a request to move caravan to 0.50, -0.06. Let's do that
+[INFO] [1497346878.697051]: Moving caravan to -0.11,0.10
+[INFO] [1497346878.697375]: Requesting a plan...
+[INFO] [1497346878.819514]: Received trajectory! As requested, waiting -0.038183882s before starting...
+[INFO] [1497346878.821037]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346878.821473]: Starting to play trajectory!
+[INFO] [1497346878.822050]: Done 0%
+[INFO] [1497346878.923050]: Done 2%
+[INFO] [1497346879.024420]: Done 4%
+[INFO] [1497346879.125595]: Done 7%
+[INFO] [1497346879.226675]: Done 9%
+[INFO] [1497346879.327848]: Done 11%
+[INFO] [1497346879.429096]: Done 14%
+[INFO] [1497346879.530287]: Done 16%
+[INFO] [1497346879.631422]: Done 19%
+[INFO] [1497346879.733101]: Done 21%
+[INFO] [1497346879.834045]: Done 23%
+[INFO] [1497346879.935053]: Done 26%
+[INFO] [1497346880.036056]: Done 28%
+[INFO] [1497346880.137011]: Done 30%
+[INFO] [1497346880.238035]: Done 33%
+[INFO] [1497346880.338988]: Done 35%
+[INFO] [1497346880.440288]: Done 38%
+[INFO] [1497346880.541651]: Done 40%
+[INFO] [1497346880.643062]: Done 42%
+[INFO] [1497346880.744137]: Done 45%
+[INFO] [1497346880.845332]: Done 47%
+[INFO] [1497346880.946423]: Done 50%
+[INFO] [1497346881.047443]: Done 52%
+[INFO] [1497346881.148589]: Done 54%
+[INFO] [1497346881.250231]: Done 57%
+[INFO] [1497346881.352474]: Done 59%
+[INFO] [1497346881.453816]: Done 61%
+[INFO] [1497346881.555042]: Done 64%
+[INFO] [1497346881.656027]: Done 66%
+[INFO] [1497346881.757685]: Done 69%
+[INFO] [1497346881.858799]: Done 71%
+[INFO] [1497346881.959759]: Done 73%
+[INFO] [1497346882.060794]: Done 76%
+[INFO] [1497346882.161758]: Done 78%
+[INFO] [1497346882.262925]: Done 80%
+[INFO] [1497346882.363864]: Done 83%
+[INFO] [1497346882.464818]: Done 85%
+[INFO] [1497346882.566236]: Done 88%
+[INFO] [1497346882.667802]: Done 90%
+[INFO] [1497346882.769753]: Done 92%
+[INFO] [1497346882.871585]: Done 95%
+[INFO] [1497346882.972848]: /move_sandbox_items: Succeeded
+[INFO] [1497346885.212087]: /move_sandbox_items: Received a request to move giraffe to 0.39, -0.07. Let's do that
+[INFO] [1497346885.212752]: Moving giraffe to -0.00,0.05
+[INFO] [1497346885.213050]: Requesting a plan...
+[INFO] [1497346885.382050]: Received trajectory! As requested, waiting -0.000459287s before starting...
+[INFO] [1497346885.382533]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346885.382878]: Starting to play trajectory!
+[INFO] [1497346885.383431]: Done 0%
+[INFO] [1497346885.484370]: Done 10%
+[INFO] [1497346885.585456]: Done 20%
+[INFO] [1497346885.686844]: Done 30%
+[INFO] [1497346885.788107]: Done 40%
+[INFO] [1497346885.889205]: Done 50%
+[INFO] [1497346885.990323]: Done 60%
+[INFO] [1497346886.092123]: Done 70%
+[INFO] [1497346886.193077]: Done 80%
+[INFO] [1497346886.294190]: /move_sandbox_items: Succeeded
+[INFO] [1497346894.208475]: /move_sandbox_items: Received a request to move lion to 0.50, -0.06. Let's do that
+[INFO] [1497346894.209180]: Moving lion to -0.03,0.05
+[INFO] [1497346894.209432]: Requesting a plan...
+[INFO] [1497346894.422688]: Received trajectory! As requested, waiting -0.040935326s before starting...
+[INFO] [1497346894.423212]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346894.423543]: Starting to play trajectory!
+[INFO] [1497346894.424055]: Done 0%
+[INFO] [1497346894.525015]: Done 10%
+[INFO] [1497346894.625991]: Done 20%
+[INFO] [1497346894.727062]: Done 30%
+[INFO] [1497346894.828787]: Done 40%
+[INFO] [1497346894.929945]: Done 50%
+[INFO] [1497346895.030983]: Done 60%
+[INFO] [1497346895.132042]: Done 70%
+[INFO] [1497346895.233633]: Done 80%
+[INFO] [1497346895.334707]: /move_sandbox_items: Succeeded
+[INFO] [1497346898.774083]: /move_sandbox_items: Received a request to move ball to 0.50, -0.06. Let's do that
+[INFO] [1497346898.774716]: Moving ball to 0.05,-0.02
+[INFO] [1497346898.774977]: Requesting a plan...
+[INFO] [1497346898.814279]: Received trajectory! As requested, waiting -0.032901534s before starting...
+[INFO] [1497346898.814694]: Waiting a bit more (0.0s) to give the robot time to prepare...
+[INFO] [1497346898.815049]: Starting to play trajectory!
+[INFO] [1497346898.815607]: Done 0%
+[INFO] [1497346898.916701]: Done 4%
+[INFO] [1497346899.017984]: Done 9%
+[INFO] [1497346899.119005]: Done 14%
+[INFO] [1497346899.219975]: Done 19%
+[INFO] [1497346899.321041]: Done 23%
+[INFO] [1497346899.421980]: Done 28%
+[INFO] [1497346899.523057]: Done 33%
+[INFO] [1497346899.624370]: Done 38%
+[INFO] [1497346899.725515]: Done 42%
+[INFO] [1497346899.826587]: Done 47%
+[INFO] [1497346899.927684]: Done 52%
+[INFO] [1497346900.028919]: Done 57%
+[INFO] [1497346900.130068]: Done 61%
+[INFO] [1497346900.231157]: Done 66%
+[INFO] [1497346900.332300]: Done 71%
+[INFO] [1497346900.433432]: Done 76%
+[INFO] [1497346900.534551]: Done 80%
+[INFO] [1497346900.635562]: Done 85%
+[INFO] [1497346900.736621]: Done 90%
+[INFO] [1497346900.837973]: /move_sandbox_items: Succeeded

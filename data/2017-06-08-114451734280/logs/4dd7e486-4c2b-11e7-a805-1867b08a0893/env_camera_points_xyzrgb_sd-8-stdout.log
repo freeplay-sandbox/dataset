@@ -1,0 +1,8 @@
+[0m[ INFO] [1496918880.103023716]: Loading nodelet /env_camera_points_xyzrgb_sd of type depth_image_proc/point_cloud_xyzrgb to manager env_camera with the following remappings:[0m
+[0m[ INFO] [1496918880.103084837]: /depth_registered/image_rect -> /env_camera/sd/image_depth_rect[0m
+[0m[ INFO] [1496918880.103116211]: /depth_registered/points -> /env_camera/sd/points[0m
+[0m[ INFO] [1496918880.103138358]: /rgb/camera_info -> /env_camera/sd/camera_info[0m
+[0m[ INFO] [1496918880.103158500]: /rgb/image_rect_color -> /env_camera/sd/image_color_rect[0m
+[0m[ INFO] [1496918880.116826976]: waitForService: Service [/env_camera/load_nodelet] could not connect to host [sandtray-hrilab:46433], waiting...[0m
+[0m[ INFO] [1496918880.138198702]: waitForService: Service [/env_camera/load_nodelet] is now available.[0m
+[0m[ INFO] [1496918940.585509640]: Unloading nodelet /env_camera_points_xyzrgb_sd from manager env_camera[0m

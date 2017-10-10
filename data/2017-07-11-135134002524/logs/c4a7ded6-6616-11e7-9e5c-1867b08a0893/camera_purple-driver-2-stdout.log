@@ -1,0 +1,8 @@
+[0m[ INFO] [1499778064.286422616]: Loading nodelet /camera_purple/driver of type realsense_camera/SR300Nodelet to manager /camera_nodelet_manager with the following remappings:[0m
+[0m[ INFO] [1499778064.286490740]: /camera_purple/color -> /camera_purple/rgb[0m
+[0m[ INFO] [1499778064.286513554]: /camera_purple/depth -> /camera_purple/depth[0m
+[0m[ INFO] [1499778064.286539990]: /camera_purple/ir -> /camera_purple/ir[0m
+[0m[ INFO] [1499778064.286563171]: /camera_purple/ir2 -> /camera_purple/ir2[0m
+[0m[ INFO] [1499778064.295104592]: waitForService: Service [/camera_nodelet_manager/load_nodelet] could not connect to host [sandtray-hrilab:54598], waiting...[0m
+[0m[ INFO] [1499778064.349435365]: waitForService: Service [/camera_nodelet_manager/load_nodelet] is now available.[0m
+[0m[ INFO] [1499778515.256604650]: Unloading nodelet /camera_purple/driver from manager /camera_nodelet_manager[0m

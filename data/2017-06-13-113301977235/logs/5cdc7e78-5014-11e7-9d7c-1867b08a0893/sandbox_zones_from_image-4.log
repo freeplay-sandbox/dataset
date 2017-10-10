@@ -1,0 +1,148 @@
+[rospy.client][INFO] 2017-06-13 11:33:02,985: init_node, name[/sandbox_zones_from_image], pid[14092]
+[xmlrpc][INFO] 2017-06-13 11:33:02,986: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-13 11:33:02,986: Started XML-RPC server [http://sandtray-hrilab:35268/]
+[rospy.init][INFO] 2017-06-13 11:33:02,986: ROS Slave URI: [http://sandtray-hrilab:35268/]
+[rospy.impl.masterslave][INFO] 2017-06-13 11:33:02,986: _ready: http://sandtray-hrilab:35268/
+[rospy.registration][INFO] 2017-06-13 11:33:02,987: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-13 11:33:02,987: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-13 11:33:03,087: registered with master
+[rospy.rosout][INFO] 2017-06-13 11:33:03,087: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-13 11:33:03,089: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-13 11:33:03,090: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-06-13 11:33:03,098: Waiting for images of the playground
+[rospy.internal][INFO] 2017-06-13 11:33:03,102: topic[/sandtray/background/camera_info] adding connection to [http://sandtray-hrilab:41585/], count 0
+[rospy.internal][INFO] 2017-06-13 11:33:03,103: topic[/sandtray/background/image] adding connection to [http://sandtray-hrilab:41585/], count 0
+[rospy.internal][INFO] 2017-06-13 11:33:03,383: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2017-06-13 11:34:17,070: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:34:17,087: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:34:45,811: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:34:45,822: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:34:53,305: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:34:53,316: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:34:57,069: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:34:57,085: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:04,816: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:04,827: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:13,551: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:13,562: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:14,304: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:14,321: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:14,560: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:14,572: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:23,806: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:23,820: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:24,548: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:24,561: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:26,579: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:26,593: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:29,054: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:29,067: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:35:37,580: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:35:37,596: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:40:46,815: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:40:46,827: Publishing the detected zones on /zones
+[rospy.internal][INFO] 2017-06-13 11:40:47,629: topic[/zones] adding connection to [/rosbag_record_freeplay_sandbox], count 0
+[rospy.internal][INFO] 2017-06-13 11:40:48,080: topic[/zones] adding connection to [/sandbox_play], count 1
+[rosout][INFO] 2017-06-13 11:44:10,711: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:44:10,742: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:46:15,957: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:46:15,979: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:46:37,916: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:46:37,937: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:46:53,451: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:46:53,472: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:47:57,961: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:47:57,981: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:48:04,422: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:48:04,449: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:48:14,187: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:48:14,219: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:48:35,929: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:48:35,951: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:48:48,891: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:48:48,918: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:48:50,897: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:48:50,915: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:49:00,908: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:49:00,927: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:49:11,201: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:49:11,222: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:49:20,439: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:49:20,475: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:49:28,696: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:49:28,721: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:49:58,486: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:49:58,517: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:21,190: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:21,207: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:28,466: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:28,499: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:28,684: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:28,707: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:30,450: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:30,473: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:35,898: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:35,916: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:50:47,453: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:50:47,476: Publishing the detected zones on /zones
+[rosout][INFO] 2017-06-13 11:51:12,893: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-13 11:51:12,914: Publishing the detected zones on /zones
+[rospy.internal][INFO] 2017-06-13 11:51:47,049: topic[/zones] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-13 11:51:56,052: topic[/zones] removing connection to /rosbag_record_freeplay_sandbox
+[rospy.internal][ERROR] 2017-06-13 11:57:48,884: Unable to initiate TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/sandtray/background/image] from [TCPROS connection on port 60871 to [127.0.0.1:43444 on socket 19]] [/sandbox_zones_from_image].
+
+[rospy.internal][ERROR] 2017-06-13 11:57:48,890: Unable to initiate TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/sandtray/background/camera_info] from [TCPROS connection on port 60871 to [127.0.0.1:43466 on socket 19]] [/sandbox_zones_from_image].
+
+[rospy.internal][ERROR] 2017-06-13 11:57:49,886: Unable to initiate TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/sandtray/background/image] from [TCPROS connection on port 60871 to [127.0.0.1:43512 on socket 19]] [/sandbox_zones_from_image].
+
+[rospy.internal][ERROR] 2017-06-13 11:57:49,891: Unable to initiate TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: received a connection for a nonexistent topic [/sandtray/background/camera_info] from [TCPROS connection on port 60871 to [127.0.0.1:43524 on socket 19]] [/sandbox_zones_from_image].
+
+[rospy.internal][WARNING] 2017-06-13 11:57:51,889: Unknown error initiating TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-13 11:57:51,889: topic[/sandtray/background/image] removing connection to http://sandtray-hrilab:41585/
+[rospy.internal][WARNING] 2017-06-13 11:57:51,894: Unknown error initiating TCP/IP socket to sandtray-hrilab:60871 (http://sandtray-hrilab:41585/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-13 11:57:51,894: topic[/sandtray/background/camera_info] removing connection to http://sandtray-hrilab:41585/
+[rospy.core][INFO] 2017-06-13 11:58:08,972: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-13 11:58:08,979: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2017-06-13 11:58:08,979: signal-2
+[rospy.core][INFO] 2017-06-13 11:58:09,108: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-13 11:58:09,109: signal_shutdown [atexit]

@@ -1,0 +1,21 @@
+[rospy.client][INFO] 2017-06-06 15:08:09,405: init_node, name[/sandbox_zones_from_image], pid[5939]
+[xmlrpc][INFO] 2017-06-06 15:08:09,406: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-06 15:08:09,406: Started XML-RPC server [http://sandtray-hrilab:42420/]
+[rospy.impl.masterslave][INFO] 2017-06-06 15:08:09,406: _ready: http://sandtray-hrilab:42420/
+[rospy.init][INFO] 2017-06-06 15:08:09,406: ROS Slave URI: [http://sandtray-hrilab:42420/]
+[xmlrpc][INFO] 2017-06-06 15:08:09,407: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2017-06-06 15:08:09,407: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2017-06-06 15:08:09,507: registered with master
+[rospy.rosout][INFO] 2017-06-06 15:08:09,508: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-06 15:08:09,510: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-06 15:08:09,511: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-06-06 15:08:09,519: Waiting for images of the playground
+[rospy.internal][INFO] 2017-06-06 15:08:09,523: topic[/sandtray/background/camera_info] adding connection to [http://sandtray-hrilab:38321/], count 0
+[rospy.internal][INFO] 2017-06-06 15:08:09,523: topic[/sandtray/background/image] adding connection to [http://sandtray-hrilab:38321/], count 0
+[rosout][INFO] 2017-06-06 15:08:09,539: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-06-06 15:08:09,565: Publishing the detected zones on /zones
+[rospy.core][INFO] 2017-06-06 15:08:09,667: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-06 15:08:09,674: topic[/sandtray/background/image] removing connection to http://sandtray-hrilab:38321/
+[rospy.internal][INFO] 2017-06-06 15:08:09,674: topic[/sandtray/background/camera_info] removing connection to http://sandtray-hrilab:38321/
+[rospy.impl.masterslave][INFO] 2017-06-06 15:08:09,675: signal-2
+[rospy.core][INFO] 2017-06-06 15:08:09,806: signal_shutdown [atexit]

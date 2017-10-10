@@ -1,0 +1,160 @@
+[rospy.client][INFO] 2017-07-11 11:58:47,463: init_node, name[/nao_behaviours], pid[14480]
+[xmlrpc][INFO] 2017-07-11 11:58:47,463: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-11 11:58:47,464: Started XML-RPC server [http://sandtray-hrilab:35434/]
+[rospy.impl.masterslave][INFO] 2017-07-11 11:58:47,464: _ready: http://sandtray-hrilab:35434/
+[rospy.init][INFO] 2017-07-11 11:58:47,464: ROS Slave URI: [http://sandtray-hrilab:35434/]
+[rospy.registration][INFO] 2017-07-11 11:58:47,465: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-11 11:58:47,465: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-11 11:58:47,565: registered with master
+[rospy.rosout][INFO] 2017-07-11 11:58:47,565: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-11 11:58:47,568: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-11 11:58:47,569: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-07-11 11:58:48,155: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-07-11 11:58:53,074: topic[/speech] adding connection to [/naoqi_driver_node], count 0
+[rosout][WARNING] 2017-07-11 11:59:09,529: Waiting for frame /odom to be published...
+[rospy.internal][INFO] 2017-07-11 11:59:09,564: topic[/tf] adding connection to [http://sandtray-hrilab:39043/], count 0
+[rospy.internal][INFO] 2017-07-11 11:59:09,564: topic[/tf] adding connection to [http://sandtray-hrilab:36241/], count 1
+[rospy.internal][INFO] 2017-07-11 11:59:09,565: topic[/tf] adding connection to [http://sandtray-hrilab:41681/], count 2
+[rospy.internal][INFO] 2017-07-11 11:59:09,566: topic[/tf] adding connection to [http://sandtray-hrilab:33621/], count 3
+[rospy.internal][INFO] 2017-07-11 11:59:09,567: topic[/tf] adding connection to [http://sandtray-hrilab:40399/], count 3
+[rospy.internal][INFO] 2017-07-11 11:59:09,568: topic[/tf] adding connection to [http://sandtray-hrilab:44481/], count 3
+[rospy.internal][INFO] 2017-07-11 11:59:09,574: topic[/tf] adding connection to [http://sandtray-hrilab:42559/], count 6
+[rospy.internal][INFO] 2017-07-11 11:59:09,577: topic[/tf] adding connection to [http://192.168.2.103:45979/], count 7
+[rosout][INFO] 2017-07-11 11:59:10,030: Ok! Starting robot behaviours.
+[rospy.internal][INFO] 2017-07-11 11:59:10,048: topic[/poses] adding connection to [http://sandtray-hrilab:46426/], count 0
+[rosout][ERROR] 2017-07-11 12:05:09,030: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.099271059, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rosout][ERROR] 2017-07-11 12:05:09,130: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.199274063, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rosout][ERROR] 2017-07-11 12:05:09,231: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.199274063, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rosout][ERROR] 2017-07-11 12:05:09,332: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.299272299, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rosout][ERROR] 2017-07-11 12:05:09,432: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.399272919, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rospy.internal][WARNING] 2017-07-11 12:05:09,496: Unknown error initiating TCP/IP socket to 192.168.2.103:35012 (http://192.168.2.103:45979/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-11 12:05:09,496: topic[/tf] removing connection to http://192.168.2.103:45979/
+[rosout][ERROR] 2017-07-11 12:05:09,533: bad callback: <function on_pose at 0x7fca82721938>
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 214, in on_pose
+    point_at(pose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 133, in point_at
+    angles = arm_ik(targetpose)
+  File "/opt/ros/kinetic/lib/freeplay_sandbox/nao_behaviours", line 98, in arm_ik
+    pose = tl.transformPose(reference_frame, targetpose)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 184, in transformPose
+    mat44 = self.asMatrix(target_frame, ps.header)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/tf/listener.py", line 71, in asMatrix
+    translation,rotation = self.lookupTransform(target_frame, hdr.frame_id, hdr.stamp)
+ExtrapolationException: Lookup would require extrapolation into the past.  Requested time 1499771075.265193701 but the earliest data is at time 1499771099.499275208, when looking up transform from frame [sandtray] to frame [RShoulder]
+
+[rospy.core][INFO] 2017-07-11 12:05:09,620: signal_shutdown [atexit]
+[rospy.internal][INFO] 2017-07-11 12:05:09,626: topic[/speech] removing connection to /naoqi_driver_node
+[rospy.internal][INFO] 2017-07-11 12:05:09,626: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-11 12:05:09,626: topic[/poses] removing connection to http://sandtray-hrilab:46426/
+[rospy.internal][INFO] 2017-07-11 12:05:09,626: topic[/tf] removing connection to http://sandtray-hrilab:39043/
+[rospy.internal][INFO] 2017-07-11 12:05:09,627: topic[/tf] removing connection to http://sandtray-hrilab:36241/
+[rospy.internal][INFO] 2017-07-11 12:05:09,631: topic[/tf] removing connection to http://sandtray-hrilab:41681/
+[rospy.internal][INFO] 2017-07-11 12:05:09,631: topic[/tf] removing connection to http://sandtray-hrilab:33621/
+[rospy.internal][INFO] 2017-07-11 12:05:09,632: topic[/tf] removing connection to http://sandtray-hrilab:40399/
+[rospy.internal][INFO] 2017-07-11 12:05:09,632: topic[/tf] removing connection to http://sandtray-hrilab:44481/
+[rospy.internal][WARNING] 2017-07-11 12:05:09,632: Unknown error initiating TCP/IP socket to sandtray-hrilab:53292 (http://sandtray-hrilab:40399/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-07-11 12:05:09,633: topic[/tf] removing connection to http://sandtray-hrilab:42559/
+[rospy.topics][ERROR] 2017-07-11 12:05:09,636: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2017-07-11 12:05:09,637: atexit
+[rospy.internal][WARNING] 2017-07-11 12:05:09,633: Unknown error initiating TCP/IP socket to sandtray-hrilab:58781 (http://sandtray-hrilab:42559/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2017-07-11 12:05:09,700: signal_shutdown [signal-2]

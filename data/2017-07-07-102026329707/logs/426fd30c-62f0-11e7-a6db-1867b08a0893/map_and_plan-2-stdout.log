@@ -1,0 +1,714 @@
+[0m[ INFO] [1499420142.550328920]: playground_map_and_plan is ready. Waiting for footprints on /footprints + TF updates[0m
+Got footprint for /zebra: (-0.0169137,0.00985825), (-0.00531572,0.016817), (0.00396263,0.00521907), (0.013241,-0.000579897), (0.0103415,-0.0156572), (-0.00531572,-0.0156572), (-0.0169137,0.00985825), 
+Got footprint for /elephant: (-0.0220085,0.0130249), (0.00961165,0.0169569), (0.0233738,0.00221177), (0.0184587,-0.0158101), (-0.00365898,-0.0158101), (-0.0257767,-0.000573422), (-0.0220085,0.0130249), 
+Got footprint for /ball: (0.0118125,0), (0.00826875,-0.00826875), (0,-0.0118125), (-0.00826875,-0.00826875), (-0.0118125,0), (-0.00826875,0.00826875), (0,0.0118125), (0.00826875,0.00826875), (0.0118125,0), 
+Got footprint for /lion: (-0.00110714,0.0147321), (0.0106429,0.00885714), (0.0156429,-0.00539286), (0.00426786,-0.0181429), (-0.00760714,-0.0152679), (-0.0123571,0.00385714), (-0.00948214,0.0113571), (-0.00110714,0.0147321), 
+Got footprint for /giraffe: (-0.00374656,0.0275573), (0.0135929,-0.0018578), (0.0117351,-0.0226032), (-0.00421101,-0.0221388), (-0.0173704,0.0190424), (-0.00374656,0.0275573), 
+Got footprint for /caravan: (-0.0307125,0.0175219), (0.023625,0.00975938), (0.0435375,-0.00492187), (0.0342563,-0.0120094), (-0.0307125,-0.0120094), (-0.0399938,0.00165938), (-0.0307125,0.0175219), 
+Got footprint for /crocodile: (-0.00304826,0.0129501), (0.00406434,0.017134), (0.0160581,0.0174129), (0.0171738,-0.012711), (-0.00765053,-0.0155003), (-0.0136474,-0.0115953), (-0.0129501,-0.00769038), (-0.00304826,0.0129501), 
+Got footprint for /hippo: (-0.00336986,0.0166949), (0.0256469,0.00573647), (0.0231774,-0.014174), (-0.00336986,-0.014174), (-0.0181869,-0.00460461), (-0.0238977,0.0105212), (-0.00336986,0.0166949), 
+Got footprint for /boy: (0.016875,0), (0.0118125,-0.0118125), (0,-0.016875), (-0.0118125,-0.0118125), (-0.016875,0), (-0.0118125,0.0118125), (0,0.016875), (0.0118125,0.0118125), (0.016875,0), 
+Got footprint for /girl: (0.016875,0), (0.0118125,-0.0118125), (0,-0.016875), (-0.0118125,-0.0118125), (-0.016875,0), (-0.0118125,0.0118125), (0,0.016875), (0.0118125,0.0118125), (0.016875,0), 
+[33m[ WARN] [1499420143.150601369]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150683246]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150734592]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150784285]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150833579]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150882248]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150931651]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.150984511]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.151027181]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.151068501]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350543813]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350611174]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350659593]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350706922]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350753472]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350799408]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350845716]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350891584]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350937037]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.350983304]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550518957]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550577923]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550617983]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550659024]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550700767]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550741367]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550781389]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550818995]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550855313]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.550891585]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750508538]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750562779]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750599310]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750645150]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750683681]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750721777]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750759600]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750819953]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750874691]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.750911136]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950517953]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950574739]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950614719]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950660009]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950697839]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950735753]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950772960]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950809873]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950846476]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420143.950882806]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150547256]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150614937]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150663224]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150711095]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150770287]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150824597]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150889361]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.150941873]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.151004117]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.151064523]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350535084]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350594928]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350636417]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350677624]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350717322]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350759618]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350799383]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350838529]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350877404]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.350916268]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550505729]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550546179]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550583417]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550613203]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550664304]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550694366]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550730167]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550754377]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550789492]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.550817787]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750547097]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750607047]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750654553]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750706615]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750761615]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750815118]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750844681]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750875546]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750933188]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.750970792]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950527230]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950573576]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950610524]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950640354]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950671267]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950699492]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950725653]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950761468]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950786023]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420144.950821906]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150509393]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150553438]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150590620]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150620631]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150650195]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150678212]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150721494]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150797298]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150864205]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.150919637]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350513500]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350594146]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350624628]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350652745]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350698188]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350725426]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350761418]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350785838]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350809719]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.350833772]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550543852]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550615771]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550669452]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550719185]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550767997]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550804388]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550831706]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550858449]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550884617]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.550910971]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750496568]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750549579]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750605668]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750656242]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750709007]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750760969]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750819610]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750877435]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750936685]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.750991521]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950509968]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950583299]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950616458]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950657361]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950687368]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950716375]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950744770]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950804493]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950843632]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420145.950887580]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150507864]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150563863]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150594465]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150624678]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150666432]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150707543]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150747496]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150786167]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150824733]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.150861650]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350505593]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350570102]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350612166]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350649801]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350690197]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350729330]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350765675]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350804550]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350840416]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.350875501]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550505812]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550571081]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550611291]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550651531]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550696530]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550735060]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550772371]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550809661]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550846260]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.550882604]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750536080]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750610827]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750654370]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750693636]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750760491]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750800002]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750838241]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750875978]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750912854]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.750949770]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950552554]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950613720]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950644084]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950672205]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950701494]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950743511]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950783269]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950821230]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950859489]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420146.950897314]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150531045]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150595020]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150635021]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150683886]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150721964]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150758706]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150795440]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150831475]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150867923]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.150903677]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350543297]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350623472]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350683636]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350759517]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350833292]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350931537]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.350994987]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.351051826]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.351126318]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.351181403]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550547646]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550657922]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550722538]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550781310]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550843008]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550908498]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.550966100]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.551023450]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.551081034]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.551137149]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750525890]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750583622]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750613623]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750643738]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750672297]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750701373]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750727888]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750754441]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750780488]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.750810000]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950522612]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950589768]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950621299]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950652690]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950692415]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950729831]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950770857]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950807664]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950844668]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420147.950880884]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150525495]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150594332]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150634976]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150673513]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150718932]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150769828]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150824799]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150868519]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150893087]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.150917298]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350523301]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350586299]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350641830]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350691379]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350738066]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350779002]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350829745]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350885361]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350928110]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.350979341]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550531603]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550592910]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550638015]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550692788]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550739833]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550787671]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550816970]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550843927]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550870630]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.550897175]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750528560]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750587252]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750617480]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750647660]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750676490]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750718064]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750756589]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750794492]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750831725]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.750869778]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950521538]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950587488]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950631710]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950671028]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950754335]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950796200]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950850567]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950894486]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950948578]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420148.950990342]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150514705]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150570615]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150630619]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150687753]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150717498]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150744334]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150770914]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150797605]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150832408]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.150856769]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350520287]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350576657]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350607418]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350641402]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350691616]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350747156]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350790209]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350846148]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350887604]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.350924427]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.550541257]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.550635487]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.550797579]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.550927820]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551111202]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551233557]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551356156]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551478717]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551600285]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.551729490]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750524476]: Got bounding box for /ball but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750596645]: Got bounding box for /boy but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750625765]: Got bounding box for /caravan but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750675626]: Got bounding box for /crocodile but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750704600]: Got bounding box for /elephant but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750733167]: Got bounding box for /giraffe but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750761395]: Got bounding box for /girl but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750789309]: Got bounding box for /hippo but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750817018]: Got bounding box for /lion but corresponding frame not yet published[0m
+[33m[ WARN] [1499420149.750844723]: Got bounding box for /zebra but corresponding frame not yet published[0m
+[0m[ INFO] [1499420151.150654466]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420151.150679510]: Updating occupancy map...[0m
+[0m[ INFO] [1499420151.150848164]: Planing...[0m
+[0m[ INFO] [1499420151.150882490]: Planning from elephant (0.583402, -0.140787) to (0.390667, -0.0734792)[0m
+Starting A*...done.
+Publishing path (45 points)
+[0m[ INFO] [1499420151.151052647]: Done![0m
+[0m[ INFO] [1499420157.950632347]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499420157.950660058]: Updating occupancy map...[0m
+[0m[ INFO] [1499420157.950833671]: Planing...[0m
+[0m[ INFO] [1499420157.950871781]: Planning from giraffe (0.573028, -0.221117) to (0.370369, -0.247045)[0m
+Starting A*...done.
+Publishing path (41 points)
+[0m[ INFO] [1499420157.951038662]: Done![0m
+[0m[ INFO] [1499420163.950640545]: Got a planning request for girl[0m
+[0m[ INFO] [1499420163.950667797]: Updating occupancy map...[0m
+[0m[ INFO] [1499420163.950810502]: Planing...[0m
+[0m[ INFO] [1499420163.950851611]: Planning from girl (0.356402, -0.0616534) to (0.390667, -0.0734792)[0m
+Starting A*...done.
+Publishing path (8 points)
+[0m[ INFO] [1499420163.990908067]: Done![0m
+[0m[ INFO] [1499420166.950684852]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499420166.950744889]: Updating occupancy map...[0m
+[0m[ INFO] [1499420166.950987252]: Planing...[0m
+[0m[ INFO] [1499420166.951043685]: Planning from giraffe (0.5704, -0.220268) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (36 points)
+[0m[ INFO] [1499420166.951244729]: Done![0m
+[0m[ INFO] [1499420173.150650313]: Got a planning request for crocodile[0m
+[0m[ INFO] [1499420173.150679972]: Updating occupancy map...[0m
+[0m[ INFO] [1499420173.150807133]: Planing...[0m
+[0m[ INFO] [1499420173.150840722]: Planning from crocodile (0.582961, -0.0224622) to (0.566818, -0.180966)[0m
+Starting A*...done.
+Publishing path (46 points)
+[0m[ INFO] [1499420173.177306314]: Done![0m
+[0m[ INFO] [1499420179.751002387]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420179.751027511]: Updating occupancy map...[0m
+[0m[ INFO] [1499420179.751470000]: Planing...[0m
+[0m[ INFO] [1499420179.751513316]: Planning from elephant (0.424289, -0.095352) to (0.390667, -0.0734792)[0m
+Starting A*...done.
+Publishing path (19 points)
+[0m[ INFO] [1499420179.786355797]: Done![0m
+[0m[ INFO] [1499420183.951436927]: Got a planning request for girl[0m
+[0m[ INFO] [1499420183.951466479]: Updating occupancy map...[0m
+[0m[ INFO] [1499420183.951909607]: Planing...[0m
+[0m[ INFO] [1499420183.951984317]: Planning from girl (0.341182, -0.0544268) to (0.0635208, -0.0577083)[0m
+Starting A*...done.
+Publishing path (57 points)
+[0m[ INFO] [1499420183.952205564]: Done![0m
+[0m[ INFO] [1499420293.951075955]: Got a planning request for ball[0m
+[0m[ INFO] [1499420293.951143697]: Updating occupancy map...[0m
+[0m[ INFO] [1499420293.951662945]: Planing...[0m
+[0m[ INFO] [1499420293.951738888]: Planning from ball (0.153675, -0.277695) to (0.333638, 0.0594915)[0m
+Starting A*...done.
+Publishing path (67 points)
+[0m[ INFO] [1499420294.011976220]: Done![0m
+[0m[ INFO] [1499420302.151026018]: Got a planning request for ball[0m
+[0m[ INFO] [1499420302.151083587]: Updating occupancy map...[0m
+[0m[ INFO] [1499420302.151576762]: Planing...[0m
+[0m[ INFO] [1499420302.151640670]: Planning from ball (0.335025, -0.0172056) to (0.0641359, -0.0616018)[0m
+Starting A*...done.
+Publishing path (62 points)
+[0m[ INFO] [1499420302.191972748]: Done![0m
+[0m[ INFO] [1499420313.351117432]: Got a planning request for boy[0m
+[0m[ INFO] [1499420313.351157734]: Updating occupancy map...[0m
+[0m[ INFO] [1499420313.351653479]: Planing...[0m
+[0m[ INFO] [1499420313.351710911]: Planning from boy (0.437811, -0.124216) to (0.377103, -0.086705)[0m
+Starting A*...done.
+Publishing path (17 points)
+[0m[ INFO] [1499420313.356786089]: Done![0m
+[0m[ INFO] [1499420316.951273158]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499420316.951338586]: Updating occupancy map...[0m
+[0m[ INFO] [1499420316.951775673]: Planing...[0m
+[0m[ INFO] [1499420316.951840118]: Planning from giraffe (0.445923, -0.0559634) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (10 points)
+[0m[ INFO] [1499420316.951944704]: Done![0m
+[0m[ INFO] [1499420325.750955035]: Got a planning request for boy[0m
+[0m[ INFO] [1499420325.750982039]: Updating occupancy map...[0m
+[0m[ INFO] [1499420325.751394546]: Planing...[0m
+[0m[ INFO] [1499420325.751435642]: Planning from boy (0.427866, -0.0829238) to (0.0709444, -0.125859)[0m
+Starting A*...done.
+Publishing path (72 points)
+[0m[ INFO] [1499420325.751687654]: Done![0m
+[0m[ INFO] [1499420334.751032482]: Got a planning request for boy[0m
+[0m[ INFO] [1499420334.751114571]: Updating occupancy map...[0m
+[0m[ INFO] [1499420334.751602712]: Planing...[0m
+[0m[ INFO] [1499420334.751666573]: Planning from boy (0.0661219, -0.123688) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (92 points)
+[0m[ INFO] [1499420334.786120072]: Done![0m
+[0m[ INFO] [1499420347.750800822]: Got a planning request for crocodile[0m
+[0m[ INFO] [1499420347.750824290]: Updating occupancy map...[0m
+[0m[ INFO] [1499420347.751118959]: Planing...[0m
+[0m[ INFO] [1499420347.751152186]: Planning from crocodile (0.487008, -0.137272) to (0.436607, -0.182054)[0m
+Starting A*...done.
+Publishing path (11 points)
+[0m[ INFO] [1499420347.751222301]: Done![0m
+[0m[ INFO] [1499420355.551027945]: Got a planning request for zebra[0m
+[0m[ INFO] [1499420355.551082870]: Updating occupancy map...[0m
+[0m[ INFO] [1499420355.551573492]: Planing...[0m
+[0m[ INFO] [1499420355.551633453]: Planning from zebra (0.312051, -0.243877) to (0.530043, -0.105723)[0m
+Starting A*...done.
+Publishing path (47 points)
+[0m[ INFO] [1499420355.551866088]: Done![0m
+[0m[ INFO] [1499420362.351082989]: Got a planning request for hippo[0m
+[0m[ INFO] [1499420362.351114042]: Updating occupancy map...[0m
+[0m[ INFO] [1499420362.351608060]: Planing...[0m
+[0m[ INFO] [1499420362.351652542]: Planning from hippo (0.449167, -0.113177) to (0.436841, -0.182049)[0m
+Starting A*...done.
+Publishing path (15 points)
+[0m[ INFO] [1499420362.351767382]: Done![0m
+[0m[ INFO] [1499420366.350809641]: Got a planning request for hippo[0m
+[0m[ INFO] [1499420366.350833907]: Updating occupancy map...[0m
+[0m[ INFO] [1499420366.351116176]: Planing...[0m
+[0m[ INFO] [1499420366.351159791]: Planning from hippo (0.438646, -0.176234) to (0.436607, -0.182054)[0m
+Starting A*...done.
+Publishing path (2 points)
+[0m[ INFO] [1499420366.351208944]: Done![0m
+[0m[ INFO] [1499420368.950848964]: Got a planning request for caravan[0m
+[0m[ INFO] [1499420368.950870132]: Updating occupancy map...[0m
+[0m[ INFO] [1499420368.951128893]: Planing...[0m
+[0m[ INFO] [1499420368.951157651]: Planning from caravan (0.388689, -0.226342) to (0.385461, -0.041102)[0m
+Starting A*...done.
+Publishing path (43 points)
+[0m[ INFO] [1499420368.985257346]: Done![0m
+[0m[ INFO] [1499420375.551057270]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420375.551079094]: Updating occupancy map...[0m
+[0m[ INFO] [1499420375.551340164]: Planing...[0m
+[0m[ INFO] [1499420375.551371541]: Planning from elephant (0.426803, -0.0203539) to (0.385461, -0.041102)[0m
+Starting A*...done.
+Publishing path (9 points)
+[0m[ INFO] [1499420375.551435351]: Done![0m
+[0m[ INFO] [1499420378.150898288]: Got a planning request for caravan[0m
+[0m[ INFO] [1499420378.150923134]: Updating occupancy map...[0m
+[0m[ INFO] [1499420378.151186837]: Planing...[0m
+[0m[ INFO] [1499420378.151226728]: Planning from caravan (0.467421, -0.0759744) to (0.377425, -0.0111915)[0m
+Starting A*...done.
+Publishing path (19 points)
+[0m[ INFO] [1499420378.151317720]: Done![0m
+[0m[ INFO] [1499420381.950820739]: Got a planning request for caravan[0m
+[0m[ INFO] [1499420381.950854186]: Updating occupancy map...[0m
+[0m[ INFO] [1499420381.951299571]: Planing...[0m
+[0m[ INFO] [1499420381.951336281]: Planning from caravan (0.462169, -0.109976) to (0.0586622, -0.0721845)[0m
+Starting A*...done.
+Publishing path (88 points)
+[0m[ INFO] [1499420381.989718341]: Done![0m
+[0m[ INFO] [1499420392.350964475]: Got a planning request for hippo[0m
+[0m[ INFO] [1499420392.350993189]: Updating occupancy map...[0m
+[0m[ INFO] [1499420392.351407681]: Planing...[0m
+[0m[ INFO] [1499420392.351451644]: Planning from hippo (0.213065, -0.118949) to (0.277644, -0.0222596)[0m
+Starting A*...done.
+Publishing path (20 points)
+[0m[ INFO] [1499420392.351586352]: Done![0m
+[0m[ INFO] [1499420396.151002377]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420396.151060026]: Updating occupancy map...[0m
+[0m[ INFO] [1499420396.151531877]: Planing...[0m
+[0m[ INFO] [1499420396.151596540]: Planning from elephant (0.0715337, -0.041443) to (0.20196, -0.0249432)[0m
+Starting A*...done.
+Publishing path (27 points)
+[0m[ INFO] [1499420396.151797521]: Done![0m
+[0m[ INFO] [1499420400.751026940]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499420400.751080655]: Updating occupancy map...[0m
+[0m[ INFO] [1499420400.751582285]: Planing...[0m
+[0m[ INFO] [1499420400.751648706]: Planning from giraffe (0.1775, -0.253438) to (0.493766, -0.0609704)[0m
+Starting A*...done.
+Publishing path (64 points)
+[0m[ INFO] [1499420400.752286447]: Done![0m
+[0m[ INFO] [1499420408.751004477]: Got a planning request for girl[0m
+[0m[ INFO] [1499420408.751033896]: Updating occupancy map...[0m
+[0m[ INFO] [1499420408.751495947]: Planing...[0m
+[0m[ INFO] [1499420408.751536042]: Planning from girl (0.146078, -0.0188462) to (0.0635208, -0.0577083)[0m
+Starting A*...done.
+Publishing path (18 points)
+[0m[ INFO] [1499420408.751643410]: Done![0m
+[0m[ INFO] [1499420412.151039313]: Got a planning request for zebra[0m
+[0m[ INFO] [1499420412.151070389]: Updating occupancy map...[0m
+[0m[ INFO] [1499420412.151574763]: Planing...[0m
+[0m[ INFO] [1499420412.151621490]: Planning from zebra (0.310718, -0.237675) to (0.181652, -0.16317)[0m
+Starting A*...done.
+Publishing path (27 points)
+[0m[ INFO] [1499420412.151785710]: Done![0m
+[0m[ INFO] [1499420896.951083771]: Got a planning request for boy[0m
+[0m[ INFO] [1499420896.951116735]: Updating occupancy map...[0m
+[0m[ INFO] [1499420896.951574687]: Planing...[0m
+[0m[ INFO] [1499420896.951654795]: Planning from boy (0.0184242, -0.120574) to (0.00390625, -0.166927)[0m
+Starting A*...done.
+Publishing path (10 points)
+[0m[ INFO] [1499420896.951758675]: Done![0m
+[0m[ INFO] [1499420900.351074251]: Got a planning request for crocodile[0m
+[0m[ INFO] [1499420900.351135495]: Updating occupancy map...[0m
+[0m[ INFO] [1499420900.351637408]: Planing...[0m
+[0m[ INFO] [1499420900.351712473]: Planning from crocodile (0.0199625, -0.0235639) to (0.11682, -0.248318)[0m
+Starting A*...done.
+Publishing path (46 points)
+[0m[ INFO] [1499420900.351979173]: Done![0m
+[0m[ INFO] [1499420907.151134185]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420907.151161995]: Updating occupancy map...[0m
+[0m[ INFO] [1499420907.151639260]: Planing...[0m
+[0m[ INFO] [1499420907.151684114]: Planning from elephant (0.0995107, -0.11689) to (0.00390904, -0.166831)[0m
+Starting A*...done.
+Publishing path (23 points)
+[0m[ INFO] [1499420907.191016740]: Done![0m
+[0m[ INFO] [1499420911.951145831]: Got a planning request for ball[0m
+[0m[ INFO] [1499420911.951177679]: Updating occupancy map...[0m
+[0m[ INFO] [1499420911.951631812]: Planing...[0m
+[0m[ INFO] [1499420911.951683060]: Planning from ball (0.191957, -0.212046) to (0.102116, -0.0507812)[0m
+Starting A*...done.
+Publishing path (33 points)
+[0m[ INFO] [1499420911.951858093]: Done![0m
+[0m[ INFO] [1499420917.150808222]: Got a planning request for girl[0m
+[0m[ INFO] [1499420917.150831373]: Updating occupancy map...[0m
+[0m[ INFO] [1499420917.151096264]: Planing...[0m
+[0m[ INFO] [1499420917.151141261]: Planning from girl (0.154854, -0.0307342) to (0.0372526, -0.0426172)[0m
+Starting A*...done.
+Publishing path (24 points)
+[0m[ INFO] [1499420917.151349447]: Done![0m
+[0m[ INFO] [1499420921.951105281]: Got a planning request for caravan[0m
+[0m[ INFO] [1499420921.951164861]: Updating occupancy map...[0m
+[0m[ INFO] [1499420921.951793377]: Planing...[0m
+[0m[ INFO] [1499420921.951897307]: Planning from caravan (0.110188, -0.277256) to (0.102116, -0.0507812)[0m
+Starting A*...done.
+Publishing path (46 points)
+[0m[ INFO] [1499420921.952112784]: Done![0m
+[0m[ INFO] [1499420928.550998992]: Got a planning request for caravan[0m
+[0m[ INFO] [1499420928.551033101]: Updating occupancy map...[0m
+[0m[ INFO] [1499420928.551502474]: Planing...[0m
+[0m[ INFO] [1499420928.551574367]: Planning from caravan (0.191241, -0.222254) to (0.124179, -0.0916799)[0m
+Starting A*...done.
+Publishing path (27 points)
+[0m[ INFO] [1499420928.551768422]: Done![0m
+[0m[ INFO] [1499420933.750806406]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420933.750834264]: Updating occupancy map...[0m
+[0m[ INFO] [1499420933.751166983]: Planing...[0m
+[0m[ INFO] [1499420933.751216794]: Planning from elephant (0.0384147, -0.170279) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (8 points)
+[0m[ INFO] [1499420933.751299438]: Done![0m
+[0m[ INFO] [1499420936.551092755]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420936.551168649]: Updating occupancy map...[0m
+[0m[ INFO] [1499420936.551699970]: Planing...[0m
+[0m[ INFO] [1499420936.551756649]: Planning from elephant (0.0225419, -0.163837) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1499420936.551826922]: Done![0m
+[0m[ INFO] [1499420938.951030519]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420938.951089668]: Updating occupancy map...[0m
+[0m[ INFO] [1499420938.951579524]: Planing...[0m
+[0m[ INFO] [1499420938.951640203]: Planning from elephant (0.0226485, -0.164238) to (0.00390516, -0.166823)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1499420938.951724463]: Done![0m
+[0m[ INFO] [1499420940.951305346]: Got a planning request for ball[0m
+[0m[ INFO] [1499420940.951384756]: Updating occupancy map...[0m
+[0m[ INFO] [1499420940.952055418]: Planing...[0m
+[0m[ INFO] [1499420940.952204910]: Planning from ball (0.36196, -0.166608) to (0.501588, -0.069)[0m
+Starting A*...done.
+Publishing path (29 points)
+[0m[ INFO] [1499420940.952499568]: Done![0m
+[0m[ INFO] [1499420946.350817432]: Got a planning request for hippo[0m
+[0m[ INFO] [1499420946.350844872]: Updating occupancy map...[0m
+[0m[ INFO] [1499420946.351143840]: Planing...[0m
+[0m[ INFO] [1499420946.351188496]: Planning from hippo (0.303332, -0.213743) to (0.279549, -0.14566)[0m
+Starting A*...done.
+Publishing path (14 points)
+[0m[ INFO] [1499420946.351299649]: Done![0m
+[0m[ INFO] [1499420950.150910682]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499420950.150941104]: Updating occupancy map...[0m
+[0m[ INFO] [1499420950.151315963]: Planing...[0m
+[0m[ INFO] [1499420950.151364172]: Planning from giraffe (0.333881, -0.318262) to (0.501588, -0.069)[0m
+Starting A*...done.
+Publishing path (55 points)
+[0m[ INFO] [1499420950.201608283]: Done![0m
+[0m[ INFO] [1499420957.550995990]: Got a planning request for lion[0m
+[0m[ INFO] [1499420957.551050509]: Updating occupancy map...[0m
+[0m[ INFO] [1499420957.551516664]: Planing...[0m
+[0m[ INFO] [1499420957.551576544]: Planning from lion (0.399925, -0.0542048) to (0.501588, -0.069)[0m
+Starting A*...done.
+Publishing path (34 points)
+[0m[ INFO] [1499420957.579725178]: Done![0m
+[0m[ INFO] [1499420962.550814553]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420962.550885873]: Updating occupancy map...[0m
+[0m[ INFO] [1499420962.551323086]: Planing...[0m
+[0m[ INFO] [1499420962.551377141]: Planning from elephant (0.0226536, -0.164267) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1499420962.551433561]: Done![0m
+[0m[ INFO] [1499420965.351091560]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420965.351165553]: Updating occupancy map...[0m
+[0m[ INFO] [1499420965.351632785]: Planing...[0m
+[0m[ INFO] [1499420965.351705317]: Planning from elephant (0.0227641, -0.164708) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (5 points)
+[0m[ INFO] [1499420965.351797436]: Done![0m
+[0m[ INFO] [1499420967.551141943]: Got a planning request for boy[0m
+[0m[ INFO] [1499420967.551252668]: Updating occupancy map...[0m
+[0m[ INFO] [1499420967.551755834]: Planing...[0m
+[0m[ INFO] [1499420967.551797508]: Planning from boy (0.0164811, -0.199395) to (0.102116, -0.0507813)[0m
+Starting A*...done.
+Publishing path (35 points)
+[0m[ INFO] [1499420967.551952357]: Done![0m
+[0m[ INFO] [1499420973.151140501]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420973.151203218]: Updating occupancy map...[0m
+[0m[ INFO] [1499420973.151819679]: Planing...[0m
+[0m[ INFO] [1499420973.151902076]: Planning from elephant (0.0300336, -0.155836) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (7 points)
+[0m[ INFO] [1499420973.152042630]: Done![0m
+[0m[ INFO] [1499420974.351101804]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420974.351165984]: Updating occupancy map...[0m
+[0m[ INFO] [1499420974.351717086]: Planing...[0m
+[0m[ INFO] [1499420974.351918780]: Planning from elephant (0.0157578, -0.154086) to (0.00333327, -0.168552)[0m
+Starting A*...done.
+Publishing path (4 points)
+[0m[ INFO] [1499420974.352040317]: Done![0m
+[0m[ INFO] [1499420976.551123767]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420976.551195549]: Updating occupancy map...[0m
+[0m[ INFO] [1499420976.551928867]: Planing...[0m
+[0m[ INFO] [1499420976.552148054]: Planning from elephant (0.0154306, -0.151617) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (4 points)
+[0m[ INFO] [1499420976.552282100]: Done![0m
+[0m[ INFO] [1499420978.150909465]: Got a planning request for elephant[0m
+[0m[ INFO] [1499420978.150935584]: Updating occupancy map...[0m
+[0m[ INFO] [1499420978.151310410]: Planing...[0m
+[0m[ INFO] [1499420978.151362747]: Planning from elephant (0.0154316, -0.151669) to (0.00390625, -0.166823)[0m
+Starting A*...done.
+Publishing path (4 points)
+[0m[ INFO] [1499420978.151458300]: Done![0m
+[0m[ INFO] [1499421002.751363959]: Got a planning request for caravan[0m
+[0m[ INFO] [1499421002.751422971]: Updating occupancy map...[0m
+[0m[ INFO] [1499421002.751728046]: Planing...[0m
+[0m[ INFO] [1499421002.751769381]: Planning from caravan (0.260267, -0.17102) to (0.102116, -0.0507812)[0m
+Starting A*...done.
+Publishing path (33 points)
+[0m[ INFO] [1499421002.791976912]: Done![0m
+[0m[ INFO] [1499421008.150856939]: Got a planning request for girl[0m
+[0m[ INFO] [1499421008.150884552]: Updating occupancy map...[0m
+[0m[ INFO] [1499421008.151321111]: Planing...[0m
+[0m[ INFO] [1499421008.151370130]: Planning from girl (0.251819, -0.320468) to (0.039375, -0.0488322)[0m
+Starting A*...done.
+Publishing path (56 points)
+[0m[ INFO] [1499421008.151626430]: Done![0m
+[0m[ INFO] [1499421015.551032500]: Got a planning request for giraffe[0m
+[0m[ INFO] [1499421015.551064990]: Updating occupancy map...[0m
+[0m[ INFO] [1499421015.551555881]: Planing...[0m
+[0m[ INFO] [1499421015.551629716]: Planning from giraffe (0.273678, -0.252454) to (0.521884, -0.0986911)[0m
+Starting A*...done.
+Publishing path (51 points)
+[0m[ INFO] [1499421015.551888061]: Done![0m
+[0m[ INFO] [1499421022.951013794]: Got a planning request for crocodile[0m
+[0m[ INFO] [1499421022.951072129]: Updating occupancy map...[0m
+[0m[ INFO] [1499421022.951544873]: Planing...[0m
+[0m[ INFO] [1499421022.951607814]: Planning from crocodile (0.152627, -0.316296) to (0.093246, -0.249063)[0m
+Starting A*...done.
+Publishing path (15 points)
+[0m[ INFO] [1499421022.951731495]: Done![0m
+[0m[ INFO] [1499421026.751008158]: Got a planning request for zebra[0m
+[0m[ INFO] [1499421026.751047496]: Updating occupancy map...[0m
+[0m[ INFO] [1499421026.751503146]: Planing...[0m
+[0m[ INFO] [1499421026.751545856]: Planning from zebra (0.241907, -0.253127) to (0.258375, -0.32925)[0m
+Starting A*...done.
+Publishing path (16 points)

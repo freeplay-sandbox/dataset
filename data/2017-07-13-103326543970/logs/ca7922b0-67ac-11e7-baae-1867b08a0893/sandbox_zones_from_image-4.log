@@ -1,0 +1,70 @@
+[rospy.client][INFO] 2017-07-13 10:33:27,666: init_node, name[/sandbox_zones_from_image], pid[3523]
+[xmlrpc][INFO] 2017-07-13 10:33:27,666: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-13 10:33:27,666: Started XML-RPC server [http://sandtray-hrilab:35754/]
+[rospy.init][INFO] 2017-07-13 10:33:27,667: ROS Slave URI: [http://sandtray-hrilab:35754/]
+[rospy.impl.masterslave][INFO] 2017-07-13 10:33:27,667: _ready: http://sandtray-hrilab:35754/
+[rospy.registration][INFO] 2017-07-13 10:33:27,667: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-13 10:33:27,667: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-13 10:33:27,767: registered with master
+[rospy.rosout][INFO] 2017-07-13 10:33:27,767: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-13 10:33:27,769: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-13 10:33:27,770: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-07-13 10:33:27,778: Waiting for images of the playground
+[rospy.internal][INFO] 2017-07-13 10:33:27,782: topic[/sandtray/background/camera_info] adding connection to [http://sandtray-hrilab:35091/], count 0
+[rospy.internal][INFO] 2017-07-13 10:33:27,783: topic[/sandtray/background/image] adding connection to [http://sandtray-hrilab:35091/], count 0
+[rospy.internal][INFO] 2017-07-13 10:33:27,996: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2017-07-13 10:35:04,728: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:04,747: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:35:12,964: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:12,980: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:35:15,982: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:15,999: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:35:26,216: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:26,233: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:35:26,456: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:26,467: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:35:45,461: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:35:45,473: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:04,221: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:04,238: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:04,974: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:04,989: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:07,228: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:07,245: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:07,696: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:07,707: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:09,227: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:09,242: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:09,458: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:09,472: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:10,220: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:10,236: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:10,973: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:10,991: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:11,209: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:11,227: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:11,714: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:11,727: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:19,697: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:19,708: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:30,222: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:30,240: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:32,711: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:32,724: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:36:37,969: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:36:37,982: Publishing the detected zones on /zones
+[rosout][INFO] 2017-07-13 10:42:23,968: Received the playground image. Detecting zones...
+[rosout][INFO] 2017-07-13 10:42:23,981: Publishing the detected zones on /zones
+[rospy.internal][INFO] 2017-07-13 10:42:24,543: topic[/zones] adding connection to [/rosbag_record_freeplay_sandbox], count 0
+[rospy.internal][INFO] 2017-07-13 10:42:25,082: topic[/zones] adding connection to [/sandbox_play], count 1
+[rospy.internal][INFO] 2017-07-13 10:42:35,991: topic[/zones] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-07-13 10:42:46,214: topic[/zones] adding connection to [/sandbox_play], count 1
+[rospy.internal][INFO] 2017-07-13 10:42:46,496: topic[/zones] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-07-13 10:42:54,000: topic[/zones] removing connection to /rosbag_record_freeplay_sandbox
+[rospy.core][INFO] 2017-07-13 10:42:58,161: signal_shutdown [signal-15]
+[rospy.internal][INFO] 2017-07-13 10:42:58,167: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-13 10:42:58,167: topic[/sandtray/background/image] removing connection to http://sandtray-hrilab:35091/
+[rospy.internal][INFO] 2017-07-13 10:42:58,168: topic[/sandtray/background/camera_info] removing connection to http://sandtray-hrilab:35091/
+[rospy.impl.masterslave][INFO] 2017-07-13 10:42:58,168: signal-15
+[rospy.core][INFO] 2017-07-13 10:42:58,781: signal_shutdown [signal-2]
+[rospy.core][INFO] 2017-07-13 10:42:58,782: signal_shutdown [atexit]

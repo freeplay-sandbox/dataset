@@ -1,0 +1,21 @@
+[rospy.client][INFO] 2017-06-07 10:17:51,148: init_node, name[/sandbox_zones_from_image], pid[12700]
+[xmlrpc][INFO] 2017-06-07 10:17:51,148: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-07 10:17:51,148: Started XML-RPC server [http://sandtray-hrilab:38268/]
+[rospy.impl.masterslave][INFO] 2017-06-07 10:17:51,148: _ready: http://sandtray-hrilab:38268/
+[rospy.init][INFO] 2017-06-07 10:17:51,149: ROS Slave URI: [http://sandtray-hrilab:38268/]
+[rospy.registration][INFO] 2017-06-07 10:17:51,149: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-07 10:17:51,150: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-07 10:17:51,250: registered with master
+[rospy.rosout][INFO] 2017-06-07 10:17:51,251: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-07 10:17:51,253: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-07 10:17:51,255: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-06-07 10:17:51,264: Waiting for images of the playground
+[rospy.internal][INFO] 2017-06-07 10:17:51,266: topic[/sandtray/background/camera_info] adding connection to [http://sandtray-hrilab:34594/], count 0
+[rospy.internal][INFO] 2017-06-07 10:17:51,266: topic[/sandtray/background/image] adding connection to [http://sandtray-hrilab:34594/], count 0
+[rospy.internal][INFO] 2017-06-07 10:17:51,459: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2017-06-07 10:17:51,638: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-07 10:17:51,645: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-07 10:17:51,646: topic[/sandtray/background/image] removing connection to http://sandtray-hrilab:34594/
+[rospy.internal][INFO] 2017-06-07 10:17:51,646: topic[/sandtray/background/camera_info] removing connection to http://sandtray-hrilab:34594/
+[rospy.impl.masterslave][INFO] 2017-06-07 10:17:51,646: signal-2
+[rospy.core][INFO] 2017-06-07 10:17:51,810: signal_shutdown [atexit]

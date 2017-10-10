@@ -1,0 +1,6 @@
+[0m[ INFO] [1499778064.365436956]: Loading nodelet /env_camera_points_xyzrgb_hd of type depth_image_proc/point_cloud_xyzrgb to manager env_camera with the following remappings:[0m
+[0m[ INFO] [1499778064.365478929]: /depth_registered/image_rect -> /env_camera/hd/image_depth_rect[0m
+[0m[ INFO] [1499778064.365502727]: /depth_registered/points -> /env_camera/hd/points[0m
+[0m[ INFO] [1499778064.365514088]: /rgb/camera_info -> /env_camera/hd/camera_info[0m
+[0m[ INFO] [1499778064.365524775]: /rgb/image_rect_color -> /env_camera/hd/image_color_rect[0m
+[0m[ INFO] [1499778515.249409451]: Unloading nodelet /env_camera_points_xyzrgb_hd from manager env_camera[0m

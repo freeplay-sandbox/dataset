@@ -1,0 +1,625 @@
+[rospy.client][INFO] 2017-06-26 10:28:45,015: init_node, name[/move_sandbox_items], pid[7443]
+[xmlrpc][INFO] 2017-06-26 10:28:45,015: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:28:45,015: Started XML-RPC server [http://sandtray-hrilab:41336/]
+[rospy.init][INFO] 2017-06-26 10:28:45,016: ROS Slave URI: [http://sandtray-hrilab:41336/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:28:45,016: _ready: http://sandtray-hrilab:41336/
+[rospy.registration][INFO] 2017-06-26 10:28:45,017: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:28:45,017: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:28:45,116: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:28:45,116: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:28:45,119: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:28:45,120: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-26 10:28:45,141: topic[/tf] adding connection to [http://sandtray-hrilab:34759/], count 0
+[rospy.internal][INFO] 2017-06-26 10:28:45,142: topic[/tf] adding connection to [http://sandtray-hrilab:35600/], count 0
+[rospy.internal][INFO] 2017-06-26 10:28:45,142: topic[/tf] adding connection to [http://sandtray-hrilab:44662/], count 1
+[rospy.internal][INFO] 2017-06-26 10:28:45,143: topic[/tf] adding connection to [http://sandtray-hrilab:42429/], count 2
+[rospy.internal][INFO] 2017-06-26 10:28:45,143: topic[/tf] adding connection to [http://sandtray-hrilab:40309/], count 2
+[rospy.internal][INFO] 2017-06-26 10:28:45,349: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-26 10:28:45,398: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.internal][WARNING] 2017-06-26 10:30:47,762: Unknown error initiating TCP/IP socket to sandtray-hrilab:55707 (http://sandtray-hrilab:44662/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:30:47,762: topic[/tf] removing connection to http://sandtray-hrilab:44662/
+[rospy.internal][INFO] 2017-06-26 10:32:21,262: topic[/tf] adding connection to [http://sandtray-hrilab:42996/], count 4
+[rospy.internal][INFO] 2017-06-26 10:32:22,266: topic[/tf] adding connection to [http://sandtray-hrilab:43341/], count 5
+[rospy.internal][WARNING] 2017-06-26 10:39:28,148: Unknown error initiating TCP/IP socket to sandtray-hrilab:56425 (http://sandtray-hrilab:43341/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:39:28,148: topic[/tf] removing connection to http://sandtray-hrilab:43341/
+[rospy.internal][WARNING] 2017-06-26 10:39:28,150: Unknown error initiating TCP/IP socket to sandtray-hrilab:51226 (http://sandtray-hrilab:42996/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-06-26 10:39:28,150: topic[/tf] removing connection to http://sandtray-hrilab:42996/
+[rospy.internal][INFO] 2017-06-26 10:40:03,621: topic[/tf] adding connection to [http://sandtray-hrilab:41681/], count 4
+[rospy.internal][INFO] 2017-06-26 10:40:03,737: topic[/tf] adding connection to [http://sandtray-hrilab:41005/], count 5
+[rospy.internal][INFO] 2017-06-26 10:40:04,268: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:04,270: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:04,270: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:04,302: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:34804/], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:04,303: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:34804/], count 0
+[rosout][INFO] 2017-06-26 10:40:04,371: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:04,372: Moving crocodile to -0.06,-0.05
+[rosout][INFO] 2017-06-26 10:40:04,372: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:04,483: Received trajectory! As requested, waiting -0.016794161s before starting...
+[rosout][INFO] 2017-06-26 10:40:04,484: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:04,484: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:04,485: Done 0%
+[rosout][INFO] 2017-06-26 10:40:04,586: Done 4%
+[rosout][INFO] 2017-06-26 10:40:04,687: Done 8%
+[rosout][INFO] 2017-06-26 10:40:04,787: Done 12%
+[rospy.internal][INFO] 2017-06-26 10:40:04,810: topic[/tf] adding connection to [http://sandtray-hrilab:33537/], count 6
+[rosout][INFO] 2017-06-26 10:40:04,888: Done 16%
+[rosout][INFO] 2017-06-26 10:40:04,990: Done 20%
+[rosout][INFO] 2017-06-26 10:40:05,092: Done 25%
+[rosout][INFO] 2017-06-26 10:40:05,193: Done 29%
+[rosout][INFO] 2017-06-26 10:40:05,294: Done 33%
+[rosout][INFO] 2017-06-26 10:40:05,395: Done 37%
+[rosout][INFO] 2017-06-26 10:40:05,496: Done 41%
+[rosout][INFO] 2017-06-26 10:40:05,597: Done 45%
+[rosout][INFO] 2017-06-26 10:40:05,698: Done 50%
+[rosout][INFO] 2017-06-26 10:40:05,799: Done 54%
+[rosout][INFO] 2017-06-26 10:40:05,900: Done 58%
+[rosout][INFO] 2017-06-26 10:40:06,001: Done 62%
+[rosout][INFO] 2017-06-26 10:40:06,102: Done 66%
+[rosout][INFO] 2017-06-26 10:40:06,203: Done 70%
+[rosout][INFO] 2017-06-26 10:40:06,304: Done 75%
+[rosout][INFO] 2017-06-26 10:40:06,405: Done 79%
+[rosout][INFO] 2017-06-26 10:40:06,506: Done 83%
+[rosout][INFO] 2017-06-26 10:40:06,607: Done 87%
+[rosout][INFO] 2017-06-26 10:40:06,708: Done 91%
+[rosout][INFO] 2017-06-26 10:40:06,809: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:08,929: /move_sandbox_items: Received a request to move giraffe to 0.37, -0.25. Let's do that
+[rosout][INFO] 2017-06-26 10:40:08,930: Moving giraffe to -0.21,-0.01
+[rosout][INFO] 2017-06-26 10:40:08,930: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:09,067: Received trajectory! As requested, waiting -0.000880622s before starting...
+[rosout][INFO] 2017-06-26 10:40:09,067: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:09,068: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:09,068: Done 0%
+[rosout][INFO] 2017-06-26 10:40:09,169: Done 2%
+[rosout][INFO] 2017-06-26 10:40:09,270: Done 4%
+[rosout][INFO] 2017-06-26 10:40:09,371: Done 6%
+[rosout][INFO] 2017-06-26 10:40:09,472: Done 9%
+[rosout][INFO] 2017-06-26 10:40:09,573: Done 11%
+[rosout][INFO] 2017-06-26 10:40:09,674: Done 13%
+[rosout][INFO] 2017-06-26 10:40:09,775: Done 16%
+[rosout][INFO] 2017-06-26 10:40:09,876: Done 18%
+[rosout][INFO] 2017-06-26 10:40:09,977: Done 20%
+[rosout][INFO] 2017-06-26 10:40:10,078: Done 23%
+[rosout][INFO] 2017-06-26 10:40:10,179: Done 25%
+[rosout][INFO] 2017-06-26 10:40:10,280: Done 27%
+[rosout][INFO] 2017-06-26 10:40:10,381: Done 30%
+[rosout][INFO] 2017-06-26 10:40:10,482: Done 32%
+[rosout][INFO] 2017-06-26 10:40:10,583: Done 34%
+[rosout][INFO] 2017-06-26 10:40:10,684: Done 37%
+[rosout][INFO] 2017-06-26 10:40:10,785: Done 39%
+[rosout][INFO] 2017-06-26 10:40:10,886: Done 41%
+[rosout][INFO] 2017-06-26 10:40:10,987: Done 44%
+[rosout][INFO] 2017-06-26 10:40:11,088: Done 46%
+[rosout][INFO] 2017-06-26 10:40:11,189: Done 48%
+[rosout][INFO] 2017-06-26 10:40:11,290: Done 51%
+[rosout][INFO] 2017-06-26 10:40:11,391: Done 53%
+[rosout][INFO] 2017-06-26 10:40:11,492: Done 55%
+[rosout][INFO] 2017-06-26 10:40:11,593: Done 58%
+[rosout][INFO] 2017-06-26 10:40:11,694: Done 60%
+[rosout][INFO] 2017-06-26 10:40:11,794: Done 62%
+[rosout][INFO] 2017-06-26 10:40:11,896: Done 65%
+[rosout][INFO] 2017-06-26 10:40:11,997: Done 67%
+[rosout][INFO] 2017-06-26 10:40:12,098: Done 69%
+[rosout][INFO] 2017-06-26 10:40:12,199: Done 72%
+[rosout][INFO] 2017-06-26 10:40:12,300: Done 74%
+[rosout][INFO] 2017-06-26 10:40:12,401: Done 76%
+[rosout][INFO] 2017-06-26 10:40:12,502: Done 79%
+[rosout][INFO] 2017-06-26 10:40:12,603: Done 81%
+[rosout][INFO] 2017-06-26 10:40:12,704: Done 83%
+[rosout][INFO] 2017-06-26 10:40:12,806: Done 86%
+[rosout][INFO] 2017-06-26 10:40:12,907: Done 88%
+[rosout][INFO] 2017-06-26 10:40:13,008: Done 90%
+[rosout][INFO] 2017-06-26 10:40:13,109: Done 93%
+[rosout][INFO] 2017-06-26 10:40:13,210: Done 95%
+[rosout][INFO] 2017-06-26 10:40:13,311: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:14,915: /move_sandbox_items: Received a request to move lion to 0.49, -0.06. Let's do that
+[rosout][INFO] 2017-06-26 10:40:14,915: Moving lion to -0.05,0.14
+[rosout][INFO] 2017-06-26 10:40:14,916: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:15,067: Received trajectory! As requested, waiting -0.000990351s before starting...
+[rosout][INFO] 2017-06-26 10:40:15,068: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:15,068: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:15,068: Done 0%
+[rosout][INFO] 2017-06-26 10:40:15,169: Done 2%
+[rosout][INFO] 2017-06-26 10:40:15,270: Done 4%
+[rosout][INFO] 2017-06-26 10:40:15,371: Done 7%
+[rosout][INFO] 2017-06-26 10:40:15,472: Done 9%
+[rosout][INFO] 2017-06-26 10:40:15,573: Done 11%
+[rosout][INFO] 2017-06-26 10:40:15,674: Done 14%
+[rosout][INFO] 2017-06-26 10:40:15,775: Done 16%
+[rosout][INFO] 2017-06-26 10:40:15,876: Done 19%
+[rosout][INFO] 2017-06-26 10:40:15,977: Done 21%
+[rosout][INFO] 2017-06-26 10:40:16,078: Done 23%
+[rosout][INFO] 2017-06-26 10:40:16,179: Done 26%
+[rosout][INFO] 2017-06-26 10:40:16,280: Done 28%
+[rosout][INFO] 2017-06-26 10:40:16,381: Done 30%
+[rosout][INFO] 2017-06-26 10:40:16,482: Done 33%
+[rosout][INFO] 2017-06-26 10:40:16,583: Done 35%
+[rosout][INFO] 2017-06-26 10:40:16,684: Done 38%
+[rosout][INFO] 2017-06-26 10:40:16,785: Done 40%
+[rosout][INFO] 2017-06-26 10:40:16,887: Done 42%
+[rosout][INFO] 2017-06-26 10:40:16,987: Done 45%
+[rosout][INFO] 2017-06-26 10:40:17,088: Done 47%
+[rosout][INFO] 2017-06-26 10:40:17,189: Done 50%
+[rosout][INFO] 2017-06-26 10:40:17,290: Done 52%
+[rosout][INFO] 2017-06-26 10:40:17,391: Done 54%
+[rosout][INFO] 2017-06-26 10:40:17,492: Done 57%
+[rosout][INFO] 2017-06-26 10:40:17,593: Done 59%
+[rosout][INFO] 2017-06-26 10:40:17,694: Done 61%
+[rosout][INFO] 2017-06-26 10:40:17,796: Done 64%
+[rosout][INFO] 2017-06-26 10:40:17,897: Done 66%
+[rosout][INFO] 2017-06-26 10:40:17,998: Done 69%
+[rosout][INFO] 2017-06-26 10:40:18,099: Done 71%
+[rosout][INFO] 2017-06-26 10:40:18,200: Done 73%
+[rosout][INFO] 2017-06-26 10:40:18,301: Done 76%
+[rosout][INFO] 2017-06-26 10:40:18,402: Done 78%
+[rosout][INFO] 2017-06-26 10:40:18,503: Done 80%
+[rosout][INFO] 2017-06-26 10:40:18,604: Done 83%
+[rosout][INFO] 2017-06-26 10:40:18,705: Done 85%
+[rosout][INFO] 2017-06-26 10:40:18,808: Done 88%
+[rosout][INFO] 2017-06-26 10:40:18,909: Done 90%
+[rosout][INFO] 2017-06-26 10:40:19,010: Done 92%
+[rosout][INFO] 2017-06-26 10:40:19,111: Done 95%
+[rosout][INFO] 2017-06-26 10:40:19,212: /move_sandbox_items: Succeeded
+[rospy.internal][ERROR] 2017-06-26 10:40:20,287: Unable to initiate TCP/IP socket to sandtray-hrilab:44527 (http://sandtray-hrilab:34804/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2017-06-26 10:40:20,288: Unknown error initiating TCP/IP socket to sandtray-hrilab:35012 (http://sandtray-hrilab:41681/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:20,288: topic[/tf] removing connection to http://sandtray-hrilab:41681/
+[rospy.internal][ERROR] 2017-06-26 10:40:20,289: Unable to initiate TCP/IP socket to sandtray-hrilab:44527 (http://sandtray-hrilab:34804/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2017-06-26 10:40:20,319: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:40:20,319: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:40:20,320: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rosout][WARNING] 2017-06-26 10:40:20,433: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2017-06-26 10:40:20,434: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2017-06-26 10:40:20,434: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rosout][WARNING] 2017-06-26 10:40:20,435: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2017-06-26 10:40:20,435: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 364, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2017-06-26 10:40:20,820: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][WARNING] 2017-06-26 10:40:21,288: Unknown error initiating TCP/IP socket to sandtray-hrilab:44527 (http://sandtray-hrilab:34804/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:21,289: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:34804/
+[rospy.internal][WARNING] 2017-06-26 10:40:21,290: Unknown error initiating TCP/IP socket to sandtray-hrilab:44527 (http://sandtray-hrilab:34804/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:21,290: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:34804/
+[rospy.internal][INFO] 2017-06-26 10:40:22,887: topic[/tf] adding connection to [http://sandtray-hrilab:33866/], count 6
+[rospy.internal][INFO] 2017-06-26 10:40:23,771: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:23,772: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:23,777: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:23,807: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:45983/], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:23,808: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:45983/], count 0
+[rospy.internal][WARNING] 2017-06-26 10:40:23,878: Unknown error initiating TCP/IP socket to sandtray-hrilab:36681 (http://sandtray-hrilab:33866/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:23,878: topic[/tf] removing connection to http://sandtray-hrilab:33866/
+[rospy.internal][ERROR] 2017-06-26 10:40:23,884: Unable to initiate TCP/IP socket to sandtray-hrilab:39193 (http://sandtray-hrilab:45983/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2017-06-26 10:40:23,884: Unable to initiate TCP/IP socket to sandtray-hrilab:39193 (http://sandtray-hrilab:45983/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rosout][INFO] 2017-06-26 10:40:23,885: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:23,887: Moving crocodile to -0.03,-0.01
+[rosout][INFO] 2017-06-26 10:40:23,887: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:24,067: Received trajectory! As requested, waiting -0.000353832s before starting...
+[rosout][INFO] 2017-06-26 10:40:24,067: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:24,067: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:24,068: Done 0%
+[rospy.internal][INFO] 2017-06-26 10:40:24,156: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rosout][INFO] 2017-06-26 10:40:24,169: Done 14%
+[rospy.internal][INFO] 2017-06-26 10:40:24,169: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rosout][INFO] 2017-06-26 10:40:24,270: Done 28%
+[rospy.internal][INFO] 2017-06-26 10:40:24,302: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rosout][INFO] 2017-06-26 10:40:24,371: Done 42%
+[rosout][INFO] 2017-06-26 10:40:24,472: Done 57%
+[rosout][INFO] 2017-06-26 10:40:24,573: Done 71%
+[rosout][INFO] 2017-06-26 10:40:24,674: /move_sandbox_items: Succeeded
+[rospy.internal][WARNING] 2017-06-26 10:40:24,885: Unknown error initiating TCP/IP socket to sandtray-hrilab:39193 (http://sandtray-hrilab:45983/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-06-26 10:40:24,885: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:45983/
+[rospy.internal][WARNING] 2017-06-26 10:40:24,886: Unknown error initiating TCP/IP socket to sandtray-hrilab:39193 (http://sandtray-hrilab:45983/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:24,886: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:45983/
+[rospy.core][INFO] 2017-06-26 10:40:32,262: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-26 10:40:32,263: signal_shutdown [signal-2]
+[rospy.internal][WARNING] 2017-06-26 10:40:32,265: Unknown error initiating TCP/IP socket to sandtray-hrilab:34677 (http://sandtray-hrilab:34759/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:32,265: topic[/tf] removing connection to http://sandtray-hrilab:34759/
+[rospy.internal][INFO] 2017-06-26 10:40:32,273: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-06-26 10:40:32,273: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-26 10:40:32,273: topic[/tf] removing connection to http://sandtray-hrilab:35600/
+[rospy.internal][INFO] 2017-06-26 10:40:32,274: topic[/tf] removing connection to http://sandtray-hrilab:42429/
+[rospy.internal][INFO] 2017-06-26 10:40:32,274: topic[/tf] removing connection to http://sandtray-hrilab:40309/
+[rospy.internal][INFO] 2017-06-26 10:40:32,275: topic[/tf] removing connection to http://sandtray-hrilab:41005/
+[rospy.internal][INFO] 2017-06-26 10:40:32,275: topic[/tf] removing connection to http://sandtray-hrilab:33537/
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:32,276: signal-15
+[rospy.core][INFO] 2017-06-26 10:40:32,890: signal_shutdown [atexit]
+[rospy.client][INFO] 2017-06-26 10:40:35,080: init_node, name[/move_sandbox_items], pid[11225]
+[xmlrpc][INFO] 2017-06-26 10:40:35,080: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:40:35,081: Started XML-RPC server [http://sandtray-hrilab:40731/]
+[rospy.init][INFO] 2017-06-26 10:40:35,081: ROS Slave URI: [http://sandtray-hrilab:40731/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:40:35,081: _ready: http://sandtray-hrilab:40731/
+[rospy.registration][INFO] 2017-06-26 10:40:35,082: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:40:35,082: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:40:35,181: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:40:35,181: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:40:35,184: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:40:35,185: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-26 10:40:35,203: topic[/tf] adding connection to [http://sandtray-hrilab:42429/], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:35,208: topic[/tf] adding connection to [http://sandtray-hrilab:35600/], count 1
+[rospy.internal][INFO] 2017-06-26 10:40:35,209: topic[/tf] adding connection to [http://sandtray-hrilab:40309/], count 1
+[rospy.internal][INFO] 2017-06-26 10:40:35,223: topic[/tf] adding connection to [http://sandtray-hrilab:41005/], count 3
+[rospy.internal][INFO] 2017-06-26 10:40:35,224: topic[/tf] adding connection to [http://sandtray-hrilab:33537/], count 3
+[rospy.internal][INFO] 2017-06-26 10:40:35,227: topic[/tf] adding connection to [http://sandtray-hrilab:40048/], count 4
+[rospy.internal][INFO] 2017-06-26 10:40:35,393: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:35,499: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:38,447: topic[/tf] adding connection to [http://sandtray-hrilab:41846/], count 6
+[rospy.internal][INFO] 2017-06-26 10:40:39,348: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:39,349: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:39,352: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:39,412: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:35795/], count 0
+[rospy.internal][INFO] 2017-06-26 10:40:39,413: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:35795/], count 0
+[rosout][INFO] 2017-06-26 10:40:39,476: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:39,477: Moving hippo to 0.01,0.04
+[rosout][INFO] 2017-06-26 10:40:39,477: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:39,670: Received trajectory! As requested, waiting -0.030694391s before starting...
+[rosout][INFO] 2017-06-26 10:40:39,670: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:39,671: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:39,671: Done 0%
+[rosout][INFO] 2017-06-26 10:40:39,773: Done 6%
+[rosout][INFO] 2017-06-26 10:40:39,874: Done 12%
+[rosout][INFO] 2017-06-26 10:40:39,975: Done 18%
+[rosout][INFO] 2017-06-26 10:40:40,076: Done 25%
+[rosout][INFO] 2017-06-26 10:40:40,178: Done 31%
+[rosout][INFO] 2017-06-26 10:40:40,279: Done 37%
+[rosout][INFO] 2017-06-26 10:40:40,380: Done 43%
+[rosout][INFO] 2017-06-26 10:40:40,481: Done 50%
+[rosout][INFO] 2017-06-26 10:40:40,582: Done 56%
+[rosout][INFO] 2017-06-26 10:40:40,683: Done 62%
+[rosout][INFO] 2017-06-26 10:40:40,784: Done 68%
+[rosout][INFO] 2017-06-26 10:40:40,885: Done 75%
+[rosout][INFO] 2017-06-26 10:40:40,986: Done 81%
+[rosout][INFO] 2017-06-26 10:40:41,087: Done 87%
+[rosout][INFO] 2017-06-26 10:40:41,188: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:43,556: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:43,557: Moving crocodile to 0.05,-0.02
+[rosout][INFO] 2017-06-26 10:40:43,557: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:43,681: Received trajectory! As requested, waiting -0.041733525s before starting...
+[rosout][INFO] 2017-06-26 10:40:43,681: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:43,682: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:43,682: Done 0%
+[rosout][INFO] 2017-06-26 10:40:43,783: Done 9%
+[rosout][INFO] 2017-06-26 10:40:43,884: Done 18%
+[rosout][INFO] 2017-06-26 10:40:43,985: Done 27%
+[rosout][INFO] 2017-06-26 10:40:44,086: Done 36%
+[rosout][INFO] 2017-06-26 10:40:44,187: Done 45%
+[rosout][INFO] 2017-06-26 10:40:44,288: Done 54%
+[rosout][INFO] 2017-06-26 10:40:44,389: Done 63%
+[rosout][INFO] 2017-06-26 10:40:44,490: Done 72%
+[rosout][INFO] 2017-06-26 10:40:44,591: Done 81%
+[rosout][INFO] 2017-06-26 10:40:44,692: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:46,696: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:46,697: Moving hippo to 0.03,0.02
+[rosout][INFO] 2017-06-26 10:40:46,697: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:46,868: Received trajectory! As requested, waiting -0.029028647s before starting...
+[rosout][INFO] 2017-06-26 10:40:46,869: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:46,869: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:46,869: Done 0%
+[rosout][INFO] 2017-06-26 10:40:46,971: Done 10%
+[rosout][INFO] 2017-06-26 10:40:47,072: Done 20%
+[rosout][INFO] 2017-06-26 10:40:47,173: Done 30%
+[rosout][INFO] 2017-06-26 10:40:47,274: Done 40%
+[rosout][INFO] 2017-06-26 10:40:47,375: Done 50%
+[rosout][INFO] 2017-06-26 10:40:47,477: Done 60%
+[rosout][INFO] 2017-06-26 10:40:47,578: Done 70%
+[rosout][INFO] 2017-06-26 10:40:47,679: Done 80%
+[rosout][INFO] 2017-06-26 10:40:47,781: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:49,749: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:49,750: Moving crocodile to 0.03,-0.02
+[rosout][INFO] 2017-06-26 10:40:49,750: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:40:49,863: Received trajectory! As requested, waiting -0.023587219s before starting...
+[rosout][INFO] 2017-06-26 10:40:49,863: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:49,864: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:49,864: Done 0%
+[rosout][INFO] 2017-06-26 10:40:49,965: Done 5%
+[rosout][INFO] 2017-06-26 10:40:50,066: Done 10%
+[rosout][INFO] 2017-06-26 10:40:50,167: Done 15%
+[rosout][INFO] 2017-06-26 10:40:50,269: Done 20%
+[rosout][INFO] 2017-06-26 10:40:50,370: Done 25%
+[rosout][INFO] 2017-06-26 10:40:50,471: Done 30%
+[rosout][INFO] 2017-06-26 10:40:50,572: Done 35%
+[rosout][INFO] 2017-06-26 10:40:50,673: Done 40%
+[rosout][INFO] 2017-06-26 10:40:50,775: Done 45%
+[rosout][INFO] 2017-06-26 10:40:50,876: Done 50%
+[rosout][INFO] 2017-06-26 10:40:50,978: Done 55%
+[rosout][INFO] 2017-06-26 10:40:51,079: Done 60%
+[rosout][INFO] 2017-06-26 10:40:51,180: Done 65%
+[rosout][INFO] 2017-06-26 10:40:51,281: Done 70%
+[rosout][INFO] 2017-06-26 10:40:51,382: Done 75%
+[rosout][INFO] 2017-06-26 10:40:51,483: Done 80%
+[rosout][INFO] 2017-06-26 10:40:51,583: Done 85%
+[rosout][INFO] 2017-06-26 10:40:51,684: Done 90%
+[rosout][INFO] 2017-06-26 10:40:51,786: /move_sandbox_items: Succeeded
+[rosout][INFO] 2017-06-26 10:40:54,091: /move_sandbox_items: Received a request to move hippo to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:40:54,092: Moving hippo to 0.01,0.01
+[rosout][INFO] 2017-06-26 10:40:54,092: Requesting a plan...
+[rospy.internal][WARNING] 2017-06-26 10:40:54,166: Unknown error initiating TCP/IP socket to sandtray-hrilab:48045 (http://sandtray-hrilab:41846/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:54,166: topic[/tf] removing connection to http://sandtray-hrilab:41846/
+[rospy.internal][ERROR] 2017-06-26 10:40:54,169: Unable to initiate TCP/IP socket to sandtray-hrilab:46454 (http://sandtray-hrilab:35795/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2017-06-26 10:40:54,171: Unable to initiate TCP/IP socket to sandtray-hrilab:46454 (http://sandtray-hrilab:35795/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 593, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rosout][INFO] 2017-06-26 10:40:54,239: Received trajectory! As requested, waiting -0.000253279s before starting...
+[rosout][INFO] 2017-06-26 10:40:54,239: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:40:54,240: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:40:54,240: Done 0%
+[rosout][INFO] 2017-06-26 10:40:54,341: Done 25%
+[rospy.internal][INFO] 2017-06-26 10:40:54,342: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:40:54,417: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:40:54,417: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rosout][INFO] 2017-06-26 10:40:54,442: Done 50%
+[rosout][INFO] 2017-06-26 10:40:54,543: /move_sandbox_items: Succeeded
+[rospy.internal][WARNING] 2017-06-26 10:40:55,171: Unknown error initiating TCP/IP socket to sandtray-hrilab:46454 (http://sandtray-hrilab:35795/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-06-26 10:40:55,172: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:35795/
+[rospy.internal][WARNING] 2017-06-26 10:40:55,172: Unknown error initiating TCP/IP socket to sandtray-hrilab:46454 (http://sandtray-hrilab:35795/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-06-26 10:40:55,172: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:35795/
+[rospy.internal][INFO] 2017-06-26 10:40:59,586: topic[/tf] adding connection to [http://sandtray-hrilab:33594/], count 6
+[rospy.internal][INFO] 2017-06-26 10:41:00,375: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:00,377: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:00,377: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:00,402: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:39130/], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:00,402: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:39130/], count 0
+[rosout][INFO] 2017-06-26 10:41:00,472: /move_sandbox_items: Received a request to move crocodile to 0.57, -0.18. Let's do that
+[rosout][INFO] 2017-06-26 10:41:00,473: Moving crocodile to 0.02,-0.04
+[rosout][INFO] 2017-06-26 10:41:00,473: Requesting a plan...
+[rosout][INFO] 2017-06-26 10:41:00,662: Received trajectory! As requested, waiting -0.022818098s before starting...
+[rosout][INFO] 2017-06-26 10:41:00,662: Waiting a bit more (0.0s) to give the robot time to prepare...
+[rosout][INFO] 2017-06-26 10:41:00,662: Starting to play trajectory!
+[rosout][INFO] 2017-06-26 10:41:00,663: Done 0%
+[rosout][INFO] 2017-06-26 10:41:00,764: Done 7%
+[rosout][INFO] 2017-06-26 10:41:00,865: Done 15%
+[rosout][INFO] 2017-06-26 10:41:00,966: Done 23%
+[rosout][INFO] 2017-06-26 10:41:01,067: Done 30%
+[rosout][INFO] 2017-06-26 10:41:01,168: Done 38%
+[rosout][INFO] 2017-06-26 10:41:01,269: Done 46%
+[rosout][INFO] 2017-06-26 10:41:01,370: Done 53%
+[rosout][INFO] 2017-06-26 10:41:01,471: Done 61%
+[rosout][INFO] 2017-06-26 10:41:01,572: Done 69%
+[rosout][INFO] 2017-06-26 10:41:01,673: Done 76%
+[rosout][INFO] 2017-06-26 10:41:01,774: Done 84%
+[rosout][INFO] 2017-06-26 10:41:01,875: /move_sandbox_items: Succeeded
+[rospy.core][INFO] 2017-06-26 10:41:05,744: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-26 10:41:05,750: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-06-26 10:41:05,751: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-26 10:41:05,751: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:05,751: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:05,752: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:05,753: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:39130/
+[rospy.internal][INFO] 2017-06-26 10:41:05,753: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:39130/
+[rospy.internal][WARNING] 2017-06-26 10:41:05,753: Unknown error initiating TCP/IP socket to sandtray-hrilab:45848 (http://sandtray-hrilab:39130/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-06-26 10:41:05,753: topic[/tf] removing connection to http://sandtray-hrilab:42429/
+[rospy.internal][INFO] 2017-06-26 10:41:05,754: topic[/tf] removing connection to http://sandtray-hrilab:35600/
+[rospy.internal][INFO] 2017-06-26 10:41:05,755: topic[/tf] removing connection to http://sandtray-hrilab:40309/
+[rospy.internal][INFO] 2017-06-26 10:41:05,755: topic[/tf] removing connection to http://sandtray-hrilab:41005/
+[rospy.internal][INFO] 2017-06-26 10:41:05,755: topic[/tf] removing connection to http://sandtray-hrilab:33537/
+[rospy.internal][INFO] 2017-06-26 10:41:05,756: topic[/tf] removing connection to http://sandtray-hrilab:40048/
+[rospy.internal][INFO] 2017-06-26 10:41:05,756: topic[/tf] removing connection to http://sandtray-hrilab:33594/
+[rospy.impl.masterslave][INFO] 2017-06-26 10:41:05,756: signal-2
+[rospy.internal][WARNING] 2017-06-26 10:41:05,757: Unknown error initiating TCP/IP socket to sandtray-hrilab:49059 (http://sandtray-hrilab:33594/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2017-06-26 10:41:05,831: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-26 10:41:05,832: signal_shutdown [atexit]
+[rospy.client][INFO] 2017-06-26 10:41:12,570: init_node, name[/move_sandbox_items], pid[11754]
+[xmlrpc][INFO] 2017-06-26 10:41:12,571: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-26 10:41:12,571: Started XML-RPC server [http://sandtray-hrilab:33821/]
+[rospy.impl.masterslave][INFO] 2017-06-26 10:41:12,571: _ready: http://sandtray-hrilab:33821/
+[rospy.registration][INFO] 2017-06-26 10:41:12,572: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-26 10:41:12,572: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-26 10:41:12,573: ROS Slave URI: [http://sandtray-hrilab:33821/]
+[rospy.init][INFO] 2017-06-26 10:41:12,573: registered with master
+[rospy.rosout][INFO] 2017-06-26 10:41:12,573: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-26 10:41:12,576: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-26 10:41:12,578: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-26 10:41:12,608: topic[/tf] adding connection to [http://sandtray-hrilab:35600/], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,617: topic[/tf] adding connection to [http://sandtray-hrilab:42429/], count 1
+[rospy.internal][INFO] 2017-06-26 10:41:12,625: topic[/tf] adding connection to [http://sandtray-hrilab:40309/], count 2
+[rospy.internal][INFO] 2017-06-26 10:41:12,626: topic[/tf] adding connection to [http://sandtray-hrilab:41005/], count 3
+[rospy.internal][INFO] 2017-06-26 10:41:12,631: topic[/tf] adding connection to [http://sandtray-hrilab:33594/], count 4
+[rospy.internal][INFO] 2017-06-26 10:41:12,631: topic[/tf] adding connection to [http://sandtray-hrilab:33537/], count 5
+[rospy.internal][INFO] 2017-06-26 10:41:12,635: topic[/tf] adding connection to [http://sandtray-hrilab:36071/], count 6
+[rospy.internal][INFO] 2017-06-26 10:41:12,639: topic[/move_sandbox_items/cancel] adding connection to [http://sandtray-hrilab:39130/], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,645: topic[/move_sandbox_items/goal] adding connection to [http://sandtray-hrilab:39130/], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,715: topic[/move_sandbox_items/result] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,717: topic[/move_sandbox_items/feedback] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,717: topic[/move_sandbox_items/status] adding connection to [/sandbox_play], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,791: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-26 10:41:12,792: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.internal][WARNING] 2017-06-26 10:41:19,401: Unknown error initiating TCP/IP socket to sandtray-hrilab:60971 (http://sandtray-hrilab:35600/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-06-26 10:41:19,401: topic[/tf] removing connection to http://sandtray-hrilab:35600/
+[rospy.internal][INFO] 2017-06-26 10:41:19,643: topic[/poses] removing connection to /sandtray
+[rospy.core][INFO] 2017-06-26 10:41:23,170: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-26 10:41:23,181: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-26 10:41:23,181: topic[/move_sandbox_items/feedback] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:23,181: topic[/move_sandbox_items/result] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:23,182: topic[/move_sandbox_items/status] removing connection to /sandbox_play
+[rospy.internal][INFO] 2017-06-26 10:41:23,182: topic[/move_sandbox_items/goal] removing connection to http://sandtray-hrilab:39130/
+[rospy.internal][INFO] 2017-06-26 10:41:23,183: topic[/move_sandbox_items/cancel] removing connection to http://sandtray-hrilab:39130/
+[rospy.internal][INFO] 2017-06-26 10:41:23,183: topic[/tf] removing connection to http://sandtray-hrilab:42429/
+[rospy.internal][WARNING] 2017-06-26 10:41:23,183: Unknown error initiating TCP/IP socket to sandtray-hrilab:45848 (http://sandtray-hrilab:39130/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2017-06-26 10:41:23,184: topic[/tf] removing connection to http://sandtray-hrilab:40309/
+[rospy.internal][INFO] 2017-06-26 10:41:23,184: topic[/tf] removing connection to http://sandtray-hrilab:41005/
+[rospy.internal][INFO] 2017-06-26 10:41:23,184: topic[/tf] removing connection to http://sandtray-hrilab:33594/
+[rospy.internal][INFO] 2017-06-26 10:41:23,184: topic[/tf] removing connection to http://sandtray-hrilab:33537/
+[rospy.internal][INFO] 2017-06-26 10:41:23,184: topic[/tf] removing connection to http://sandtray-hrilab:36071/
+[rospy.impl.masterslave][INFO] 2017-06-26 10:41:23,185: signal-2
+[rospy.internal][ERROR] 2017-06-26 10:41:23,186: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 729, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 103, in recv_buff
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][WARNING] 2017-06-26 10:41:23,309: Unknown error initiating TCP/IP socket to sandtray-hrilab:39290 (http://sandtray-hrilab:40309/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rosgraph/network.py", line 362, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.core][INFO] 2017-06-26 10:41:23,803: signal_shutdown [atexit]

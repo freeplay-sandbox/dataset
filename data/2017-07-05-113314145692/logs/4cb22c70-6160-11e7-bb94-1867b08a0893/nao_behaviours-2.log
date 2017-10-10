@@ -1,0 +1,45 @@
+[rospy.client][INFO] 2017-07-05 11:40:42,254: init_node, name[/nao_behaviours], pid[16689]
+[xmlrpc][INFO] 2017-07-05 11:40:42,255: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-05 11:40:42,255: Started XML-RPC server [http://sandtray-hrilab:44100/]
+[rospy.init][INFO] 2017-07-05 11:40:42,255: ROS Slave URI: [http://sandtray-hrilab:44100/]
+[rospy.impl.masterslave][INFO] 2017-07-05 11:40:42,257: _ready: http://sandtray-hrilab:44100/
+[rospy.registration][INFO] 2017-07-05 11:40:42,258: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-05 11:40:42,258: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-05 11:40:42,357: registered with master
+[rospy.rosout][INFO] 2017-07-05 11:40:42,357: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-05 11:40:42,359: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-05 11:40:42,360: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-07-05 11:40:43,219: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-07-05 11:40:48,981: topic[/speech] adding connection to [/naoqi_driver_node], count 0
+[rosout][WARNING] 2017-07-05 11:41:04,532: Waiting for frame /odom to be published...
+[rospy.internal][INFO] 2017-07-05 11:41:04,543: topic[/tf] adding connection to [http://sandtray-hrilab:36952/], count 0
+[rospy.internal][INFO] 2017-07-05 11:41:04,544: topic[/tf] adding connection to [http://sandtray-hrilab:36316/], count 0
+[rospy.internal][INFO] 2017-07-05 11:41:04,546: topic[/tf] adding connection to [http://sandtray-hrilab:39648/], count 1
+[rospy.internal][INFO] 2017-07-05 11:41:04,547: topic[/tf] adding connection to [http://sandtray-hrilab:37595/], count 3
+[rospy.internal][INFO] 2017-07-05 11:41:04,548: topic[/tf] adding connection to [http://sandtray-hrilab:36396/], count 3
+[rospy.internal][INFO] 2017-07-05 11:41:04,552: topic[/tf] adding connection to [http://sandtray-hrilab:35942/], count 5
+[rospy.internal][INFO] 2017-07-05 11:41:04,554: topic[/tf] adding connection to [http://sandtray-hrilab:35399/], count 6
+[rospy.internal][INFO] 2017-07-05 11:41:04,555: topic[/tf] adding connection to [http://192.168.2.101:33682/], count 7
+[rosout][INFO] 2017-07-05 11:41:05,034: Ok! Starting robot behaviours.
+[rospy.internal][INFO] 2017-07-05 11:41:05,055: topic[/poses] adding connection to [http://sandtray-hrilab:42517/], count 0
+[rospy.core][INFO] 2017-07-05 11:54:30,002: signal_shutdown [signal-15]
+[rospy.internal][WARNING] 2017-07-05 11:54:30,009: Unknown error initiating TCP/IP socket to sandtray-hrilab:52335 (http://sandtray-hrilab:36396/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2017-07-05 11:54:30,009: topic[/tf] removing connection to http://sandtray-hrilab:36396/
+[rospy.internal][INFO] 2017-07-05 11:54:30,014: topic[/speech] removing connection to /naoqi_driver_node
+[rospy.internal][INFO] 2017-07-05 11:54:30,014: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-07-05 11:54:30,014: topic[/poses] removing connection to http://sandtray-hrilab:42517/
+[rospy.internal][INFO] 2017-07-05 11:54:30,014: topic[/tf] removing connection to http://sandtray-hrilab:36952/
+[rospy.internal][INFO] 2017-07-05 11:54:30,015: topic[/tf] removing connection to http://sandtray-hrilab:36316/
+[rospy.internal][INFO] 2017-07-05 11:54:30,015: topic[/tf] removing connection to http://sandtray-hrilab:39648/
+[rospy.internal][INFO] 2017-07-05 11:54:30,015: topic[/tf] removing connection to http://sandtray-hrilab:37595/
+[rospy.internal][INFO] 2017-07-05 11:54:30,016: topic[/tf] removing connection to http://sandtray-hrilab:35942/
+[rospy.internal][INFO] 2017-07-05 11:54:30,016: topic[/tf] removing connection to http://sandtray-hrilab:35399/
+[rospy.internal][INFO] 2017-07-05 11:54:30,016: topic[/tf] removing connection to http://192.168.2.101:33682/
+[rospy.impl.masterslave][INFO] 2017-07-05 11:54:30,016: signal-15
+[rospy.core][INFO] 2017-07-05 11:54:30,144: signal_shutdown [signal-2]

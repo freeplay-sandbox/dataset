@@ -1,0 +1,28 @@
+[rospy.client][INFO] 2017-06-01 10:27:44,591: init_node, name[/sandbox_zones_from_image], pid[3589]
+[xmlrpc][INFO] 2017-06-01 10:27:44,591: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-01 10:27:44,591: Started XML-RPC server [http://sandtray-hrilab:43270/]
+[rospy.init][INFO] 2017-06-01 10:27:44,591: ROS Slave URI: [http://sandtray-hrilab:43270/]
+[rospy.impl.masterslave][INFO] 2017-06-01 10:27:44,592: _ready: http://sandtray-hrilab:43270/
+[rospy.registration][INFO] 2017-06-01 10:27:44,593: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-01 10:27:44,593: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-01 10:27:44,692: registered with master
+[rospy.rosout][INFO] 2017-06-01 10:27:44,692: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-01 10:27:44,694: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-01 10:27:44,695: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-06-01 10:27:44,702: Waiting for images of the playground
+[rospy.internal][INFO] 2017-06-01 10:27:44,708: topic[/sandtray/background/camera_info] adding connection to [http://sandtray-hrilab:42565/], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,708: topic[/sandtray/background/image] adding connection to [http://sandtray-hrilab:42565/], count 0
+[rospy.internal][INFO] 2017-06-01 10:27:44,898: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2017-06-01 10:27:45,018: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-01 10:27:45,028: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-01 10:27:45,028: topic[/sandtray/background/image] removing connection to http://sandtray-hrilab:42565/
+[rospy.internal][INFO] 2017-06-01 10:27:45,028: topic[/sandtray/background/camera_info] removing connection to http://sandtray-hrilab:42565/
+[rospy.impl.masterslave][INFO] 2017-06-01 10:27:45,029: signal-2
+[rospy.internal][WARNING] 2017-06-01 10:27:45,029: Unknown error initiating TCP/IP socket to sandtray-hrilab:34673 (http://sandtray-hrilab:42565/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.core][INFO] 2017-06-01 10:27:45,644: signal_shutdown [atexit]

@@ -1,0 +1,28 @@
+[rospy.client][INFO] 2017-07-13 10:42:24,506: init_node, name[/nao_behaviours], pid[5646]
+[xmlrpc][INFO] 2017-07-13 10:42:24,506: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-13 10:42:24,507: Started XML-RPC server [http://sandtray-hrilab:42354/]
+[rospy.init][INFO] 2017-07-13 10:42:24,507: ROS Slave URI: [http://sandtray-hrilab:42354/]
+[rospy.impl.masterslave][INFO] 2017-07-13 10:42:24,507: _ready: http://sandtray-hrilab:42354/
+[rospy.registration][INFO] 2017-07-13 10:42:24,508: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-13 10:42:24,508: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-13 10:42:24,607: registered with master
+[rospy.rosout][INFO] 2017-07-13 10:42:24,608: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-13 10:42:24,610: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-13 10:42:24,611: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2017-07-13 10:42:29,625: signal_shutdown [atexit]
+[rospy.impl.masterslave][INFO] 2017-07-13 10:42:29,628: atexit
+[rospy.client][INFO] 2017-07-13 10:42:45,571: init_node, name[/nao_behaviours], pid[6991]
+[xmlrpc][INFO] 2017-07-13 10:42:45,571: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-07-13 10:42:45,578: Started XML-RPC server [http://sandtray-hrilab:40471/]
+[rospy.init][INFO] 2017-07-13 10:42:45,578: ROS Slave URI: [http://sandtray-hrilab:40471/]
+[rospy.impl.masterslave][INFO] 2017-07-13 10:42:45,579: _ready: http://sandtray-hrilab:40471/
+[rospy.registration][INFO] 2017-07-13 10:42:45,580: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-07-13 10:42:45,580: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-07-13 10:42:45,679: registered with master
+[rospy.rosout][INFO] 2017-07-13 10:42:45,679: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-07-13 10:42:45,682: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-07-13 10:42:45,684: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2017-07-13 10:42:50,705: signal_shutdown [signal-2]
+[rospy.impl.masterslave][INFO] 2017-07-13 10:42:50,710: signal-2
+[rospy.core][INFO] 2017-07-13 10:42:51,325: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-07-13 10:42:51,325: signal_shutdown [atexit]

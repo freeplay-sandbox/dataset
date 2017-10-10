@@ -1,0 +1,300 @@
+[rospy.client][INFO] 2017-06-13 10:31:42,691: init_node, name[/sandbox_play], pid[6515]
+[xmlrpc][INFO] 2017-06-13 10:31:42,692: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-13 10:31:42,692: Started XML-RPC server [http://sandtray-hrilab:46817/]
+[rospy.init][INFO] 2017-06-13 10:31:42,692: ROS Slave URI: [http://sandtray-hrilab:46817/]
+[rospy.impl.masterslave][INFO] 2017-06-13 10:31:42,692: _ready: http://sandtray-hrilab:46817/
+[xmlrpc][INFO] 2017-06-13 10:31:42,693: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2017-06-13 10:31:42,693: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2017-06-13 10:31:42,793: registered with master
+[rospy.rosout][INFO] 2017-06-13 10:31:42,793: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-13 10:31:42,795: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-13 10:31:42,796: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2017-06-13 10:31:42,799: Initializing TF...
+[rospy.internal][INFO] 2017-06-13 10:31:42,809: topic[/tf] adding connection to [http://sandtray-hrilab:33888/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:42,809: topic[/tf] adding connection to [http://sandtray-hrilab:39543/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:42,810: topic[/tf] adding connection to [http://sandtray-hrilab:39898/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:42,811: topic[/tf] adding connection to [http://sandtray-hrilab:33182/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:42,812: topic[/tf] adding connection to [http://sandtray-hrilab:37546/], count 2
+[rospy.internal][INFO] 2017-06-13 10:31:42,813: topic[/tf] adding connection to [http://sandtray-hrilab:37227/], count 3
+[rospy.internal][INFO] 2017-06-13 10:31:42,924: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2017-06-13 10:31:43,307: Waiting for move_sandbox_items action server...
+[rospy.internal][INFO] 2017-06-13 10:31:43,318: topic[/zones] adding connection to [http://sandtray-hrilab:33677/], count 0
+[rosout][INFO] 2017-06-13 10:31:43,322: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:31:43,324: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:31:43,325: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:31:43,325: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:31:43,326: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:31:43,326: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:31:43,327: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:31:43,328: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:31:43,328: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:31:43,330: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:31:43,330: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:31:43,330: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:31:43,332: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:31:43,332: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:31:43,333: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:31:43,333: Adding/updating a white zone
+[rospy.internal][INFO] 2017-06-13 10:31:43,337: topic[/move_sandbox_items/result] adding connection to [http://sandtray-hrilab:42055/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:43,339: topic[/move_sandbox_items/feedback] adding connection to [http://sandtray-hrilab:42055/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:43,339: topic[/move_sandbox_items/status] adding connection to [http://sandtray-hrilab:42055/], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:43,349: topic[/move_sandbox_items/cancel] adding connection to [/move_sandbox_items], count 0
+[rospy.internal][INFO] 2017-06-13 10:31:43,350: topic[/move_sandbox_items/goal] adding connection to [/move_sandbox_items], count 0
+[rosout][INFO] 2017-06-13 10:31:43,354: Ready to play!
+[rosout][WARNING] 2017-06-13 10:31:43,386: arm_reach is not yet published.
+[rosout][INFO] 2017-06-13 10:31:43,388: Sending hippo to blue
+[rospy.internal][INFO] 2017-06-13 10:31:43,754: topic[/tf] adding connection to [http://sandtray-hrilab:37024/], count 6
+[rosout][INFO] 2017-06-13 10:31:46,737: Sending elephant to green
+[rospy.internal][INFO] 2017-06-13 10:31:49,474: topic[/tf] adding connection to [http://192.168.2.104:38738/], count 7
+[rosout][INFO] 2017-06-13 10:31:51,713: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:31:55,701: Sending hippo to blue
+[rosout][INFO] 2017-06-13 10:31:58,845: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:32:02,313: Sending hippo to blue
+[rosout][WARNING] 2017-06-13 10:32:05,613: arm_reach is not yet published.
+[rosout][INFO] 2017-06-13 10:32:05,615: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:32:08,928: Sending hippo to blue
+[rosout][INFO] 2017-06-13 10:32:43,990: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:43,990: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:43,991: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:43,991: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:43,991: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:32:43,992: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:43,992: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:43,993: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:43,994: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:43,995: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:43,995: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:43,995: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:43,996: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:43,996: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:43,997: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:43,998: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:32:50,463: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:50,464: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:50,464: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:50,464: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:32:50,465: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:32:50,465: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:50,465: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:50,466: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:50,466: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:50,466: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:32:50,467: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:50,467: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:50,468: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:50,468: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:50,469: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:32:50,469: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:32:51,533: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:33:08,122: Sending ball to white
+[rosout][INFO] 2017-06-13 10:33:09,178: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:33:09,179: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:33:09,179: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:33:09,179: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:33:09,180: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:33:09,180: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:33:09,180: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:33:09,180: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:33:09,181: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:33:09,181: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:33:09,181: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:33:09,182: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:33:09,182: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:33:09,182: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:33:09,182: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:33:09,183: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:33:27,511: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:33:32,857: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:33:37,732: Sending zebra to green
+[rosout][INFO] 2017-06-13 10:33:42,826: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:33:47,612: Sending zebra to green
+[rosout][INFO] 2017-06-13 10:33:50,382: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:34:07,607: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:34:21,814: Sending girl to white
+[rosout][INFO] 2017-06-13 10:34:31,748: Sending ball to white
+[rosout][INFO] 2017-06-13 10:34:34,137: Sending boy to white
+[rosout][INFO] 2017-06-13 10:34:43,117: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:34:48,808: Sending hippo to blue
+[rosout][INFO] 2017-06-13 10:34:55,986: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:35:00,054: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:35:06,498: Sending hippo to blue
+[rosout][INFO] 2017-06-13 10:35:12,964: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:35:12,964: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:35:12,965: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:35:12,965: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:35:12,965: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:35:12,966: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:35:12,966: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:35:12,966: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:35:12,967: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:35:12,967: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:35:12,968: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:35:12,968: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:35:12,969: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:35:12,969: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:35:12,970: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:35:12,970: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:35:13,972: Sending ball to white
+[rosout][INFO] 2017-06-13 10:35:22,237: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:35:25,697: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:35:36,159: Sending zebra to green
+[rosout][INFO] 2017-06-13 10:35:44,977: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:35:51,698: Sending girl to white
+[rosout][INFO] 2017-06-13 10:35:55,519: Sending girl to white
+[rosout][INFO] 2017-06-13 10:36:00,233: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:36:03,070: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:36:06,247: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:36:10,018: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:36:12,405: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:36:22,782: Sending ball to white
+[rosout][INFO] 2017-06-13 10:36:26,489: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:36:30,621: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:36:33,715: Sending ball to white
+[rosout][INFO] 2017-06-13 10:36:36,293: Sending ball to white
+[rosout][INFO] 2017-06-13 10:36:47,966: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:37:01,182: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:37:04,133: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:37:07,706: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:37:14,607: Sending zebra to green
+[rosout][INFO] 2017-06-13 10:37:19,409: Sending ball to white
+[rosout][INFO] 2017-06-13 10:37:24,010: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:37:27,970: Sending ball to white
+[rosout][INFO] 2017-06-13 10:37:48,628: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:37:54,518: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:38:02,802: Sending hippo to blue
+[rosout][INFO] 2017-06-13 10:38:09,495: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:38:14,858: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:38:18,525: Sending ball to white
+[rosout][INFO] 2017-06-13 10:38:20,682: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:38:20,683: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:38:20,683: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:38:20,683: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:38:20,683: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:38:20,684: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:38:20,684: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:38:20,684: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:38:20,684: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:38:20,685: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:38:20,685: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:38:20,685: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:38:20,686: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:38:20,686: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:38:20,686: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:38:20,686: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:38:32,930: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:38:39,467: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:38:50,193: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:38:54,898: Sending crocodile to blue
+[rosout][INFO] 2017-06-13 10:38:59,144: Sending ball to white
+[rosout][INFO] 2017-06-13 10:39:15,530: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:39:22,045: Sending zebra to green
+[rosout][INFO] 2017-06-13 10:39:22,697: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:39:22,698: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:39:22,698: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:39:22,698: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:39:22,698: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:39:22,699: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:39:22,699: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:39:22,700: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:39:22,701: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:39:22,701: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:39:22,701: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:39:22,702: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:39:22,702: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:39:22,702: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:39:22,703: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:39:22,703: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:39:26,491: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:39:30,187: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:39:38,128: Sending elephant to green
+[rosout][INFO] 2017-06-13 10:39:41,036: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:39:51,732: Sending girl to white
+[rosout][INFO] 2017-06-13 10:39:57,070: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:40:03,443: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:03,443: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:03,444: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:03,444: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:03,444: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:40:03,445: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:03,445: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:03,445: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:03,445: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:03,446: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:03,446: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:03,446: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:03,446: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:03,446: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:03,447: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:03,447: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:40:10,937: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:40:18,992: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:40:22,479: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:40:26,229: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:40:32,472: Sending ball to white
+[rosout][INFO] 2017-06-13 10:40:33,702: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:33,702: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:33,703: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:33,703: Adding/updating a blue zone
+[rosout][INFO] 2017-06-13 10:40:33,703: Adding/updating a yellow zone
+[rosout][INFO] 2017-06-13 10:40:33,703: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:33,704: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:33,704: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:33,704: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:33,705: Adding/updating a black zone
+[rosout][INFO] 2017-06-13 10:40:33,706: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:33,707: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:33,707: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:33,708: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:33,708: Adding/updating a green zone
+[rosout][INFO] 2017-06-13 10:40:33,708: Adding/updating a white zone
+[rosout][INFO] 2017-06-13 10:40:47,177: Sending girl to white
+[rosout][INFO] 2017-06-13 10:40:51,902: Sending ball to white
+[rosout][INFO] 2017-06-13 10:40:57,723: Sending ball to white
+[rosout][INFO] 2017-06-13 10:41:07,377: Sending boy to white
+[rosout][INFO] 2017-06-13 10:41:18,675: Sending caravan to white
+[rosout][INFO] 2017-06-13 10:41:25,196: Sending giraffe to green
+[rosout][INFO] 2017-06-13 10:41:34,178: Sending lion to yellow
+[rosout][INFO] 2017-06-13 10:41:38,756: Sending ball to white
+[rospy.core][INFO] 2017-06-13 10:41:46,754: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-13 10:41:46,761: topic[/move_sandbox_items/goal] removing connection to /move_sandbox_items
+[rospy.internal][INFO] 2017-06-13 10:41:46,762: topic[/move_sandbox_items/cancel] removing connection to /move_sandbox_items
+[rospy.internal][INFO] 2017-06-13 10:41:46,762: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-13 10:41:46,763: topic[/move_sandbox_items/result] removing connection to http://sandtray-hrilab:42055/
+[rospy.internal][INFO] 2017-06-13 10:41:46,763: topic[/zones] removing connection to http://sandtray-hrilab:33677/
+[rospy.internal][INFO] 2017-06-13 10:41:46,763: topic[/tf] removing connection to http://sandtray-hrilab:33888/
+[rospy.internal][INFO] 2017-06-13 10:41:46,764: topic[/tf] removing connection to http://sandtray-hrilab:39543/
+[rospy.internal][INFO] 2017-06-13 10:41:46,764: topic[/tf] removing connection to http://sandtray-hrilab:39898/
+[rospy.internal][INFO] 2017-06-13 10:41:46,764: topic[/tf] removing connection to http://sandtray-hrilab:33182/
+[rospy.internal][WARNING] 2017-06-13 10:41:46,766: Unknown error initiating TCP/IP socket to sandtray-hrilab:43749 (http://sandtray-hrilab:39898/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][WARNING] 2017-06-13 10:41:46,767: Unknown error initiating TCP/IP socket to sandtray-hrilab:35122 (http://sandtray-hrilab:33182/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 650, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2017-06-13 10:41:46,767: Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 838, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2017-06-13 10:41:46,767: topic[/tf] removing connection to http://sandtray-hrilab:37546/
+[rospy.internal][INFO] 2017-06-13 10:41:46,768: topic[/tf] removing connection to http://sandtray-hrilab:37227/
+[rospy.internal][INFO] 2017-06-13 10:41:46,768: topic[/tf] removing connection to http://sandtray-hrilab:37024/
+[rospy.internal][INFO] 2017-06-13 10:41:46,768: topic[/tf] removing connection to http://192.168.2.104:38738/
+[rospy.internal][INFO] 2017-06-13 10:41:46,769: topic[/move_sandbox_items/feedback] removing connection to http://sandtray-hrilab:42055/
+[rospy.internal][WARNING] 2017-06-13 10:41:46,769: Unknown error initiating TCP/IP socket to 192.168.2.104:44161 (http://192.168.2.104:38738/): Traceback (most recent call last):
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2017-06-13 10:41:46,769: topic[/move_sandbox_items/status] removing connection to http://sandtray-hrilab:42055/
+[rospy.impl.masterslave][INFO] 2017-06-13 10:41:46,769: signal-2
+[rospy.core][INFO] 2017-06-13 10:41:46,786: signal_shutdown [signal-15]
+[rospy.core][INFO] 2017-06-13 10:41:46,786: signal_shutdown [atexit]

@@ -1,0 +1,28 @@
+[rospy.client][INFO] 2017-06-07 11:03:40,831: init_node, name[/move_sandbox_items], pid[22331]
+[xmlrpc][INFO] 2017-06-07 11:03:40,831: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2017-06-07 11:03:40,832: Started XML-RPC server [http://sandtray-hrilab:42540/]
+[rospy.init][INFO] 2017-06-07 11:03:40,832: ROS Slave URI: [http://sandtray-hrilab:42540/]
+[rospy.impl.masterslave][INFO] 2017-06-07 11:03:40,832: _ready: http://sandtray-hrilab:42540/
+[rospy.registration][INFO] 2017-06-07 11:03:40,833: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2017-06-07 11:03:40,833: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2017-06-07 11:03:40,932: registered with master
+[rospy.rosout][INFO] 2017-06-07 11:03:40,932: initializing /rosout core topic
+[rospy.rosout][INFO] 2017-06-07 11:03:40,935: connected to core topic /rosout
+[rospy.simtime][INFO] 2017-06-07 11:03:40,936: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2017-06-07 11:03:40,949: topic[/tf] adding connection to [http://sandtray-hrilab:43078/], count 0
+[rospy.internal][INFO] 2017-06-07 11:03:40,950: topic[/tf] adding connection to [http://sandtray-hrilab:37802/], count 0
+[rospy.internal][INFO] 2017-06-07 11:03:40,951: topic[/tf] adding connection to [http://sandtray-hrilab:43351/], count 0
+[rospy.internal][INFO] 2017-06-07 11:03:40,954: topic[/tf] adding connection to [http://sandtray-hrilab:45516/], count 2
+[rospy.internal][INFO] 2017-06-07 11:03:40,954: topic[/tf] adding connection to [http://sandtray-hrilab:34576/], count 2
+[rospy.internal][INFO] 2017-06-07 11:03:41,174: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2017-06-07 11:03:41,196: topic[/poses] adding connection to [/sandtray], count 0
+[rospy.core][INFO] 2017-06-07 11:03:41,426: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2017-06-07 11:03:41,433: topic[/poses] removing connection to /sandtray
+[rospy.internal][INFO] 2017-06-07 11:03:41,433: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2017-06-07 11:03:41,434: topic[/tf] removing connection to http://sandtray-hrilab:43078/
+[rospy.internal][INFO] 2017-06-07 11:03:41,434: topic[/tf] removing connection to http://sandtray-hrilab:37802/
+[rospy.internal][INFO] 2017-06-07 11:03:41,434: topic[/tf] removing connection to http://sandtray-hrilab:43351/
+[rospy.internal][INFO] 2017-06-07 11:03:41,434: topic[/tf] removing connection to http://sandtray-hrilab:45516/
+[rospy.internal][INFO] 2017-06-07 11:03:41,434: topic[/tf] removing connection to http://sandtray-hrilab:34576/
+[rospy.impl.masterslave][INFO] 2017-06-07 11:03:41,435: signal-2
+[rospy.core][INFO] 2017-06-07 11:03:41,568: signal_shutdown [atexit]
