@@ -1,0 +1,80 @@
+compression: none
+duration: 985.315048
+end: 1498213001.157429
+indexed: true
+messages: 671532
+path: /media/slemaignan/DoRoThy1/freeplay_sandox/data/2017-06-07-110339927658/freeplay.bag
+size: 8792377021
+start: 1498212015.842381
+topics:
+- messages: 1
+  topic: /footprints
+  type: visualization_msgs/MarkerArray
+- frequency: 16.1515
+  messages: 3653
+  topic: /sandtray/background/image/compressed
+  type: sensor_msgs/CompressedImage
+- frequency: 26715.3121
+  messages: 325006
+  topic: /tf
+  type: tf2_msgs/TFMessage
+- frequency: 26.5629
+  messages: 27370
+  topic: camera_purple/audio
+  type: audio_common_msgs/AudioData
+- frequency: 30.3876
+  messages: 29294
+  topic: camera_purple/depth/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.3719
+  messages: 29294
+  topic: camera_purple/depth/image_raw/compressedDepth
+  type: sensor_msgs/CompressedImage
+- frequency: 30.3739
+  messages: 29308
+  topic: camera_purple/rgb/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.3353
+  messages: 29308
+  topic: camera_purple/rgb/image_raw/compressed
+  type: sensor_msgs/CompressedImage
+- frequency: 26.3784
+  messages: 27370
+  topic: camera_yellow/audio
+  type: audio_common_msgs/AudioData
+- frequency: 30.6125
+  messages: 28412
+  topic: camera_yellow/depth/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.5922
+  messages: 28413
+  topic: camera_yellow/depth/image_raw/compressedDepth
+  type: sensor_msgs/CompressedImage
+- frequency: 30.5315
+  messages: 29391
+  topic: camera_yellow/rgb/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.4814
+  messages: 29391
+  topic: camera_yellow/rgb/image_raw/compressed
+  type: sensor_msgs/CompressedImage
+- frequency: 30.8176
+  messages: 27661
+  topic: env_camera/qhd/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.7916
+  messages: 27660
+  topic: env_camera/qhd/image_color/compressed
+  type: sensor_msgs/CompressedImage
+types:
+- md5: f43a8e1b362b75baa741461b46adc7e0
+  type: audio_common_msgs/AudioData
+- md5: c9a58c1b0b154e0e6da7578cb991d214
+  type: sensor_msgs/CameraInfo
+- md5: 8f7a12909da2c9d3332d540a0977563f
+  type: sensor_msgs/CompressedImage
+- md5: 94810edda583a504dfda3829e70d7eec
+  type: tf2_msgs/TFMessage
+- md5: d155b9ce5188fbaf89745847fd5882d7
+  type: visualization_msgs/MarkerArray
+version: 2.0

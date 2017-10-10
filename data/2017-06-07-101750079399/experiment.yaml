@@ -1,0 +1,37 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-07 10:17:50.079399
+timestamp: 1496827291348514080
+condition: childrobot
+purple-participant:
+  id: 2p007
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  288.51644802: interesting
+  347.783792972: interesting
+  412.282069921: interesting
+  433.541955947: interesting
+  604.098373889: interesting
+  643.342284917: interesting
+  694.710063934: issue
+  823.922294855: interesting
+  890.627822876: interesting
+  923.312937021: interesting
+  951.951598882: interesting
+  1059.26317596: interesting
+notes: 
+  general: Seemed to enjoy self very much. Interacted with the robot hand on screen (not so much with the robot itself). A few minutes of setting up robot at the beginning. 
+  288: P steals object from R
+  347: if R doesn't do anything, P provokes it
+  412: P trying to steal object from R
+  433: attacking R's creature with own
+  604: P played on own for a bit
+  643: P worked out reach of R
+  694: E helped retrieve object from under paint tray
+  823: P playing by self
+  890: attaching R's animal with P's
+  923: P teases R
+  951: P talking to R
+  1059: Playing by self
+

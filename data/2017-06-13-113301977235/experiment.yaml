@@ -1,0 +1,28 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-13 11:33:01.977235
+timestamp: 1497350448942251920
+condition: childrobot
+purple-participant:
+  id: 2017-06-13-11:33-p2
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 0
+markers:
+  203.923959971: interesting
+  244.697262049: interesting
+  355.620632172: note
+  368.15644908: interesting
+  445.878736973: interesting
+  566.328116179: interesting
+  645.161327124: interesting
+extras:
+  social-engagement: 0
+notes: 
+  general: Quiet with robot, although was happy enough during obj placement
+  203: Long R setup time
+  244: P confused when R steals objects
+  355: Very quiet. 
+  368: P trying to steal with R
+  445: P tries to play with the objects R isn't moving
+  566: P trying to flick objects away from R
+  645: P brings objects into R's field

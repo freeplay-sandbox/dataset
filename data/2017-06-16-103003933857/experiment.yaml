@@ -1,0 +1,44 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-16 10:30:03.933857
+timestamp: 1497605968989533901
+condition: childrobot
+purple-participant:
+  id: 2017-06-16-10:30-p2
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  117.1606431: issue
+  155.811527013: interesting
+  256.099131107: issue
+  310.918429136: interesting
+  330.967761039: interesting
+  354.058084011: issue
+  408.584563017: issue
+  604.818279981: interesting
+  672.776653051: interesting
+  737.503233194: interesting
+  763.132045984: interesting
+  808.842082023: interesting
+  849.758787155: interesting
+  900.480923176: interesting
+  961.987671137: interesting
+extras:
+  social-engagement: 2
+notes: 
+  general: very interested in robots. 
+  117: gave hint to play with R
+  155: P adds to R
+  256: forgot to say he can finish any time
+  310: drawing “in” map
+  320: kind of ignoring R
+  354: interrupted by teacher
+  408: P asking E about R
+  604: P colouring all green
+  672: P fighting for object with R
+  737: P added water back in (drawing own landscape)
+  763: P ignoring R 
+  808: P very tidy/neat
+  849: P pushing objects towards R (seeking interaction)
+  900: P used whole hand to move multiple objects
+  961: P very frustrated, sighing

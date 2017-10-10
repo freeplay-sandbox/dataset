@@ -1,0 +1,82 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-12 11:20:02.661195
+timestamp: 1497263053626142024
+condition: childchild
+purple-participant:
+  id: 2017-06-12-11:20-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-12-11:20-y1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  33.500241995: interesting
+  65.222984076: issue
+  97.143259049: interesting
+  128.601108075: interesting
+  166.1936059: interesting
+  212.455884934: interesting
+  242.794748068: interesting
+  268.317409993: interesting
+  292.15892005: interesting
+  309.134830952: interesting
+  336.114881993: interesting
+  356.048407078: interesting
+  411.404053927: interesting
+  435.590519906: interesting
+  462.557941914: issue
+  548.359123946: interesting
+  627.886569024: interesting
+  668.390573979: issue
+  744.051192046: interesting
+  814.318465949: interesting
+  850.097766877: interesting
+  902.368232012: interesting
+  923.886358977: interesting
+  943.468898058: interesting
+  964.949472905: interesting
+  999.560922862: interesting
+  1056.87533593: interesting
+  1095.54287505: interesting
+  1127.35500097: interesting
+  1232.2898159: issue
+  1283.87044788: interesting
+extras:
+  social-engagement: 5
+notes: 
+  general: Y more dominant that P. Both got on well. Spent a part of the time gossiping. 
+  33: telling each other about animals
+  65: E encourages them to use table
+  97: Y "Help me"
+  128: Y seeks approval from E
+  166: Colouring "in" land rather than over
+  212: Play separate games but telling each other about it
+  242: Y writing on table
+  268: P copies Y's intonation
+  292: Y joins in P, then gives orders
+  301: P copying Y verbally
+  336: Colour in all one colour
+  356: P "Oh look!"
+  411: Y write the other's name
+  435: Y tries to grap P
+  462: Distracted by robot (and E) 
+  548: P takes advantage of Y being distracted
+  627: Distracted by robot
+  668: Distracted by E
+  744: Y "Shall we?"
+  814: Gossiping
+  850: Creativity P expands on Y's ideas
+  902: Y "Hey! Naughty P"
+  923: P deliberately messing with Y's drawing
+  943: Y instructing P
+  964: Y using "I hate you!" as a joke telling off
+  999: Both overacting mistakes (Y copied P I think) 
+  1056: Y coping P's phrasing
+  1095: P finishing Y's sentence
+  1127: Using table sideways
+  1283: Shut up 
+  

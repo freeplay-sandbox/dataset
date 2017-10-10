@@ -1,0 +1,140 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-16 11:01:34.843091
+timestamp: 1497607870854084968
+condition: childchild
+purple-participant:
+  id: 2017-06-16-11:01-p1
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-16-11:01-y1
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  51.886488915: interesting
+  94.088521004: interesting
+  113.691465139: interesting
+  140.968472958: interesting
+  158.706948996: interesting
+  162.253828049: interesting
+  189.277678967: interesting
+  203.857183933: interesting
+  220.289412975: interesting
+  236.937222004: note
+  285.971040011: interesting
+  302.294947147: interesting
+  326.439491034: note
+  347.242051125: interesting
+  356.687037945: issue
+  601.316781044: interesting
+  656.097223044: interesting
+  667.457750082: interesting
+  683.609473944: interesting
+  725.276335001: interesting
+  753.16167593: interesting
+  840.566884041: issue
+  859.838489056: interesting
+  870.091926098: interesting
+  897.174252033: interesting
+  931.362801075: interesting
+  957.606724978: interesting
+  1044.00436211: interesting
+  1058.64794302: interesting
+  1088.030972: interesting
+  1150.41719699: interesting
+  1194.37451506: interesting
+  1217.95764899: interesting
+  1244.14193797: interesting
+  1258.18880796: interesting
+  1297.05622411: interesting
+  1343.85433412: interesting
+  1374.97240496: interesting
+  1401.69282007: interesting
+  1438.93880796: interesting
+  1457.36792707: interesting
+  1480.44154596: interesting
+  1509.51108408: note
+  1533.17512894: issue
+  1572.85520291: interesting
+  1622.24369407: interesting
+  1647.85705113: interesting
+  1676.54224992: interesting
+  1736.73745894: interesting
+  1781.03636503: interesting
+  1802.14486408: interesting
+  1824.07619: interesting
+  1844.58268213: interesting
+  1901.95646214: interesting
+  1939.46950412: interesting
+  1971.36837101: interesting
+  1991.11669397: interesting
+  2004.50063396: interesting
+  2029.84785104: interesting
+  2069.77293992: interesting
+  2101.94956708: interesting
+extras:
+  social-engagement: 5
+notes: 
+  general: P more dominant (acting like a manager). Session interrupted several times. 
+  51: P talks very fast. 
+  94: P giving instructions
+  113: Y finds something to do
+  140: Y looks to P because confused
+  158: disagreement about what to draw
+  162: lighthouse together
+  189: Y goes back to original idea
+  203: some turn taking
+  220: P tells Y off
+  236: generally more story telling
+  285: P “We have to start again”
+  302: P “Stop for a second”
+  326: generally uncomfortable on floor
+  347: P int
+  356: distracted by random child
+  601: distracted by robot
+  656: playing football
+  667: Y “we need to” P ignoring
+  683: P distracted by cameras
+  725: P distracted by R
+  753: P distracted by R
+  840: P very dominant
+  859: P “Let’s”
+  870: Y suggested other game
+  897: P making executive decision “No! we are going to…”
+  931: P always focussing on Y too
+  957: P asks for help with rainbow colours from E and Y
+  1044: P “Make everything blue”
+  1058: P asking questions/looking at Y
+  1088: P planning ahead 
+  1150: red=lava
+  1194: P “You can do that”
+  1217: P explaining why Y has to do it
+  1244: P using smilies
+  1258: P delegating, encouraging speed
+  1297: P totally ignores Y’s suggestions
+  1343: Y tells P off “not doing anything” 
+  1374: more turn taking after being told off
+  1401: P telling Y off
+  1438: drawing volcano
+  1457: P “good idea”
+  1480: P explicitly seeking approval
+  1509: generally long attention span
+  1533: P wants to take bib off
+  1572: Y teaching P 
+  1622: Y telling P off “You’ve done everything”
+  1647: P said Y was allowed an idea, but then talks over
+  1676: P topping from the bottom
+  1736: P giving Y compliments
+  1781: Y trying to talk over P “Look!”
+  1802: P adds sound effects
+  1901: Y teaching P 
+  1939: P giving Y colour, finger to finger
+  1971: P uses colours like in RL, rubber then colour
+  1991: P delegates
+  2004: P bored
+  2029: P telling stories
+  2069: Y “Let’s make everything random” 
+  2101: P asked how to get two colours at once

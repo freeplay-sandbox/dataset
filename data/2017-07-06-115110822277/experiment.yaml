@@ -1,0 +1,42 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 11:51:10.822277
+timestamp: 1499338690138375997
+condition: childrobot
+purple-participant:
+  id: 2017-07-06-11:51-p2
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  202.063635111: screenshot
+  223.681580067: note
+  281.173039913: note
+  345.251173973: note
+  423.679939985: screenshot
+  459.052318096: note
+  459.475136042: note
+  601.52529192: note
+  628.345010996: screenshot
+  669.29520011: screenshot
+  924.086678028: interesting
+  937.511111975: screenshot
+  979.28666997: interesting
+  1060.71924996: note
+  1160.09271789: note
+extras:
+  social-engagement: 1
+notes:
+  general: annotated by Severin
+  general: prompted that the robot might not be very social
+  general: after a few minutes, since P does not attempt to play much with the robot, the robot is mostly static, in rest pose
+  general: nearly no speech at all; nearly no interaction with the robot
+  202: screenshot heart
+  223: P engaged in drawing -- ignores the robot
+  281: briefly tests what the robot does with the children
+  345: back to drawing -- ignores the robot
+  423: screenshot -- picture of the robot!
+  424: plays again with the robot
+  601: pick up an idea card
+  924: P to E -- "it's a snowy island, it's freezing"
+  979: picks up idea card, and starting drawing something else
+  1070: clearing the bg

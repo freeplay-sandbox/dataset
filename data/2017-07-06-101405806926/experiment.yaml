@@ -1,0 +1,47 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 10:14:05.806926
+timestamp: 1499332969540302038
+condition: childchild
+purple-participant:
+  id: 2017-07-06-10:14-p1
+  age: 6
+  gender: female
+  details:
+    tablet-familiarity: na
+yellow-participant:
+  id: 2017-07-06-10:14-y1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: na
+markers:
+  340.115027904: note
+  375.431566953: interesting
+  383.24959588: interesting
+  437.397880077: interesting
+  481.37944293: note
+  561.400728941: note
+  886.82407999: issue
+  1025.33336997: screenshot
+  1077.24560499: note
+  1137.73683095: note
+  1219.07084394: interesting
+  1448.68382096: screenshot
+extras:
+  social-engagement: 3
+notes:
+  general: annotated by Severin
+  general: some RGBD + Kinect camera issues. Need to check whether usable or not 
+  general: poised children
+  general: speak very quitely
+  general: P dominant, very goal-oriented, not too bossy however
+  general: they spent most of their time drawing a complex zoo
+  340: Y seek for adult approval
+  375: coulouring all in blue, and then writes 'ZOO' on it
+  383: after colouring all in blue, Y "it's a flood"
+  437: P says 'Stop!' to Y -- Y was aimlessly playing, but not really disturbing
+  481: both (but mainly P) are very much into building a zoo
+  561: P erases Y corner, Y not upset, but P doe snot seem to care too much about what Y might want to do
+  886: yellow camera disconnected some time ago -- restarted it.
+  1077: turn-taking -- Y asking P permission to do its own drawing
+  1137: P now making the pathway -- very structured play
+  1219: Y "we need more animals", P put a person, Y, grinning -- "ok"

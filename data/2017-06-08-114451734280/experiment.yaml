@@ -1,0 +1,24 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-08 11:44:51.734280
+timestamp: 1496918881622509002
+condition: childchild
+purple-participant:
+  id: 2017-06-08-11:44-p1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-08-11:44-y1
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 0
+markers:
+  21.355108977: interesting
+  37.418766976: interesting
+  130.237565041: interesting
+notes:
+  general: Both have done this before (P 1y008, Y 1y003)
+  21: P telling stories
+  37: P laughter for attention, Y joins in
+  130: Around here E noticed cameras had died, so switched to Status to get them running, therefore, no more notes. 

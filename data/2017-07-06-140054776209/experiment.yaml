@@ -1,0 +1,41 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 14:00:54.776209
+timestamp: 1499346608303962945
+condition: childrobot
+purple-participant:
+  id: 2017-07-06-14:00-p2
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  80.59871316: note
+  234.359998942: screenshot
+  278.362290144: screenshot
+  349.387784005: note
+  381.660423041: screenshot
+  410.188246012: note
+  483.86135602: screenshot
+  617.962630988: note
+  639.501513005: screenshot
+  641.813519955: screenshot
+  666.091364146: note
+  745.252586127: interesting
+  945.921131134: note
+  961.745705128: screenshot
+  999.307027102: note
+  1039.51077008: screenshot
+extras:
+  social-engagement: 1
+notes:
+  general: annotated by Severin
+  general: no speech, very poised, serious child, committed to his drawings
+  general: no interactions with the robot
+  80: start
+  234: drawing road
+  349: example of situation where the robot takes away items from child
+  410: keep on drawing in very structured way (drawing house now)
+  617: still committed to drawing -- when back to build a road network
+  666: pays a lot of attention to details
+  745: tries to grab objects from the robot -- in particular the car, gives up when the robot seems to want to keep it
+  945: now draws a railway
+  999: again battles with the robot for animals

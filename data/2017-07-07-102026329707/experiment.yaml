@@ -1,0 +1,27 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-07 10:20:26.329707
+timestamp: 1499419711596854925
+condition: childrobot
+purple-participant:
+  id: 2017-07-07-10:20-p2
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+extras:
+  social-engagement: 1
+notes:
+  general: annotated by Severin
+  general: issues starting the robot -- had to restart it
+  general: child talking all along, explaning what he is doing, even though robot not interactive ; sometimes looking for adult approval, but not that often
+  general: nearly no interaction with the robot
+  105: child talking -- verbally expliciting what he is doing with the zoo
+  160: robot moves ball to castle, P 'he wants it in the house'
+  180: P accompanies robot to move boy
+  218: P says 'rhino lives there', dropping hippo onto grass; R moves it to water, P puzzled and look at robot
+  267: P picks up space card and start drawing rocket ship
+  397: wants the boy in the car
+  471: after clearing screen, switches to 'city' card
+  494: telling story about boy, girl and car
+  518: starts to draw city
+  764: noticed the robot is not responsive anymore -- likely another disconnection? attempted to restart play.launch -- not successfull
+  postmortem: robot disconnected at 1499420479.43

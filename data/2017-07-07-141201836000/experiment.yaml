@@ -1,0 +1,62 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-07 14:12:01.836000
+timestamp: 1499434055173707962
+condition: childchild
+purple-participant:
+  id: 2017-07-07-14:12-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 1
+yellow-participant:
+  id: 2017-07-07-14:12-y1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  59.714594125: note
+  88.792936086: note
+  124.295659065: issue
+  137.565247058: note
+  183.510010957: note
+  231.597538948: note
+  269.811102151: note
+  385.053702116: note
+  497.099743127: note
+  675.867583036: note
+  931.090934038: note
+  974.699137926: note
+  1214.83309698: note
+  1235.47623897: screenshot
+  1450.90817499: note
+  1562.14535403: note
+  1716.72630215: note
+  1784.46812701: issue
+extras:
+  social-engagement: 5
+notes:
+  general: annotated by Severin
+  general: item placements -- they struggle -- P is super shy, so started with Y
+  general: item placement -- P's turn, speak incredibly low
+  general: shy children, especially P
+  general: good example of one child playing mostly aimlessly (B) while the other child is focusing on goal-directed drawing (Y) -- at least during the first 15min
+  general: surprinsingly little speech, but a lot of giggles (especially from P)
+  general: globally, little structured play (mostly local structures for some drawings, essentially from Y)
+  59: start
+  88: first play episode -- independent play
+  124: teacher entering the room
+  137: first giggles
+  183: P invading Y (drawing) space, Y does not react
+  231: P scribbling -- guilty/giggly look at E
+  269: Y engaged into rather structured play; P less so; P giggling a lot, but does not really get Y out of her stream of activity
+  385: not a lot of speech, but a lot of giggles (especially from P)
+  497: P still playing silly, trying to get Y on board -- Y giggles, but keep on playing in a rather structured way
+  675: filled screen in white, then drawing big hearts
+  931: head pose estimation for Y should be accurate there
+  974: sequence where they keep (purposefully) stealing each others the colour
+  1214: P eventually draws something structured (house)
+  1235: screenshot with P's house
+  1450: Y to P "ok, don't go in this bit" (one of the corner); P does not really comply
+  1562: playing at hidding items behind colour picker
+  1716: getting more and more unstructured, on both sides
+  1784: teacher briefly enter the room

@@ -1,0 +1,73 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-29 10:55:24.492596
+timestamp: 1498730840919087886
+condition: childchild
+purple-participant:
+  id: 2017-06-29-10:55-p1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 1
+yellow-participant:
+  id: 2017-06-29-10:55-y1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  104.474466086: interesting
+  121.021824122: interesting
+  140.020147086: interesting
+  159.971425057: interesting
+  185.7713902: interesting
+  198.259680033: interesting
+  214.730604172: interesting
+  251.235833168: interesting
+  295.253460169: interesting
+  305.438547135: interesting
+  360.485536099: interesting
+  390.152464152: interesting
+  438.760880232: interesting
+  459.041207075: interesting
+  485.055742026: interesting
+  506.921407223: interesting
+  535.902456045: interesting
+  553.286564112: interesting
+  599.108997107: interesting
+  622.500910998: interesting
+  630.70215106: interesting
+  650.815543175: interesting
+  677.302428007: interesting
+  742.618139029: interesting
+  796.665430069: interesting
+  849.783315182: interesting
+  870.082694054: interesting
+  902.841699124: interesting
+  921.804518223: interesting
+  1009.88430309: interesting
+  1032.44228005: interesting
+  1138.46646714: interesting
+  1209.26188922: interesting
+  1239.48298621: interesting
+  1264.48970509: interesting
+  1294.26276112: interesting
+  1375.50068712: interesting
+  1392.08962607: interesting
+  1464.67924118: interesting
+  1519.64573121: interesting
+  1560.32711005: interesting
+  1618.60254502: interesting
+  1708.43861604: interesting
+  1841.7869432: interesting
+  1916.32543016: interesting
+  1932.41977406: interesting
+  1959.75974107: issue
+  1982.06817818: interesting
+  2053.69819307: interesting
+  2100.97507501: issue
+  2115.93815708: interesting
+  2156.00019717: interesting
+  2204.58109808: interesting
+  2227.17880511: interesting
+  2265.52600622: interesting
+extras:
+  social-engagement: 4

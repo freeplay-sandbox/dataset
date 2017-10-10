@@ -1,0 +1,22 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-20 10:35:39.303567
+timestamp: 1497951910436525106
+condition: childrobot
+purple-participant:
+  id: 2017-06-20-10:35-p2
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 1
+markers:
+  117.398790836: interesting
+  171.406018972: interesting
+  196.248117924: interesting
+  222.837650776: interesting
+extras:
+  social-engagement: 1
+notes: 
+  general:
+  117: talks to self
+  171: perhaps telling stories
+  196: plays by self, not that interested in R
+  222: P looks up when R moves

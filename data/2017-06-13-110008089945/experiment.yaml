@@ -1,0 +1,44 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-13 11:00:08.089945
+timestamp: 1497348670675831079
+condition: childchild
+purple-participant:
+  id: 2017-06-13-11:00-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-13-11:00-y1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  49.815397978: interesting
+  73.350514889: interesting
+  100.514869928: issue
+  126.610169888: interesting
+  139.587553024: interesting
+  154.467702866: interesting
+  184.604992866: interesting
+  270.675115824: interesting
+  290.634429932: interesting
+  303.759531021: note
+  326.825496912: interesting
+  354.846899986: interesting
+  369.711382866: interesting
+  394.829027891: interesting
+  432.01919198: note
+  451.285199881: interesting
+  487.773923874: interesting
+  527.656569958: interesting
+  540.452379942: issue
+  563.272953033: interesting
+  599.876127958: interesting
+  645.875419855: interesting
+  689.347913027: interesting
+  708.805016994: interesting
+extras:
+  social-engagement: 5
+notes: 
+  general: Y more dominant than P. Seem fairly friendly/used to each other

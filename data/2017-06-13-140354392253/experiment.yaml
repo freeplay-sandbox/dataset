@@ -1,0 +1,51 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-13 14:03:54.392253
+timestamp: 1497359779718940973
+condition: childchild
+purple-participant:
+  id: 2017-06-13-14:03-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-13-14:03-y1
+  age: 6
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  63.888278007: note
+  151.255789995: interesting
+  162.376074075: interesting
+  179.679718971: interesting
+  212.870384931: interesting
+  247.676676035: interesting
+  283.343760967: interesting
+  298.488443136: interesting
+  314.715889931: interesting
+  348.796193123: interesting
+  384.345541: interesting
+  489.709589004: interesting
+  502.102138042: interesting
+  523.73814702: interesting
+  570.986469984: issue
+extras:
+  social-engagement: 5
+notes:
+  general: Both randomly sang. Got on well. P more dominant than Y. Notes seem off perhaps not right. 
+  63: Colouring "in" map
+  151: Y copying P
+  162: Y suggesting, P ignores
+  179: P copying Y's words
+  212: P giving orders
+  247: P looking for reassurance from E
+  283: Discovered mess with colours game
+  298: P "Let's play"
+  314: P noughts and crosses
+  348: Drawing themselves
+  384: Distracted by R
+  489: Y complaining, P changed colour
+  502: Telling them to pres lighter
+  523: Y "Help me!"
+  570: P mocking Y
+

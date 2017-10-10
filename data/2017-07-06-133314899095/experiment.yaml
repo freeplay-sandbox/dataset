@@ -1,0 +1,40 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 13:33:14.899095
+timestamp: 1499344979238549947
+condition: childchild
+purple-participant:
+  id: 2017-07-06-13:33-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 1
+yellow-participant:
+  id: 2017-07-06-13:33-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  211.425676108: interesting
+  296.930511952: note
+  384.596899033: note
+  400.433048964: interesting
+  433.327619076: note
+  516.05727911: note
+  600.757519007: note
+  687.853430987: note
+  825.783009053: note
+extras:
+  social-engagement: 5
+notes:
+  general: annotated by Severin
+  general: not super engaged in the game
+  general: item placement -- Y confused by map upside down relative to screen
+  211: P "can we play another game?" (asked x2)
+  296: P -> lots of adult seeking -- want to know about the robot, about other games -- do not seem super excited by the freeplay activity
+  384: agreed to colour the world in purple
+  400: P addresses the robot -- 'robot, we are making the world purple'
+  433: P being a little annoyed at Y who keep on changing colours
+  516: P initiates a game on the purple bg -- object placement -> start of a 2-3min long sequence of structured play
+  600: asking more questions about cameras/robot
+  687: clearing purple bg
+  825: considering going back to class

@@ -1,0 +1,17 @@
+# Freeplay sandbox experiment -- recorded on the 2017-05-18 14:51:57.833880
+date: 2017-05-18 14:51:57.833880
+condition: childchild
+purple-participant:
+  id: 2017-05-18-14:51-p1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 0
+yellow-participant:
+  id: 2017-05-18-14:51-y1
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 2
+postprocess:
+    - recompressed sandtray background -- moved the start time from 1495115678.27 to 1498207252.56

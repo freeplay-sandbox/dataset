@@ -1,0 +1,39 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 11:08:34.943320
+timestamp: 1499336402574583053
+condition: childchild
+purple-participant:
+  id: 2017-07-06-11:08-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-07-06-11:08-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  142.16166687: note
+  284.279808045: note
+  669.281177998: note
+  971.965775967: interesting
+  1024.72179389: note
+  1077.21277094: screenshot
+  1090.39532805: note
+  1262.31886291: note
+  1523.61396098: note
+extras:
+  social-engagement: 4
+notes:
+  general: annotated by Severin
+  general: two children playing nicely together -- little disagreement, P is slightly dominant
+  general: mostly structured play
+  142: initial play phase so far -- they play independently
+  284: agreed to colour everything in blue at P initiative, then they decide to clear it again.
+  669: pick up an idea card -- P gives it a try, and gives up
+  971: discussing what to do -- P 'ought to do something with the animals'
+  1024: pirate card -- drawing skulls
+  1090: P asking genuinely "what are you doing?"
+  1262: Y looks like he starts to be bored
+  1523: making hand prints

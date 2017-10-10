@@ -1,0 +1,20 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-07 10:45:53.891616
+timestamp: 1496829063586765050
+condition: childchild
+purple-participant:
+  id: 1p008
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: na
+yellow-participant:
+  id: 1y008
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  78.673125983: issue
+notes:
+  general: Didn't interact with game much at all. Both extremely reluctant to touch it, although Y would chat with E. 
+  78: E suggests zoo, and then has a chat (mainly with Y)

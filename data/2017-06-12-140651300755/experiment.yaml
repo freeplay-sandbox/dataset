@@ -1,0 +1,72 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-12 14:06:51.300755
+timestamp: 1497273036579736948
+condition: childchild
+purple-participant:
+  id: 2017-06-12-14:06-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 0
+yellow-participant:
+  id: 2017-06-12-14:06-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 1
+markers:
+  74.803555011: issue
+  98.254847049: interesting
+  128.486912965: interesting
+  143.031011104: issue
+  194.71956706: interesting
+  215.479630947: interesting
+  274.720365047: issue
+  329.674864053: interesting
+  389.644876003: interesting
+  402.283693075: interesting
+  448.022416114: interesting
+  471.834321022: interesting
+  483.280672073: interesting
+  506.840131998: interesting
+  565.542690992: interesting
+  594.976825952: interesting
+  636.840556144: interesting
+  668.465348958: interesting
+  697.754227161: issue
+  760.290819168: interesting
+  873.58973813: interesting
+  894.45224595: interesting
+  923.598334074: interesting
+  946.02694416: interesting
+  1016.369241: interesting
+  1092.35282397: interesting
+extras:
+  social-engagement: 4
+notes: 
+  general: Both very chatty & quite equally matched. 
+  74: E get them to move down
+  98: Y looking for reassurance
+  128: Both drawing "in" picture
+  143: P "Let's draw together"
+  194: P "Why are you doing that?"
+  215: Y generally telling stories, P joins in
+  274: P to E "Does it only work with 2 fingers?"
+  329: Y tries to make P & E laugh
+  389: P playing with Y's colours
+  402: P understanding of perspective
+  448: distracted by robots
+  471: Y makes jokes
+  483: P creeped out by robot
+  506: P elaborates on Y's sun
+  565: Y "No"
+  594: P changing Y's colours
+  636: disagree about whether it's a picture or not
+  668: Y personifying croc
+  697: Y wants to see rocket, distracted by robot
+  760: bored
+  873: P "We are going to rub out"
+  894: Talking to cameras
+  923: Distracted by robot
+  946: Asking E questions
+  1016: Collaborating on story
+  1092: End

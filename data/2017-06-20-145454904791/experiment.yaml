@@ -1,0 +1,38 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-20 14:54:54.904791
+timestamp: 1497966919432010889
+condition: childrobot
+purple-participant:
+  id: 2017-06-20-14:54-p2
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  211.632701158: interesting
+  239.8177042: note
+  334.044805049: interesting
+  370.046313047: interesting
+  445.478242158: interesting
+  497.367668151: note
+  540.093322038: interesting
+  655.775989055: interesting
+  691.372677087: interesting
+  720.90766406: issue
+  804.2254951: interesting
+  922.395932197: interesting
+  1007.17845201: interesting
+notes: 
+  general: forgot to change R IP address so two entries. Very quiet. Ignores R much of the time
+  211: P playing by self
+  239: P uses paint to writ
+  334: P drawing by self
+  370: P bringing things to R
+  445: P trying to do stuff and R interrupts
+  497: P makes houses for the animals
+  540: P using object to hit objects
+  655: P trying to keep hold of objects
+  691: P drawing by self
+  720: interrupted by staff
+  804: P colouring whole board
+  922: P starts making zoo
+  1007: P looking at R

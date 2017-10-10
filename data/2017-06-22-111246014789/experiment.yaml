@@ -1,0 +1,130 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-22 11:12:46.014789
+timestamp: 1498127043347826004
+condition: childchild
+purple-participant:
+  id: 2017-06-22-11:12-p1
+  age: 8
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-22-11:12-y1
+  age: 8
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  74.959928989: interesting
+  103.275757074: note
+  135.909799098: interesting
+  174.929342985: interesting
+  201.453939914: interesting
+  267.501467943: interesting
+  295.423207044: interesting
+  316.933125972: note
+  345.44640994: interesting
+  367.614077091: interesting
+  389.557228088: interesting
+  411.296082973: interesting
+  419.783931016: interesting
+  428.195472002: interesting
+  461.329725027: note
+  484.784094095: interesting
+  500.422477006: interesting
+  608.672909021: interesting
+  672.595561027: interesting
+  707.862709045: interesting
+  772.723254919: interesting
+  797.414448022: interesting
+  824.80360794: interesting
+  843.915635108: interesting
+  899.68116188: interesting
+  926.538063049: interesting
+  977.981734037: interesting
+  1009.51811099: interesting
+  1064.9804709: note
+  1096.98466396: interesting
+  1139.91442299: interesting
+  1175.93472195: interesting
+  1197.67041802: interesting
+  1223.33313799: interesting
+  1247.50608301: interesting
+  1285.12149501: interesting
+  1308.99770594: interesting
+  1330.8745079: interesting
+  1367.94921589: interesting
+  1396.68427491: interesting
+  1421.57319689: interesting
+  1431.53442192: interesting
+  1462.29063201: interesting
+  1524.4185369: interesting
+  1573.93620706: interesting
+  1602.94932103: interesting
+  1660.82553506: interesting
+  1678.104388: interesting
+  1706.69622302: interesting
+  1736.91769004: interesting
+  1772.16848302: interesting
+  1792.28652692: interesting
+  1806.13418198: interesting
+  1855.527349: note
+  1898.1761539: interesting
+  1931.64865208: interesting
+  1967.98936701: interesting
+  2182.44300604: interesting
+  2198.0381999: interesting
+  2255.32369399: interesting
+  2272.4335041: interesting
+  2323.24521089: interesting
+  2323.53191304: interesting
+  2358.09418607: interesting
+notes: 
+  general: friends. giggled a lot. Very distractible (especially Y)
+  74: Y telling P what she’s going to d
+  103: Y has good perspective (understands top down view)
+  135: P asks Y questions-trying to collaborate
+  174: arguing over colours
+  201: Y exasperated with P
+  267: both giggling
+  295: singing together
+  316: making zoo together
+  345: P asks Y whether OK or not
+  367: Y accidentally rubbed out P’s drawing
+  389: singing together
+  411: P “Look!”
+  419: Y elaborates
+  428: Y suggests stopping, P “No!”
+  461: Y gets new idea card
+  484: Y excited by space
+  500: Collaborating making everything black
+  608: Y “Now we have to..”
+  672: Dividing up the tasks
+  707: Y giggles when messing with P’s colours
+  772: Y discovered the mess with colours game
+  797: Y pushing P’s arm out of the way
+  824: Y trying to show P
+  843: P elaborates what Y says in a song
+  899: Y jeering at P
+  926: Y faking upset
+  972: Y stops
+  1009: distracted by R
+  1064: Y picks new card
+  1096: looking at camera
+  1139: telling each other what they want to draw
+  1175: chatting
+  1197: distracted by R
+  1223: Y happy to go on because P wants to (social influence)
+  1247: Y free association
+  1285: chatting
+  1308: Y apologises
+  1330: Y insulting P (joke)
+  1367: Y calls her drawings ugly
+  1396: making mess
+  1421: Y gets new card
+  1431: P chatting about pink
+  1462: Y “We are going to..”
+  1524: P “Let’s fight fingers…”
+  1573: Y “Now let’s draw houses” 
+  1602: secret ghosts
+  1660: Y “Ugly”
+  1678:

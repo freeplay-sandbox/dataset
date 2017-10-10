@@ -1,0 +1,62 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-07 11:03:39.927658
+timestamp: 1496830030545797109
+condition: childchild
+purple-participant:
+  id: 1p009
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 1y009
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  18.943898916: interesting
+  71.305453777: interesting
+  172.134840965: interesting
+  201.882803917: interesting
+  246.446204901: interesting
+  320.615092993: interesting
+  336.105724812: interesting
+  358.214404821: interesting
+  399.669387817: interesting
+  423.795977831: interesting
+  441.972706795: issue
+  458.604170799: interesting
+  470.871559858: interesting
+  502.164569855: interesting
+  574.09885478: interesting
+  588.166471958: interesting
+  601.503277779: interesting
+  645.528367996: interesting
+  719.20796299: interesting
+  828.642555952: issue
+  922.087873936: interesting
+notes: 
+  general: Y more dominant than P, although nursery staff says usually p is the one telling everyone else what to do. Both had large preference for colouring. 
+  18: get stuck in straight away
+  71: Y takes ownership of entire board. Y gives instructions to P.
+  172: Y likes rubber
+  201: disagreement; P-color, Y-rubber
+  246: Y "look!"
+  320: Y pushes P's hand away
+  336: P looks for reassurance from E
+  358: Y "look", P joins in game
+  399: not sticking to sides
+  423: Y "No! Blue 'member"
+  441: FS animals
+  458: P rubs off
+  470: Y "No! Blue!"
+  502: Y "All clear!"
+  574: Y "Colour all blue"
+  588: Y "No"
+  601: P attempting playing together (picking colour other than blue)
+  645: Y pushes P's hand away
+  719: P waits for permission from Y
+  828: Y finger hurts. FS, "Y put leg down"
+  922: P tidied the animals, Y untidied again. 
+postprocess:
+    - recompressed sandtray background -- moved the starting time from 1496830029.17 to 1498212015.84

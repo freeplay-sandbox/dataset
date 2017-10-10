@@ -1,0 +1,29 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-01 10:27:43.523980
+timestamp: 1496309539585567951
+condition: childchild
+purple-participant:
+  id: 1p003
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 0
+yellow-participant:
+  id: 1y003
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 0
+markers:
+  462.235321045: interesting
+  548.012109041: interesting
+  635.503678083: issue
+  635.84168911: issue
+  692.245708942: issue
+  701.932088136: interesting
+  745.409091949: issue
+  849.465136051: interesting
+  911.80439806: issue
+  939.462368965: interesting
+  953.157236099: interesting
+notes: 
+  One dominant child (purple vocal, yellow not)

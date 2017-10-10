@@ -1,0 +1,43 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-08 11:18:58.535617
+timestamp: 1496917355889909029
+condition: childchild
+purple-participant:
+  id: 2017-06-08-11:18-p1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 0
+yellow-participant:
+  id: 2017-06-08-11:18-y1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  75.936775922: interesting
+  104.153236866: interesting
+  214.65380907: interesting
+  328.371172904: interesting
+  376.429432868: interesting
+  428.393737077: interesting
+  590.867943048: issue
+  685.981807947: interesting
+  708.350763082: issue
+  789.571500062: interesting
+  811.970171928: interesting
+notes: 
+  general: Both very quiet. P has done experiment before (1y002).
+  75: Very quiet
+  104: Y watching P
+  214: Both absorbed in own games
+  328: Confusion about colours
+  376: P drawing pictures
+  428: Quiet battle about colours
+  590: P to FS "Look!"
+  685: Y copied P's drawing
+  708: P seeking encouragement from FS
+  780: P drawing pictures, Y scribbling
+  811: Both seem kind of bored
+postprocess:
+    - recompressed sandtray background, start timestamp moved from 1496917354.451842 to 1498168785.467365
+

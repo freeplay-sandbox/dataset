@@ -1,0 +1,43 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-06 14:51:35.235899
+timestamp: 1496757249844532012
+condition: childchild
+purple-participant:
+  id: 1p005
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 1y005
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  20.81571889: issue
+  42.725178957: interesting
+  73.185765982: interesting
+  92.965562106: issue
+  101.175685883: interesting
+  101.345993042: interesting
+  145.975879908: issue
+  155.448885918: issue
+  182.225807906: interesting
+  199.389564991: issue
+  241.37260294: interesting
+  247.989326954: issue
+  351.055247069: issue
+  441.659874917: interesting
+  466.33245492: interesting
+  493.636671067: interesting
+notes:
+  general: Generally engaged, but not for very long. P has tested previous versions of game before. 
+  101: disagreement about colours
+  247: trying to take control
+  247: Y concerned that the rubber doesn't work
+  351: Y still concerned that rubber doesn't work
+  441: Rubber vs. colour battle
+  466: Copying noises from each other
+  493: Disagreement about girl 
+postprocess:
+    - recompressed sandtray background -- moved the starting timestamp from 1496757248.46 to 1498170771.62

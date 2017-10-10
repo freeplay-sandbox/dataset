@@ -1,0 +1,44 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-20 10:55:05.400084
+timestamp: 1497953478576653003
+condition: childchild
+purple-participant:
+  id: 2017-06-20-10:55-p1
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-20-10:55-y1
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 1
+markers:
+  109.085169077: interesting
+  140.877702952: note
+  166.384900093: interesting
+  209.558199883: interesting
+  223.664484978: interesting
+  268.738302946: interesting
+  343.753139019: interesting
+  372.647155047: interesting
+  402.251256943: interesting
+  425.697252035: note
+  471.640734911: interesting
+  544.639713049: interesting
+extras:
+  social-engagement: 4
+notes:
+  general: Y = english as a foreign language. Very nice with each other. 
+  109: P being very helpful for Y
+  140: P looks through ideas box
+  166: P telling Y what he’s going to do
+  209: P helping with sounds
+  223: Y elaborating on P’s drawing
+  268: P giving instructions, Y asking for clarification
+  343: colour confusion P “Wait! Let me just…”
+  372: P giving permission
+  402: P suggesting options
+  425: Both very patient with each other
+  471: Y waits for P to finish before changing colours
+  544: P suggesting

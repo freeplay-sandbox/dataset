@@ -1,0 +1,24 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-13 10:22:26.367218
+timestamp: 1497346304112735033
+condition: childrobot
+purple-participant:
+  id: 2017-06-13-10:22-p2
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  152.594156026: interesting
+  305.179296016: interesting
+  357.373574972: interesting
+  388.292378902: note
+  462.290376901: note
+extras:
+  social-engagement: 0
+notes:
+  general: Very quiet. Seems to be very patient with R
+  152: R steals & P doesn't want to steal back
+  305: P waits for R
+  357: P moves into R's field & waits
+  388: Generally slower paced than with children
+  462: No colouring -maybe learned from obj-placement task? Or cos R doesn't colour?

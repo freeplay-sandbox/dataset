@@ -1,0 +1,54 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-20 14:09:56.193720
+timestamp: 1497964926880872964
+condition: childchild
+purple-participant:
+  id: 2017-06-20-14:09-p1
+  age: 8
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-20-14:09-y1
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 1
+markers:
+  36.136116982: interesting
+  71.474204064: interesting
+  112.115708113: interesting
+  157.296576023: issue
+  196.480289936: issue
+  223.634396077: interesting
+  233.838146925: interesting
+  257.22628212: interesting
+  269.294533968: interesting
+  303.338992119: interesting
+  326.382518053: interesting
+  372.40593195: interesting
+  384.715425969: issue
+  409.180220127: interesting
+  515.956346989: interesting
+  527.227170945: interesting
+  565.464491129: interesting
+  588.142063141: interesting
+  601.050744057: interesting
+  676.867830038: interesting
+extras:
+  social-engagement: 3
+notes: 
+  general: very antagonistic/competitive. P trying trying to get control & not succeeding. Y moved the picture upside down in object placement.
+  36: colour wars
+  71: Y very frustrated by colours
+  112: P asking for permission
+  157: P organising cards
+  196: E interrupts so they don’t use cards for colouring
+  223: colouring all in
+  233: partitioned the colouring space
+  257: P organising/selecting pics. trying to collaborate
+  269: P giving orders
+  303: P “Wait!”
+  326: P very upset
+  372: P setting stages and planning
+  384: distracted by R
+  409: P pushing Y’s hand away

@@ -1,0 +1,55 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-10 11:46:25.404870
+timestamp: 1499684330100709915
+condition: childchild
+purple-participant:
+  id: 2017-07-10-11:46-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-07-10-11:46-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  229.100663185: interesting
+  257.995305061: note
+  278.759566068: interesting
+  355.894860983: interesting
+  489.578225135: interesting
+  511.633182048: note
+  553.865164995: note
+  569.622146129: note
+  601.339755058: issue
+  719.479804039: note
+  745.949513197: interesting
+  763.328469991: note
+  813.716799974: note
+  876.422049999: interesting
+  985.129513979: interesting
+  995.716402053: interesting
+  1015.51187611: note
+  1051.47885609: interesting
+  1232.70391607: note
+  1293.33787203: interesting
+  1448.7562542: interesting
+  1493.61628008: note
+  1599.30798817: interesting
+  1622.9464972: issue
+  1687.69399309: interesting
+  1727.11477399: interesting
+  1752.0952971: issue
+  1826.84328318: note
+  1861.51588201: interesting
+  1957.38106418: interesting
+  2103.804147: interesting
+  2137.25770616: interesting
+  2231.21907806: interesting
+  2252.05483603: interesting
+  2268.42243814: interesting
+  2326.92953014: interesting
+  2344.92706513: interesting
+extras:
+  social-engagement: 2

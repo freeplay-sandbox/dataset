@@ -1,0 +1,118 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-22 10:10:45.562870
+timestamp: 1498123095009385108
+condition: childchild
+purple-participant:
+  id: 2017-06-22-10:10-p1
+  age: 8
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-22-10:10-y1
+  age: 8
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  163.545005799: issue
+  203.545349837: note
+  214.447196961: interesting
+  255.084603787: interesting
+  272.274321795: interesting
+  299.201267958: interesting
+  354.0695889: interesting
+  382.051317931: interesting
+  454.988541842: interesting
+  478.137862921: interesting
+  539.266731978: interesting
+  588.424573899: interesting
+  640.942125798: interesting
+  652.156586886: note
+  705.705466986: interesting
+  736.068182946: interesting
+  774.052691937: interesting
+  785.588238001: interesting
+  823.086530924: interesting
+  858.838421822: interesting
+  902.609939814: interesting
+  919.685094834: interesting
+  954.838837862: interesting
+  976.846164942: interesting
+  1061.25761795: interesting
+  1093.26878595: interesting
+  1108.68680191: interesting
+  1134.50979686: interesting
+  1155.34071589: interesting
+  1215.66749191: interesting
+  1230.36658788: interesting
+  1257.9771719: interesting
+  1262.96416688: interesting
+  1282.77347088: interesting
+  1285.51993299: interesting
+  1347.99203992: interesting
+  1372.57681298: interesting
+  1423.9299078: interesting
+  1451.57701492: interesting
+  1465.79772282: interesting
+  1497.44239688: interesting
+  1542.03699899: interesting
+  1565.97918296: interesting
+  1591.31331492: interesting
+  1630.83476686: interesting
+  1656.33026385: interesting
+  1683.04865694: interesting
+  1702.71671796: interesting
+  1758.28613281: note
+extras:
+  social-engagement: 5
+notes: 
+  general: Seem good friends. Gestures weren’t switched off. Y more dominant. Seemed quite antagonistic to each other. 
+  163: interrupted by class
+  203: new ideas
+  214: turn taking and compromise
+  255: Y grabbing stuff from P
+  272: sharing out the objects
+  299: telling each other what they are doing
+  354: Y looking/waiting for P
+  382: both negotiating colours
+  454: telling each other what they are doing
+  478: Y jeering at P 
+  539: Y & P collaborating
+  588: P encouraging Y, also questioning fairness
+  640: Y “I told you so”
+  652: tend to draw the picture on the card rather than stories
+  705: discussing what’s right
+  736: P gives up, but then helps do what Y wants
+  774: Y cackling
+  785: distracted by R
+  823: P “Hey!”
+  858: P sounds like swearing
+  902: being antagonistic
+  919: Y telling what she’s doing, P raising voice
+  954: P being silly & antagonistic
+  976: P distracted by R
+  1061: Y gets distracted
+  1093: chatting to each other
+  1108: over acting surprise
+  1134: mess with colours game
+  1155: chatting
+  1215: learning limits of board
+  1230: Y “You weirdo” (amicably)
+  1257: Y giving instructions
+  1262: distracted by R
+  1282: Y being rude
+  1285: copying each other
+  1347: managed to draw curtains right way up
+  1372: P “Stop” pushes Y’s hand away
+  1423: have argument about whether P goes to ballet or not
+  1451: mess with colour game
+  1465: distracted by R
+  1497: copying each other (and then R)
+  1542: copying hand positions
+  1555: P just watching Y, Y discusses pros and cons
+  1591: Y gives up 
+  1630: animals dancing
+  1656: Y suggests hospital
+  1683: “I’m asleep” game
+  1702: chatting
+  1758: distracted by R

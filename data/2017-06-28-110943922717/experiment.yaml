@@ -1,0 +1,75 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-28 11:09:43.922717
+timestamp: 1498644990781645059
+condition: childchild
+purple-participant:
+  id: 2017-06-28-11:09-p1
+  age: 6
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-28-11:09-y1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  90.309476853: note
+  151.824481964: interesting
+  162.346305847: interesting
+  195.944918871: interesting
+  235.538933992: interesting
+  251.152117968: interesting
+  292.935515881: interesting
+  308.021113873: interesting
+  319.783318997: interesting
+  344.303477049: interesting
+  362.375562906: interesting
+  391.182745934: interesting
+  430.519145012: interesting
+  459.351404905: interesting
+  486.610780954: interesting
+  512.511966944: interesting
+  535.143028021: interesting
+  558.904881954: interesting
+  638.496219874: interesting
+  668.463981867: interesting
+  700.151938915: interesting
+  727.406718016: interesting
+  735.931390047: interesting
+  772.129415989: note
+  809.856058836: interesting
+  892.603580952: interesting
+  942.408241034: issue
+  958.625500918: interesting
+  993.557725906: issue
+  1059.17826295: interesting
+  1075.28149986: interesting
+  1099.10654187: interesting
+  1131.00568199: interesting
+  1262.22166896: interesting
+  1277.05987787: interesting
+  1304.89594889: interesting
+  1321.76934004: interesting
+  1400.07561588: interesting
+  1437.15861893: interesting
+  1465.48079491: interesting
+  1501.38287497: issue
+  1540.00309801: issue
+  1555.25572991: interesting
+  1591.30359602: issue
+  1616.01521802: interesting
+  1635.69583487: interesting
+  1652.37626505: interesting
+  1670.40073085: interesting
+  1695.47235799: interesting
+  1707.3690939: interesting
+  1736.92111802: interesting
+  1763.20326996: interesting
+  1834.39326787: interesting
+  1852.73655987: interesting
+  1871.84292197: interesting
+  1928.3530519: interesting
+  1950.49888802: interesting
+extras:
+  social-engagement: 3

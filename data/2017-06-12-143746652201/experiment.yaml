@@ -1,0 +1,31 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-12 14:37:46.652201
+timestamp: 1497274902887267112
+condition: childchild
+purple-participant:
+  id: 2017-06-12-14:37-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-12-14:37-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 0
+markers:
+  44.860540867: interesting
+  102.285713911: interesting
+  122.093757868: interesting
+  167.664833784: interesting
+  218.083389998: interesting
+extras:
+  social-engagement: 2
+notes: 
+  general: both very quiet
+  44: Playing separately
+  102: Y waiting for P to finish
+  122: Y joins in with P's road ideas
+  169: communicating by drawings
+  218: done!
+

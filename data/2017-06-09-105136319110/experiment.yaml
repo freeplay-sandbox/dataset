@@ -1,0 +1,72 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-09 10:51:36.319110
+timestamp: 1497002132851068019
+condition: childchild
+purple-participant:
+  id: 2017-06-09-10:51-p1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 0
+yellow-participant:
+  id: 2017-06-09-10:51-y1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  42.874100924: interesting
+  43.273732901: interesting
+  59.888885022: interesting
+  74.142523051: interesting
+  94.258024931: interesting
+  158.414860011: interesting
+  184.167435885: interesting
+  256.520451069: interesting
+  323.28233409: interesting
+  381.620630026: interesting
+  418.578342915: interesting
+  444.920119048: interesting
+  462.535044909: interesting
+  487.072663069: interesting
+  535.852293969: interesting
+  602.43551302: interesting
+  631.622170926: interesting
+  662.589771986: interesting
+  723.934033871: interesting
+  830.223370076: interesting
+  858.933299065: interesting
+  941.154049874: interesting
+  983.778105021: interesting
+  1150.82075191: interesting
+  1151.65182209: interesting
+  1182.45335698: interesting
+  1232.84855008: interesting
+notes:
+  general: Both really chatty. Y trying to direct game, but P only agreeing occassionally. 
+  43: explaining what they are both doing
+  59: telling stories to each other
+  74: Y "Excuse me!"
+  94: P telling what she wants
+  158: teasing with colours
+  184: Y "Let us..." collaborating
+  256: Y "How about we make the world funny?" P elaborates "snow"
+  323: Y touching P to try to get her to stop changing colours
+  381: Y "Isn't it?" to get P to agree
+  418: Y "Pretend that..."
+  444: imaginative play
+  462: P starting to suggest things
+  487: Y white, P rubbing out 
+  585: Y uses animals to make majority for her game, P agrees. Eventually. 
+  602: Y using "Please". Negotiaing in advance
+  631: Y "Hey!"
+  662: Y Robot also doesn't like it
+  723: Y changing colour to tease P
+  830: P post-hoc "I want it like that", even though Y changed it
+  858: P mimicking Y
+  941: Both identifying with the characters. Strict gender roles.
+  983: Explaining the stories to each other
+  1151: Y explaining everything
+  1182: Y "Fire!"
+  1232: P mimicking Y's song
+postprocess:
+    - recompressed sandtray bg -- moved start timestamp from 1497002131.46 to 1498214028.06

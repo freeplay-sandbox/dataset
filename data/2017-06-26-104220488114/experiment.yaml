@@ -1,0 +1,46 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-26 10:42:20.488114
+timestamp: 1498470154332552909
+condition: childrobot
+purple-participant:
+  id: 2017-06-26-10:42-p2
+  age: 6
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  91.664481163: note
+  164.450857163: note
+  274.176347018: note
+  405.2460742: note
+  443.745177031: interesting
+  459.260998011: interesting
+  532.556254149: issue
+  588.5971272: note
+  689.845218182: note
+  930.013780117: note
+  1040.95896101: note
+  1070.90625715: interesting
+  1171.55355406: interesting
+  1271.62969208: interesting
+  1397.63178706: note
+  1426.67018199: interesting
+extras:
+  social-engagement: 1
+notes: 
+  general: P very quiet, very polite. Will answer direct questions but doesn’t volunteer anything. Perhaps a little scared by R? R doesn’t connect the first time.
+  91: Got R working
+  164: E sat down
+  274: P seeks reassurance from E
+  405: P generally seems quiet uncertain
+  443: P not interested in R
+  459: P seeks reassurance from E 
+  532: E reminds P they can withdraw
+  588: P absorbed in drawing
+  689: P drawing “in” map
+  930: Think P drew zoo
+  1040: P adapts hand position depending on precision
+  1070: P ignores R notification sounds now
+  1171: P generally quite engrossed
+  1271: P looking at R
+  1397: P keeps checking in with E
+  1426: P distracted by one of the E - perhaps worried she’s doing it wrong?

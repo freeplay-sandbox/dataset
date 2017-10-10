@@ -1,0 +1,63 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-06 15:08:08.383862
+timestamp: 1496758229313438892
+condition: childchild
+purple-participant:
+  id: 1p006
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 1
+yellow-participant:
+  id: 1y006
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  9.392680168: interesting
+  65.952493191: interesting
+  121.525128126: interesting
+  134.873959064: interesting
+  176.650876045: interesting
+  213.950291157: interesting
+  236.81687212: interesting
+  268.095718145: interesting
+  301.278450012: interesting
+  324.637446165: interesting
+  344.7104671: issue
+  385.416514158: interesting
+  447.027730226: interesting
+  590.805160045: issue
+  702.56560421: interesting
+  731.837592125: interesting
+  834.758561134: interesting
+  850.373679161: interesting
+  864.870078087: interesting
+  971.088183164: issue
+  1112.43345809: issue
+  1224.17363: interesting
+notes: 
+  general: both seemed to very much enjoy themselves. Y played game with P, switching colours part way through. Both have played game before, but with different partners. 
+  9: arguing about car
+  65: arguing about colours
+  121: arguing about colours
+  134: P "No! I'm clearning!"
+  176: Y deliberately teasing P by changing from rubber to colour, but helps clean up
+  213: Y deliberately teasing P by changing from rubber to colour, but helps clean up
+  236: "No!"
+  268: Y stole car from P
+  301: using colours again
+  324: P joinging Y scribbling
+  322: E warns them to be gentle with the table
+  385: P joins in scribbling but then Y changes to rubber
+  447: Y copying P 
+  590: P telling E that red looks like strawberries
+  702: scribbling together
+  731: Y complaining
+  834: P giving instructions
+  850: Y asking "What next?"
+  864: P ineffectually giving instructions
+  971: P playing with E
+  1112: P playing with E
+  1224: Ended! 
+  

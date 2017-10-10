@@ -1,0 +1,15 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-10 14:48:35.853060
+timestamp: 1499695003883522033
+condition: childrobot
+purple-participant:
+  id: 2017-07-10-14:48-p2
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  190.66968894: interesting
+  278.431056023: interesting
+  288.350890875: note
+extras:
+  social-engagement: 1

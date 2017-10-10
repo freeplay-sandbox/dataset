@@ -1,0 +1,52 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-22 14:13:04.357365
+timestamp: 1498137383243885993
+condition: childrobot
+purple-participant:
+  id: 2017-06-22-14:13-p2
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  247.249501944: note
+  286.826314927: interesting
+  353.156968117: interesting
+  425.364099026: interesting
+  638.265640021: interesting
+  667.341455937: interesting
+  703.72499609: interesting
+  729.810942889: interesting
+  750.156202078: interesting
+  798.500019074: interesting
+  887.846792937: issue
+  920.961887122: interesting
+  975.710330964: interesting
+  1055.95085311: interesting
+  1117.31536102: interesting
+  1222.16411805: note
+  1325.14509606: interesting
+  1409.23628592: interesting
+  1449.74193406: interesting
+extras:
+  social-engagement: 1
+notes: 
+  general: He’s actually 8 and familiar with a tablet - E accidentally switched away during object placement. There are also two object placement videos (1st one him, 2nd E). Very quiet and shy seeming. 
+  247: Colouring “in” the map
+  286: Playing by self, very quiet 
+  353: P looking at R
+  425: P colouring whole board
+  638: P looks up when R moves
+  667: P colouring by self for the most part
+  703: P very neat
+  729: P looks up when R steals from him
+  750: P tries to give R object
+  798: P scribbling/throwing around objects
+  887: Interrupted by E
+  920: P giving R objects
+  975: P very carefully placing objects
+  1055: P telling stories to himself
+  1117: P giving R objects
+  1222: E changed arm reach of R to 0.5 (from 0.4)
+  1325: E ignoring the R
+  1409: P making sound effects
+  1449: P tidying objects

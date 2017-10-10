@@ -1,0 +1,32 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-23 11:55:04.081145
+timestamp: 1498215327799047946
+condition: childrobot
+purple-participant:
+  id: 2017-06-23-11:55-p2
+  age: 8
+  gender: male
+  details:
+    tablet-familiarity: 8
+markers:
+  224.943274022: interesting
+  238.795931101: interesting
+  281.610142947: interesting
+  310.527956009: interesting
+  378.2865901: note
+  451.069118977: interesting
+  482.72053504: interesting
+  586.778507948: interesting
+  638.413784981: interesting
+  764.797178984: interesting
+notes: 
+  general: took ages to get R set up, P was very patient. Quite artistic (drew awesome alien in tutorial task) Very quiet. 
+  224: Seems to be playing by self
+  238: Started to give objects to R
+  281: P trying to wave/get R to move
+  310: P showing R card
+  378: Perhaps P drew R another hand?
+  451: P putting all the animals in a pit?
+  482: P glancing at R
+  586: P scared by R’s notification beeps
+  638: P draw R another hand
+  764: P seemed surprised when R moved object without raising his arm

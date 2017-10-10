@@ -1,0 +1,99 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-12 10:26:16.090964
+timestamp: 1497259783887845039
+condition: childchild
+purple-participant:
+  id: 2017-06-12-10:26-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-12-10:26-y1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  42.682659864: issue
+  101.977216005: interesting
+  125.600524902: interesting
+  143.850812912: interesting
+  164.758707046: interesting
+  185.924385071: interesting
+  205.427196979: issue
+  257.137417078: interesting
+  265.432487964: interesting
+  304.254565: interesting
+  363.647692919: issue
+  416.52529192: interesting
+  459.385321855: issue
+  486.954565048: interesting
+  575.908207893: interesting
+  599.125570059: issue
+  661.439822912: interesting
+  693.71431303: interesting
+  710.460192919: interesting
+  729.43372798: interesting
+  772.051804066: interesting
+  792.75615406: issue
+  862.583677053: interesting
+  1018.35372996: interesting
+  1070.90931487: interesting
+  1086.72596002: interesting
+  1127.37547088: interesting
+  1143.377635: interesting
+  1230.66134691: issue
+  1333.37726498: interesting
+  1375.35278892: interesting
+  1470.53806591: interesting
+  1579.69325995: issue
+  1593.62289095: interesting
+  1713.84472489: issue
+  1734.79598093: interesting
+  1772.04535484: interesting
+  1807.16197085: issue
+  1859.40100193: interesting
+  1966.55716991: issue
+extras:
+  social-engagement: 4
+notes: 
+  general: Got very distracted by robot. Generally got on OK. P perhaps slightly more dominant than Y. 
+  42: E rescued boy
+  101: Both talking a lot, explaining what they are doing
+  125: P "Wait! Let me do something!"
+  143: P looks for reassurance from E
+  164: Discovered the interrupt colouring game
+  185: Colouring all red
+  205: Distracted by robot
+  257: red=hot
+  265: P using Y's name
+  304: P asking Y questions
+  363: P talking to E
+  416: Y asking for advice from P
+  459: Asking for information from E
+  486: Y phonetic copying of P
+  575: Black=space
+  599: Distracted by robot
+  661: Y problem solving P's game
+  693: Play fighting
+  710: P "Let's"
+  729: P thinking about what others would think of him
+  772: Each build on the other's idea
+  792: Distracted by robot
+  862: 
+  1018: Expand on each other's game
+  1070: Writing names
+  1086: P "Please can you not?"
+  1127: Creativity Y expands on P
+  1143: P taking over Y's space
+  1230: Sleeping
+  1375: P messing with Y
+  1470: Very distractable
+  1579: E
+  1593: Sleeping
+  1713: E
+  1734: Collaborating on rainbow (Y's idea)
+  1772: P messing up colour game @ Y
+  1966: E 
+errors:
+  no env camera

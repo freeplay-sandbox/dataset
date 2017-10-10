@@ -1,0 +1,15 @@
+# Freeplay sandbox experiment -- recorded on the 2017-05-18 15:21:18.060656
+date: 2017-05-18 15:21:18.060656
+condition: childchild
+purple-participant:
+  id: 2017-05-18-15:21-p1
+  age: 4
+  gender: male
+  details:
+    tablet-familiarity: na
+yellow-participant:
+  id: 2017-05-18-15:21-y1
+  age: 4
+  gender: female
+  details:
+    tablet-familiarity: na

@@ -1,0 +1,76 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-05 10:24:37.565816
+timestamp: 1499247218949124097
+condition: childchild
+purple-participant:
+  id: 2017-07-05-10:24-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-07-05-10:24-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  150.956296921: note
+  177.627297879: interesting
+  185.120699883: interesting
+  209.862802983: interesting
+  239.632217884: note
+  274.239727974: interesting
+  315.842525006: interesting
+  349.707778931: interesting
+  371.542559862: interesting
+  458.583616972: interesting
+  498.137413979: interesting
+  545.31146288: interesting
+  567.207926989: interesting
+  607.572910786: interesting
+  643.256713868: interesting
+  755.712988854: interesting
+  784.751096011: interesting
+  841.756698847: interesting
+  887.793499947: interesting
+  911.878979922: interesting
+  947.190434933: interesting
+  973.967459917: interesting
+  1029.48430586: interesting
+  1058.88592195: interesting
+  1060.23612595: interesting
+  1131.75175881: interesting
+  1131.75890589: interesting
+  1131.77159095: interesting
+  1133.54050183: interesting
+  1258.06612396: interesting
+  1329.09706879: interesting
+  1350.00419879: interesting
+  1374.90334892: interesting
+  1390.64143682: interesting
+  1400.18498182: interesting
+  1439.27602482: interesting
+  1467.97126484: interesting
+  1528.700212: interesting
+  1547.02038097: interesting
+  1616.2400918: interesting
+  1704.51844788: interesting
+  1723.96243286: interesting
+  1758.78629494: interesting
+  1788.37576079: interesting
+  1811.7182498: interesting
+  1845.7975018: interesting
+  1887.12496185: interesting
+  1937.79683185: interesting
+  1972.173697: interesting
+  2018.25333691: interesting
+  2084.25960398: interesting
+  2108.31308699: interesting
+  2157.28180385: interesting
+  2175.39878082: interesting
+  2234.28333879: interesting
+  2247.39846086: interesting
+  2323.81841302: interesting
+  2448.93315888: screenshot
+extras:
+  social-engagement: 4

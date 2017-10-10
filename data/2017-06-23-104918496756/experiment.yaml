@@ -1,0 +1,118 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-23 10:49:18.496756
+timestamp: 1498211395289923906
+condition: childchild
+purple-participant:
+  id: 2017-06-23-10:49-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: na
+yellow-participant:
+  id: 2017-06-23-10:49-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  149.558747053: interesting
+  183.935926199: interesting
+  231.754391193: interesting
+  250.689134121: interesting
+  288.691522121: interesting
+  314.147731066: interesting
+  334.655844211: note
+  363.41202712: interesting
+  392.187431097: interesting
+  430.029196024: note
+  452.454503059: interesting
+  476.622621059: interesting
+  488.223711014: note
+  518.887487173: interesting
+  561.733978987: interesting
+  623.986909151: interesting
+  643.77525115: interesting
+  656.659867048: interesting
+  706.120392084: interesting
+  720.217327118: interesting
+  734.919105053: interesting
+  754.444893122: interesting
+  830.698446989: interesting
+  846.922827005: issue
+  863.810652017: interesting
+  915.204241991: note
+  923.50299406: interesting
+  937.69028306: interesting
+  1046.17501211: interesting
+  1059.98178315: interesting
+  1082.565413: interesting
+  1103.06328702: interesting
+  1188.46323204: interesting
+  1221.01398516: interesting
+  1364.5030942: interesting
+  1533.19925117: interesting
+  1540.09331107: interesting
+  1593.29666805: interesting
+  1672.567729: interesting
+  1732.11567807: interesting
+  1805.40393019: interesting
+  1869.39865613: interesting
+  1883.51466799: interesting
+  1919.53648615: interesting
+  1940.11089611: interesting
+  2014.00760913: issue
+  2267.36132216: interesting
+  2335.75896501: interesting
+  2397.32712507: interesting
+extras:
+  social-engagement: 4
+notes:
+  general: P very quiet (couldn’t get to talk during obj placement). Y very chatting and makes noises etc. Table got laggy at some points
+  149: P teasing Y (rubbing out colours)
+  183: Y giving instructions to tell whether both can draw simultaneously
+  231: giggling together
+  250: P starting to make noises (seems to be having more fun)
+  288: Y joining in P’s idea
+  314: Y “Look what I did?”
+  334: New card
+  363: Y very encouraging. P teaching Y how to do something
+  392: Giggling together
+  430: Y new card - space
+  452: P joins in Y’s game with noises
+  476: Y “Stop”
+  488: Y explains what he’s doing, running commentary
+  518: P joins in Y’s rubbing out
+  561: Y making mistakes to make P giggle
+  623: P joins in twirling objects with P
+  643: Y “Stop stop stop”
+  656: P discovered mess with colours game
+  706: Y trying to teach P the object placement
+  720: Y distracted by R
+  734: Y “Wait wait wait, stop stop stop”
+  754: Y “Wait I wanna show you something”
+  830: P finds it funny when Y makes mistake
+  846: Y asks E for thinner pen
+  863: P and Y using objects to interact
+  915: Y new task
+  923: P talking finally
+  937: Y chatting to himself. Then distracted by robot.
+  1046: Y making board plain white
+  1059: P giggling
+  1082: P giggling when scribbling over board
+  1103: Y giving advice to P
+  1188: Y distracted by R
+  1221: P playing mess with colour game
+  1364: Going back over the object placement task 
+  1533: Both scribbling
+  1540: Y grabs P to stop him
+  1593: Making sound effects
+  1672: Chatting together trying to work out the object placement task again
+  1732: Y asks E for help reconstructing
+  1805: P starting to talk and sing. Copies Y’s game
+  1869: Y distracted by R
+  1883: Y “I know what we can do”
+  1919: P “Look. Oh my gosh” Possibly copying Y?
+  1940: Y giving instructions
+  2014: E “You don’t need to press so hard”
+  2267: Y maybe getting a little frustrated
+  2335: Y giving instructions
+  2397: Y “Are you serious?”

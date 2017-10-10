@@ -1,0 +1,52 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 09:37:40.908665
+timestamp: 1499330783735296964
+condition: childchild
+purple-participant:
+  id: 2017-07-06-09:37-p1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-07-06-09:37-y1
+  age: 7
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  247.70570612: note
+  319.618332148: note
+  476.881096125: interesting
+  598.532748938: note
+  733.469686031: issue
+  841.615105152: interesting
+  896.087957144: note
+  932.064720154: interesting
+  975.142705918: interesting
+  1092.08265305: issue
+  1119.70435405: note
+  1167.84331202: note
+  1189.58101201: note
+  1206.19025493: interesting
+extras:
+  social-engagement: 4
+notes:
+  general: annotated by Severin
+  general: SWAPPED YELLOW AND PURPLE!! Y -> wears Y bib, recorded as P child; P -> wears P bib, recorded as Y child
+  general: Y push more for structured play, P more silly
+  general: keep on refering to the item placement map to place items back to their 'right' location
+  247: started to pickup cards
+  319: having fun together, Y writing
+  476: Y proposes a 'fun game' involving picking up cards
+  598: P plays at hiding items behind colour picker
+  733: intervention to replace P
+  841: Y is generally dominant, asks P to choose the colour anyway -> trying to involve Y back into his proposed game?
+  896: fun writing
+  932: Y suggests a new game -- play again item placement, but I'll change the objects places
+  975: Y, smilling, to P -- "when you do it wrong, you're out, ok"
+  1092: robot beeps
+  1119: P stop the 'item placement' game 
+  1167: starting covering in white
+  1189: Y struggles to get back Y attentions
+  1206: Y whispering to P (what?? I don't know)
+

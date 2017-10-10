@@ -1,0 +1,142 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-26 11:23:31.105839
+timestamp: 1498473328052576065
+condition: childchild
+purple-participant:
+  id: 2017-06-26-11:23-p1
+  age: 6
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-06-26-11:23-y1
+  age: 6
+  gender: male
+  details:
+    tablet-familiarity: 2
+markers:
+  122.197798013: interesting
+  138.836067915: interesting
+  159.388876915: interesting
+  188.021144867: interesting
+  210.905160903: note
+  266.018357992: issue
+  283.996235847: note
+  306.864291906: interesting
+  363.295631885: note
+  408.850791931: interesting
+  428.708642959: interesting
+  498.210086822: interesting
+  507.564323902: note
+  580.502848863: interesting
+  618.114887952: interesting
+  663.636173009: interesting
+  693.601598978: interesting
+  782.34204483: note
+  802.627014875: interesting
+  860.356323003: note
+  901.081152916: interesting
+  913.171774864: interesting
+  929.314983844: interesting
+  958.699002981: interesting
+  976.676076889: interesting
+  1060.42182493: interesting
+  1100.86926603: interesting
+  1120.93450999: interesting
+  1161.89017892: interesting
+  1293.49846482: interesting
+  1303.60376787: note
+  1400.79699087: interesting
+  1410.55426001: interesting
+  1417.89301395: interesting
+  1431.9930129: interesting
+  1451.39007282: interesting
+  1523.55722284: interesting
+  1645.17623901: interesting
+  1705.77585483: interesting
+  1853.98072886: interesting
+  1882.89272189: interesting
+  1896.84005499: interesting
+  1912.01911902: interesting
+  1921.80923986: interesting
+  1957.01159382: interesting
+  1996.68989301: interesting
+  2018.7384069: interesting
+  2037.55379486: interesting
+  2067.2497859: interesting
+  2087.79151893: interesting
+  2102.74000788: interesting
+  2128.80807996: interesting
+  2149.02878284: interesting
+  2171.81419992: interesting
+  2201.09666395: interesting
+  2262.284904: interesting
+  2285.76131797: interesting
+  2338.00179291: interesting
+  2353.26969194: interesting
+  2370.90194392: interesting
+  2390.81813884: interesting
+extras:
+  social-engagement: 4
+notes:
+  general: think P has prior experience with the table. P trying to be more dominant. 
+  122: Neogiating where water is
+  138: P “No no no!” 
+  159: P seeming to try to get control
+  188: P “Let’s” to try get cooperation
+  210: P looking at cards (pirates)
+  266: E “P please tuck hair behind ear”
+  283: Y looking at cards (space)
+  306: Y “Wanna stay here” P “No!” 
+  363: pretty sure Y kept suggesting things until he got to colour board all one colour
+  408: P doesn’t elaborate on Y’s ideas
+  428: P evaluates other options before agreeing to Y’s idea
+  498: P “Let’s..”
+  507: Trying to collaborate on drawing the world
+  580: P providing music/sound effects
+  618: P setting rules of engagement
+  663: P goes to Y’s area
+  693: P comes up with game like the object placement game
+  782: Perhaps P likes structure rather than free play?
+  802: P trying to control Y by grabbing hand
+  860: despite trying to do object placement game, P keeps pointing
+  901: P gives corrections to Y
+  913: Y’s go
+  929: Y tries to help P
+  958: P questions Y’s choices of placement
+  976: P tells Y off for being silly
+  1060: Y mimics P’s corrections
+  1100: P’s go
+  1120: P “can you help me?”
+  1161: P gets frustrated when Y does something wrong
+  1293: P correcting Y
+  1303: Good turn taking
+  1400: Y giggling
+  1410: P seems bored
+  1417: P’s go
+  1431: P says the same thing louder when orders not followed
+  1451: Y starting to be a bit naughty/giggly
+  1523: Y a bit distracted
+  1645: Discussion about whether to finish or not
+  1705: telling stories
+  1852: P looking for approval
+  1882: Y “That’s funny” without laughing
+  1896: P “looklook!”
+  1912: P singing
+  1921: P tries to put limits on silly
+  1957: Discussing, learning from each other
+  1996: Y telling stories
+  2018: Y discovered mess with colours game
+  2037: P joining in
+  2067: P “Stop stop” pushes hand away
+  2087: Collaborating on a story
+  2102: Y talking to E
+  2128: P starting new game
+  2149: P tells Y off for not playing her game
+  2171: P developing Likert scale
+  2201: P being encouraging, but then tells him off for not doing what she expects
+  2262: P “C’mon help!”
+  2285: Being silly but then P “No! Keep it rubber”
+  2338: Colour in whole board green
+  2353: P “No! I want to do something” 
+  2370: Y discovered mess with colour game
+  2390: Y elaborates on P’s ideas 

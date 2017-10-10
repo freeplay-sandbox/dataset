@@ -1,0 +1,33 @@
+# Freeplay sandbox experiment -- recorded on the 2017-06-14 10:05:55.273347
+timestamp: 1497431185127258062
+condition: childrobot
+purple-participant:
+  id: 2017-06-14-10:05-p2
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  687.785630941: interesting
+  869.674402952: interesting
+  922.611943006: interesting
+  1051.30918384: interesting
+  1154.9799459: interesting
+  1246.64299202: interesting
+  1344.97464991: interesting
+  1414.878757: interesting
+  1587.46021199: interesting
+extras:
+  social-engagement: 1
+notes:
+  general: Generally very tentative and quiet
+  687: R started playing properly
+  869: Colouring
+  922: P gives up when R steals
+  1051: P making everything right way up
+  1154: Colouring "in" picture
+  1246: Generally, P doesn't want to disturb set up too much
+  1344: P tidying
+  1414: P looks like she's telling stories to herself
+  1587: P staying out of R's reach
+

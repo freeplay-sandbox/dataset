@@ -1,0 +1,22 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-06 14:31:56.556458
+timestamp: 1499348369590694904
+condition: childrobot
+purple-participant:
+  id: 2017-07-06-14:31-p2
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  60.062483072: note
+  171.450060129: screenshot
+  224.430116176: screenshot
+extras:
+  social-engagement: 1
+notes:
+  general: annotated by Severin
+  general: no speech
+  general: no interactions
+  60: start
+  171: screenhot -- example of robot stuck into repetitive loop (tries to put both the hippo and the crocodile into the water)
+  224: various drawings (sun, flower, ladybird...)

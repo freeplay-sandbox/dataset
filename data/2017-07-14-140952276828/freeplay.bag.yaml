@@ -1,0 +1,85 @@
+compression: none
+duration: 2333.173272
+end: 1500040708.647926
+indexed: true
+messages: 1794858
+path: /media/slemaignan/DoRoThy1/freeplay_sandox/data/2017-07-14-140952276828/freeplay.bag
+size: 23571092044
+start: 1500038375.474654
+topics:
+- messages: 1
+  topic: /footprints
+  type: visualization_msgs/MarkerArray
+- frequency: 1.9079
+  messages: 768
+  topic: /sandtray/background/image/compressed
+  type: sensor_msgs/CompressedImage
+- connections: 8
+  frequency: 974.2866
+  messages: 988184
+  topic: /tf
+  type: tf2_msgs/TFMessage
+- frequency: 1.8737
+  messages: 768
+  topic: /zones
+  type: visualization_msgs/MarkerArray
+- frequency: 25.2882
+  messages: 64809
+  topic: camera_purple/audio
+  type: audio_common_msgs/AudioData
+- frequency: 30.1833
+  messages: 69259
+  topic: camera_purple/depth/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.1631
+  messages: 69259
+  topic: camera_purple/depth/image_raw/compressedDepth
+  type: sensor_msgs/CompressedImage
+- frequency: 30.0984
+  messages: 69491
+  topic: camera_purple/rgb/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.0979
+  messages: 69491
+  topic: camera_purple/rgb/image_raw/compressed
+  type: sensor_msgs/CompressedImage
+- frequency: 25.3661
+  messages: 64809
+  topic: camera_yellow/audio
+  type: audio_common_msgs/AudioData
+- frequency: 30.1159
+  messages: 69190
+  topic: camera_yellow/depth/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.0939
+  messages: 69190
+  topic: camera_yellow/depth/image_raw/compressedDepth
+  type: sensor_msgs/CompressedImage
+- frequency: 30.0969
+  messages: 69812
+  topic: camera_yellow/rgb/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 30.0911
+  messages: 69812
+  topic: camera_yellow/rgb/image_raw/compressed
+  type: sensor_msgs/CompressedImage
+- frequency: 28.3621
+  messages: 60008
+  topic: env_camera/qhd/camera_info
+  type: sensor_msgs/CameraInfo
+- frequency: 28.3707
+  messages: 60007
+  topic: env_camera/qhd/image_color/compressed
+  type: sensor_msgs/CompressedImage
+types:
+- md5: f43a8e1b362b75baa741461b46adc7e0
+  type: audio_common_msgs/AudioData
+- md5: c9a58c1b0b154e0e6da7578cb991d214
+  type: sensor_msgs/CameraInfo
+- md5: 8f7a12909da2c9d3332d540a0977563f
+  type: sensor_msgs/CompressedImage
+- md5: 94810edda583a504dfda3829e70d7eec
+  type: tf2_msgs/TFMessage
+- md5: d155b9ce5188fbaf89745847fd5882d7
+  type: visualization_msgs/MarkerArray
+version: 2.0

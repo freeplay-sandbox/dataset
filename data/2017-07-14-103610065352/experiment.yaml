@@ -1,0 +1,68 @@
+# Freeplay sandbox experiment -- recorded on the 2017-07-14 10:36:10.065352
+timestamp: 1500025668532831907
+condition: childchild
+purple-participant:
+  id: 2017-07-14-10:36-p1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+yellow-participant:
+  id: 2017-07-14-10:36-y1
+  age: 7
+  gender: female
+  details:
+    tablet-familiarity: 2
+markers:
+  115.023970127: interesting
+  126.639935016: note
+  139.995640993: interesting
+  165.191531181: note
+  175.48393321: interesting
+  295.844645977: interesting
+  450.365219116: interesting
+  503.840380192: interesting
+  550.441544056: interesting
+  568.222512007: interesting
+  616.450644016: interesting
+  648.869488001: note
+  779.382860183: interesting
+  817.799879074: interesting
+  855.71306014: interesting
+  1039.90043306: interesting
+  1070.4915781: interesting
+  1096.21089816: interesting
+  1134.87213612: interesting
+  1149.24119615: interesting
+  1166.24193406: interesting
+  1194.44221616: interesting
+  1222.54005408: interesting
+  1268.35019708: interesting
+  1340.42783618: interesting
+  1353.24396706: note
+  1391.47509003: interesting
+  1435.76880503: interesting
+  1459.90643716: interesting
+  1473.77538299: interesting
+  1490.95506716: interesting
+  1506.8990891: interesting
+  1545.32472706: interesting
+  1561.80686712: interesting
+  1603.71686006: interesting
+  1623.62041116: interesting
+  1687.92302108: interesting
+  1725.20494008: interesting
+  1784.14364314: interesting
+  1824.55398917: note
+  1884.88934612: interesting
+  1925.95732212: interesting
+  1956.41575813: interesting
+  1974.78726101: interesting
+  2000.00188804: interesting
+  2057.10907602: interesting
+  2150.18712115: interesting
+  2235.88172507: interesting
+  2285.3587451: note
+  2311.81650209: interesting
+extras:
+  social-engagement: 2
