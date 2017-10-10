@@ -16,22 +16,27 @@ Installation of the scripts
 **The provided scripts require a bash interpreter (ie, the Linux command-line)
 as well as a Python interpreter with all the rosbag tools installed.**
 
-You simply need to download or clone the
+You need first to download or clone the
 [freeplay-sandbox-analysis](https://github.com/freeplay-sandbox/analysis)
 project somewhere. All the scripts are in `scripts/`.
 
-All the commands hereafter assume that you are in the `scripts/` directory.
+Compile (and optionally, install) the tools by follwing the instruction on the
+project's `README` page.
+
+
+
+Most of the commands hereafter assume that you are in the `scripts/` directory.
 
 Besides, most of the scripts take the path to the dataset as parameter,
 typically `/media/<your username>/PInSoRo/freeplay_sandbox/data`. In the
 examples hereafter, we call this path `$DATASET`.
 
-Exploring the dataset
----------------------
+Exploring the dataset: dataset_stats
+------------------------------------
 
-`./dataset_stats` provides several statistics on the dataset:
+`dataset_stats` provides several statistics on the dataset:
 
-- `dataset_stats $DATASET`: provides an overview of the dataset: file names,
+- `./dataset_stats $DATASET`: provides an overview of the dataset: file names,
   conditions, ages, durations of each session:
 
 ```
@@ -60,21 +65,8 @@ Total children duration: 45:48:43 -- Average duration per child: 00:22:54
 With the option `--csv <csv file>```, you can conveniently save this data to a
 csv file for processing in an external application.
 
-- `dataset_stats --check $DATASET`: display the framerate of selected recorded topics, and display in red suspicious ones:
 
-```
-PUBLICATION RATES (in Hz)
-                       cdt   len         tf  p/rgb/info   p/rgb/img  y/rgb/info   y/rgb/img  p/dpth/inf  p/dpth/img  y/dpth/inf  y/dpth/img     p/audio     y/audio    env/info     env/img 
-2017-05-18-145157833880 CC 19:59     1943.6        30.5        30.5        30.5        30.4        30.5        30.5        30.6        30.6        25.7        25.7        30.7        30.7  
-2017-05-18-152118060656 CC 19:59      828.1        30.2        30.1        30.1        30.0        30.2        30.2        30.1        30.1        25.1        25.1        30.0        30.0  
-2017-06-01-102743523980 CC 15:57     1716.2        30.0        30.0        30.0        30.0        30.0        30.0        30.1        30.1        25.1        25.1        30.0        30.0  
-2017-06-06-145135235899 CC 09:05    29127.1        30.5        30.4        30.6        30.5        30.4        30.4        30.6        30.6        26.5        26.3        30.7        30.6  
-2017-06-06-150808383862 CC 19:59      905.7        30.1        30.1        30.1        30.1        30.2        30.2        30.2        30.2        25.2        25.3        29.8        29.8  
-2017-06-07-101750079399 CR 18:22     1140.4        30.1        30.0        30.1        30.0        30.2        30.2        30.2        30.2        25.4        25.3        29.0        29.0  
-2
-```
-
-- `dataset_stats --filter "<expression>" $DATASET` returns the sessions that
+- `./dataset_stats --filter "<expression>" $DATASET` returns the sessions that
   match `<expression>`.
   
 `<expression>` is any valid Python expression. The
@@ -99,4 +91,84 @@ Example returning only the child-robot sessions:
 $ ./dataset_stats --filter "condition=='childrobot'" $DATASET
 ```
 
+Replaying the dataset
+---------------------
 
+### Replaying with rosbag
+
+```
+rosbag play <bag file>
+```
+
+### Replaying the pose & facial data overlaid on the videos
+
+You need to have compiled the `replay_with_poses` utility.
+
+Then:
+```
+./replay_with_poses --topics camera_purple/rgb/image_raw/compressed camera_yellow/rgb/image_raw/compressed  --path$DATASET/<session>/
+```
+
+
+Post-processing
+---------------
+
+The main post-process step consists in extracting the pose and facial features
+using [CMU's OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+
+
+Checking the dataset consistency
+--------------------------------
+
+### Data integrity
+
+Checksums for every binary file are provided. You can easily check whether your
+dataset is correct by running from the `scripts/` directory:
+
+```
+./compute_md5sum -c $DATASET
+```
+
+
+### dataset_stats --check
+
+`./dataset_stats --check $DATASET` displays the framerate of selected recorded topics, and display in red suspicious ones:
+
+```
+PUBLICATION RATES (in Hz)
+                       cdt   len         tf  p/rgb/info   p/rgb/img  y/rgb/info   y/rgb/img  p/dpth/inf  p/dpth/img  y/dpth/inf  y/dpth/img     p/audio     y/audio    env/info     env/img 
+2017-05-18-145157833880 CC 19:59     1943.6        30.5        30.5        30.5        30.4        30.5        30.5        30.6        30.6        25.7        25.7        30.7        30.7  
+2017-05-18-152118060656 CC 19:59      828.1        30.2        30.1        30.1        30.0        30.2        30.2        30.1        30.1        25.1        25.1        30.0        30.0  
+2017-06-01-102743523980 CC 15:57     1716.2        30.0        30.0        30.0        30.0        30.0        30.0        30.1        30.1        25.1        25.1        30.0        30.0  
+2017-06-06-145135235899 CC 09:05    29127.1        30.5        30.4        30.6        30.5        30.4        30.4        30.6        30.6        26.5        26.3        30.7        30.6  
+2017-06-06-150808383862 CC 19:59      905.7        30.1        30.1        30.1        30.1        30.2        30.2        30.2        30.2        25.2        25.3        29.8        29.8  
+2017-06-07-101750079399 CR 18:22     1140.4        30.1        30.0        30.1        30.0        30.2        30.2        30.2        30.2        25.4        25.3        29.0        29.0  
+2
+```
+
+### Consistency of extracted poses
+
+
+Advanced operations
+-------------------
+
+Note that these operation does not have to be usually performed by the end users of the
+dataset.
+
+### Trimming videos
+
+Some videos might require trimming (especially in the child-robot condition,
+when the recordings start before the robot is actually ready to go).
+
+In order to ensure a level of dataset consistency, such modification to a bag
+file should follow the following steps:
+
+1. Watch the dataset content, and write down how many seconds need to be removed
+2. Look for the start timestamp of the bag using `rosbag info` (or directly `freeplay.bag.yaml`)
+3. Run:
+```
+$ rosbag filter freeplay.bag freeplay.trimmed.bag "t.secs >= (<start time> + <secs to trim>)"
+```
+4. Re-generate `freeplay.bag.yaml` using `scripts/generate_yaml_bag_description`
+   (
+5. Update the checksum with `md5sum freeplay.bag > freeplay.bag.md5`
