@@ -50,3 +50,5 @@ markers:
   1950.55801392: interesting
 extras:
   social-engagement: 4
+issues:
+  - skeleton extraction failed
