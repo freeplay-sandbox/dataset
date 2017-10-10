@@ -15,3 +15,5 @@ yellow-participant:
     tablet-familiarity: 2
 postprocess:
     - recompressed sandtray background -- moved the start time from 1495115678.27 to 1498207252.56
+issues:
+    - skeleton extraction failed
