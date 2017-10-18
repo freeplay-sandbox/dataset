@@ -1,2 +1,8 @@
-*.bag
+# datasets -- these are not tracked with git (their MD5 checksums are, though!)
+freeplay.bag
+visual_tracking.bag
 freeplay.poses.json
+visual_tracking.poses.json
+
+# videos are not tracked by git
+videos/
