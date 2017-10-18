@@ -1,0 +1,323 @@
+#! /usr/bin/env python
+
+import logging
+logging.basicConfig(level=logging.INFO)
+
+import argparse
+import sys
+import os
+import yaml
+import csv
+from rosbag.bag import Bag
+
+#         (topic name, short name, nominal expected publication rate)
+TOPICS = [("/tf", "tf", -1),
+          ("camera_purple/rgb/camera_info", "p/rgb/info", 30),
+          ("camera_purple/rgb/image_raw/compressed", "p/rgb/img", 30),
+          ("camera_yellow/rgb/camera_info", "y/rgb/info", 30),
+          ("camera_yellow/rgb/image_raw/compressed", "y/rgb/img", 30),
+          ("camera_purple/depth/camera_info", "p/dpth/info", 30),
+          ("camera_purple/depth/image_raw/compressedDepth", "p/dpth/img", 30),
+          ("camera_yellow/depth/camera_info", "y/dpth/info", 30),
+          ("camera_yellow/depth/image_raw/compressedDepth", "y/dpth/img", 30),
+          ("camera_purple/audio", "p/audio", 25),
+          ("camera_yellow/audio", "y/audio", 25),
+          ("env_camera/qhd/camera_info", "env/info", 30),
+          ("env_camera/qhd/image_color/compressed", "env/img", 30)]
+
+MALE = "male"
+FEMALE = "female"
+CHILDCHILD = "childchild"
+CHILDROBOT = "childrobot"
+
+istty = sys.stdout.isatty()
+
+def ddhhmmss(sec):
+    return "%dd %02d:%02d:%02d" % (sec//(3600*24), (sec%(3600*24))//3600,((sec%(3600*24))%3600)//60, ((sec%(3600*24))%3600)%60)
+
+def hhmmss(sec):
+    return "%02d:%02d:%02d" % (sec//3600,(sec%3600)//60, (sec%3600)%60)
+
+def mmss(sec):
+    return "%02d:%02d" % ((sec%3600)//60, (sec%3600)%60)
+
+class Child:
+
+    def __init__(self, participant):
+        self.age = participant["age"]
+        self.gender = participant["gender"]
+        self.id = participant["id"]
+        self.details = participant["details"]
+        self.nb_frames_visible = float('nan')
+        self.percent_visible = float('nan')
+
+    def set_face_visibility(self, frames):
+        self.nb_frames_visible = frames["nb_frames_with_face"]
+        total_frames = frames["nb_frames"]
+        self.percent_visible = self.nb_frames_visible * 100. / total_frames if total_frames != 0 else 0
+
+    def csvrow(self):
+        return [self.age, self.gender, self.nb_frames_visible, self.percent_visible]
+
+class Record:
+
+    def __init__(self,id, experiment, bagfile):
+
+        self.id = id
+
+        self.experiment = experiment
+        self.bagfile = bagfile
+
+        self.start = self.bagfile["start"]
+        self.duration = self.bagfile["duration"]
+
+        self.cdt = self.experiment["condition"]
+
+        self.children = [Child(self.experiment["purple-participant"])]
+        self.avg_age = self.children[0].age
+
+        if self.cdt == CHILDCHILD:
+            self.children.append(Child(self.experiment["yellow-participant"]))
+            self.avg_age = (self.children[0].age + self.children[1].age) / 2.0
+
+        # total_child_duration is the total duration per child (ie, bag duration * nb of children recorded)
+        self.total_child_duration = self.duration * len(self.children)
+
+    def add_faces_information(self, faces):
+
+        if "camera_purple/rgb/image_raw/compressed" in faces["faces"]:
+            self.children[0].set_face_visibility(faces["faces"]["camera_purple/rgb/image_raw/compressed"])
+
+        if self.cdt == CHILDCHILD:
+            if "camera_yellow/rgb/image_raw/compressed" in faces["faces"]:
+                self.children[1].set_face_visibility(faces["faces"]["camera_yellow/rgb/image_raw/compressed"])
+
+
+    def getfreq(self, topic):
+        for t in self.bagfile["topics"]:
+            if t["topic"] == topic:
+                return t["frequency"]
+        logging.debug("Bag file %s: missing frequency for topic %s" % (self.bagfile["path"], topic))
+        return 0
+
+    def check(self):
+
+        formats = "\x1b[37m" + self.id.split(os.sep)[-1] + "\x1b[0m " + ("CC " if self.cdt == CHILDCHILD else "CR ") + mmss(self.duration) + " "
+        freqs = []
+        for t,n,r in TOPICS:
+            freq = self.getfreq(t)
+            freqs.append(freq)
+            if r > 0 and abs(freq - r) > 3:
+                formats += "\x1b[31m%10.1f\x1b[0m  "
+            else:
+                formats += "%10.1f  "
+
+        print(formats % tuple(freqs))
+
+    def color_duration(self, duration):
+        if not istty:
+            return mmss(self.duration)
+
+        if duration < 60 * 5:
+            return "\x1b[31m%s\x1b[0m" % mmss(self.duration)
+        if duration < 60 * 10:
+            return "\x1b[38;2;200;100;0m%s\x1b[0m" % mmss(self.duration)
+        if duration < 60 * 30:
+            return "\x1b[38;2;200;200;100m%s\x1b[0m" % mmss(self.duration)
+
+        return "\x1b[38;2;100;200;100m%s\x1b[0m" % mmss(self.duration)
+
+    def overview(self):
+
+        formats = ("\x1b[37m" if istty else "") + self.id.split(os.sep)[-1] + ("\x1b[0m " if istty else " ")
+        formats += "%d " % self.start
+        formats += self.color_duration(self.duration) + " "
+
+        if istty:
+            if self.cdt == CHILDCHILD:
+                formats += "\x1b[38;2;214;150;150m%s" % self.cdt
+            else:
+                formats += "\x1b[38;2;150;60;60m%s" % self.cdt
+        else:
+            formats += self.cdt
+
+        formats += " %d %s  " % (self.children[0].age, self.children[0].gender[0])
+        if self.cdt == CHILDCHILD:
+            formats += " %d %s  " % (self.children[1].age, self.children[1].gender[0])
+        else:
+            formats += "      "
+
+        if istty:
+            formats += "\x1b[0m"
+
+        return formats
+
+    def csvrow(self):
+        return [self.cdt, self.duration] + self.children[0].csvrow() + (self.children[1].csvrow() if self.cdt == CHILDCHILD else ["",""])
+
+    def csvrow_perchild(self):
+        if self.cdt == CHILDCHILD:
+            return [
+                    [self.cdt, self.duration] + self.children[0].csvrow(),
+                    [self.cdt, self.duration] + self.children[1].csvrow()
+                   ]
+        else:
+            return [[self.cdt, self.duration] + self.children[0].csvrow()]
+
+    def __repr__(self):
+        return self.id
+
+class Dataset:
+
+    def __init__(self, root):
+
+        self.dataset = []
+
+        for dirpath, dirs, files in os.walk(root, topdown=False):
+            for name in files:
+                fullpath = os.path.join(dirpath, name)
+                if name == "experiment.yaml":
+                    if dirpath.split(os.sep)[-1].startswith("exclude_"):
+                        logging.info("%s has been excluded" % fullpath)
+                        continue
+                    logging.debug("Processing %s" % fullpath)
+                    self.processpath(dirpath)
+
+        self.dataset.sort(key=lambda val: repr(val))
+
+        self.total_duration = 0
+        self.total_child_duration = 0
+        self.total_childchild_duration = 0
+        self.total_childrobot_duration = 0
+        self.nb_children = 0
+        self.nb_childchild = 0
+        self.nb_childrobot= 0
+        
+
+        for record in self.dataset:
+            self.total_duration += record.duration
+            self.total_child_duration += record.total_child_duration
+            self.nb_children += len(record.children)
+            if record.cdt == CHILDCHILD:
+                self.nb_childchild += 1
+                self.total_childchild_duration += record.duration
+            elif record.cdt == CHILDROBOT:
+                self.nb_childrobot += 1
+                self.total_childrobot_duration += record.duration
+
+    def overview(self):
+
+        print("\nOVERVIEW")
+        print("path" + " " * 19 + "  timestamp   len   condition  C1    C2")
+
+        prev_record = None
+        for r in self.dataset:
+            sys.stdout.write(r.overview())
+            if prev_record:
+                #print(ddhhmmss(r.start - prev_record.start)) # prints time between previous record and current record
+                if r.start > prev_record.start and r.start - prev_record.start < 60 * 15: # 2 records with less than 15 min inbetween? suspicious!
+                    sys.stdout.write("<- suspiciously close to previous record (less than 15min)")
+            sys.stdout.write("\n")
+
+            prev_record = r
+
+        print("\n")
+        print("Total records: %d" % len(self.dataset) + \
+              " (child-child: %d, child-robot: %d)\n" % (self.nb_childchild, self.nb_childrobot) + \
+              "Total duration: %s" % hhmmss(self.total_duration) + " -- " + \
+              "Average duration per record: %s" % hhmmss(self.total_duration/len(self.dataset)) + "\n")
+
+        print("Total duration, child-child: %s" % hhmmss(self.total_childchild_duration) + " -- " + \
+              "Average duration per record, child-child: %s" % hhmmss(self.total_childchild_duration/self.nb_childchild) + "\n")
+
+        print("Total duration, child-robot: %s" % hhmmss(self.total_childrobot_duration) + " -- " + \
+              "Average duration per record, child-robot: %s" % hhmmss(self.total_childrobot_duration/self.nb_childrobot) + "\n")
+
+        print("Total children: %d" % self.nb_children + "\n" + \
+              "Total children duration: %s" % hhmmss(self.total_child_duration) + " -- " + \
+              "Average duration per child: %s" % hhmmss(self.total_child_duration / self.nb_children))
+
+    def processpath(self, path):
+
+        with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
+            expe = yaml.load(yml)
+
+        bagpath =  os.path.join(path, "freeplay.bag")
+        if os.path.exists(bagpath):
+            yamlfile = os.path.join(path, "freeplay.bag.yaml")
+            if os.path.exists(yamlfile):
+                with open(yamlfile, 'r') as yml:
+                    bagfile = yaml.load(yml)
+            else:
+                logging.info("Found a freeplay.bag without YAML description. Parsing the bag <%s> now..." % bagpath)
+                bagfile = yaml.load(Bag(bagpath, 'r')._get_yaml_info())
+                with open(yamlfile, 'w') as outfile:
+                    yaml.dump(bagfile, outfile, default_flow_style=False)
+                    logging.debug("%s successfully saved." % yamlfile)
+
+            record = Record(path, expe, bagfile)
+
+            facesyamlfile = os.path.join(path, "faces.yaml")
+            if os.path.exists(facesyamlfile):
+                with open(facesyamlfile, 'r') as yml:
+                    faces = yaml.load(yml)
+                    record.add_faces_information(faces)
+
+            self.dataset.append(record)
+
+        else:
+            logging.warn("%s: Missing freeplay.bag!!" % path)
+
+    def filter(self, expr):
+
+        records = []
+
+        for r in self.dataset:
+            age = r.avg_age
+            age1 = r.children[0].age
+            age2 = r.children[1].age if r.cdt == CHILDCHILD else 0
+            gender1 = r.children[0].gender
+            gender2 = r.children[1].gender if r.cdt == CHILDCHILD else ""
+            duration = r.duration
+            cdt = r.cdt
+            condition = r.cdt
+
+            if eval(expr):
+                records.append(r)
+
+        for r in records:
+            print(r.id)
+
+    def write_csv(self, csvfile):
+        writer = csv.writer(csvfile)
+        writer.writerow(["condition", "duration", "age", "gender", "nb_frames_visible","percent_visible"])
+        for r in self.dataset:
+            for row in r.csvrow_perchild():
+                writer.writerow(row)
+
+    def check(self):
+        print("\nPUBLICATION RATES (in Hz)")
+        print(" " * 23 + "cdt   len " + " ".join(" " * (10 - len(n)) + n[:10] + " " for t,n,r in TOPICS))
+        for r in self.dataset:
+            r.check()
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Freeplay sandbox Dataset Statistics')
+    parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
+    parser.add_argument("--check", action='store_true', help="parse and run checks on the dataset contents")
+    parser.add_argument("-c", "--csv", nargs='?', type=argparse.FileType('wb'), default=False, const=sys.stdout, help="save the dataset statistics to the specified CSV file (default to stdout)")
+    #parser.add_argument("-s", "--per-child", action='store_true', help="In combination with --csv, stores dataset statistics per child instead of per experiment")
+    parser.add_argument("-f", "--filter", nargs=1, help="output records that match the provided filter expression")
+
+    args = parser.parse_args()
+
+    dataset = Dataset(args.path)
+    if args.csv:
+        dataset.write_csv(args.csv)
+    elif args.check:
+        dataset.check()
+    elif args.filter:
+        dataset.filter(args.filter[0])
+    else:
+        dataset.overview()

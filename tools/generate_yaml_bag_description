@@ -1,0 +1,48 @@
+#! /bin/bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <path to bag file>\n"
+    echo -e "Generate a YAML description of the content of a bag file\n"
+    echo "  -h: display this help" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+if [ "$#" -ne 1 ]; then
+    echo "Illegal number of parameters -- the full path to a bag file is expected."
+    exit 1
+fi
+
+bagpath=$1
+
+echo "Processing $bagpath..."
+yamlfile=$bagpath.yaml
+
+python - <<EOF
+import yaml
+from rosbag.bag import Bag
+
+bagfile = yaml.load(Bag("$bagpath", 'r')._get_yaml_info())
+with open("$yamlfile", 'w') as outfile:
+    yaml.dump(bagfile, outfile, default_flow_style=False)
+EOF
+
+echo "$yamlfile successfully saved."

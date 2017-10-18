@@ -1,0 +1,90 @@
+#! /bin/bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-hfc] <root of dataset>\n"
+    echo -e "Calculate or check MD5 checksums for the PInSoRo binary files\n"
+    echo "  -h: display this help" 
+    echo "  -f: force recalculate the checksum, even if one exist" 
+    echo "  -c: check existing checksums"
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+# Initialize our own variables:
+force=false
+check=false
+
+while getopts "h?fc" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    f)  force=true
+        ;;
+    c)  check=true
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+#DATASET_ROOT=/media/$USER/PInSoRo-backup/freeplay_sandbox/data
+DATASET_ROOT=$1
+
+#if [ "$force" = true ] || [ "$check" = true ]; then
+#echo "force=$force, check: $check Leftovers: $@, dataset root: $DATASET_ROOT"
+#fi
+#exit 1
+
+# if less than one arguments supplied, display usage 
+if [  $# -lt 1 ] 
+then 
+    display_usage
+    exit 1
+fi 
+
+# check whether user had supplied -h or --help . If yes display usage 
+if [[ ( $# == "--help") ||  $# == "-h" ]] 
+then 
+    display_usage
+    exit 0
+fi 
+
+
+orig_path=$(pwd)
+
+cd $DATASET_ROOT
+paths=(data/2017**/experiment.yaml)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    f=${paths[$i]}
+    
+    dir=$(dirname $f)
+    
+    echo "Processing MD5 checksums for $dir (experiment $((i+1))/${#paths[@]})..."
+    for file in freeplay.bag freeplay.poses.json visual_tracking.bag visual_tracking.poses.json
+    do
+        if [ "$check" = true ]; then
+                md5sum -c $dir/$file.md5
+        else
+            if [ ! -f $dir/$file.md5 ] || [ "$force" = true ]; then
+                echo "Calculating checksum of $file..."
+                md5sum $dir/$file > $dir/$file.md5
+            else
+                echo "$file.md5 already exist."
+            fi
+        fi
+    done
+done
+
+cd $orig_path
+echo "Done"

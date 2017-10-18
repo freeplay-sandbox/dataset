@@ -16,11 +16,12 @@ Installation of the scripts
 **The provided scripts require a bash interpreter (ie, the Linux command-line)
 as well as a Python interpreter with all the rosbag tools installed.**
 
-You need first to download or clone the
-[freeplay-sandbox-analysis](https://github.com/freeplay-sandbox/analysis)
-project somewhere. All the scripts are in `scripts/`.
 
-Compile (and optionally, install) the tools by follwing the instruction on the
+All the scripts are in the `tools/` directory. Note that some of them (cf below)
+require additional tools from the `freeplay-sandbox-analysis` project. For these
+scripts to work, you need first to download or clone the
+[freeplay-sandbox-analysis](https://github.com/freeplay-sandbox/analysis)
+project somewhere. Compile (and optionally, install) the tools by following the instruction on the
 project's `README` page.
 
 

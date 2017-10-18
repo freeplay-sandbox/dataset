@@ -1,0 +1,54 @@
+#! /bin/bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <root of dataset>\n"
+    echo -e "Check whether the number of extracted poses match the number of available frames\n"
+    echo "  -h: display this help" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+DATASET_ROOT=$1
+
+EXEC=$HOME/src/freeplay-sandbox-analysis/build/devel/lib/freeplay_sandbox_analysis/check_pose_data
+
+orig_path=$(pwd)
+
+cd $DATASET_ROOT
+paths=(2017**/experiment.yaml)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    f=${paths[$i]}
+    
+    dir=$(dirname $f)
+    
+    if [ -f $dir/freeplay.poses.json ]; then
+    
+        echo "Checking poses for experiment $dir (experiment $((i+1))/${#paths[@]})..."
+        $EXEC --path $dir
+    else
+        echo "!! Missing freeplay.poses.json in $dir!"
+    fi
+done
+
+cd $orig_path
+echo "Done"

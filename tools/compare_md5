@@ -1,0 +1,72 @@
+#! /usr/bin/env bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <root of dataset 1> <root of dataset 2> <root of dataset 3>\n"
+    echo -e "Compare the MD5 checksums between 3 repos and tell which repos have the" 
+    echo -e "correct version of the file.\n"
+    echo "  -h: display this help" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+# if less than three arguments supplied, display usage 
+if [ $# -lt 3 ] 
+then 
+    display_usage
+    exit 1
+fi 
+
+DATASET1=$1
+DATASET2=$2
+DATASET3=$3
+
+orig_path=$(pwd)
+
+cd $DATASET1
+paths=(data/2017**/*.md5)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    file=${paths[$i]}
+    
+    if [[ -e $DATASET1/$file && -e $DATASET2/$file && -e $DATASET3/$file ]]; then
+        if cmp --silent $DATASET1/$file $DATASET2/$file; then # those 2 ones are identical
+            if cmp --silent $DATASET2/$file $DATASET3/$file; then
+                true
+            else
+                echo "File $file: dataset 3 ($DATASET3) is wrong"
+            fi
+        else
+            if cmp --silent $DATASET2/$file $DATASET3/$file; then
+                echo "File $file: dataset 1 ($DATASET1) is wrong"
+            else
+                if cmp --silent $DATASET1/$file $DATASET3/$file; then
+                    echo "File $file: dataset 2 ($DATASET2) is wrong"
+                else
+                    echo "!! File $file:  All datasets disagree. We have a problem!"
+                fi
+            fi
+        fi
+    fi
+done
+
+cd $orig_path
