@@ -6,3 +6,5 @@ visual_tracking.poses.json
 
 # videos are not tracked by git
 videos/
+
+exclude_*
