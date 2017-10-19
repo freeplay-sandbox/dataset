@@ -15,6 +15,7 @@ videos/
 # specific dataset post-processing for particular applications
 visual_tracking_dataset.json
 visual_tracking_full_dataset.json
+visual_tracking_full_dataset.*.json
 
 # sessions purposefully excluded (typically, faulty recordings)
 exclude_*
