@@ -1,0 +1,59 @@
+#! /usr/bin/env bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <root of dataset 1> <root of dataset 2>\n"
+    echo -e "Compare the MD5 checksums between 2 repos and returns files whose MD5 checksums do not match." 
+    echo "  -h: display this help" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+# if less than three arguments supplied, display usage 
+if [ $# -lt 2 ] 
+then 
+    display_usage
+    exit 1
+fi 
+
+DATASET1=$1
+DATASET2=$2
+
+orig_path=$(pwd)
+
+cd $DATASET1
+paths=(data/2017**/*.md5)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    file=${paths[$i]}
+    
+    # first check file exist and are not zero size
+    if [[ -e $DATASET1/$file && -e $DATASET2/$file && -s $DATASET1/$file && -s $DATASET2/$file ]]; then
+        if cmp --silent $DATASET1/$file $DATASET2/$file; then # those 2 ones are identical
+	    true
+	else
+	    echo "${file%.*} $(cut -d" " -f1 $DATASET1/$file) $(cut -d" " -f1 $DATASET2/$file)"
+        fi
+    fi
+done
+
+cd $orig_path
