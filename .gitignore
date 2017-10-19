@@ -4,7 +4,12 @@ visual_tracking.bag
 freeplay.poses.json
 visual_tracking.poses.json
 
+*.orig.*
+
 # videos are not tracked by git
 videos/
+*.mp4
+*.mkv
+*.kdenlive
 
 exclude_*
