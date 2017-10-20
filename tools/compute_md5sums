@@ -76,11 +76,13 @@ do
         if [ "$check" = true ]; then
                 md5sum -c $dir/$file.md5
         else
-            if [ ! -f $dir/$file.md5 ] || [ "$force" = true ]; then
-                echo "Calculating checksum of $file..."
-                md5sum $dir/$file > $dir/$file.md5
-            else
-                echo "$file.md5 already exist."
+            if [[ -e $dir/$file ]]; then
+                if [ ! -f $dir/$file.md5 ] || [ "$force" = true ]; then
+                    echo "Calculating checksum of $file..."
+                    md5sum $dir/$file > $dir/$file.md5
+                else
+                    echo "$file.md5 already exist."
+                fi
             fi
         fi
     done
