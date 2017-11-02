@@ -51,13 +51,8 @@ class Child:
         self.nb_frames_visible = float('nan')
         self.percent_visible = float('nan')
 
-    def set_face_visibility(self, frames):
-        self.nb_frames_visible = frames["nb_frames_with_face"]
-        total_frames = frames["nb_frames"]
-        self.percent_visible = self.nb_frames_visible * 100. / total_frames if total_frames != 0 else 0
-
     def csvrow(self):
-        return [self.age, self.gender, self.nb_frames_visible, self.percent_visible]
+        return [self.age, self.gender]
 
 class Record:
 
@@ -82,15 +77,6 @@ class Record:
 
         # total_child_duration is the total duration per child (ie, bag duration * nb of children recorded)
         self.total_child_duration = self.duration * len(self.children)
-
-    def add_faces_information(self, faces):
-
-        if "camera_purple/rgb/image_raw/compressed" in faces["faces"]:
-            self.children[0].set_face_visibility(faces["faces"]["camera_purple/rgb/image_raw/compressed"])
-
-        if self.cdt == CHILDCHILD:
-            if "camera_yellow/rgb/image_raw/compressed" in faces["faces"]:
-                self.children[1].set_face_visibility(faces["faces"]["camera_yellow/rgb/image_raw/compressed"])
 
 
     def getfreq(self, topic):
@@ -153,7 +139,7 @@ class Record:
         return formats
 
     def csvrow(self):
-        return [self.cdt, self.duration] + self.children[0].csvrow() + (self.children[1].csvrow() if self.cdt == CHILDCHILD else ["",""])
+        return [self.id.split(os.sep)[-1], self.cdt, self.duration] + self.children[0].csvrow() + (self.children[1].csvrow() if self.cdt == CHILDCHILD else ["",""])
 
     def csvrow_perchild(self):
         if self.cdt == CHILDCHILD:
@@ -257,12 +243,6 @@ class Dataset:
 
             record = Record(path, expe, bagfile)
 
-            facesyamlfile = os.path.join(path, "faces.yaml")
-            if os.path.exists(facesyamlfile):
-                with open(facesyamlfile, 'r') as yml:
-                    faces = yaml.load(yml)
-                    record.add_faces_information(faces)
-
             self.dataset.append(record)
 
         else:
@@ -290,10 +270,9 @@ class Dataset:
 
     def write_csv(self, csvfile):
         writer = csv.writer(csvfile)
-        writer.writerow(["condition", "duration", "age", "gender", "nb_frames_visible","percent_visible"])
+        writer.writerow(["id", "condition", "duration", "age1", "gender1", "age2","gender2"])
         for r in self.dataset:
-            for row in r.csvrow_perchild():
-                writer.writerow(row)
+            writer.writerow(r.csvrow())
 
     def check(self):
         print("\nPUBLICATION RATES (in Hz)")
