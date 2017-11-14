@@ -1,6 +1,11 @@
 The Plymouth Interactive Social Robots dataset
 ==============================================
 
+**Important**: *this repository **does not** contain the actual PInSoRo data
+(~2TB would not work with GitHub!), only the meta data. See the [PInSoRo web
+site](https://freeplay-sandbox.github.io/) for details to access the actual
+data.*
+
 This dataset contains 75 recordings of free-play interactions between 2 children
 (45 recordings) or one child and one robot (30 recordings).
 
@@ -23,7 +28,6 @@ scripts to work, you need first to download or clone the
 [freeplay-sandbox-analysis](https://github.com/freeplay-sandbox/analysis)
 project somewhere. Compile (and optionally, install) the tools by following the instruction on the
 project's `README` page.
-
 
 
 Most of the commands hereafter assume that you are in the `scripts/` directory.
@@ -103,13 +107,8 @@ rosbag play <bag file>
 
 ### Replaying the pose & facial data overlaid on the videos
 
-You need to have compiled the `replay_with_poses` utility.
 
-Then:
-```
-./replay_with_poses --topics camera_purple/rgb/image_raw/compressed camera_yellow/rgb/image_raw/compressed  --path$DATASET/<session>/
-```
-
+You can replay the dataset with the skeleton data using the [`replay_with_poses`](https://github.com/freeplay-sandbox/analysis#data-replay) utility.
 
 Post-processing
 ---------------
