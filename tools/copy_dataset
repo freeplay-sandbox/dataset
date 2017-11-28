@@ -29,6 +29,7 @@ if __name__=="__main__":
 
     tobecopied={}
     totalsize = 0
+    alreadycopied = 0
 
     for dirpath, dirs, files in os.walk(args.dest, topdown=False):
         for name in files:
@@ -39,6 +40,7 @@ if __name__=="__main__":
                     destpath = os.path.abspath(os.path.join(dirpath, name))
                     if(os.path.exists(destpath) and not args.force):
                         print("File %s already exist. Skipping it (use -f to force overwrite)" % destpath)
+                        alreadycopied += os.path.getsize(sourcepath)
                         continue
                     tobecopied[sourcepath]=destpath
                     totalsize += os.path.getsize(sourcepath)
@@ -49,9 +51,8 @@ if __name__=="__main__":
     print("%d files to copy. %s in total." % (len(tobecopied), sizeof_fmt(totalsize)))
 
     i = 1
-    alreadycopied = 0
     for source, dest in tobecopied.items():
-        print("[%d/%s] (done %s/%s -- %d%) Copying %s to %s" % (i, sizeof_fmt(alreadycopied), sizeof_fmt(totalsize), (alreadycopied * 100./totalsize), len(tobecopied),source, dest))
+        print("[%d/%s] (done %s/%s -- %d%%) Copying %s to %s" % (i, len(tobecopied), sizeof_fmt(alreadycopied), sizeof_fmt(totalsize), (alreadycopied * 100./totalsize), source, dest))
         subproc_copy(source, dest)
         alreadycopied += os.path.getsize(source)
         i += 1
