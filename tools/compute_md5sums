@@ -60,26 +60,26 @@ fi
 
 orig_path=$(pwd)
 
-cd $DATASET_ROOT
+cd "$DATASET_ROOT"
 paths=(data/2017**/experiment.yaml)
 
 
 for ((i=0;i<${#paths[@]};i++))
 do
-    f=${paths[$i]}
+    f="${paths[$i]}"
     
-    dir=$(dirname $f)
+    dir="$(dirname $f)"
     
     echo "Processing MD5 checksums for $dir (experiment $((i+1))/${#paths[@]})..."
     for file in freeplay.bag freeplay.poses.json visual_tracking.bag visual_tracking.poses.json
     do
         if [ "$check" = true ]; then
-                md5sum -c $dir/$file.md5
+                md5sum -c "$dir/$file.md5"
         else
-            if [[ -e $dir/$file ]]; then
-                if [ ! -f $dir/$file.md5 ] || [ "$force" = true ]; then
+            if [[ -e "$dir/$file" ]]; then
+                if [ ! -f "$dir/$file.md5" ] || [ "$force" = true ]; then
                     echo "Calculating checksum of $file..."
-                    md5sum $dir/$file > $dir/$file.md5
+                    md5sum "$dir/$file" > "$dir/$file.md5"
                 else
                     echo "$file.md5 already exist."
                 fi
@@ -88,5 +88,5 @@ do
     done
 done
 
-cd $orig_path
+cd "$orig_path"
 echo "Done"
