@@ -4,7 +4,7 @@ condition: childchild
 purple-participant:
   id: 2017-06-29-10:55-p1
   age: 6
-  gender: male
+  gender: female
   details:
     tablet-familiarity: 1
 yellow-participant:
