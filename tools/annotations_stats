@@ -9,8 +9,8 @@ import os
 import yaml
 import csv
 
-MALE = "male"
-FEMALE = "female"
+from timeline import InterraterReliability, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE
+
 CHILDCHILD = "childchild"
 CHILDROBOT = "childrobot"
 
@@ -39,7 +39,7 @@ class Child:
         return [self.age, self.gender]
 
 
-class Record:
+class Recording:
 
     def __init__(self,id, experiment, bagfile, annotations):
 
@@ -49,13 +49,31 @@ class Record:
         self.bagfile = bagfile
         self.annotations = annotations
 
+        self.cdt = self.experiment["condition"]
+
         # to have the proper list of annotators, turn names lower-case and remove trailing numbers to
         # remove all the cases where the same annotators re-coded the same video as 'scott' or 'Scott2' for instance
         self.annotators = set([name.lower().strip("0123456789") for name in self.annotations.keys()])
 
         self.double_coded = True if len(self.annotators) > 1 else False
 
-        self.cdt = self.experiment["condition"]
+        if self.double_coded:
+            annotators = self.annotations.keys()
+            self.irr_task = InterraterReliability(TASKENGAGEMENT,
+                                                  self.annotations[annotators[0]],
+                                                  self.annotations[annotators[1]],
+                                                  self.cdt)
+
+            self.irr_social = InterraterReliability(SOCIALENGAGEMENT,
+                                                  self.annotations[annotators[0]],
+                                                  self.annotations[annotators[1]],
+                                                  self.cdt)
+
+            self.irr_attitude = InterraterReliability(SOCIALATTITUDE,
+                                                  self.annotations[annotators[0]],
+                                                  self.annotations[annotators[1]],
+                                                  self.cdt)
+
 
         self.duration = self.bagfile["duration"]
 
@@ -132,10 +150,19 @@ class Dataset:
         print("Total nb recordings with annotations: %d" % len(self.dataset))
         print("Total nb recordings double-coded: %d (%.2f%% of whole dataset)" % (double_coded, double_coded * 100. / self.total_nb_recordings))
 
-        #print("Double-coded:")
-        #for r in self.dataset:
-        #    if r.double_coded:
-        #        sys.stdout.write(r.overview())
+        print("\n\nInter-rater reliability for double-coded recordings:")
+        for r in self.dataset:
+            if r.double_coded:
+                print("%s (%s) -- annotators: %s" % (r.id, r.cdt, r.annotations.keys()))
+                print("\tTask engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                    (r.irr_task.alpha,
+                                     r.irr_task.percentage_agreement))
+                print("\tSocial engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                    (r.irr_social.alpha,
+                                     r.irr_social.percentage_agreement))
+                print("\tSocial attitude: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                    (r.irr_attitude.alpha,
+                                     r.irr_attitude.percentage_agreement))
 
 
     def processpath(self, path):
@@ -157,7 +184,7 @@ class Dataset:
 
         if len(annotations) > 0:
             #logging.info("%s: %s annotations" % (path, len(annotations)))
-            record = Record(path, expe, bagfile, annotations)
+            record = Recording(path, expe, bagfile, annotations)
             self.dataset.append(record)
 
         else:
