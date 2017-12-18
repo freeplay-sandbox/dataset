@@ -1,0 +1,181 @@
+#! /usr/bin/env python
+
+import logging
+logging.basicConfig(level=logging.INFO)
+
+import argparse
+import sys
+import os
+import yaml
+import csv
+
+MALE = "male"
+FEMALE = "female"
+CHILDCHILD = "childchild"
+CHILDROBOT = "childrobot"
+
+istty = sys.stdout.isatty()
+
+def ddhhmmss(sec):
+    return "%dd %02d:%02d:%02d" % (sec//(3600*24), (sec%(3600*24))//3600,((sec%(3600*24))%3600)//60, ((sec%(3600*24))%3600)%60)
+
+def hhmmss(sec):
+    return "%02d:%02d:%02d" % (sec//3600,(sec%3600)//60, (sec%3600)%60)
+
+def mmss(sec):
+    return "%02d:%02d" % ((sec%3600)//60, (sec%3600)%60)
+
+class Child:
+
+    def __init__(self, participant):
+        self.age = participant["age"]
+        self.gender = participant["gender"]
+        self.id = participant["id"]
+        self.details = participant["details"]
+        self.nb_frames_visible = float('nan')
+        self.percent_visible = float('nan')
+
+    def csvrow(self):
+        return [self.age, self.gender]
+
+
+class Record:
+
+    def __init__(self,id, experiment, bagfile, annotations):
+
+        self.id = id
+
+        self.experiment = experiment
+        self.bagfile = bagfile
+        self.annotations = annotations
+
+        # to have the proper list of annotators, turn names lower-case and remove trailing numbers to
+        # remove all the cases where the same annotators re-coded the same video as 'scott' or 'Scott2' for instance
+        self.annotators = set([name.lower().strip("0123456789") for name in self.annotations.keys()])
+
+        self.double_coded = True if len(self.annotators) > 1 else False
+
+        self.cdt = self.experiment["condition"]
+
+        self.duration = self.bagfile["duration"]
+
+        self.children = [Child(self.experiment["purple-participant"])]
+        self.avg_age = self.children[0].age
+
+        if self.cdt == CHILDCHILD:
+            self.children.append(Child(self.experiment["yellow-participant"]))
+            self.avg_age = (self.children[0].age + self.children[1].age) / 2.0
+
+
+    def overview(self):
+        res = "Recording %s -- %s -- duration: %s\n" % (self.id, self.cdt, mmss(self.duration))
+
+        for coder, coded in self.annotations.items():
+            res += "\tCoder %s:\n" % coder
+            res += "\t  - %d events for purple (%f per min)\n"% (len(coded["purple"]), len(coded["purple"])*60/self.duration)
+            if self.cdt == CHILDCHILD:
+                res += "\t  - %d events for yellow (%f per min)\n"% (len(coded["yellow"]), len(coded["yellow"])*60/self.duration)
+        return res
+
+    def __repr__(self):
+        return self.id
+
+
+
+
+class Dataset:
+
+    def __init__(self, root):
+
+        self.dataset = []
+
+        self.total_nb_recordings = 0
+
+        for dirpath, dirs, files in os.walk(root, topdown=False):
+            for name in files:
+                fullpath = os.path.join(dirpath, name)
+                if name == "experiment.yaml":
+                    if dirpath.split(os.sep)[-1].startswith("exclude_"):
+                        logging.info("%s has been excluded" % fullpath)
+                        continue
+                    logging.debug("Processing %s" % fullpath)
+                    self.total_nb_recordings += 1
+                    self.processpath(dirpath)
+
+        self.dataset.sort(key=lambda val: repr(val))
+
+        self.total_duration = 0
+        self.nb_children = 0
+        self.nb_childchild = 0
+        self.nb_childrobot= 0
+
+        for record in self.dataset:
+            self.total_duration += record.duration
+            if record.cdt == CHILDCHILD:
+                self.nb_childchild += 1
+            elif record.cdt == CHILDROBOT:
+                self.nb_childrobot += 1
+
+    def overview(self):
+
+        print("\nOVERVIEW")
+        print("path" + " " * 19 + "  timestamp   len   condition  C1    C2")
+
+        double_coded = 0
+        for r in self.dataset:
+            if r.double_coded:
+                double_coded += 1
+            sys.stdout.write(r.overview())
+
+        print("\n")
+        print("Total nb recordings: %d" % self.total_nb_recordings)
+        print("Total nb recordings with annotations: %d" % len(self.dataset))
+        print("Total nb recordings double-coded: %d (%.2f%% of whole dataset)" % (double_coded, double_coded * 100. / self.total_nb_recordings))
+
+        #print("Double-coded:")
+        #for r in self.dataset:
+        #    if r.double_coded:
+        #        sys.stdout.write(r.overview())
+
+
+    def processpath(self, path):
+
+        with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
+            expe = yaml.load(yml)
+
+        with open(os.path.join(path, "freeplay.bag.yaml"), 'r') as yml:
+            bagfile = yaml.load(yml)
+
+        annotations = {}
+        for file in os.listdir(path):
+            if file.startswith("freeplay.annotations.") and file.endswith(".yaml"):
+                annotationfile = os.path.join(path, file)
+                annotator = file.split("freeplay.annotations.")[1].split(".yaml")[0]
+
+                with open(annotationfile, 'r') as yml:
+                    annotations[annotator] = yaml.load(yml)
+
+        if len(annotations) > 0:
+            #logging.info("%s: %s annotations" % (path, len(annotations)))
+            record = Record(path, expe, bagfile, annotations)
+            self.dataset.append(record)
+
+        else:
+            logging.warn("%s: No annotations!!" % path)
+
+    def write_csv(self):
+        raise NotImplementedException()
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Annotations Statistics')
+    parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
+    parser.add_argument("-c", "--csv", nargs='?', type=argparse.FileType('wb'), default=False, const=sys.stdout, help="save the dataset statistics to the specified CSV file (default to stdout)")
+
+    args = parser.parse_args()
+
+    dataset = Dataset(args.path)
+    if args.csv:
+        dataset.write_csv(args.csv)
+    else:
+        dataset.overview()
