@@ -19,3 +19,6 @@ visual_tracking_full_dataset.*.json
 
 # sessions purposefully excluded (typically, faulty recordings)
 exclude_*
+
+
+*.pyc
