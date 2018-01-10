@@ -25,6 +25,9 @@ def hhmmss(sec):
 def mmss(sec):
     return "%02d:%02d" % ((sec%3600)//60, (sec%3600)%60)
 
+def normalize_name(name):
+    return name.lower().strip("0123456789") 
+
 class Child:
 
     def __init__(self, participant):
@@ -53,7 +56,7 @@ class Recording:
 
         # to have the proper list of annotators, turn names lower-case and remove trailing numbers to
         # remove all the cases where the same annotators re-coded the same video as 'scott' or 'Scott2' for instance
-        self.annotators = set([name.lower().strip("0123456789") for name in self.annotations.keys()])
+        self.annotators = set([normalize_name(name) for name in self.annotations.keys()])
 
         self.double_coded = True if len(self.annotators) > 1 else False
 
@@ -80,6 +83,25 @@ class Recording:
         self.children = [Child(self.experiment["purple-participant"])]
         self.avg_age = self.children[0].age
 
+        self.nb_annotations = 0
+        total_episodes_duration = 0
+
+        for coder, coded in self.annotations.items():
+            self.nb_annotations += len(coded["purple"])
+            for a in coded["purple"]:
+                for atype, ts in a.items():
+                    total_episodes_duration += ts[1]-ts[0]
+            if self.cdt == CHILDCHILD:
+                self.nb_annotations += len(coded["yellow"])
+                for a in coded["purple"]:
+                    for atype, ts in a.items():
+                        total_episodes_duration += ts[1]-ts[0]
+
+        self.avg_episode_duration = total_episodes_duration / self.nb_annotations
+
+
+        self.annotation_rate = self.nb_annotations * 1. / self.duration
+
         if self.cdt == CHILDCHILD:
             self.children.append(Child(self.experiment["yellow-participant"]))
             self.avg_age = (self.children[0].age + self.children[1].age) / 2.0
@@ -88,12 +110,23 @@ class Recording:
     def overview(self):
         res = "Recording %s -- %s -- duration: %s\n" % (self.id, self.cdt, mmss(self.duration))
 
+        total=0
         for coder, coded in self.annotations.items():
             res += "\tCoder %s:\n" % coder
             res += "\t  - %d events for purple (%f per min)\n"% (len(coded["purple"]), len(coded["purple"])*60/self.duration)
+            total+=len(coded["purple"])
             if self.cdt == CHILDCHILD:
                 res += "\t  - %d events for yellow (%f per min)\n"% (len(coded["yellow"]), len(coded["yellow"])*60/self.duration)
+                total+=len(coded["yellow"])
+        res += "Total # of annotations: %d\n" % total
         return res
+
+    def csvrows(self):
+        rows = []
+        for coder, coded in self.annotations.items():
+            for child, ann in coded.items():
+                rows.append([self.id, self.cdt, self.duration, normalize_name(coder), child, len(ann)])
+        return rows
 
     def __repr__(self):
         return self.id
@@ -150,10 +183,27 @@ class Dataset:
         print("Total nb recordings with annotations: %d" % len(self.dataset))
         print("Total nb recordings double-coded: %d (%.2f%% of whole dataset)" % (double_coded, double_coded * 100. / self.total_nb_recordings))
 
+        total_annotations=0
+        total_duration=0
+        avg_episode_duration=0
+
+        for r in self.dataset:
+            total_annotations += r.nb_annotations
+            total_duration += r.duration
+            avg_episode_duration += r.avg_episode_duration
+
+        print("\n\nTotal duration: %f" % total_duration)
+        print("Total # annotations: %d" % total_annotations)
+        print("Average annotations per record: %.1f" % (total_annotations/len(self.dataset)))
+        print("Average annotations per minute: %.1f" % (total_annotations*60./total_duration))
+        print("Average annotations duration: %.1fsec" % (avg_episode_duration/len(self.dataset)))
+
+
         print("\n\nInter-rater reliability for double-coded recordings:")
         for r in self.dataset:
             if r.double_coded:
                 print("%s (%s) -- annotators: %s" % (r.id, r.cdt, r.annotations.keys()))
+                print("%d annotations, %.1f annotations/min" % (r.nb_annotations, 60*r.annotation_rate))
                 print("\tTask engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
                                     (r.irr_task.alpha,
                                      r.irr_task.percentage_agreement))
@@ -163,7 +213,6 @@ class Dataset:
                 print("\tSocial attitude: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
                                     (r.irr_attitude.alpha,
                                      r.irr_attitude.percentage_agreement))
-
 
     def processpath(self, path):
 
@@ -190,8 +239,13 @@ class Dataset:
         else:
             logging.warn("%s: No annotations!!" % path)
 
-    def write_csv(self):
-        raise NotImplementedException()
+    def write_csv(self, csvfile):
+        writer = csv.writer(csvfile)
+        writer.writerow(["id", "condition", "duration", "coder", "child", "nb_annotations"])
+        for r in self.dataset:
+            for row in r.csvrows():
+                writer.writerow(row)
+
 
 if __name__ == "__main__":
 
