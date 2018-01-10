@@ -109,25 +109,41 @@ class Recording:
             self.avg_age = (self.children[0].age + self.children[1].age) / 2.0
 
 
+    def avg_annotations_duration(self, annotations):
+        nb_annotations = len(annotations)
+        total_episodes_duration = 0
+
+        for a in annotations:
+            for atype, ts in a.items():
+                total_episodes_duration += ts[1]-ts[0]
+
+        return total_episodes_duration / nb_annotations
+
+
+
     def overview(self):
         res = "Recording %s -- %s -- duration: %s\n" % (self.id, self.cdt, mmss(self.duration))
 
         total=0
         for coder, coded in self.annotations.items():
             res += "\tCoder %s:\n" % coder
-            res += "\t  - %d events for purple (%f per min)\n"% (len(coded["purple"]), len(coded["purple"])*60/self.duration)
+            res += "\t  - %d events for purple (%.1f per min)\n"% (len(coded["purple"]), len(coded["purple"])*60/self.duration)
+            res += "\t  - avg duration of annotated events: %.1fs\n" % self.avg_annotations_duration(coded["purple"])
             total+=len(coded["purple"])
             if self.cdt == CHILDCHILD:
-                res += "\t  - %d events for yellow (%f per min)\n"% (len(coded["yellow"]), len(coded["yellow"])*60/self.duration)
+                res += "\t  - %d events for yellow (%.1f per min)\n"% (len(coded["yellow"]), len(coded["yellow"])*60/self.duration)
+                res += "\t  - avg duration of annotated events: %.1fs\n" % self.avg_annotations_duration(coded["yellow"])
                 total+=len(coded["yellow"])
+
         res += "Total # of annotations: %d\n" % total
         return res
 
     def csvrows(self):
         rows = []
         for coder, coded in self.annotations.items():
-            for child, ann in coded.items():
-                rows.append([self.id, self.cdt, self.duration, normalize_name(coder), child, len(ann)])
+            rows.append([self.id, self.cdt, self.duration, normalize_name(coder), "purple", len(coded["purple"]), self.avg_annotations_duration(coded["purple"])])
+            if self.cdt == CHILDCHILD:
+                rows.append([self.id, self.cdt, self.duration, normalize_name(coder), "yellow", len(coded["yellow"]), self.avg_annotations_duration(coded["yellow"])])
         return rows
 
     def __repr__(self):
@@ -194,7 +210,7 @@ class Dataset:
             total_duration += r.duration
             avg_episode_duration += r.avg_episode_duration
 
-        print("\n\nTotal duration: %f" % total_duration)
+        print("\n\nTotal duration: %.1f (%s)" % (total_duration, hhmmss(total_duration)))
         print("Total # annotations: %d" % total_annotations)
         print("Average annotations per record: %.1f" % (total_annotations/len(self.dataset)))
         print("Average annotations per minute: %.1f" % (total_annotations*60./total_duration))
@@ -243,7 +259,7 @@ class Dataset:
 
     def write_csv(self, csvfile):
         writer = csv.writer(csvfile)
-        writer.writerow(["id", "condition", "duration", "coder", "child", "nb_annotations"])
+        writer.writerow(["id", "condition", "duration", "coder", "child", "nb_annotations","avg_episode_duration"])
         for r in self.dataset:
             for row in r.csvrows():
                 writer.writerow(row)
