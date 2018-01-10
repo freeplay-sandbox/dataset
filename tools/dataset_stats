@@ -229,8 +229,8 @@ class Dataset:
             expe = yaml.load(yml)
 
         bagpath =  os.path.join(path, "freeplay.bag")
-        if os.path.exists(bagpath):
-            yamlfile = os.path.join(path, "freeplay.bag.yaml")
+        yamlfile = os.path.join(path, "freeplay.bag.yaml")
+        if os.path.exists(yamlfile) or os.path.exists(bagpath):
             if os.path.exists(yamlfile):
                 with open(yamlfile, 'r') as yml:
                     bagfile = yaml.load(yml)
