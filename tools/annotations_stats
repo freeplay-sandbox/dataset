@@ -79,6 +79,8 @@ class Recording:
 
 
         self.duration = self.bagfile["duration"]
+        if self.cdt == CHILDCHILD:
+            self.duration *= 2
 
         self.children = [Child(self.experiment["purple-participant"])]
         self.avg_age = self.children[0].age
@@ -93,7 +95,7 @@ class Recording:
                     total_episodes_duration += ts[1]-ts[0]
             if self.cdt == CHILDCHILD:
                 self.nb_annotations += len(coded["yellow"])
-                for a in coded["purple"]:
+                for a in coded["yellow"]:
                     for atype, ts in a.items():
                         total_episodes_duration += ts[1]-ts[0]
 
