@@ -9,7 +9,9 @@ import os
 import yaml
 import csv
 
-from timeline import InterraterReliability, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE
+from itertools import combinations
+
+from timeline import InterraterReliability, TimelinePrinter, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE
 
 CHILDCHILD = "childchild"
 CHILDROBOT = "childrobot"
@@ -61,21 +63,25 @@ class Recording:
         self.double_coded = True if len(self.annotators) > 1 else False
 
         if self.double_coded:
+            self.irr_task = {}
+            self.irr_social = {}
+            self.irr_attitude = {}
             annotators = self.annotations.keys()
-            self.irr_task = InterraterReliability(TASKENGAGEMENT,
-                                                  self.annotations[annotators[0]],
-                                                  self.annotations[annotators[1]],
-                                                  self.cdt)
+            for a0, a1 in combinations(annotators, 2):
+                self.irr_task[(a0, a1)] = InterraterReliability(TASKENGAGEMENT,
+                                                    self.annotations[a0],
+                                                    self.annotations[a1],
+                                                    self.cdt)
 
-            self.irr_social = InterraterReliability(SOCIALENGAGEMENT,
-                                                  self.annotations[annotators[0]],
-                                                  self.annotations[annotators[1]],
-                                                  self.cdt)
+                self.irr_social[(a0, a1)] = InterraterReliability(SOCIALENGAGEMENT,
+                                                    self.annotations[a0],
+                                                    self.annotations[a1],
+                                                    self.cdt)
 
-            self.irr_attitude = InterraterReliability(SOCIALATTITUDE,
-                                                  self.annotations[annotators[0]],
-                                                  self.annotations[annotators[1]],
-                                                  self.cdt)
+                self.irr_attitude[(a0, a1)] = InterraterReliability(SOCIALATTITUDE,
+                                                    self.annotations[a0],
+                                                    self.annotations[a1],
+                                                    self.cdt)
 
 
         self.duration = self.bagfile["duration"]
@@ -145,6 +151,18 @@ class Recording:
             if self.cdt == CHILDCHILD:
                 rows.append([self.id, self.cdt, self.duration, normalize_name(coder), "yellow", len(coded["yellow"]), self.avg_annotations_duration(coded["yellow"])])
         return rows
+
+
+    def csvrows_annotations(self, construct):
+
+        rows = []
+        for coder, coded in self.annotations.items():
+            printer = TimelinePrinter(construct,
+                                      coded,
+                                      self.cdt)
+            rows += printer.csvrows()
+        return rows
+
 
     def __repr__(self):
         return self.id
@@ -217,20 +235,24 @@ class Dataset:
         print("Average annotations duration: %.1fsec" % (avg_episode_duration/len(self.dataset)))
 
 
-        print("\n\nInter-rater reliability for double-coded recordings:")
+        print("\n\nInter-rater reliability for double-coded recordings:\n")
+
         for r in self.dataset:
             if r.double_coded:
                 print("%s (%s) -- annotators: %s" % (r.id, r.cdt, r.annotations.keys()))
                 print("%d annotations, %.1f annotations/min" % (r.nb_annotations, 60*r.annotation_rate))
-                print("\tTask engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
-                                    (r.irr_task.alpha,
-                                     r.irr_task.percentage_agreement))
-                print("\tSocial engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
-                                    (r.irr_social.alpha,
-                                     r.irr_social.percentage_agreement))
-                print("\tSocial attitude: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
-                                    (r.irr_attitude.alpha,
-                                     r.irr_attitude.percentage_agreement))
+                for pair in r.irr_task.keys():
+                    print("Pair %s:" % str(pair))
+                    print("\tTask engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                        (r.irr_task[pair].alpha,
+                                         r.irr_task[pair].percentage_agreement))
+                    print("\tSocial engagement: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                        (r.irr_social[pair].alpha,
+                                         r.irr_social[pair].percentage_agreement))
+                    print("\tSocial attitude: Krippendorff's alpha: %.2f --  %.2f%% agreement" % \
+                                        (r.irr_attitude[pair].alpha,
+                                         r.irr_attitude[pair].percentage_agreement))
+                print("\n*****************************************************************************\n\n")
 
     def processpath(self, path):
 
@@ -250,7 +272,7 @@ class Dataset:
                     annotations[annotator] = yaml.load(yml)
 
         if len(annotations) > 0:
-            #logging.info("%s: %s annotations" % (path, len(annotations)))
+            logging.info("%s: %s annotations" % (path, len(annotations)))
             record = Recording(path, expe, bagfile, annotations)
             self.dataset.append(record)
 
@@ -264,17 +286,36 @@ class Dataset:
             for row in r.csvrows():
                 writer.writerow(row)
 
+    def write_csv_annotations(self, csvfile):
+        writer = csv.writer(csvfile)
+        writer.writerow(["construct_class", "construct", "duration"])
+        for r in self.dataset:
+            for row in r.csvrows_annotations(TASKENGAGEMENT):
+                writer.writerow(row)
+
+        for r in self.dataset:
+            for row in r.csvrows_annotations(SOCIALENGAGEMENT):
+                writer.writerow(row)
+
+        for r in self.dataset:
+            for row in r.csvrows_annotations(SOCIALATTITUDE):
+                writer.writerow(row)
+
+
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Annotations Statistics')
     parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
     parser.add_argument("-c", "--csv", nargs='?', type=argparse.FileType('wb'), default=False, const=sys.stdout, help="save the dataset statistics to the specified CSV file (default to stdout)")
+    parser.add_argument("--csv-full", nargs='?', type=argparse.FileType('wb'), default=False, const=sys.stdout, help="save the full annotation set to the specified CSV file (default to stdout)")
 
     args = parser.parse_args()
 
     dataset = Dataset(args.path)
     if args.csv:
         dataset.write_csv(args.csv)
+    elif args.csv_full:
+        dataset.write_csv_annotations(args.csv_full)
     else:
         dataset.overview()

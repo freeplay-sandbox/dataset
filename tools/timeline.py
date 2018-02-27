@@ -39,6 +39,9 @@ SOCIALATTITUDE=(PROSOCIAL,
                 PASSIVE)
 
 CONSTRUCTS = (TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE)
+CONSTRUCTS_NAMES = {TASKENGAGEMENT:"task_engagement",
+                    SOCIALENGAGEMENT:"social_engagement",
+                    SOCIALATTITUDE:"social_attitude"}
 
 MISSINGDATA="missingdata"
 
@@ -78,7 +81,40 @@ class Timeline:
     def __repr__(self):
         return "timeline from %f to %f (%d sec), %s" % (self.start, self.end, self.end-self.start, str(self.construct))
 
+class TimelinePrinter:
+    
+    def __init__(self, construct, coder, cdt = CHILDCHILD):
+        self.construct = construct
+        self.tp = Timeline(construct, coder["purple"])
 
+        self.cdt = cdt
+
+        self.start = self.tp.start
+        self.end = self.tp.end
+
+
+        if cdt == CHILDCHILD:
+            self.ty = Timeline(construct, coder["yellow"])
+            self.start = max(self.start, self.ty.start)
+            self.end = min(self.end, self.ty.end)
+
+    def csv_header(self):
+        return ["construct", "annotation", "duration"]
+
+    def csvrows(self):
+        rows = []
+        for k, v in self.tp.timeline.items():
+            start, end, annotation = v
+            rows.append([CONSTRUCTS_NAMES[self.construct], annotation, end-start])
+
+        if self.cdt == CHILDCHILD:
+            for k, v in self.ty.timeline.items():
+                start, end, annotation = v
+                rows.append([CONSTRUCTS_NAMES[self.construct], annotation, end-start])
+
+        return rows
+
+ 
 class InterraterReliability:
     
     def __init__(self, construct, coder1, coder2, cdt = CHILDCHILD):
