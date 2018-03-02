@@ -6,6 +6,7 @@ logging.basicConfig(level=logging.INFO)
 import argparse
 import sys
 import os
+import os.path
 import yaml
 import csv
 from rosbag.bag import Bag
@@ -86,7 +87,44 @@ class Record:
         logging.debug("Bag file %s: missing frequency for topic %s" % (self.bagfile["path"], topic))
         return 0
 
-    def check(self):
+    def check_files(self):
+
+        formats = "\x1b[37m" + self.id.split(os.sep)[-1] + "\x1b[0m " + ("CC " if self.cdt == CHILDCHILD else "CR ") + mmss(self.duration) + " "
+
+        files = [
+                "freeplay.bag",
+                "freeplay.poses.json",
+                "freeplay.gaze.json",
+                "audio/freeplay_camera_purple_audio.mp3",
+                "audio/freeplay_camera_purple_audio.wav",
+                "audio/freeplay_camera_yellow_audio.mp3",
+                "audio/freeplay_camera_yellow_audio.wav",
+                "videos/camera_purple_raw.mkv",
+                "videos/camera_purple_skel.mkv",
+                "videos/camera_purple_optical_flow.mkv",
+                "videos/camera_yellow_raw.mkv",
+                "videos/camera_yellow_skel.mkv",
+                "videos/camera_yellow_optical_flow.mkv",
+                "videos/env_camera_raw.mkv",
+                "videos/env_camera_skel.mkv",
+                "videos/env_camera_optical_flow.mkv",
+                ]
+
+        for f in files:
+
+            path = os.path.join(self.id, f)
+
+            if os.path.exists(path):
+                if os.path.getsize(path) > 0:
+                    formats += "        Y"
+                else:
+                    formats += "\x1b[31m        0\x1b[0m"
+            else:
+                formats += "\x1b[31m        N\x1b[0m"
+
+        print(formats)
+
+    def check_hz(self):
 
         formats = "\x1b[37m" + self.id.split(os.sep)[-1] + "\x1b[0m " + ("CC " if self.cdt == CHILDCHILD else "CR ") + mmss(self.duration) + " "
         freqs = []
@@ -275,10 +313,16 @@ class Dataset:
             writer.writerow(r.csvrow())
 
     def check(self):
+        print("\nPREPROCESSING")
+        print(" " * 23 + "cdt   len       bag    poses     gaze    p/mp3    p/wav    y/mp3    y/wav    p/rgb    p/skl p/optflw    y/rgb    y/skl y/optflw  env/rgb  env/skl env/opfl")
+        for r in self.dataset:
+            r.check_files()
+
+
         print("\nPUBLICATION RATES (in Hz)")
         print(" " * 23 + "cdt   len " + " ".join(" " * (10 - len(n)) + n[:10] + " " for t,n,r in TOPICS))
         for r in self.dataset:
-            r.check()
+            r.check_hz()
 
 if __name__ == "__main__":
 
