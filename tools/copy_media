@@ -1,0 +1,68 @@
+#! /usr/bin/env python
+
+import argparse
+import subprocess
+import os
+
+def sizeof_fmt(num, suffix='B'):
+    """
+    Taken from https://stackoverflow.com/questions/1094841/reusable-library-to-get-human-readable-version-of-file-size
+    """
+    for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
+        if abs(num) < 1024.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f%s%s" % (num, 'Yi', suffix)
+
+def subproc_copy(source, dest):
+    subprocess.check_call(['cp', source, dest])
+
+
+if __name__=="__main__":
+
+    parser = argparse.ArgumentParser(description="Copy the dataset 'big' files from one place to another (currently, only mkv, mp3 & wav files)")
+    parser.add_argument("source", help="root path of the source dataset -- recordings are recursively looked for from this path")
+    parser.add_argument("dest", default=".", help="root path of the destination dataset")
+    parser.add_argument("-f", "--force", action='store_true', help="if true, overwrite existing files. Otherwise, skip them.")
+    parser.add_argument("-n", "--dry-run", action='store_true', help="if true, only print what would be copied, but do not copy anything.")
+
+    args = parser.parse_args()
+
+    tobecopied={}
+    totalsize = 0
+    alreadycopied = 0
+    tobecopiedsize = 0
+
+    for dirpath, dirs, files in os.walk(args.source, topdown=False):
+        #print(dirpath)
+        for name in files:
+            if name[-3:] in ["mkv", "mp3", "wav"]:
+                relpath = os.path.relpath(dirpath, args.source)
+                sourcepath = os.path.abspath(os.path.join(args.source, relpath, name))
+                destpath = os.path.abspath(os.path.join(args.dest, relpath, name))
+                size = os.path.getsize(sourcepath)
+                totalsize += size
+                if size == 0:
+                    print("File %s is empty. Skipping it." % sourcepath)
+                    continue
+
+                if(os.path.exists(destpath) and not args.force):
+                    #print("File %s already exist. Skipping it (use -f to force overwrite)" % destpath)
+                    alreadycopied += size
+                    continue
+                tobecopied[sourcepath]=destpath
+                tobecopiedsize += size
+
+
+    print("%s in total to copy, %s already copied (%d%%). %d files remaining to copy (%s)." % (sizeof_fmt(totalsize), sizeof_fmt(alreadycopied), int(alreadycopied * 100. / totalsize), len(tobecopied), sizeof_fmt(tobecopiedsize)))
+
+    i = 1
+    for source, dest in tobecopied.items():
+        if args.dry_run:
+            print("Need to copy %s to %s" % (source, dest))
+        else:
+            print("[%d/%s] (done %s/%s -- %d%%) Copying %s to %s" % (i, len(tobecopied), sizeof_fmt(alreadycopied), sizeof_fmt(totalsize), (alreadycopied * 100./totalsize), source, dest))
+            subproc_copy(source, dest)
+            alreadycopied += os.path.getsize(source)
+            i += 1
+
