@@ -47,7 +47,7 @@ if __name__=="__main__":
                     print("File %s is empty. Skipping it." % sourcepath)
                     continue
 
-                if(os.path.exists(destpath) and not args.force):
+                if os.path.exists(destpath) and not args.force:
                     #print("File %s already exist. Skipping it (use -f to force overwrite)" % destpath)
                     alreadycopied += size
                     continue
@@ -62,7 +62,7 @@ if __name__=="__main__":
         if args.dry_run:
             print("Need to copy %s to %s" % (source, dest))
         else:
-            print("[%d/%s] (done %s/%s -- %d%%) Copying %s to %s" % (i, len(tobecopied), sizeof_fmt(copiedsize), sizeof_fmt(tobecopiedsize), (copied * 100./tobecopiedsize), source, dest))
+            print("[%d/%s] (done %s/%s -- %d%%) Copying %s to %s" % (i, len(tobecopied), sizeof_fmt(copiedsize), sizeof_fmt(tobecopiedsize), (copiedsize * 100./tobecopiedsize), source, dest))
             destdir = os.path.abspath(os.path.dirname(dest))
             if not os.path.exists(destdir):
                 os.makedirs(destdir)
