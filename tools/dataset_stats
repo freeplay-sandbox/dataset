@@ -115,10 +115,10 @@ class Record:
             path = os.path.join(self.id, f)
 
             if os.path.exists(path):
-                if os.path.getsize(path) > 0:
-                    formats += "        Y"
-                else:
+                if os.path.getsize(path) < 100000:
                     formats += "\x1b[31m        0\x1b[0m"
+                else:
+                    formats += "        Y"
             else:
                 formats += "\x1b[31m        N\x1b[0m"
 
