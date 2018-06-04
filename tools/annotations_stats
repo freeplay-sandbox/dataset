@@ -161,7 +161,8 @@ class Recording:
 
         rows = []
         for coder, coded in self.annotations.items():
-            printer = TimelinePrinter(construct,
+            printer = TimelinePrinter(self.id,
+                                      construct,
                                       coded,
                                       self.cdt)
             rows += printer.csvrows()
@@ -316,7 +317,7 @@ class Dataset:
 
     def write_csv_annotations(self, csvfile):
         writer = csv.writer(csvfile)
-        writer.writerow(["construct_class", "construct", "duration"])
+        writer.writerow(TimelinePrinter.csv_header())
         for r in self.dataset:
             for row in r.csvrows_annotations(TASKENGAGEMENT):
                 writer.writerow(row)
