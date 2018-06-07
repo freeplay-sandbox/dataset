@@ -1,0 +1,323 @@
+#! /usr/bin/env python3
+
+import logging
+logging.basicConfig(level=logging.INFO)
+
+import argparse
+import sys
+import os
+
+import csv
+import json
+import yaml
+
+from timeline import TimelinePrinter, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE
+
+CHILDCHILD = "childchild"
+CHILDROBOT = "childrobot"
+
+FPS=30.
+
+PURPLE_TOPIC="camera_purple/rgb/image_raw/compressed"
+YELLOW_TOPIC="camera_yellow/rgb/image_raw/compressed"
+
+MIN_CONFIDENCE_FACE=0.2
+MIN_CONFIDENCE_SKEL=0.05
+
+NOSE_FACE=30 # idx of nose in the facial landmarks
+NOSE_SKEL=0 # idx of nose in the skeleton joints
+
+# face and skeleton indices are described here:
+# https://github.com/freeplay-sandbox/analysis#format-of-poses-files
+PURPLE_FACE_KEYS=["purple_child_face%02d_%s" % (i, s) for i in range(70) for s in 'xy']
+YELLOW_FACE_KEYS=["yellow_child_face%02d_%s" % (i, s) for i in range(70) for s in 'xy']
+PURPLE_SKEL_KEYS=["purple_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
+YELLOW_SKEL_KEYS=["yellow_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
+
+FIELDNAMES = ['timestamp',
+              'id', 
+              "purple_child_age", "yellow_child_age", 
+              "purple_child_gender", "yellow_child_gender"] + \
+              PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
+              PURPLE_SKEL_KEYS + YELLOW_SKEL_KEYS +\
+              ["purple_child_gaze_on_screen", "purple_child_gaze_on_peer", "purple_child_gaze_on_adult",
+               "purple_child_gaze_x", "purple_child_gaze_y", # only defined when gaze on screen
+               "yellow_child_gaze_on_screen", "yellow_child_gaze_on_peer", "yellow_child_gaze_on_adult",
+               "yellow_child_gaze_x", "yellow_child_gaze_y",  # only defined when gaze on screen
+               "gaze_distance", # only defined when gaze on screen
+               "purple_child_au01",
+               "purple_child_au02",
+               "purple_child_au04",
+               "purple_child_au05",
+               "purple_child_au06",
+               "purple_child_au07",
+               "purple_child_au09",
+               "purple_child_au10",
+               "purple_child_au12",
+               "purple_child_au14",
+               "purple_child_au15",
+               "purple_child_au17",
+               "purple_child_au20",
+               "purple_child_au23",
+               "purple_child_au25",
+               "purple_child_au26",
+               "purple_child_au28",
+               "purple_child_au45",
+               "yellow_child_au01",
+               "yellow_child_au02",
+               "yellow_child_au04",
+               "yellow_child_au05",
+               "yellow_child_au06",
+               "yellow_child_au07",
+               "yellow_child_au09",
+               "yellow_child_au10",
+               "yellow_child_au12",
+               "yellow_child_au14",
+               "yellow_child_au15",
+               "yellow_child_au17",
+               "yellow_child_au20",
+               "yellow_child_au23",
+               "yellow_child_au25",
+               "yellow_child_au26",
+               "yellow_child_au28",
+               "yellow_child_au45"] +\
+               ["purple_child_motion_intensity_avg",
+                "purple_child_motion_intensity_stdev",
+                "purple_child_motion_intensity_max",
+                "purple_child_motion_direction_avg",
+                "purple_child_motion_direction_stdev",
+                "yellow_child_motion_intensity_avg",
+                "yellow_child_motion_intensity_stdev",
+                "yellow_child_motion_intensity_max",
+                "yellow_child_motion_direction_avg",
+                "yellow_child_motion_direction_stdev"] +\
+              ["audio%02d" % i for i in range(16)] +\
+              ["purple_child_task_engagement", "purple_child_social_engagement", "purple_child_social_attitude",
+              "yellow_child_task_engagement", "yellow_child_social_engagement", "yellow_child_social_attitude"]
+
+class Dataset:
+
+    def __init__(self, root):
+
+        self.dataset = []
+
+        self.total_nb_recordings = 0
+        self.paths = []
+
+        logging.info("Looking for recordings...")
+
+        for dirpath, dirs, files in os.walk(root, topdown=False):
+            for name in files:
+                fullpath = os.path.join(dirpath, name)
+                if name == "experiment.yaml":
+                    if dirpath.split(os.sep)[-1].startswith("exclude_"):
+                        logging.debug("%s has been excluded" % fullpath)
+                        continue
+                    if not self.ischildchild(dirpath):
+                        continue
+                    self.total_nb_recordings += 1
+                    self.paths.append(dirpath)
+
+        logging.info("Found %d valid recordings in child-child condition" % self.total_nb_recordings)
+        logging.info("%d fields to store per recorded frame" % len(FIELDNAMES))
+
+        self.last_timestamp = 0
+        self.last_purple_timestamp = 0
+        self.last_yellow_timestamp = 0
+
+    def ischildchild(self, path):
+        with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
+            expe = yaml.load(yml)
+            return expe["condition"] == CHILDCHILD
+
+    def frame_at(self, timestamp, frames):
+        
+        for frame in frames:
+            if abs(frame["ts"] - timestamp) < 0.5 * 1/FPS:
+                return frame
+            if frame["ts"] > timestamp + 1:
+                return None
+
+    def get_annotations(self, annotator, timestamp):
+
+        pcte = "goaloriented"
+        pcse = "cooperative"
+        pcsa = "assertive"
+        ycte = "aimless"
+        ycse = "solitary"
+        ycsa = "passive"
+
+        return {"purple_child_task_engagement":pcte, 
+                "purple_child_social_engagement": pcse, 
+                "purple_child_social_attitude": pcsa,
+                "yellow_child_task_engagement": ycte, 
+                "yellow_child_social_engagement": ycse, 
+                "yellow_child_social_attitude": ycsa}
+
+    def processpath(self, path, writer):
+
+        with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
+            expe = yaml.load(yml)
+
+        with open(os.path.join(path, "freeplay.bag.yaml"), 'r') as yml:
+            bagfile = yaml.load(yml)
+
+
+        logging.info("Opening freeplay.poses.json...")
+        with open(os.path.join(path, "freeplay.poses.json"), 'r') as poses_json:
+            poses = json.load(poses_json)
+
+        logging.info("Opening annotations...")
+
+        annotations = {}
+        annotator = None
+
+        for file in os.listdir(path):
+            if file.startswith("freeplay.annotations.") and file.endswith(".yaml"):
+                annotationfile = os.path.join(path, file)
+                annotator = file.split("freeplay.annotations.")[1].split(".yaml")[0]
+
+                with open(annotationfile, 'r') as yml:
+                    annotations[annotator] = yaml.load(yml)
+
+        if len(annotations) > 1:
+            logging.info("%s: coded by %s annotator. I will accordingly duplicate this recording" % (path, len(annotations)))
+            #record = Recording(path, expe, bagfile, annotations)
+            #self.dataset.append(record)
+
+        # the starting timestamp is *not* bagfile["start"], but instead the timestamp contained in the header of the first published frame (which is *before* is was recorded in the bagfile.
+        ts = min(poses[PURPLE_TOPIC]["frames"][0]["ts"],
+                 poses[YELLOW_TOPIC]["frames"][0]["ts"])
+
+        # we need to store the bagfile delta as annotations are timestamped relative to the bagfile start time, *not* the frames timestamps
+        bagfile_delta = bagfile["start"] - ts
+
+        last_ts = max(poses[PURPLE_TOPIC]["frames"][-1]["ts"],
+                      poses[YELLOW_TOPIC]["frames"][-1]["ts"])
+
+        duration = last_ts - ts
+        logging.info("Collating features (%0.2f sec of data)..." % duration)
+
+        last_percent = 0
+        rows = []
+        while ts < last_ts:
+
+            row = {"timestamp": ts,
+                    "id": path.split("/")[-1] + "_" + annotator,
+                    "purple_child_age": expe["purple-participant"]["age"],
+                    "purple_child_gender": expe["purple-participant"]["gender"],
+                    "yellow_child_age": expe["yellow-participant"]["age"],
+                    "yellow_child_gender": expe["yellow-participant"]["gender"]}
+
+            purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"])
+            if purple_frame:
+                row.update(
+                    self.formatpose("faces", 
+                                    purple_frame, 
+                                    PURPLE_FACE_KEYS, 
+                                    NOSE_FACE,
+                                    MIN_CONFIDENCE_FACE))
+
+                row.update(
+                    self.formatpose("poses", 
+                                    purple_frame, 
+                                    PURPLE_SKEL_KEYS, 
+                                    NOSE_SKEL,
+                                    MIN_CONFIDENCE_SKEL))
+
+
+            yellow_frame = self.frame_at(ts, poses[YELLOW_TOPIC]["frames"])
+            if yellow_frame:
+                row.update(
+                    self.formatpose("faces", 
+                                    yellow_frame, 
+                                    YELLOW_FACE_KEYS, 
+                                    NOSE_FACE,
+                                    MIN_CONFIDENCE_FACE))
+
+                row.update(
+                    self.formatpose("poses", 
+                                    yellow_frame, 
+                                    YELLOW_SKEL_KEYS, 
+                                    NOSE_SKEL,
+                                    MIN_CONFIDENCE_SKEL))
+
+
+            if annotator:
+                row.update(self.get_annotations(annotator, ts + bagfile_delta))
+
+            rows.append(row)
+            ts += 1/FPS
+
+            percent = int((ts - (last_ts-duration)) / duration * 100)
+            if percent != last_percent:
+                logging.info("%d%% done" % percent)
+                last_percent = percent
+        
+        writer.writerows(rows)
+
+
+    def formatpose(self,
+                    partname, 
+                    frame, 
+                    keys, 
+                    idx_central_landmark, 
+                    min_confidence_level):
+        """
+        :param idx_central_landmark: the index of one feature (for instance, the nose) that is expected to be close to the image centre. Used to select the right part when more than one face/skeleton has been detected.
+        """
+
+        ### First, select the face the closest to the center of the image
+
+        if partname in frame and len(frame[partname]) > 0: # one face or more detected. Assume the correct one is the one closest to the image centre
+            part = frame[partname]["1"]
+            min_dist = pow(part[idx_central_landmark][0] - 0.5, 2) +\
+                       pow(part[idx_central_landmark][1] - 0.5, 2)
+
+            for p in frame[partname].values():
+                dist = pow(p[idx_central_landmark][0] - 0.5, 2) +\
+                       pow(p[idx_central_landmark][1] - 0.5, 2)
+
+                if dist < min_dist:
+                    part = p
+                    min_dist = dist
+        else:
+            return {}
+
+        results = {}
+        for i in range(int(len(keys)/2)):
+            x,y,c = part[i]
+            if c > min_confidence_level:
+                results[keys[i*2]] = x
+                results[keys[i*2 + 1]] = y
+
+
+        return results
+
+    def write_csv(self, writer):
+        
+        idx = 0
+        for path in self.paths:
+            idx += 1
+            logging.info("[%02d/%02d] Processing %s" % (idx, len(self.paths), path))
+            self.processpath(path, writer)
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator -- CHILD-CHILD condition only')
+    parser.add_argument("csv_file", type=argparse.FileType('w'), help="CSV file to save to")
+    parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
+
+    args = parser.parse_args()
+
+
+    dataset = Dataset(args.path)
+
+    writer = csv.DictWriter(args.csv_file, fieldnames=FIELDNAMES)
+    writer.writeheader()
+
+    dataset.write_csv(writer)
+
+
+
