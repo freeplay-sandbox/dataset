@@ -11,7 +11,7 @@ import csv
 import json
 import yaml
 
-from timeline import TimelinePrinter, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE
+from timeline import Timeline, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE, MISSINGDATA
 
 CHILDCHILD = "childchild"
 CHILDROBOT = "childrobot"
@@ -140,19 +140,21 @@ class Dataset:
 
     def get_annotations(self, annotator, timestamp):
 
-        pcte = "goaloriented"
-        pcse = "cooperative"
-        pcsa = "assertive"
-        ycte = "aimless"
-        ycse = "solitary"
-        ycsa = "passive"
+        result = {}
 
-        return {"purple_child_task_engagement":pcte, 
-                "purple_child_social_engagement": pcse, 
-                "purple_child_social_attitude": pcsa,
-                "yellow_child_task_engagement": ycte, 
-                "yellow_child_social_engagement": ycse, 
-                "yellow_child_social_attitude": ycsa}
+        constructs = ["purple_child_task_engagement",
+                      "purple_child_social_engagement",
+                      "purple_child_social_attitude",
+                      "yellow_child_task_engagement",
+                      "yellow_child_social_engagement",
+                      "yellow_child_social_attitude"]
+
+        for c in constructs:
+            ann = self.annotations[annotator][c].attime(timestamp)
+            if ann != MISSINGDATA:
+                result[c] = ann
+
+        return result
 
     def processpath(self, path, writer):
 
@@ -162,14 +164,9 @@ class Dataset:
         with open(os.path.join(path, "freeplay.bag.yaml"), 'r') as yml:
             bagfile = yaml.load(yml)
 
-
-        logging.info("Opening freeplay.poses.json...")
-        with open(os.path.join(path, "freeplay.poses.json"), 'r') as poses_json:
-            poses = json.load(poses_json)
-
         logging.info("Opening annotations...")
 
-        annotations = {}
+        self.annotations = {}
         annotator = None
 
         for file in os.listdir(path):
@@ -178,12 +175,25 @@ class Dataset:
                 annotator = file.split("freeplay.annotations.")[1].split(".yaml")[0]
 
                 with open(annotationfile, 'r') as yml:
-                    annotations[annotator] = yaml.load(yml)
+                    raw = yaml.load(yml)
+                    annotation_timelines = {
+                            "purple_child_task_engagement": Timeline(TASKENGAGEMENT, raw["purple"]),
+                            "purple_child_social_engagement": Timeline(SOCIALENGAGEMENT, raw["purple"]),
+                            "purple_child_social_attitude": Timeline(SOCIALATTITUDE, raw["purple"]),
+                            "yellow_child_task_engagement": Timeline(TASKENGAGEMENT, raw["yellow"]),
+                            "yellow_child_social_engagement": Timeline(SOCIALENGAGEMENT, raw["yellow"]),
+                            "yellow_child_social_attitude": Timeline(SOCIALATTITUDE, raw["yellow"])
+                            }
+                    self.annotations[annotator] = annotation_timelines
 
-        if len(annotations) > 1:
-            logging.info("%s: coded by %s annotator. I will accordingly duplicate this recording" % (path, len(annotations)))
-            #record = Recording(path, expe, bagfile, annotations)
-            #self.dataset.append(record)
+        if len(self.annotations) > 1:
+            logging.info("%s: coded by %s annotator. I will accordingly duplicate this recording" % (path, len(self.annotations)))
+
+        logging.info("Opening freeplay.poses.json...")
+        with open(os.path.join(path, "freeplay.poses.json"), 'r') as poses_json:
+            poses = json.load(poses_json)
+
+
 
         # the starting timestamp is *not* bagfile["start"], but instead the timestamp contained in the header of the first published frame (which is *before* is was recorded in the bagfile.
         ts = min(poses[PURPLE_TOPIC]["frames"][0]["ts"],
