@@ -95,6 +95,18 @@ FIELDNAMES = ['timestamp',
               ["purple_child_task_engagement", "purple_child_social_engagement", "purple_child_social_attitude",
               "yellow_child_task_engagement", "yellow_child_social_engagement", "yellow_child_social_attitude"]
 
+CHECKS_FIELDNAMES = ['id', 
+                     'timestamp_bagfile_start', 
+                     'timestamp_bagfile_end', 
+                     'timestamp_first_purple_image', 
+                     'timestamp_last_purple_image', 
+                     'timestamp_first_yellow_image', 
+                     'timestamp_last_yellow_image', 
+                     'nb_purple_images_bag', 'nb_purple_poses', 
+                     'nb_yellow_images_bag', 'nb_yellow_poses', 
+                     'timestamp_first_annotation', 
+                     'timestamp_last_annotation']
+
 class Dataset:
 
     def __init__(self, root):
@@ -156,7 +168,7 @@ class Dataset:
 
         return result
 
-    def processpath(self, path, writer):
+    def processpath(self, path, writer, checks_writer):
 
         with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
             expe = yaml.load(yml)
@@ -194,22 +206,59 @@ class Dataset:
             poses = json.load(poses_json)
 
 
+        #################################################################
+        #################################################################
+        #################################################################
+        rows = []
+        checks_row = {}
+
+        ts_first_purple = poses[PURPLE_TOPIC]["frames"][0]["ts"]
+        ts_first_yellow = poses[YELLOW_TOPIC]["frames"][0]["ts"]
+        ts_last_purple = poses[PURPLE_TOPIC]["frames"][-1]["ts"]
+        ts_last_yellow = poses[YELLOW_TOPIC]["frames"][-1]["ts"]
+
+        ##############################################################
+        ##############################################################
+        #### Save dataset metadata for later sanity checks
+        ##############################################################
+
+
+        checks_row["id"] = path.split("/")[-1] + "_" + annotator
+        checks_row["timestamp_first_purple_image"] = ts_first_purple
+        checks_row["timestamp_first_yellow_image"] = ts_first_yellow
+        checks_row["timestamp_last_purple_image"] = ts_last_purple
+        checks_row["timestamp_last_yellow_image"] = ts_last_yellow
+
+        checks_row["timestamp_bagfile_start"] = bagfile["start"]
+        checks_row["timestamp_bagfile_end"] = bagfile["end"]
+
+        checks_row["nb_purple_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == PURPLE_TOPIC][0]
+        checks_row["nb_purple_poses"] = len(poses[PURPLE_TOPIC]["frames"])
+        checks_row["nb_yellow_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == YELLOW_TOPIC][0]
+        checks_row["nb_yellow_poses"] = len(poses[YELLOW_TOPIC]["frames"])
+
+        checks_row["timestamp_first_annotation"] = min([t.start for t in self.annotations[annotator].values()])
+        checks_row["timestamp_last_annotation"] = max([t.end for t in self.annotations[annotator].values()])
+
+        checks_writer.writerow(checks_row)
+
+        ##############################################################
+        ##############################################################
+        ##############################################################
+
 
         # the starting timestamp is *not* bagfile["start"], but instead the timestamp contained in the header of the first published frame (which is *before* is was recorded in the bagfile.
-        ts = min(poses[PURPLE_TOPIC]["frames"][0]["ts"],
-                 poses[YELLOW_TOPIC]["frames"][0]["ts"])
+        ts = min(ts_first_purple, ts_first_yellow)
 
         # we need to store the bagfile delta as annotations are timestamped relative to the bagfile start time, *not* the frames timestamps
         bagfile_delta = bagfile["start"] - ts
 
-        last_ts = max(poses[PURPLE_TOPIC]["frames"][-1]["ts"],
-                      poses[YELLOW_TOPIC]["frames"][-1]["ts"])
+        last_ts = max(ts_last_purple, ts_last_yellow)
 
         duration = last_ts - ts
         logging.info("Collating features (%0.2f sec of data)..." % duration)
 
         last_percent = 0
-        rows = []
         while ts < last_ts:
 
             row = {"timestamp": ts,
@@ -304,18 +353,19 @@ class Dataset:
 
         return results
 
-    def write_csv(self, writer):
+    def write_csv(self, writer, checks_writer):
         
         idx = 0
         for path in self.paths:
             idx += 1
             logging.info("[%02d/%02d] Processing %s" % (idx, len(self.paths), path))
-            self.processpath(path, writer)
+            self.processpath(path, writer, checks_writer)
 
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator -- CHILD-CHILD condition only')
+    parser.add_argument("--data-check", nargs='?', type=argparse.FileType('w'), default=False, const=sys.stdout, help="run some consistency checks on the dataset while collating it. You can specify a filename to save as CSV (default to stdout)")
     parser.add_argument("csv_file", type=argparse.FileType('w'), help="CSV file to save to")
     parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
 
@@ -327,7 +377,10 @@ if __name__ == "__main__":
     writer = csv.DictWriter(args.csv_file, fieldnames=FIELDNAMES)
     writer.writeheader()
 
-    dataset.write_csv(writer)
+    dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
+    dataset_checks_writer.writeheader()
+
+    dataset.write_csv(writer, dataset_checks_writer)
 
 
 
