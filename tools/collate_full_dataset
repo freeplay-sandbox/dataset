@@ -36,6 +36,7 @@ YELLOW_SKEL_KEYS=["yellow_child_skel%02d_%s" % (i, s) for i in range(18) for s i
 
 FIELDNAMES = ['timestamp',
               'id', 
+              'annotator', 
               "purple_child_age", "yellow_child_age", 
               "purple_child_gender", "yellow_child_gender"] + \
               PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
@@ -96,6 +97,7 @@ FIELDNAMES = ['timestamp',
               "yellow_child_task_engagement", "yellow_child_social_engagement", "yellow_child_social_attitude"]
 
 CHECKS_FIELDNAMES = ['id', 
+                     'annotator',
                      'timestamp_bagfile_start', 
                      'timestamp_bagfile_end', 
                      'timestamp_first_purple_image', 
@@ -170,12 +172,18 @@ class Dataset:
 
     def processpath(self, path, writer, checks_writer):
 
+        #################################################################
+        #################################################################
         with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
             expe = yaml.load(yml)
 
+        #################################################################
+        #################################################################
         with open(os.path.join(path, "freeplay.bag.yaml"), 'r') as yml:
             bagfile = yaml.load(yml)
 
+        #################################################################
+        #################################################################
         logging.info("Opening annotations...")
 
         self.annotations = {}
@@ -199,13 +207,23 @@ class Dataset:
                     self.annotations[annotator] = annotation_timelines
 
         if len(self.annotations) > 1:
-            logging.info("%s: coded by %s annotator. I will accordingly duplicate this recording" % (path, len(self.annotations)))
+            logging.info("%s: coded by %s annotators. I will accordingly duplicate this recording" % (path, len(self.annotations)))
 
+        #################################################################
+        #################################################################
         logging.info("Opening freeplay.poses.json...")
         with open(os.path.join(path, "freeplay.poses.json"), 'r') as poses_json:
             poses = json.load(poses_json)
 
+        if len(self.annotations) == 0:
+            self.collate(path, writer, checks_writer, None, expe, bagfile, poses)
+        else:
+            for annotator in self.annotations.keys():
+                self.collate(path, writer, checks_writer, annotator, expe, bagfile, poses)
 
+
+
+    def collate(self, path, writer, checks_writer, annotator, expe, bagfile, poses):
         #################################################################
         #################################################################
         #################################################################
@@ -223,7 +241,9 @@ class Dataset:
         ##############################################################
 
 
-        checks_row["id"] = path.split("/")[-1] + "_" + annotator
+        checks_row["id"] = path.split("/")[-1]
+        if annotator:
+            checks_row["annotator"] = annotator
         checks_row["timestamp_first_purple_image"] = ts_first_purple
         checks_row["timestamp_first_yellow_image"] = ts_first_yellow
         checks_row["timestamp_last_purple_image"] = ts_last_purple
@@ -237,8 +257,9 @@ class Dataset:
         checks_row["nb_yellow_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == YELLOW_TOPIC][0]
         checks_row["nb_yellow_poses"] = len(poses[YELLOW_TOPIC]["frames"])
 
-        checks_row["timestamp_first_annotation"] = min([t.start for t in self.annotations[annotator].values()])
-        checks_row["timestamp_last_annotation"] = max([t.end for t in self.annotations[annotator].values()])
+        if annotator:
+            checks_row["timestamp_first_annotation"] = min([t.start for t in self.annotations[annotator].values()])
+            checks_row["timestamp_last_annotation"] = max([t.end for t in self.annotations[annotator].values()])
 
         checks_writer.writerow(checks_row)
 
@@ -262,12 +283,14 @@ class Dataset:
         while ts < last_ts:
 
             row = {"timestamp": ts,
-                    "id": path.split("/")[-1] + "_" + annotator,
+                    "id": path.split("/")[-1],
                     "purple_child_age": expe["purple-participant"]["age"],
                     "purple_child_gender": expe["purple-participant"]["gender"],
                     "yellow_child_age": expe["yellow-participant"]["age"],
                     "yellow_child_gender": expe["yellow-participant"]["gender"]}
 
+            if annotator:
+                row["annotator"] = annotator
             purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"])
             if purple_frame:
                 row.update(
