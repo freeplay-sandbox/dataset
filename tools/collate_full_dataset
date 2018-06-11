@@ -152,7 +152,7 @@ class Dataset:
             if frame["ts"] > timestamp + 1:
                 return None
 
-    def get_annotations(self, annotator, timestamp):
+    def get_annotations(self, annotator, timestamp, only_complete):
 
         result = {}
 
@@ -167,10 +167,12 @@ class Dataset:
             ann = self.annotations[annotator][c].attime(timestamp)
             if ann != MISSINGDATA:
                 result[c] = ann
+            elif only_complete:
+                return None
 
         return result
 
-    def processpath(self, path, writer, checks_writer):
+    def processpath(self, path, writer, checks_writer, only_complete):
 
         #################################################################
         #################################################################
@@ -206,24 +208,37 @@ class Dataset:
                             }
                     self.annotations[annotator] = annotation_timelines
 
+        if len(self.annotations) == 0 and only_complete:
+            logging.info("Skipping %s as no annotations and 'only complete' requested" % path)
+            return
         if len(self.annotations) > 1:
-            logging.info("%s: coded by %s annotators. I will accordingly duplicate this recording" % (path, len(self.annotations)))
+            logging.info("%s: coded by %d annotators. I will accordingly duplicate this recording" % (path, len(self.annotations)))
 
         #################################################################
         #################################################################
         logging.info("Opening freeplay.poses.json...")
-        with open(os.path.join(path, "freeplay.poses.json"), 'r') as poses_json:
+        poses_json_file = os.path.join(path, "freeplay.poses.json")
+        if not os.path.isfile(poses_json_file):
+            logging.warning("%s has no freeplay.poses.json" % path)
+            return
+
+        with open(poses_json_file, 'r') as poses_json:
             poses = json.load(poses_json)
 
+
+        #################################################################
+        #################################################################
+        #### COLLATE
+
         if len(self.annotations) == 0:
-            self.collate(path, writer, checks_writer, None, expe, bagfile, poses)
+            self.collate(path, writer, checks_writer, only_complete, None, expe, bagfile, poses)
         else:
             for annotator in self.annotations.keys():
-                self.collate(path, writer, checks_writer, annotator, expe, bagfile, poses)
+                self.collate(path, writer, checks_writer, only_complete, annotator, expe, bagfile, poses)
 
 
 
-    def collate(self, path, writer, checks_writer, annotator, expe, bagfile, poses):
+    def collate(self, path, writer, checks_writer, only_complete, annotator, expe, bagfile, poses):
         #################################################################
         #################################################################
         #################################################################
@@ -282,6 +297,8 @@ class Dataset:
         last_percent = 0
         while ts < last_ts:
 
+            skip_row = False
+
             row = {"timestamp": ts,
                     "id": path.split("/")[-1],
                     "purple_child_age": expe["purple-participant"]["age"],
@@ -291,6 +308,7 @@ class Dataset:
 
             if annotator:
                 row["annotator"] = annotator
+
             purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"])
             if purple_frame:
                 row.update(
@@ -326,9 +344,16 @@ class Dataset:
 
 
             if annotator:
-                row.update(self.get_annotations(annotator, ts + bagfile_delta))
+                anns = self.get_annotations(annotator, ts + bagfile_delta, only_complete)
 
-            rows.append(row)
+                if anns is None: # this means 'only complete' was requested, but some annotations were missing
+                    skip_row = True
+                else:
+                    row.update(anns)
+
+            if not skip_row:
+                rows.append(row)
+
             ts += 1/FPS
 
             percent = int((ts - (last_ts-duration)) / duration * 100)
@@ -376,34 +401,35 @@ class Dataset:
 
         return results
 
-    def write_csv(self, writer, checks_writer):
+    def write(self, writer, checks_writer, only_complete):
         
         idx = 0
         for path in self.paths:
             idx += 1
             logging.info("[%02d/%02d] Processing %s" % (idx, len(self.paths), path))
-            self.processpath(path, writer, checks_writer)
+            self.processpath(path, writer, checks_writer, only_complete)
 
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator -- CHILD-CHILD condition only')
     parser.add_argument("--data-check", nargs='?', type=argparse.FileType('w'), default=False, const=sys.stdout, help="run some consistency checks on the dataset while collating it. You can specify a filename to save as CSV (default to stdout)")
-    parser.add_argument("csv_file", type=argparse.FileType('w'), help="CSV file to save to")
+    parser.add_argument("--only-complete", action="store_true", help="Only complete datapoints (all features and annotations present) are recorded")
+    parser.add_argument("file", help="CSV file to save to.")
     parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
 
     args = parser.parse_args()
 
-
     dataset = Dataset(args.path)
 
-    writer = csv.DictWriter(args.csv_file, fieldnames=FIELDNAMES)
+    f = open(args.file, 'w')
+    writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
     writer.writeheader()
 
     dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
     dataset_checks_writer.writeheader()
 
-    dataset.write_csv(writer, dataset_checks_writer)
+    dataset.write(writer, dataset_checks_writer, args.only_complete)
 
 
 
