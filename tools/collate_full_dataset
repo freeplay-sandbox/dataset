@@ -231,10 +231,25 @@ class Dataset:
         #### COLLATE
 
         if len(self.annotations) == 0:
-            self.collate(path, writer, checks_writer, only_complete, None, expe, bagfile, poses)
+            localwriter = writer
+            if localwriter is None:
+                logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-no-annotations.csv"))
+                f = open(os.path.join(path,"pinsoro-complete-no-annotations.csv"), 'w')
+                localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                localwriter.writeheader()
+
+            self.collate(path, localwriter, checks_writer, only_complete, None, expe, bagfile, poses)
         else:
             for annotator in self.annotations.keys():
-                self.collate(path, writer, checks_writer, only_complete, annotator, expe, bagfile, poses)
+                localwriter = writer
+                if localwriter is None:
+                    logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-%s.csv" % annotator))
+                    f = open(os.path.join(path,"pinsoro-complete-%s.csv" % annotator), 'w')
+                    localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                    localwriter.writeheader()
+
+
+                self.collate(path, localwriter, checks_writer, only_complete, annotator, expe, bagfile, poses)
 
 
 
@@ -415,16 +430,18 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator -- CHILD-CHILD condition only')
     parser.add_argument("--data-check", nargs='?', type=argparse.FileType('w'), default=False, const=sys.stdout, help="run some consistency checks on the dataset while collating it. You can specify a filename to save as CSV (default to stdout)")
     parser.add_argument("--only-complete", action="store_true", help="Only complete datapoints (all features and annotations present) are recorded")
-    parser.add_argument("file", help="CSV file to save to.")
+    parser.add_argument("--single-csv", help="name of the CSV file where the whole dataset should be recorded. By default, create one file per recording.")
     parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
 
     args = parser.parse_args()
 
     dataset = Dataset(args.path)
 
-    f = open(args.file, 'w')
-    writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
-    writer.writeheader()
+    writer=None
+    if args.single_csv:
+        f = open(args.file, 'w')
+        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        writer.writeheader()
 
     dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
     dataset_checks_writer.writeheader()
