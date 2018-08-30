@@ -7,6 +7,7 @@ import time
 
 fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, sharey=True)
 
+
 df_annotations = pd.read_csv("annotations.csv")
 
 plots = []
@@ -18,36 +19,39 @@ indices["social_attitude"] = ['prosocial', 'adversarial', 'frustrated', 'asserti
 
 for cls, ax in zip(["task_engagement", "social_engagement", "social_attitude"], (ax1, ax2, ax3)):
     df_cls = df_annotations[df_annotations["construct_class"] == cls]
+    #df_sum_by_id=df_cls.groupby(["construct", "id_with_coder"]).sum().unstack(fill_value=0)
 
-    df_reshaped = df_cls.groupby(["condition", "construct"])["duration"].sum().unstack().fillna(0)
-    #df_reshaped.plot(ax=ax, kind="bar", stacked=True)
-    #df_reshaped.set_index("construct")
-    plots.append(df_reshaped.T.reindex(index=reversed(indices[cls])).T.plot(ax=ax, kind="bar", stacked=True, legend='reverse'))
+    #colors = ["blue", "orange"]
+    #positions = [0,1,2,3,4,5,6]
+
+    df=df_cls.groupby(["construct", "condition", "id_with_coder"])["duration"].sum().unstack(fill_value=0).T
+
+    df.mean().unstack(fill_value=0).plot(kind="bar", yerr=df.std().unstack(), ax=ax, capsize=2)
+
 
 ##plt.title('Title 2', fontsize=16)
 #plt.xlabel('Annotated construct class', fontsize=14)
-plt.yticks(np.arange(0, 50*3600, 3600*5))
-plt.ylabel('Total time annotated', fontsize=14)
 ##plt.legend(['Child-child', 'Child-robot'])
 #
 
 #handle, legend = 
 
 
-formatter = matplotlib.ticker.FuncFormatter(lambda s, x: "%02dh%02dm" % (s // 3600, (s % 3600) // 60))
+formatter = matplotlib.ticker.FuncFormatter(lambda s, x: "%02dm%02ds" % (s // 60, s % 60))
 
 xformatter = matplotlib.ticker.FuncFormatter(lambda s, x: "child-robot" if "robot" in s else "child-child")
 
 for cls, ax in zip(["task_engagement", "social_engagement", "social_attitude"], (ax1, ax2, ax3)):
+    ax.set_ylabel("Average time per annotation", fontsize=20)
+    #ax.set_yticks(np.arange(0, 1*60, 30*60))
+    #ax.set_yticklabels(np.arange(0, 1*60, 30*60))
+
     ax.yaxis.set_major_formatter(formatter)
     ax.yaxis.grid()
     ax.set_axisbelow(True) # plot grid line below bar plots
     #ax.xaxis.set_major_formatter(xformatter)
     ax.set_xlabel("")
-    import pdb;pdb.set_trace()
-    for i in ax.get_xticklabels():
-        print(i)
-        i.set_rotation('vertical')
+    for i in ax.get_xticklabels(): i.set_rotation(30)
     ax.get_legend().set_title("")
     ax.set_title(cls.replace("_", " "), fontsize=20)
 

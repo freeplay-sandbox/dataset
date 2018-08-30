@@ -163,6 +163,7 @@ class Recording:
         for coder, coded in self.annotations.items():
             printer = TimelinePrinter(self.id,
                                       construct,
+                                      coder,
                                       coded,
                                       self.cdt)
             rows += printer.csvrows()

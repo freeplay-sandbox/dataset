@@ -83,10 +83,11 @@ class Timeline:
 
 class TimelinePrinter:
     
-    def __init__(self, id, construct, coder, cdt = CHILDCHILD):
+    def __init__(self, id, construct, coder, coded, cdt = CHILDCHILD):
         self.id = id
         self.construct = construct
-        self.tp = Timeline(construct, coder["purple"])
+        self.tp = Timeline(construct, coded["purple"])
+        self.coder = coder
 
         self.cdt = cdt
 
@@ -95,24 +96,24 @@ class TimelinePrinter:
 
 
         if cdt == CHILDCHILD:
-            self.ty = Timeline(construct, coder["yellow"])
+            self.ty = Timeline(construct, coded["yellow"])
             self.start = max(self.start, self.ty.start)
             self.end = min(self.end, self.ty.end)
 
     @staticmethod
     def csv_header():
-        return ["id", "condition", "child", "construct_class", "construct", "duration"]
+        return ["id", "id_with_coder", "condition", "child", "construct_class", "construct", "duration"]
 
     def csvrows(self):
         rows = []
         for k, v in self.tp.timeline.items():
             start, end, annotation = v
-            rows.append([self.id, self.cdt, "purple", CONSTRUCTS_NAMES[self.construct], annotation, end-start])
+            rows.append([self.id, "%s-%s" % (self.id, self.coder), self.cdt, "purple", CONSTRUCTS_NAMES[self.construct], annotation, end-start])
 
         if self.cdt == CHILDCHILD:
             for k, v in self.ty.timeline.items():
                 start, end, annotation = v
-                rows.append([self.id, self.cdt, "yellow", CONSTRUCTS_NAMES[self.construct], annotation, end-start])
+                rows.append([self.id, "%s-%s" % (self.id, self.coder), self.cdt, "yellow", CONSTRUCTS_NAMES[self.construct], annotation, end-start])
 
         return rows
 
