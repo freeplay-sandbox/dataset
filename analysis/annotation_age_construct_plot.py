@@ -5,10 +5,10 @@ import pandas as pd
 import seaborn
 seaborn.set()
 
-
 import time
 
 fig, (ax1, ax2, ax3) = plt.subplots(ncols=3, sharey=True)
+
 
 df_annotations = pd.read_csv("annotations.csv")
 
@@ -21,36 +21,36 @@ indices["social_attitude"] = ['prosocial', 'adversarial', 'frustrated', 'asserti
 
 for cls, ax in zip(["task_engagement", "social_engagement", "social_attitude"], (ax1, ax2, ax3)):
     df_cls = df_annotations[df_annotations["construct_class"] == cls]
+    df_sum=df_cls.groupby(["age"])["duration"].sum()
+    df_sum_construct=df_cls.groupby(["construct", "age"])["duration"].sum()
+    df=df_sum_construct/df_sum
+    df.unstack().plot.bar(ax=ax, width=0.8)
 
-    df_reshaped = df_cls.groupby(["condition", "construct"])["duration"].sum().unstack().fillna(0)
-    #df_reshaped.plot(ax=ax, kind="bar", stacked=True)
-    #df_reshaped.set_index("construct")
-    df_reshaped.T.reindex(index=reversed(indices[cls])).T.plot(ax=ax, kind="bar", stacked=True, legend='reverse')
 
 ##plt.title('Title 2', fontsize=16)
 #plt.xlabel('Annotated construct class', fontsize=14)
-plt.yticks(np.arange(0, 50*3600, 3600*5))
-plt.ylabel('Total time annotated', fontsize=14)
 ##plt.legend(['Child-child', 'Child-robot'])
 #
 
 #handle, legend = 
 
 
-formatter = matplotlib.ticker.FuncFormatter(lambda s, x: "%02dh%02dm" % (s // 3600, (s % 3600) // 60))
+formatter = matplotlib.ticker.FuncFormatter(lambda s, x: "%d%%" % int(s * 100))
 
 xformatter = matplotlib.ticker.FuncFormatter(lambda s, x: "child-robot" if "robot" in s else "child-child")
 
 for cls, ax in zip(["task_engagement", "social_engagement", "social_attitude"], (ax1, ax2, ax3)):
-    ax.set_ylabel("Total annotated time", fontsize=20)
+    ax.set_ylabel("Construct distribution per age", fontsize=20)
+    #ax.set_yticks(np.arange(0, 1*60, 30*60))
+    #ax.set_yticklabels(np.arange(0, 1*60, 30*60))
+
     ax.yaxis.set_major_formatter(formatter)
     ax.yaxis.grid()
     ax.set_axisbelow(True) # plot grid line below bar plots
     #ax.xaxis.set_major_formatter(xformatter)
     ax.set_xlabel("")
-    for i in ax.get_xticklabels():
-        i.set_rotation(0)
-    ax.get_legend().set_title("")
+    for i in ax.get_xticklabels(): i.set_rotation(30)
+    ax.get_legend().set_title("Age")
     ax.set_title(cls.replace("_", " "), fontsize=20)
 
     #handles, labels = ax.get_legend_handles_labels()

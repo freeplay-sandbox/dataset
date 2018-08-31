@@ -2,6 +2,9 @@ import matplotlib
 import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
+import seaborn
+seaborn.set()
+
 
 import time
 
@@ -26,7 +29,7 @@ for cls, ax in zip(["task_engagement", "social_engagement", "social_attitude"], 
 
     df=df_cls.groupby(["construct", "condition", "id_with_coder"])["duration"].sum().unstack(fill_value=0).T
 
-    df.mean().unstack(fill_value=0).plot(kind="bar", yerr=df.std().unstack(), ax=ax, capsize=2)
+    df.mean().unstack(fill_value=0).plot(kind="bar", width=0.8, yerr=df.std().unstack(), ax=ax, capsize=2)
 
 
 ##plt.title('Title 2', fontsize=16)

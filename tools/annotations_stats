@@ -165,7 +165,9 @@ class Recording:
                                       construct,
                                       coder,
                                       coded,
-                                      self.cdt)
+                                      self.cdt,
+                                      self.children[0].age,
+                                      self.children[1].age if len(self.children) > 1 else 0) # childchild condition?
             rows += printer.csvrows()
         return rows
 
