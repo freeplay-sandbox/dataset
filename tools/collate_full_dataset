@@ -34,6 +34,7 @@ NOSE_SKEL=0 # idx of nose in the skeleton joints
 # https://github.com/freeplay-sandbox/analysis#format-of-poses-files
 PURPLE_FACE_KEYS=["purple_child_face%02d_%s" % (i, s) for i in range(70) for s in 'xy']
 YELLOW_FACE_KEYS=["yellow_child_face%02d_%s" % (i, s) for i in range(70) for s in 'xy']
+
 PURPLE_SKEL_KEYS=["purple_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
 YELLOW_SKEL_KEYS=["yellow_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
 
@@ -44,11 +45,12 @@ FIELDNAMES = ['timestamp',
               "purple_child_gender", "yellow_child_gender"] + \
               PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
               PURPLE_SKEL_KEYS + YELLOW_SKEL_KEYS +\
-              ["purple_child_gaze_on_screen", "purple_child_gaze_on_peer", "purple_child_gaze_on_adult",
-               "purple_child_gaze_x", "purple_child_gaze_y", # only defined when gaze on screen
-               "yellow_child_gaze_on_screen", "yellow_child_gaze_on_peer", "yellow_child_gaze_on_adult",
-               "yellow_child_gaze_x", "yellow_child_gaze_y",  # only defined when gaze on screen
-               "gaze_distance", # only defined when gaze on screen
+              ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
+               "purple_child_head_yaw", "purple_child_head_pitch", "purple_child_head_roll",  # head pose estimation, relative to centre of interactive table
+               "yellow_child_head_x", "yellow_child_head_y", "yellow_child_head_z",
+               "yellow_child_head_yaw", "yellow_child_head_pitch", "yellow_child_head_roll",  # head pose estimation, relative to centre of interactive table
+               "purple_child_gaze_x", "purple_child_gaze_y", "purple_child_gaze_z", # gaze vector, origin at the 0,0,0 of the face (sellion)
+               "yellow_child_gaze_x", "yellow_child_gaze_y", "yellow_child_gaze_z",
                "purple_child_au01",
                "purple_child_au02",
                "purple_child_au04",
