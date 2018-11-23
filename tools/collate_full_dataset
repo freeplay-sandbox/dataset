@@ -340,20 +340,21 @@ class Dataset:
 
         purple_face_csv_path = os.path.join(path, "videos", "processed", "camera_purple_raw.csv")
         yellow_face_csv_path = os.path.join(path, "videos", "processed", "camera_yellow_raw.csv")
-        if os.path.exists(purple_face_csv_path) \
-           and os.path.exists(yellow_face_csv_path):
-        
+
+        # purple face data should always exist
+        if os.path.exists(purple_face_csv_path):
             logging.info("Reading face data %s..." % purple_face_csv_path)
             with open(purple_face_csv_path, 'r') as csv_file:
                 reader = csv.DictReader(csv_file)
                 for row in reader:
                     self.purple_face_csv[int(row["frame"])] = row
 
-            logging.info("Reading face data %s..." % yellow_face_csv_path)
-            with open(yellow_face_csv_path, 'r') as csv_file:
-                reader = csv.DictReader(csv_file)
-                for row in reader:
-                    self.yellow_face_csv[int(row["frame"])] = row
+            if os.path.exists(yellow_face_csv_path):
+                logging.info("Reading face data %s..." % yellow_face_csv_path)
+                with open(yellow_face_csv_path, 'r') as csv_file:
+                    reader = csv.DictReader(csv_file)
+                    for row in reader:
+                        self.yellow_face_csv[int(row["frame"])] = row
         else:
             logging.error("Face data missing for %s" % path)
 
@@ -367,8 +368,7 @@ class Dataset:
 
         purple_optflow_csv_path = os.path.join(path, "videos", "camera_purple_optical_flow.csv")
         yellow_optflow_csv_path = os.path.join(path, "videos", "camera_yellow_optical_flow.csv")
-        if os.path.exists(purple_optflow_csv_path) \
-           and os.path.exists(yellow_optflow_csv_path):
+        if os.path.exists(purple_optflow_csv_path):
         
             logging.info("Reading optflow data %s..." % purple_optflow_csv_path)
             with open(purple_optflow_csv_path, 'r') as csv_file:
@@ -376,11 +376,13 @@ class Dataset:
                 for row in reader:
                     self.purple_optflow_csv[int(row["frame"])] = row
 
-            logging.info("Reading optflow data %s..." % yellow_optflow_csv_path)
-            with open(yellow_optflow_csv_path, 'r') as csv_file:
-                reader = csv.DictReader(csv_file)
-                for row in reader:
-                    self.yellow_optflow_csv[int(row["frame"])] = row
+            # in some rare child-robot occasions, yellow optflow is missing
+            if os.path.exists(yellow_optflow_csv_path):
+                logging.info("Reading optflow data %s..." % yellow_optflow_csv_path)
+                with open(yellow_optflow_csv_path, 'r') as csv_file:
+                    reader = csv.DictReader(csv_file)
+                    for row in reader:
+                        self.yellow_optflow_csv[int(row["frame"])] = row
         else:
             logging.error("Optical flow data missing for %s" % path)
 
