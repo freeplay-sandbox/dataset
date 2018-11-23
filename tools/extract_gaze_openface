@@ -1,0 +1,69 @@
+#! /bin/bash
+
+me=`basename "$0"`
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <root of dataset>\n"
+    echo -e "Run OpenFace on the dataset videos to extract gaze and action units\n"
+    echo "  -h: display this help" 
+    echo "  -f: force re-extract, even if one exist" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+force=false
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    f)  force=true
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+DATASET_ROOT=$1
+
+# if less than one arguments supplied, display usage 
+if [  $# -lt 1 ] 
+then 
+    display_usage
+    exit 1
+fi 
+
+orig_path=$(pwd)
+
+cd "$DATASET_ROOT"
+paths=(data/2017**/videos)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    dir="${paths[$i]}"
+    
+    echo "[$((i+1))/${#paths[@]}] Processing $dir..."
+    for file in camera_purple_raw.mkv camera_yellow_raw.mkv
+    do
+        if [[ -e "$dir/$file" ]]; then
+            if [ ! -f "$dir/processed/$(basename "$file" .mkv).csv" ] || [ "$force" = true ]; then
+                echo "Analysing $file..."
+                FeatureExtraction -f $dir/$file -fx 697.811 -fy 697.811 -cx 479.047 -cy 261.227 -aus -pose -3Dfp -gaze -out_dir $dir/processed
+            else
+                echo "processed/$(basename "$file" .mkv).csv already exist. Skipping."
+            fi
+        else
+            echo "[EE] Missing $dir/$file!"
+        fi
+    done
+done
+
+cd "$orig_path"
+echo "Done"
