@@ -246,6 +246,31 @@ class Dataset:
 
         return result
 
+    def optflow_data_at(self, purple_frame_idx, yellow_frame_idx):
+
+        result = {}
+
+        if self.purple_optflow_csv \
+           and purple_frame_idx != MISSINGFRAME:
+
+               row=self.purple_optflow_csv[purple_frame_idx]
+
+               for k in row.keys():
+                    if k != "frame":
+                        result["purple_child_" + k.strip()] = row[k]
+
+        if self.condition == CHILDCHILD \
+           and self.yellow_optflow_csv \
+           and yellow_frame_idx != MISSINGFRAME:
+
+               row=self.yellow_optflow_csv[yellow_frame_idx]
+
+               for k in row.keys():
+                    if k != "frame":
+                        result["yellow_child_" + k.strip()] = row[k]
+
+        return result
+
             
 
     def processpath(self, path, writer, checks_writer, only_complete, duplicate_records):
@@ -331,6 +356,33 @@ class Dataset:
                     self.yellow_face_csv[int(row["frame"])] = row
         else:
             logging.error("Face data missing for %s" % path)
+
+
+        #################################################################
+        #################################################################
+        ##### Loading optical flow data
+
+        self.purple_optflow_csv = {}
+        self.yellow_optflow_csv = {}
+
+        purple_optflow_csv_path = os.path.join(path, "videos", "camera_purple_optical_flow.csv")
+        yellow_optflow_csv_path = os.path.join(path, "videos", "camera_yellow_optical_flow.csv")
+        if os.path.exists(purple_optflow_csv_path) \
+           and os.path.exists(yellow_optflow_csv_path):
+        
+            logging.info("Reading optflow data %s..." % purple_optflow_csv_path)
+            with open(purple_optflow_csv_path, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    self.purple_optflow_csv[int(row["frame"])] = row
+
+            logging.info("Reading optflow data %s..." % yellow_optflow_csv_path)
+            with open(yellow_optflow_csv_path, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    self.yellow_optflow_csv[int(row["frame"])] = row
+        else:
+            logging.error("Optical flow data missing for %s" % path)
 
 
         #################################################################
@@ -502,6 +554,10 @@ class Dataset:
 
             face_data = self.face_data_at(purple_idx, yellow_idx)
             row.update(face_data)
+
+            optflow_data = self.optflow_data_at(purple_idx, yellow_idx)
+            row.update(optflow_data)
+
 
             if annotators:
                 anns = self.get_annotations(annotators, ts + bagfile_delta)
