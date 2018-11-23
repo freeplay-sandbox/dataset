@@ -17,7 +17,7 @@ CHILDCHILD = "childchild"
 CHILDROBOT = "childrobot"
 
 # separator used to concatenate annotations when the do not match
-SEPARATOR= "-"
+SEPARATOR= "+"
 
 FPS=30.
 
@@ -40,7 +40,8 @@ YELLOW_SKEL_KEYS=["yellow_child_skel%02d_%s" % (i, s) for i in range(18) for s i
 
 FIELDNAMES = ['timestamp',
               'id', 
-              'annotator', 
+              'condition', 
+              'annotators', 
               "purple_child_age", "yellow_child_age", 
               "purple_child_gender", "yellow_child_gender"] + \
               ["purple_frame_idx", "yellow_frame_idx"] + \
@@ -103,7 +104,7 @@ FIELDNAMES = ['timestamp',
               "yellow_child_task_engagement", "yellow_child_social_engagement", "yellow_child_social_attitude"]
 
 CHECKS_FIELDNAMES = ['id', 
-                     'annotator',
+                     'annotators',
                      'timestamp_bagfile_start', 
                      'timestamp_bagfile_end', 
                      'timestamp_first_purple_image', 
@@ -133,12 +134,10 @@ class Dataset:
                     if dirpath.split(os.sep)[-1].startswith("exclude_"):
                         logging.debug("%s has been excluded" % fullpath)
                         continue
-                    if not self.ischildchild(dirpath):
-                        continue
                     self.total_nb_recordings += 1
                     self.paths.append(dirpath)
 
-        logging.info("Found %d valid recordings in child-child condition" % self.total_nb_recordings)
+        logging.info("Found %d valid recordings" % self.total_nb_recordings)
         logging.info("%d fields to store per recorded frame" % len(FIELDNAMES))
 
         self.last_timestamp = 0
@@ -254,35 +253,45 @@ class Dataset:
         #################################################################
         #### COLLATE
 
-        if len(self.annotations) == 0:
+        if duplicate_records:
+            if len(self.annotations) == 0:
+                localwriter = writer
+                if localwriter is None:
+                    logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-no-annotations.csv"))
+                    f = open(os.path.join(path,"pinsoro-complete-no-annotations.csv"), 'w')
+                    localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                    localwriter.writeheader()
+
+                self.collate(path, localwriter, checks_writer, only_complete, None, expe, bagfile, poses)
+            else:
+                    for annotator in self.annotations.keys():
+                        localwriter = writer
+                        if localwriter is None:
+                            logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-%s.csv" % annotator))
+                            f = open(os.path.join(path,"pinsoro-complete-%s.csv" % annotator), 'w')
+                            localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                            localwriter.writeheader()
+
+
+                        self.collate(path, localwriter, checks_writer, only_complete, annotator, expe, bagfile, poses)
+
+        else: # concatenate divergent annotations
+
             localwriter = writer
             if localwriter is None:
-                logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-no-annotations.csv"))
-                f = open(os.path.join(path,"pinsoro-complete-no-annotations.csv"), 'w')
+
+                id=path.split("/")[-1],
+                logging.info("Writing to %s" % os.path.join(path,"pinsoro-%s.csv" % id))
+                f = open(os.path.join(path,"pinsoro-%s.csv" % id), 'w')
                 localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
                 localwriter.writeheader()
 
-            self.collate(path, localwriter, checks_writer, only_complete, None, expe, bagfile, poses)
-        else:
-            if duplicate_records:
-                for annotator in self.annotations.keys():
-                    localwriter = writer
-                    if localwriter is None:
-                        logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-%s.csv" % annotator))
-                        f = open(os.path.join(path,"pinsoro-complete-%s.csv" % annotator), 'w')
-                        localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
-                        localwriter.writeheader()
-
-
-                    self.collate(path, localwriter, checks_writer, only_complete, annotator, expe, bagfile, poses)
-
-            else: # concatenate divergent annotations
-                annotators = SEPARATOR.join(self.annotations.keys())
-                self.collate(path, localwriter, checks_writer, only_complete, annotators, expe, bagfile, poses)
+            annotators = SEPARATOR.join(self.annotations.keys())
+            self.collate(path, localwriter, checks_writer, only_complete, annotators, expe, bagfile, poses)
 
 
 
-    def collate(self, path, writer, checks_writer, only_complete, annotator, expe, bagfile, poses):
+    def collate(self, path, writer, checks_writer, only_complete, annotators, expe, bagfile, poses):
         #################################################################
         #################################################################
         #################################################################
@@ -301,8 +310,8 @@ class Dataset:
 
 
         checks_row["id"] = path.split("/")[-1]
-        if annotator:
-            checks_row["annotator"] = annotator
+        if annotators:
+            checks_row["annotators"] = annotators
         checks_row["timestamp_first_purple_image"] = ts_first_purple
         checks_row["timestamp_first_yellow_image"] = ts_first_yellow
         checks_row["timestamp_last_purple_image"] = ts_last_purple
@@ -316,9 +325,9 @@ class Dataset:
         checks_row["nb_yellow_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == YELLOW_TOPIC][0]
         checks_row["nb_yellow_poses"] = len(poses[YELLOW_TOPIC]["frames"])
 
-        if annotator:
-            checks_row["timestamp_first_annotation"] = min([t.start for t in self.annotations[annotator].values()])
-            checks_row["timestamp_last_annotation"] = max([t.end for t in self.annotations[annotator].values()])
+        if annotators:
+            checks_row["timestamp_first_annotation"] = "/".join(["%s: %s" % (a, min([t.start for t in self.annotations[a].values()])) for a in annotators.split(SEPARATOR)])
+            checks_row["timestamp_last_annotation"] = "/".join(["%s: %s" % (a,max([t.end for t in self.annotations[a].values()])) for a in annotators.split(SEPARATOR)])
 
         checks_writer.writerow(checks_row)
 
@@ -346,14 +355,15 @@ class Dataset:
             skip_row = False
 
             row = {"timestamp": ts,
+                    "condition": "childchild" if self.ischildchild(path) else "childrobot",
                     "id": path.split("/")[-1],
                     "purple_child_age": expe["purple-participant"]["age"],
                     "purple_child_gender": expe["purple-participant"]["gender"],
                     "yellow_child_age": expe["yellow-participant"]["age"],
                     "yellow_child_gender": expe["yellow-participant"]["gender"]}
 
-            if annotator:
-                row["annotator"] = annotator
+            if annotators:
+                row["annotators"] = annotators
 
             purple_idx, purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"], start_at=purple_idx)
 
@@ -392,8 +402,8 @@ class Dataset:
                                     MIN_CONFIDENCE_SKEL))
 
 
-            if annotator:
-                anns = self.get_annotations(annotator, ts + bagfile_delta, only_complete)
+            if annotators:
+                anns = self.get_annotations(annotators, ts + bagfile_delta, only_complete)
 
                 if anns is None: # this means 'only complete' was requested, but some annotations were missing
                     skip_row = True
@@ -461,7 +471,7 @@ class Dataset:
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator -- CHILD-CHILD condition only')
+    parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator')
     parser.add_argument("--data-check", nargs='?', type=argparse.FileType('w'), default=False, const=sys.stdout, help="run some consistency checks on the dataset while collating it. You can specify a filename to save as CSV (default to stdout)")
     parser.add_argument("--only-complete", action="store_true", help="Only complete datapoints (all features and annotations present) are recorded")
     parser.add_argument("--single-csv", help="name of the CSV file where the whole dataset should be recorded. By default, create one file per recording.")
