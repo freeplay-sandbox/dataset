@@ -43,6 +43,7 @@ FIELDNAMES = ['timestamp',
               'annotator', 
               "purple_child_age", "yellow_child_age", 
               "purple_child_gender", "yellow_child_gender"] + \
+              ["purple_frame_idx", "yellow_frame_idx"] + \
               PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
               PURPLE_SKEL_KEYS + YELLOW_SKEL_KEYS +\
               ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
@@ -149,13 +150,19 @@ class Dataset:
             expe = yaml.load(yml)
             return expe["condition"] == CHILDCHILD
 
-    def frame_at(self, timestamp, frames):
+    def frame_at(self, timestamp, frames, start_at=0):
         
-        for frame in frames:
+        startidx=max(0, start_at-5)
+
+        for idx, frame in enumerate(frames[startidx:]):
             if abs(frame["ts"] - timestamp) < 0.5 * 1/FPS:
-                return frame
+                return startidx+idx, frame
             if frame["ts"] > timestamp + 1:
-                return None
+                #logging.error("Frame for timestamp %s not found!" % timestamp)
+                return -1, None
+
+        #logging.error("Frame for timestamp %s not found!" % timestamp)
+        return -1, None
 
     def get_annotations(self, annotators_list, timestamp, only_complete):
 
@@ -332,6 +339,8 @@ class Dataset:
         logging.info("Collating features (%0.2f sec of data)..." % duration)
 
         last_percent = 0
+        purple_idx = 0
+        yellow_idx = 0
         while ts < last_ts:
 
             skip_row = False
@@ -346,7 +355,9 @@ class Dataset:
             if annotator:
                 row["annotator"] = annotator
 
-            purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"])
+            purple_idx, purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"], start_at=purple_idx)
+
+            row["purple_frame_idx"] = purple_idx + 1
             if purple_frame:
                 row.update(
                     self.formatpose("faces", 
@@ -363,7 +374,8 @@ class Dataset:
                                     MIN_CONFIDENCE_SKEL))
 
 
-            yellow_frame = self.frame_at(ts, poses[YELLOW_TOPIC]["frames"])
+            yellow_idx, yellow_frame = self.frame_at(ts, poses[YELLOW_TOPIC]["frames"], start_at=yellow_idx)
+            row["yellow_frame_idx"] = yellow_idx + 1
             if yellow_frame:
                 row.update(
                     self.formatpose("faces", 
