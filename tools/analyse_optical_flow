@@ -1,0 +1,71 @@
+#! /bin/bash
+
+me=`basename "$0"`
+
+exec=/home/s-lemaignan/ros-dev/lib/freeplay_sandbox_analysis/analyse_optical_flow
+
+display_usage() { 
+    echo -e "Usage: $me [-h] <root of dataset>\n"
+    echo -e "Extract main optical flow metrics into a CSV file\n"
+    echo "  -h: display this help" 
+    echo "  -f: force re-extract, even if one exist" 
+} 
+
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+force=false
+
+while getopts "h?" opt; do
+    case "$opt" in
+    h|\?)
+        display_usage
+        exit 0
+        ;;
+    f)  force=true
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+DATASET_ROOT=$1
+
+# if less than one arguments supplied, display usage 
+if [  $# -lt 1 ] 
+then 
+    display_usage
+    exit 1
+fi 
+
+orig_path=$(pwd)
+
+cd "$DATASET_ROOT"
+paths=(data/2017**/videos)
+
+
+for ((i=0;i<${#paths[@]};i++))
+do
+    dir="${paths[$i]}"
+    
+    echo "[$((i+1))/${#paths[@]}] Processing $dir..."
+    for file in camera_purple camera_yellow
+    do
+        if [[ -e "$dir/${file}_optical_flow.mkv" ]]; then
+            if [ ! -f "$dir/$(basename "${file}_optical_flow.mkv" .mkv).csv" ] || [ "$force" = true ]; then
+                echo "Analysing $file..."
+                $exec $dir/${file}_optical_flow.mkv > $dir/${file}_optical_flow.csv
+            else
+                echo "${file}_optical_flow.csv already exist. Skipping."
+            fi
+        else
+            echo "[EE] Missing $dir/${file}_optical_flow.mkv!"
+        fi
+    done
+done
+
+cd "$orig_path"
+echo "Done"
