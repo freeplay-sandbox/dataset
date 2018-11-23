@@ -19,13 +19,24 @@ CHILDROBOT = "childrobot"
 # separator used to concatenate annotations when the do not match
 SEPARATOR= "+"
 
+MISSINGFRAME=-1
+
 FPS=30.
 
 PURPLE_TOPIC="camera_purple/rgb/image_raw/compressed"
 YELLOW_TOPIC="camera_yellow/rgb/image_raw/compressed"
 
+CONSTRUCTS = ["purple_child_task_engagement",
+                "purple_child_social_engagement",
+                "purple_child_social_attitude",
+                "yellow_child_task_engagement",
+                "yellow_child_social_engagement",
+                "yellow_child_social_attitude"]
+
+
 MIN_CONFIDENCE_FACE=0.2
 MIN_CONFIDENCE_SKEL=0.05
+MIN_CONFIDENCE_OPENFACE=0.7
 
 NOSE_FACE=30 # idx of nose in the facial landmarks
 NOSE_SKEL=0 # idx of nose in the skeleton joints
@@ -42,17 +53,18 @@ FIELDNAMES = ['timestamp',
               'id', 
               'condition', 
               'annotators', 
+              "complete",
               "purple_child_age", "yellow_child_age", 
               "purple_child_gender", "yellow_child_gender"] + \
               ["purple_frame_idx", "yellow_frame_idx"] + \
               PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
               PURPLE_SKEL_KEYS + YELLOW_SKEL_KEYS +\
               ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
-               "purple_child_head_yaw", "purple_child_head_pitch", "purple_child_head_roll",  # head pose estimation, relative to centre of interactive table
+               "purple_child_head_rx", "purple_child_head_ry", "purple_child_head_rz", # head pose estimation, relative to 'purple' camera
                "yellow_child_head_x", "yellow_child_head_y", "yellow_child_head_z",
-               "yellow_child_head_yaw", "yellow_child_head_pitch", "yellow_child_head_roll",  # head pose estimation, relative to centre of interactive table
-               "purple_child_gaze_x", "purple_child_gaze_y", "purple_child_gaze_z", # gaze vector, origin at the 0,0,0 of the face (sellion)
-               "yellow_child_gaze_x", "yellow_child_gaze_y", "yellow_child_gaze_z",
+               "yellow_child_head_rx", "yellow_child_head_ry", "yellow_child_head_rz",  # head pose estimation, relative to 'yellow' camera
+               "purple_child_gaze_angle_x", "purple_child_gaze_angle_y", # gaze angle, in radians in world coordinates averaged for both eyes.
+               "yellow_child_gaze_angle_x", "yellow_child_gaze_angle_y",
                "purple_child_au01",
                "purple_child_au02",
                "purple_child_au04",
@@ -116,6 +128,20 @@ CHECKS_FIELDNAMES = ['id',
                      'timestamp_first_annotation', 
                      'timestamp_last_annotation']
 
+MAPPING_FACE = {
+        "_child_head_x": " pose_Tx",
+        "_child_head_y": " pose_Ty",
+        "_child_head_z": " pose_Tz",
+        "_child_head_rx": " pose_Rx",
+        "_child_head_ry": " pose_Ry",
+        "_child_head_rz": " pose_Rz"}
+
+MAPPING_FACE.update({"_child_au%02d" % au: " AU%02d_r" % au for au in [1,2,4,5,6,7,9,10,12,14,15,17,20,23,25,26,45]})
+
+MAPPING_GAZE = {
+        "_child_gaze_angle_x": " gaze_angle_x",
+        "_child_gaze_angle_y": " gaze_angle_y"}
+
 class Dataset:
 
     def __init__(self, root):
@@ -145,38 +171,35 @@ class Dataset:
         self.last_yellow_timestamp = 0
 
     def ischildchild(self, path):
-        with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
-            expe = yaml.load(yml)
-            return expe["condition"] == CHILDCHILD
+
+        if not self.condition:
+            with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
+                expe = yaml.load(yml)
+                self.condition = expe["condition"]
+        
+        return self.condition == CHILDCHILD
 
     def frame_at(self, timestamp, frames, start_at=0):
         
-        startidx=max(0, start_at-5)
+        startidx=max(0, start_at)
 
         for idx, frame in enumerate(frames[startidx:]):
             if abs(frame["ts"] - timestamp) < 0.5 * 1/FPS:
                 return startidx+idx, frame
             if frame["ts"] > timestamp + 1:
                 #logging.error("Frame for timestamp %s not found!" % timestamp)
-                return -1, None
+                return MISSINGFRAME, None
 
         #logging.error("Frame for timestamp %s not found!" % timestamp)
-        return -1, None
+        return MISSINGFRAME, None
 
-    def get_annotations(self, annotators_list, timestamp, only_complete):
+    def get_annotations(self, annotators_list, timestamp):
 
         annotators = annotators_list.split(SEPARATOR)
 
         result = {}
 
-        constructs = ["purple_child_task_engagement",
-                      "purple_child_social_engagement",
-                      "purple_child_social_attitude",
-                      "yellow_child_task_engagement",
-                      "yellow_child_social_engagement",
-                      "yellow_child_social_attitude"]
-
-        for c in constructs:
+        for c in CONSTRUCTS:
 
             annotations = set()
             for annotator in annotators:
@@ -186,15 +209,50 @@ class Dataset:
 
             if annotations:
                 result[c] = SEPARATOR.join(annotations)
-            elif only_complete:
-                return None
 
         return result
+
+    def face_data_at(self, purple_frame_idx, yellow_frame_idx):
+
+        result = {}
+
+        # Note that OpenFace indexes frames starting at 1 while we start at 0 -> hence the +1 below.
+
+        if self.purple_face_csv \
+           and purple_frame_idx != MISSINGFRAME \
+           and float(self.purple_face_csv[purple_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+
+            for k in MAPPING_FACE.keys():
+                result["purple" + k] = self.purple_face_csv[purple_frame_idx+1][MAPPING_FACE[k]]
+
+            for k in MAPPING_GAZE.keys():
+                # for certain recordings (the 57 first ones), the gaze data has been extracted to an external "processed-gaze/....csv -> for those files, the gaze-related fields are missing, so we need to check.
+                if MAPPING_GAZE[k] in self.purple_face_csv[purple_frame_idx+1]:
+                    result["purple" + k] = self.purple_face_csv[purple_frame_idx+1][MAPPING_GAZE[k]]
+
+
+        if self.condition == CHILDCHILD \
+           and self.yellow_face_csv \
+           and yellow_frame_idx != MISSINGFRAME \
+           and float(self.yellow_face_csv[yellow_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+
+            for k in MAPPING_FACE.keys():
+                result["yellow" + k] = self.yellow_face_csv[yellow_frame_idx+1][MAPPING_FACE[k]]
+
+            for k in MAPPING_GAZE.keys():
+                # for certain recordings (the 57 first ones), the gaze data has been extracted to an external "processed-gaze/....csv -> for those files, the gaze-related fields are missing, so we need to check.
+                if MAPPING_GAZE[k] in self.yellow_face_csv[yellow_frame_idx+1]:
+                    result["yellow" + k] = self.yellow_face_csv[yellow_frame_idx+1][MAPPING_GAZE[k]]
+
+        return result
+
+            
 
     def processpath(self, path, writer, checks_writer, only_complete, duplicate_records):
 
         #################################################################
         #################################################################
+        self.condition = None
         with open(os.path.join(path, "experiment.yaml"), 'r') as yml:
             expe = yaml.load(yml)
 
@@ -247,6 +305,32 @@ class Dataset:
 
         with open(poses_json_file, 'r') as poses_json:
             poses = json.load(poses_json)
+
+        #################################################################
+        #################################################################
+        ##### Loading face data
+
+        self.purple_face_csv = {}
+        self.yellow_face_csv = {}
+
+        purple_face_csv_path = os.path.join(path, "videos", "processed", "camera_purple_raw.csv")
+        yellow_face_csv_path = os.path.join(path, "videos", "processed", "camera_yellow_raw.csv")
+        if os.path.exists(purple_face_csv_path) \
+           and os.path.exists(yellow_face_csv_path):
+        
+            logging.info("Reading face data %s..." % purple_face_csv_path)
+            with open(purple_face_csv_path, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    self.purple_face_csv[int(row["frame"])] = row
+
+            logging.info("Reading face data %s..." % yellow_face_csv_path)
+            with open(yellow_face_csv_path, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    self.yellow_face_csv[int(row["frame"])] = row
+        else:
+            logging.error("Face data missing for %s" % path)
 
 
         #################################################################
@@ -329,7 +413,8 @@ class Dataset:
             checks_row["timestamp_first_annotation"] = "/".join(["%s: %s" % (a, min([t.start for t in self.annotations[a].values()])) for a in annotators.split(SEPARATOR)])
             checks_row["timestamp_last_annotation"] = "/".join(["%s: %s" % (a,max([t.end for t in self.annotations[a].values()])) for a in annotators.split(SEPARATOR)])
 
-        checks_writer.writerow(checks_row)
+        if checks_writer:
+            checks_writer.writerow(checks_row)
 
         ##############################################################
         ##############################################################
@@ -348,8 +433,10 @@ class Dataset:
         logging.info("Collating features (%0.2f sec of data)..." % duration)
 
         last_percent = 0
-        purple_idx = 0
-        yellow_idx = 0
+        purple_idx = MISSINGFRAME
+        last_good_purple_idx = MISSINGFRAME
+        yellow_idx = MISSINGFRAME
+        last_good_yellow_idx = MISSINGFRAME
         while ts < last_ts:
 
             skip_row = False
@@ -358,16 +445,22 @@ class Dataset:
                     "condition": "childchild" if self.ischildchild(path) else "childrobot",
                     "id": path.split("/")[-1],
                     "purple_child_age": expe["purple-participant"]["age"],
-                    "purple_child_gender": expe["purple-participant"]["gender"],
-                    "yellow_child_age": expe["yellow-participant"]["age"],
-                    "yellow_child_gender": expe["yellow-participant"]["gender"]}
+                    "purple_child_gender": expe["purple-participant"]["gender"]}
+            if self.ischildchild(path):
+                row["yellow_child_age"] = expe["yellow-participant"]["age"]
+                row["yellow_child_gender"] = expe["yellow-participant"]["gender"]
+            else:
+                row["yellow_child_gender"] = "robot"
 
             if annotators:
                 row["annotators"] = annotators
 
-            purple_idx, purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"], start_at=purple_idx)
+            purple_idx, purple_frame = self.frame_at(ts, poses[PURPLE_TOPIC]["frames"], start_at=last_good_purple_idx)
 
-            row["purple_frame_idx"] = purple_idx + 1
+            row["purple_frame_idx"] = purple_idx
+            if purple_idx != MISSINGFRAME:
+                last_good_purple_idx = purple_idx
+
             if purple_frame:
                 row.update(
                     self.formatpose("faces", 
@@ -383,34 +476,40 @@ class Dataset:
                                     NOSE_SKEL,
                                     MIN_CONFIDENCE_SKEL))
 
+            if self.condition == CHILDCHILD:
 
-            yellow_idx, yellow_frame = self.frame_at(ts, poses[YELLOW_TOPIC]["frames"], start_at=yellow_idx)
-            row["yellow_frame_idx"] = yellow_idx + 1
-            if yellow_frame:
-                row.update(
-                    self.formatpose("faces", 
-                                    yellow_frame, 
-                                    YELLOW_FACE_KEYS, 
-                                    NOSE_FACE,
-                                    MIN_CONFIDENCE_FACE))
+                yellow_idx, yellow_frame = self.frame_at(ts, poses[YELLOW_TOPIC]["frames"], start_at=last_good_yellow_idx)
+                row["yellow_frame_idx"] = yellow_idx
 
-                row.update(
-                    self.formatpose("poses", 
-                                    yellow_frame, 
-                                    YELLOW_SKEL_KEYS, 
-                                    NOSE_SKEL,
-                                    MIN_CONFIDENCE_SKEL))
+                if yellow_idx != MISSINGFRAME:
+                    last_good_yellow_idx = yellow_idx
 
+                if yellow_frame:
+                    row.update(
+                        self.formatpose("faces", 
+                                        yellow_frame, 
+                                        YELLOW_FACE_KEYS, 
+                                        NOSE_FACE,
+                                        MIN_CONFIDENCE_FACE))
+
+                    row.update(
+                        self.formatpose("poses", 
+                                        yellow_frame, 
+                                        YELLOW_SKEL_KEYS, 
+                                        NOSE_SKEL,
+                                        MIN_CONFIDENCE_SKEL))
+
+
+            face_data = self.face_data_at(purple_idx, yellow_idx)
+            row.update(face_data)
 
             if annotators:
-                anns = self.get_annotations(annotators, ts + bagfile_delta, only_complete)
+                anns = self.get_annotations(annotators, ts + bagfile_delta)
+                row.update(anns)
 
-                if anns is None: # this means 'only complete' was requested, but some annotations were missing
-                    skip_row = True
-                else:
-                    row.update(anns)
+            row["complete"] = 1 if self.is_complete(row) else 0
 
-            if not skip_row:
+            if row["complete"] or not only_complete:
                 rows.append(row)
 
             ts += 1/FPS
@@ -421,6 +520,22 @@ class Dataset:
                 last_percent = percent
         
         writer.writerows(rows)
+
+    def is_complete(self, row):
+        if row["purple_frame_idx"] == MISSINGFRAME \
+           or "purple_child_head_x" not in row:
+            return False
+
+        if row["condition"] == "childchild" \
+           and (row["yellow_frame_idx"] == MISSINGFRAME
+                or "yellow_child_head_x" not in row):
+            return False
+
+        for c in CONSTRUCTS:
+            if row[c] == "":
+                return False
+
+        return True
 
 
     def formatpose(self,
@@ -488,8 +603,10 @@ if __name__ == "__main__":
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
 
-    dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
-    dataset_checks_writer.writeheader()
+    dataset_checks_writer = None
+    if args.data_check:
+        dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
+        dataset_checks_writer.writeheader()
 
     dataset.write(writer, dataset_checks_writer, args.only_complete, args.duplicate_records)
 
