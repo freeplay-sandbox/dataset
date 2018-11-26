@@ -13,6 +13,7 @@ import transformations
 import csv
 import json
 import yaml
+import pandas
 
 from timeline import Timeline, TASKENGAGEMENT, SOCIALENGAGEMENT, SOCIALATTITUDE, MISSINGDATA
 
@@ -288,12 +289,12 @@ class Dataset:
 
         # Note that OpenFace indexes frames starting at 1 while we start at 0 -> hence the +1 below.
 
-        if self.purple_face_csv \
+        if not self.purple_face_csv.empty \
            and purple_frame_idx != MISSINGFRAME \
-           and float(self.purple_face_csv[purple_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+           and float(self.purple_face_csv.iloc[purple_frame_idx][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
 
             # head pose
-            purple_head_t, purple_head_r = self.transform_head_pose("purple", self.purple_face_csv[purple_frame_idx+1])
+            purple_head_t, purple_head_r = self.transform_head_pose("purple", self.purple_face_csv.iloc[purple_frame_idx])
 
             result["purple_child_head_x"] = purple_head_t[0]
             result["purple_child_head_y"] = purple_head_t[1]
@@ -304,7 +305,7 @@ class Dataset:
             result["purple_child_head_rz"] = purple_head_r[2]
 
             # gaze vector
-            purple_gaze = self.transform_gaze("purple", self.purple_face_csv[purple_frame_idx+1])
+            purple_gaze = self.transform_gaze("purple", self.purple_face_csv.iloc[purple_frame_idx])
 
             result["purple_child_gaze_x" ] = purple_gaze[0]
             result["purple_child_gaze_y" ] = purple_gaze[1]
@@ -312,12 +313,12 @@ class Dataset:
 
 
         if self.condition == CHILDCHILD \
-           and self.yellow_face_csv \
+           and not self.yellow_face_csv.empty \
            and yellow_frame_idx != MISSINGFRAME \
-           and float(self.yellow_face_csv[yellow_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+           and float(self.yellow_face_csv.iloc[yellow_frame_idx][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
 
             # head pose
-            yellow_head_t, yellow_head_r = self.transform_head_pose("yellow", self.yellow_face_csv[yellow_frame_idx+1])
+            yellow_head_t, yellow_head_r = self.transform_head_pose("yellow", self.yellow_face_csv.iloc[yellow_frame_idx])
 
             result["yellow_child_head_x"] = yellow_head_t[0]
             result["yellow_child_head_y"] = yellow_head_t[1]
@@ -328,7 +329,7 @@ class Dataset:
             result["yellow_child_head_rz"] = yellow_head_r[2]
 
             # gaze vector
-            yellow_gaze = self.transform_gaze("yellow", self.yellow_face_csv[yellow_frame_idx+1])
+            yellow_gaze = self.transform_gaze("yellow", self.yellow_face_csv.iloc[yellow_frame_idx])
             result["yellow_child_gaze_x" ] = yellow_gaze[0]
             result["yellow_child_gaze_y" ] = yellow_gaze[1]
             result["yellow_child_gaze_z" ] = yellow_gaze[2]
@@ -435,16 +436,12 @@ class Dataset:
         if os.path.exists(purple_face_csv_path):
             logging.info("Reading face data %s..." % purple_face_csv_path)
             with open(purple_face_csv_path, 'r') as csv_file:
-                reader = csv.DictReader(csv_file)
-                for row in reader:
-                    self.purple_face_csv[int(row["frame"])] = row
+                self.purple_face_csv = pandas.read_csv(csv_file)
 
             if os.path.exists(yellow_face_csv_path):
                 logging.info("Reading face data %s..." % yellow_face_csv_path)
                 with open(yellow_face_csv_path, 'r') as csv_file:
-                    reader = csv.DictReader(csv_file)
-                    for row in reader:
-                        self.yellow_face_csv[int(row["frame"])] = row
+                    self.yellow_face_csv = pandas.read_csv(csv_file)
         else:
             logging.error("Face data missing for %s" % path)
 
