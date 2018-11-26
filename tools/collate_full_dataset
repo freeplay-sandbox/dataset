@@ -7,6 +7,9 @@ import argparse
 import sys
 import os
 
+import numpy
+import transformations
+
 import csv
 import json
 import yaml
@@ -49,70 +52,69 @@ YELLOW_FACE_KEYS=["yellow_child_face%02d_%s" % (i, s) for i in range(70) for s i
 PURPLE_SKEL_KEYS=["purple_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
 YELLOW_SKEL_KEYS=["yellow_child_skel%02d_%s" % (i, s) for i in range(18) for s in 'xy']
 
-FIELDNAMES = ['timestamp',
-              'id', 
-              'condition', 
-              'annotators', 
+FIELDNAMES = ["timestamp",
+              "id", 
+              "condition", 
+              "annotators", 
               "complete",
-              "purple_child_age", "yellow_child_age", 
-              "purple_child_gender", "yellow_child_gender"] + \
-              ["purple_frame_idx", "yellow_frame_idx"] + \
-              PURPLE_FACE_KEYS + YELLOW_FACE_KEYS +\
-              PURPLE_SKEL_KEYS + YELLOW_SKEL_KEYS +\
-              ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
-               "purple_child_head_rx", "purple_child_head_ry", "purple_child_head_rz", # head pose estimation, relative to 'purple' camera
-               "yellow_child_head_x", "yellow_child_head_y", "yellow_child_head_z",
-               "yellow_child_head_rx", "yellow_child_head_ry", "yellow_child_head_rz",  # head pose estimation, relative to 'yellow' camera
-               "purple_child_gaze_angle_x", "purple_child_gaze_angle_y", # gaze angle, in radians in world coordinates averaged for both eyes.
-               "yellow_child_gaze_angle_x", "yellow_child_gaze_angle_y",
-               "purple_child_au01",
-               "purple_child_au02",
-               "purple_child_au04",
-               "purple_child_au05",
-               "purple_child_au06",
-               "purple_child_au07",
-               "purple_child_au09",
-               "purple_child_au10",
-               "purple_child_au12",
-               "purple_child_au14",
-               "purple_child_au15",
-               "purple_child_au17",
-               "purple_child_au20",
-               "purple_child_au23",
-               "purple_child_au25",
-               "purple_child_au26",
-               "purple_child_au28",
-               "purple_child_au45",
-               "yellow_child_au01",
-               "yellow_child_au02",
-               "yellow_child_au04",
-               "yellow_child_au05",
-               "yellow_child_au06",
-               "yellow_child_au07",
-               "yellow_child_au09",
-               "yellow_child_au10",
-               "yellow_child_au12",
-               "yellow_child_au14",
-               "yellow_child_au15",
-               "yellow_child_au17",
-               "yellow_child_au20",
-               "yellow_child_au23",
-               "yellow_child_au25",
-               "yellow_child_au26",
-               "yellow_child_au28",
-               "yellow_child_au45"] +\
-               ["purple_child_motion_intensity_avg",
-                "purple_child_motion_intensity_stdev",
-                "purple_child_motion_intensity_max",
-                "purple_child_motion_direction_avg",
-                "purple_child_motion_direction_stdev",
-                "yellow_child_motion_intensity_avg",
-                "yellow_child_motion_intensity_stdev",
-                "yellow_child_motion_intensity_max",
-                "yellow_child_motion_direction_avg",
-                "yellow_child_motion_direction_stdev"] +\
-              ["audio%02d" % i for i in range(16)] +\
-              ["purple_child_task_engagement", "purple_child_social_engagement", "purple_child_social_attitude",
+              "purple_child_age", "purple_child_gender", 
+              "yellow_child_age", "yellow_child_gender"] + \
+             ["purple_frame_idx"] + PURPLE_FACE_KEYS + PURPLE_SKEL_KEYS + \
+             ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
+              "purple_child_head_rx", "purple_child_head_ry", "purple_child_head_rz", # head pose estimation, in mm and rad, relative to the table centre
+              "purple_child_gaze_x", "purple_child_gaze_y", "purple_child_gaze_z", # gaze vector, averaged for both eyes, relative to the table centre.
+              "purple_child_au01",
+              "purple_child_au02",
+              "purple_child_au04",
+              "purple_child_au05",
+              "purple_child_au06",
+              "purple_child_au07",
+              "purple_child_au09",
+              "purple_child_au10",
+              "purple_child_au12",
+              "purple_child_au14",
+              "purple_child_au15",
+              "purple_child_au17",
+              "purple_child_au20",
+              "purple_child_au23",
+              "purple_child_au25",
+              "purple_child_au26",
+              "purple_child_au28",
+              "purple_child_au45"] +\
+             ["purple_child_motion_intensity_avg",
+              "purple_child_motion_intensity_stdev",
+              "purple_child_motion_intensity_max",
+              "purple_child_motion_direction_avg",
+              "purple_child_motion_direction_stdev"] +\
+             ["yellow_frame_idx"] + YELLOW_FACE_KEYS + YELLOW_SKEL_KEYS +\
+             ["yellow_child_head_x", "yellow_child_head_y", "yellow_child_head_z",
+              "yellow_child_head_rx", "yellow_child_head_ry", "yellow_child_head_rz", # head pose estimation, in mm and rad, relative to the table centre
+              "yellow_child_gaze_x", "yellow_child_gaze_y", "yellow_child_gaze_z", # gaze vector, averaged for both eyes, relative to the table centre.
+              "yellow_child_au01",
+              "yellow_child_au02",
+              "yellow_child_au04",
+              "yellow_child_au05",
+              "yellow_child_au06",
+              "yellow_child_au07",
+              "yellow_child_au09",
+              "yellow_child_au10",
+              "yellow_child_au12",
+              "yellow_child_au14",
+              "yellow_child_au15",
+              "yellow_child_au17",
+              "yellow_child_au20",
+              "yellow_child_au23",
+              "yellow_child_au25",
+              "yellow_child_au26",
+              "yellow_child_au28",
+              "yellow_child_au45"] +\
+              ["yellow_child_motion_intensity_avg",
+               "yellow_child_motion_intensity_stdev",
+               "yellow_child_motion_intensity_max",
+               "yellow_child_motion_direction_avg",
+               "yellow_child_motion_direction_stdev"] +\
+             ["audio%02d" % i for i in range(16)] +\
+             ["purple_child_task_engagement", "purple_child_social_engagement", "purple_child_social_attitude",
               "yellow_child_task_engagement", "yellow_child_social_engagement", "yellow_child_social_attitude"]
 
 CHECKS_FIELDNAMES = ['id', 
@@ -141,6 +143,37 @@ MAPPING_FACE.update({"_child_au%02d" % au: " AU%02d_r" % au for au in [1,2,4,5,6
 MAPPING_GAZE = {
         "_child_gaze_angle_x": " gaze_angle_x",
         "_child_gaze_angle_y": " gaze_angle_y"}
+
+##### Transformations of 3D points to the centre of the table
+
+def make_transform_matrix(quaternion, translation):
+    M = numpy.identity(4)
+    T = transformations.translation_matrix(translation)
+    M = numpy.dot(M, T)
+    R = transformations.quaternion_matrix(quaternion)
+    M = numpy.dot(M, R)
+
+    M /= M[3, 3]
+
+    return M
+ 
+# Obtained with the following steps:
+# $ rosparam set /use_sim_time True
+# $ rosbag play --clock freeplay.bag
+# $ rosrun tf static_transform_publisher -0.3 0.169 0 0 0 0 sandtray_centre sandtray 20
+# $ rosrun tf tf_echo sandtray_centre camera_{purple|yellow}_rgb_optical_frame
+YELLOW_CAM_TO_CENTRE_QUATERNION=[-0.530, 0.220, -0.314, 0.757]
+YELLOW_CAM_TO_CENTRE_TRANSLATION=[-0.408, -0.208, 0.035]
+
+PURPLE_CAM_TO_CENTRE_QUATERNION=[0.220, -0.530, 0.757, -0.314]
+PURPLE_CAM_TO_CENTRE_TRANSLATION=[-0.408, 0.190, 0.035]
+
+# numpy.dot({PURPLE,YELLOW}_CAM_TO_CENTRE, <vector>) transforms
+# a vector <vector> from one of the camera's frame to the centre of the sandtray table frame.
+YELLOW_CAM_TO_CENTRE =  make_transform_matrix(YELLOW_CAM_TO_CENTRE_QUATERNION, YELLOW_CAM_TO_CENTRE_TRANSLATION)
+PURPLE_CAM_TO_CENTRE =  make_transform_matrix(PURPLE_CAM_TO_CENTRE_QUATERNION, PURPLE_CAM_TO_CENTRE_TRANSLATION)
+
+########################################################
 
 class Dataset:
 
@@ -212,6 +245,43 @@ class Dataset:
 
         return result
 
+    def transform_gaze(self, side, raw_gaze_data):
+        gaze0 = [float(raw_gaze_data[" gaze_0_x"]),
+                 float(raw_gaze_data[" gaze_0_y"]),
+                 float(raw_gaze_data[" gaze_0_z"]),
+                 1]
+
+        gaze1 = [float(raw_gaze_data[" gaze_1_x"]),
+                 float(raw_gaze_data[" gaze_1_y"]),
+                 float(raw_gaze_data[" gaze_1_z"]),
+                 1]
+
+        # average the gaze vectors of the 2 eyes + normalise
+        gaze = transformations.unit_vector((numpy.array(gaze0) + numpy.array(gaze1))/2)
+
+        # transform the result in the interactive table's frame
+        return numpy.dot(PURPLE_CAM_TO_CENTRE if side == "purple" else YELLOW_CAM_TO_CENTRE, gaze).round(3)
+
+    def transform_head_pose(self, side, raw_head_data):
+
+        translation = [float(raw_head_data[" pose_Tx"]),
+                       float(raw_head_data[" pose_Ty"]),
+                       float(raw_head_data[" pose_Tz"])]
+        euler = [float(raw_head_data[" pose_Rx"]),
+                 float(raw_head_data[" pose_Ry"]),
+                 float(raw_head_data[" pose_Rz"])]
+
+        headpose = transformations.compose_matrix(angles=euler, translate=translation)
+
+        transformed = numpy.dot(PURPLE_CAM_TO_CENTRE if side == "purple" else YELLOW_CAM_TO_CENTRE, headpose)
+
+        _, _, euler_transformed, translation_transformed, _ = transformations.decompose_matrix(transformed)
+
+        return numpy.array(translation_transformed).round(0), numpy.array(euler_transformed).round(3)
+
+
+
+
     def face_data_at(self, purple_frame_idx, yellow_frame_idx):
 
         result = {}
@@ -222,13 +292,23 @@ class Dataset:
            and purple_frame_idx != MISSINGFRAME \
            and float(self.purple_face_csv[purple_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
 
-            for k in MAPPING_FACE.keys():
-                result["purple" + k] = self.purple_face_csv[purple_frame_idx+1][MAPPING_FACE[k]]
+            # head pose
+            purple_head_t, purple_head_r = self.transform_head_pose("purple", self.purple_face_csv[purple_frame_idx+1])
 
-            for k in MAPPING_GAZE.keys():
-                # for certain recordings (the 57 first ones), the gaze data has been extracted to an external "processed-gaze/....csv -> for those files, the gaze-related fields are missing, so we need to check.
-                if MAPPING_GAZE[k] in self.purple_face_csv[purple_frame_idx+1]:
-                    result["purple" + k] = self.purple_face_csv[purple_frame_idx+1][MAPPING_GAZE[k]]
+            result["purple_child_head_x"] = purple_head_t[0]
+            result["purple_child_head_y"] = purple_head_t[1]
+            result["purple_child_head_z"] = purple_head_t[2]
+
+            result["purple_child_head_rx"] = purple_head_r[0]
+            result["purple_child_head_ry"] = purple_head_r[1]
+            result["purple_child_head_rz"] = purple_head_r[2]
+
+            # gaze vector
+            purple_gaze = self.transform_gaze("purple", self.purple_face_csv[purple_frame_idx+1])
+
+            result["purple_child_gaze_x" ] = purple_gaze[0]
+            result["purple_child_gaze_y" ] = purple_gaze[1]
+            result["purple_child_gaze_z" ] = purple_gaze[2]
 
 
         if self.condition == CHILDCHILD \
@@ -236,13 +316,23 @@ class Dataset:
            and yellow_frame_idx != MISSINGFRAME \
            and float(self.yellow_face_csv[yellow_frame_idx+1][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
 
-            for k in MAPPING_FACE.keys():
-                result["yellow" + k] = self.yellow_face_csv[yellow_frame_idx+1][MAPPING_FACE[k]]
+            # head pose
+            yellow_head_t, yellow_head_r = self.transform_head_pose("yellow", self.yellow_face_csv[yellow_frame_idx+1])
 
-            for k in MAPPING_GAZE.keys():
-                # for certain recordings (the 57 first ones), the gaze data has been extracted to an external "processed-gaze/....csv -> for those files, the gaze-related fields are missing, so we need to check.
-                if MAPPING_GAZE[k] in self.yellow_face_csv[yellow_frame_idx+1]:
-                    result["yellow" + k] = self.yellow_face_csv[yellow_frame_idx+1][MAPPING_GAZE[k]]
+            result["yellow_child_head_x"] = yellow_head_t[0]
+            result["yellow_child_head_y"] = yellow_head_t[1]
+            result["yellow_child_head_z"] = yellow_head_t[2]
+
+            result["yellow_child_head_rx"] = yellow_head_r[0]
+            result["yellow_child_head_ry"] = yellow_head_r[1]
+            result["yellow_child_head_rz"] = yellow_head_r[2]
+
+            # gaze vector
+            yellow_gaze = self.transform_gaze("yellow", self.yellow_face_csv[yellow_frame_idx+1])
+            result["yellow_child_gaze_x" ] = yellow_gaze[0]
+            result["yellow_child_gaze_y" ] = yellow_gaze[1]
+            result["yellow_child_gaze_z" ] = yellow_gaze[2]
+
 
         return result
 
