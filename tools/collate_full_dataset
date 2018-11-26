@@ -131,19 +131,7 @@ CHECKS_FIELDNAMES = ['id',
                      'timestamp_first_annotation', 
                      'timestamp_last_annotation']
 
-MAPPING_FACE = {
-        "_child_head_x": " pose_Tx",
-        "_child_head_y": " pose_Ty",
-        "_child_head_z": " pose_Tz",
-        "_child_head_rx": " pose_Rx",
-        "_child_head_ry": " pose_Ry",
-        "_child_head_rz": " pose_Rz"}
-
-MAPPING_FACE.update({"_child_au%02d" % au: " AU%02d_r" % au for au in [1,2,4,5,6,7,9,10,12,14,15,17,20,23,25,26,45]})
-
-MAPPING_GAZE = {
-        "_child_gaze_angle_x": " gaze_angle_x",
-        "_child_gaze_angle_y": " gaze_angle_y"}
+MAPPING_AUS = {"_child_au%02d" % au: " AU%02d_r" % au for au in [1,2,4,5,6,7,9,10,12,14,15,17,20,23,25,26,45]}
 
 ##### Transformations of 3D points to the centre of the table
 
@@ -289,9 +277,13 @@ class Dataset:
 
         # Note that OpenFace indexes frames starting at 1 while we start at 0 -> hence the +1 below.
 
-        if not self.purple_face_csv.empty \
+        if purple_frame_idx < len(self.purple_face_csv) \
            and purple_frame_idx != MISSINGFRAME \
            and float(self.purple_face_csv.iloc[purple_frame_idx][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+
+            # action units
+            for k in MAPPING_AUS.keys():
+                result["purple" + k] = self.purple_face_csv.iloc[purple_frame_idx][MAPPING_AUS[k]]
 
             # head pose
             purple_head_t, purple_head_r = self.transform_head_pose("purple", self.purple_face_csv.iloc[purple_frame_idx])
@@ -313,9 +305,13 @@ class Dataset:
 
 
         if self.condition == CHILDCHILD \
-           and not self.yellow_face_csv.empty \
+           and yellow_frame_idx < len(self.yellow_face_csv) \
            and yellow_frame_idx != MISSINGFRAME \
            and float(self.yellow_face_csv.iloc[yellow_frame_idx][" confidence"]) > MIN_CONFIDENCE_OPENFACE:
+
+            # action units
+            for k in MAPPING_AUS.keys():
+                result["yellow" + k] = self.yellow_face_csv.iloc[yellow_frame_idx][MAPPING_AUS[k]]
 
             # head pose
             yellow_head_t, yellow_head_r = self.transform_head_pose("yellow", self.yellow_face_csv.iloc[yellow_frame_idx])
@@ -341,24 +337,24 @@ class Dataset:
 
         result = {}
 
-        if self.purple_optflow_csv \
+        if purple_frame_idx < len(self.purple_optflow_csv) \
            and purple_frame_idx != MISSINGFRAME:
 
                row=self.purple_optflow_csv[purple_frame_idx]
 
                for k in row.keys():
                     if k != "frame":
-                        result["purple_child_" + k.strip()] = row[k]
+                        result["purple_child_" + k.strip()] = round(float(row[k]),3)
 
         if self.condition == CHILDCHILD \
-           and self.yellow_optflow_csv \
+           and yellow_frame_idx < len(self.yellow_optflow_csv) \
            and yellow_frame_idx != MISSINGFRAME:
 
                row=self.yellow_optflow_csv[yellow_frame_idx]
 
                for k in row.keys():
                     if k != "frame":
-                        result["yellow_child_" + k.strip()] = row[k]
+                        result["yellow_child_" + k.strip()] = round(float(row[k]),3)
 
         return result
 
@@ -668,16 +664,19 @@ class Dataset:
 
     def is_complete(self, row):
         if row["purple_frame_idx"] == MISSINGFRAME \
-           or "purple_child_head_x" not in row:
+           or "purple_child_head_x" not in row \
+           or "purple_child_motion_intensity_max" not in row:
             return False
 
         if row["condition"] == "childchild" \
-           and (row["yellow_frame_idx"] == MISSINGFRAME
-                or "yellow_child_head_x" not in row):
+           and (row["yellow_frame_idx"] == MISSINGFRAME \
+                or "yellow_child_head_x" not in row \
+                or "yellow_child_motion_intensity_max" not in row):
+
             return False
 
         for c in CONSTRUCTS:
-            if row[c] == "":
+            if not c in row or row[c] == "":
                 return False
 
         return True
