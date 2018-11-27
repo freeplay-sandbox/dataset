@@ -360,7 +360,8 @@ class Dataset:
 
             
 
-    def processpath(self, path, writer, checks_writer, only_complete, duplicate_records):
+    def processpath(self, path, force, writer, checks_writer, only_complete, duplicate_records):
+
 
         #################################################################
         #################################################################
@@ -406,6 +407,51 @@ class Dataset:
                 logging.info("--duplicate-records passed: I will accordingly duplicate this recording %d times." % len(self.annotations))
             else:
                 logging.info("Divergent annotations will be concatenated.")
+
+        #################################################################
+        #################################################################
+        ######## File names and CSV writer
+
+        localwriter = writer
+
+        if duplicate_records:
+            if len(self.annotations) == 0:
+                if localwriter is None:
+                    filename = os.path.join(path,"pinsoro-complete-no-annotations.csv")
+                    if os.path.exists(filename) and not force:
+                        logging.info("%s already exists. Skipping." % filename)
+                        return
+                    logging.info("Writing to %s" % filename)
+                    f = open(filename, 'w')
+                    localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                    localwriter.writeheader()
+
+            else:
+                    for annotator in self.annotations.keys():
+                        if localwriter is None:
+                            filename = os.path.join(path,"pinsoro-complete-%s.csv" % annotator)
+                            if os.path.exists(filename) and not force:
+                                logging.info("%s already exists. Skipping." % filename)
+                                return
+                            logging.info("Writing to %s" % filename)
+                            f = open(filename, 'w')
+                            localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                            localwriter.writeheader()
+
+        else: # concatenate divergent annotations
+
+            if localwriter is None:
+
+                id=path.split("/")[-1],
+                filename = os.path.join(path,"pinsoro-%s.csv" % id)
+                if os.path.exists(filename) and not force:
+                    logging.info("%s already exists. Skipping." % filename)
+                    return
+                logging.info("Writing to %s" % filename)
+                f = open(filename, 'w')
+                localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                localwriter.writeheader()
+
 
         #################################################################
         #################################################################
@@ -473,42 +519,8 @@ class Dataset:
         #################################################################
         #################################################################
         #### COLLATE
-
-        if duplicate_records:
-            if len(self.annotations) == 0:
-                localwriter = writer
-                if localwriter is None:
-                    logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-no-annotations.csv"))
-                    f = open(os.path.join(path,"pinsoro-complete-no-annotations.csv"), 'w')
-                    localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
-                    localwriter.writeheader()
-
-                self.collate(path, localwriter, checks_writer, only_complete, None, expe, bagfile, poses)
-            else:
-                    for annotator in self.annotations.keys():
-                        localwriter = writer
-                        if localwriter is None:
-                            logging.info("Writing to %s" % os.path.join(path,"pinsoro-complete-%s.csv" % annotator))
-                            f = open(os.path.join(path,"pinsoro-complete-%s.csv" % annotator), 'w')
-                            localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
-                            localwriter.writeheader()
-
-
-                        self.collate(path, localwriter, checks_writer, only_complete, annotator, expe, bagfile, poses)
-
-        else: # concatenate divergent annotations
-
-            localwriter = writer
-            if localwriter is None:
-
-                id=path.split("/")[-1],
-                logging.info("Writing to %s" % os.path.join(path,"pinsoro-%s.csv" % id))
-                f = open(os.path.join(path,"pinsoro-%s.csv" % id), 'w')
-                localwriter = csv.DictWriter(f, fieldnames=FIELDNAMES)
-                localwriter.writeheader()
-
-            annotators = SEPARATOR.join(self.annotations.keys())
-            self.collate(path, localwriter, checks_writer, only_complete, annotators, expe, bagfile, poses)
+        annotators = SEPARATOR.join(self.annotations.keys())
+        self.collate(path, localwriter, checks_writer, only_complete, annotators, expe, bagfile, poses)
 
 
 
@@ -719,18 +731,19 @@ class Dataset:
 
         return results
 
-    def write(self, writer, checks_writer, only_complete, duplicate_records):
+    def write(self, force, writer, checks_writer, only_complete, duplicate_records):
         
         idx = 0
         for path in self.paths:
             idx += 1
             logging.info("[%02d/%02d] Processing %s" % (idx, len(self.paths), path))
-            self.processpath(path, writer, checks_writer, only_complete, duplicate_records)
+            self.processpath(path, force, writer, checks_writer, only_complete, duplicate_records)
 
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator')
+    parser.add_argument("--force", action="store_true", default=False, help="overwrite existing CSV files. By default, records are skipped is CSV already exists")
     parser.add_argument("--data-check", nargs='?', type=argparse.FileType('w'), default=False, const=sys.stdout, help="run some consistency checks on the dataset while collating it. You can specify a filename to save as CSV (default to stdout)")
     parser.add_argument("--only-complete", action="store_true", help="Only complete datapoints (all features and annotations present) are recorded")
     parser.add_argument("--single-csv", help="name of the CSV file where the whole dataset should be recorded. By default, create one file per recording.")
@@ -743,6 +756,9 @@ if __name__ == "__main__":
 
     writer=None
     if args.single_csv:
+        if os.path.exist(args.file) and not args.force:
+            logging.info("%s already exists. Use --force to force overwrite." % args.file)
+            sys.exit(1)
         f = open(args.file, 'w')
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
@@ -752,7 +768,7 @@ if __name__ == "__main__":
         dataset_checks_writer = csv.DictWriter(args.data_check, fieldnames=CHECKS_FIELDNAMES)
         dataset_checks_writer.writeheader()
 
-    dataset.write(writer, dataset_checks_writer, args.only_complete, args.duplicate_records)
+    dataset.write(args.force, writer, dataset_checks_writer, args.only_complete, args.duplicate_records)
 
 
 
