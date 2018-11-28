@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 import argparse
 
 import matplotlib.pyplot as plt
@@ -22,9 +24,9 @@ def update(num, data, faces, time_label, ann_labels):
     # NOTE: there is no .set_data() for 3 dim data...
     #faces[0].set_data(data.iloc[START_IDX:START_IDX+num, 7:77:2], -1*data.iloc[START_IDX:START_IDX+num, 8:78:2],0)
     #faces[0].set_3d_properties(list(range(num)))
-    faces[0][0].set_data(-1*data.iloc[START_IDX+num, 7:7+NUM_FACIAL_LANDMARKS:2] + .25, -1*data.iloc[START_IDX+num, 8:8+NUM_FACIAL_LANDMARKS:2]+1)
-    offset = NUM_FACIAL_LANDMARKS
-    faces[1][0].set_data(-1*data.iloc[START_IDX+num, 7+offset:7+offset+NUM_FACIAL_LANDMARKS:2] + .75, -1*data.iloc[START_IDX+num, 8+offset:8+offset+NUM_FACIAL_LANDMARKS:2]+1)
+    faces[0][0].set_data(-1*data.iloc[START_IDX+num, 10:10+NUM_FACIAL_LANDMARKS:2] + .25, -1*data.iloc[START_IDX+num, 11:11+NUM_FACIAL_LANDMARKS:2]+1)
+    offset = NUM_FACIAL_LANDMARKS + 69
+    faces[1][0].set_data(-1*data.iloc[START_IDX+num, 10+offset:10+offset+NUM_FACIAL_LANDMARKS:2] + .75, -1*data.iloc[START_IDX+num, 11+offset:11+offset+NUM_FACIAL_LANDMARKS:2]+1)
 
 
     time_label.set_text("frame #%d (t=%.1fs)" % (num, num/FPS))
@@ -38,7 +40,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Dataset player')
     parser.add_argument("-i", "--start-idx", type=int, default=0, help="Start frame")
-    parser.add_argument("-l", "--length", type=int, default=600, help="# of frames to display")
+    parser.add_argument("-l", "--length", type=int, help="# of frames to display (default: full dataset)")
     parser.add_argument("--video", nargs="?", help="If set, save the animation as a video with given filename")
     parser.add_argument("path", help="path to the dataset")
 
