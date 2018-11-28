@@ -531,10 +531,24 @@ class Dataset:
         rows = []
         checks_row = {}
 
+        if len(poses[PURPLE_TOPIC]["frames"]) == 0:
+            logging.error("[EE] no purple poses! skipping.")
+            return
+
         ts_first_purple = poses[PURPLE_TOPIC]["frames"][0]["ts"]
-        ts_first_yellow = poses[YELLOW_TOPIC]["frames"][0]["ts"]
         ts_last_purple = poses[PURPLE_TOPIC]["frames"][-1]["ts"]
-        ts_last_yellow = poses[YELLOW_TOPIC]["frames"][-1]["ts"]
+
+        if len(poses[YELLOW_TOPIC]["frames"]) == 0:
+            if self.ischildchild(path):
+                logging.error("[EE] no yellow poses in child-child condition! skipping record.")
+                return
+            else:
+                logging.warn("[WW] no yellow poses. child-robot condition, so that's ok.")
+                ts_first_yellow = -1
+                ts_last_yellow = -1
+        else:
+            ts_first_yellow = poses[YELLOW_TOPIC]["frames"][0]["ts"]
+            ts_last_yellow = poses[YELLOW_TOPIC]["frames"][-1]["ts"]
 
         ##############################################################
         ##############################################################
@@ -553,9 +567,17 @@ class Dataset:
         checks_row["timestamp_bagfile_start"] = bagfile["start"]
         checks_row["timestamp_bagfile_end"] = bagfile["end"]
 
-        checks_row["nb_purple_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == PURPLE_TOPIC][0]
+        if len(poses[PURPLE_TOPIC]["frames"]) != 0:
+            checks_row["nb_purple_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == PURPLE_TOPIC][0]
+        else:
+            checks_row["nb_purple_images_bag"] = 0
         checks_row["nb_purple_poses"] = len(poses[PURPLE_TOPIC]["frames"])
-        checks_row["nb_yellow_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == YELLOW_TOPIC][0]
+
+        if len(poses[YELLOW_TOPIC]["frames"]) != 0:
+            checks_row["nb_yellow_images_bag"] = [t["messages"] for t in bagfile["topics"] if t["topic"] == YELLOW_TOPIC][0]
+        else:
+            checks_row["nb_yellow_images_bag"] = 0
+
         checks_row["nb_yellow_poses"] = len(poses[YELLOW_TOPIC]["frames"])
 
         if annotators:
@@ -571,12 +593,12 @@ class Dataset:
 
 
         # the starting timestamp is *not* bagfile["start"], but instead the timestamp contained in the header of the first published frame (which is *before* is was recorded in the bagfile.
-        ts = min(ts_first_purple, ts_first_yellow)
+        ts = min(ts_first_purple, ts_first_yellow) if ts_first_yellow > 0 else ts_last_purple # ts < 0 means frames are missing
 
         # we need to store the bagfile delta as annotations are timestamped relative to the bagfile start time, *not* the frames timestamps
         bagfile_delta = bagfile["start"] - ts
 
-        last_ts = max(ts_last_purple, ts_last_yellow)
+        last_ts = max(ts_last_purple, ts_last_yellow) if ts_last_yellow > 0 else ts_last_purple # ts < 0 means frames are missing
 
         duration = last_ts - ts
         logging.info("Collating features (%0.2f sec of data)..." % duration)
