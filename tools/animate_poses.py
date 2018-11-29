@@ -83,7 +83,7 @@ def update(num, data, faces, time_label, ann_labels):
     faces[3][0].set_data([yx, yy])
     faces[3][0].set_3d_properties(yz)
 
-    ###### 3D pose of the purple head
+    ###### 3D gaze
     gaze_magnitude = 0.300 #m
     pgx = data["purple_child_gaze_x"][START_IDX+num] * gaze_magnitude
     pgy = data["purple_child_gaze_y"][START_IDX+num] * gaze_magnitude
@@ -144,15 +144,18 @@ def update(num, data, faces, time_label, ann_labels):
     ################## Labels/annotations
 
     ann_p_label, ann_y_label = ann_labels
-    if not np.isnan(data["annotators"][START_IDX+num]):
+    if isinstance(data["annotators"][START_IDX+num], str):
         time_label.set_text("frame #%d (t=%.1fs)" % (num, num/FPS))
         ann_p_label.set_text(data.iloc[START_IDX+num,-6] + "\n" + \
                             data.iloc[START_IDX+num,-5] + "\n" + \
                             data.iloc[START_IDX+num,-4]
                             )
-        ann_y_label.set_text(data.iloc[START_IDX+num,-3] + "\n" + \
-                            data.iloc[START_IDX+num,-2] + "\n" + \
-                            data.iloc[START_IDX+num,-1])
+        if data["condition"][START_IDX+num] == "childchild":
+            ann_y_label.set_text(data.iloc[START_IDX+num,-3] + "\n" + \
+                                data.iloc[START_IDX+num,-2] + "\n" + \
+                                data.iloc[START_IDX+num,-1])
+        else:
+            ann_y_label.set_text("[robot]")
     else:
         time_label.set_text("frame #%d (t=%.1fs) (no annotations)" % (num, num/FPS))
     return faces
