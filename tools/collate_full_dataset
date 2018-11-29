@@ -62,7 +62,7 @@ FIELDNAMES = ["timestamp",
               "yellow_child_age", "yellow_child_gender"] + \
              ["purple_frame_idx"] + PURPLE_FACE_KEYS + PURPLE_SKEL_KEYS + \
              ["purple_child_head_x", "purple_child_head_y", "purple_child_head_z",
-              "purple_child_head_rx", "purple_child_head_ry", "purple_child_head_rz", # head pose estimation, in mm and rad, relative to the table centre
+              "purple_child_head_rx", "purple_child_head_ry", "purple_child_head_rz", # head pose estimation, in m and rad, relative to the table centre
               "purple_child_gaze_x", "purple_child_gaze_y", "purple_child_gaze_z", # gaze vector, averaged for both eyes, relative to the table centre.
               "purple_child_au01",
               "purple_child_au02",
@@ -89,7 +89,7 @@ FIELDNAMES = ["timestamp",
               "purple_child_motion_direction_stdev"] +\
              ["yellow_frame_idx"] + YELLOW_FACE_KEYS + YELLOW_SKEL_KEYS +\
              ["yellow_child_head_x", "yellow_child_head_y", "yellow_child_head_z",
-              "yellow_child_head_rx", "yellow_child_head_ry", "yellow_child_head_rz", # head pose estimation, in mm and rad, relative to the table centre
+              "yellow_child_head_rx", "yellow_child_head_ry", "yellow_child_head_rz", # head pose estimation, in m and rad, relative to the table centre
               "yellow_child_gaze_x", "yellow_child_gaze_y", "yellow_child_gaze_z", # gaze vector, averaged for both eyes, relative to the table centre.
               "yellow_child_au01",
               "yellow_child_au02",
@@ -152,10 +152,10 @@ def make_transform_matrix(quaternion, translation):
 # $ rosrun tf static_transform_publisher -0.3 0.169 0 0 0 0 sandtray_centre sandtray 20
 # $ rosrun tf tf_echo sandtray_centre camera_{purple|yellow}_rgb_optical_frame
 YELLOW_CAM_TO_CENTRE_QUATERNION=[-0.530, 0.220, -0.314, 0.757]
-YELLOW_CAM_TO_CENTRE_TRANSLATION=[-0.408, -0.208, 0.035]
+YELLOW_CAM_TO_CENTRE_TRANSLATION=[-0.408, -0.208, 0.035] # m
 
 PURPLE_CAM_TO_CENTRE_QUATERNION=[0.220, -0.530, 0.757, -0.314]
-PURPLE_CAM_TO_CENTRE_TRANSLATION=[-0.408, 0.190, 0.035]
+PURPLE_CAM_TO_CENTRE_TRANSLATION=[-0.408, 0.190, 0.035] # m
 
 # numpy.dot({PURPLE,YELLOW}_CAM_TO_CENTRE, <vector>) transforms
 # a vector <vector> from one of the camera's frame to the centre of the sandtray table frame.
@@ -237,25 +237,27 @@ class Dataset:
     def transform_gaze(self, side, raw_gaze_data):
         gaze0 = [float(raw_gaze_data[" gaze_0_x"]),
                  float(raw_gaze_data[" gaze_0_y"]),
-                 float(raw_gaze_data[" gaze_0_z"]),
-                 1]
+                 float(raw_gaze_data[" gaze_0_z"])]
 
         gaze1 = [float(raw_gaze_data[" gaze_1_x"]),
                  float(raw_gaze_data[" gaze_1_y"]),
-                 float(raw_gaze_data[" gaze_1_z"]),
-                 1]
+                 float(raw_gaze_data[" gaze_1_z"])]
 
         # average the gaze vectors of the 2 eyes + normalise
         gaze = transformations.unit_vector((numpy.array(gaze0) + numpy.array(gaze1))/2)
+        gaze = numpy.append(gaze,1)
 
-        # transform the result in the interactive table's frame
-        return numpy.dot(PURPLE_CAM_TO_CENTRE if side == "purple" else YELLOW_CAM_TO_CENTRE, gaze).round(3)
+        # transform the result in the interactive table's frame -- we only want to *rotate* the gaze vector, so we substract the translation at the end
+        transformed = numpy.dot(PURPLE_CAM_TO_CENTRE if side == "purple" else YELLOW_CAM_TO_CENTRE, gaze)[0:3]
+        transformed -= PURPLE_CAM_TO_CENTRE_TRANSLATION if side == "purple" else YELLOW_CAM_TO_CENTRE_TRANSLATION
+        
+        return transformed.round(3)
 
     def transform_head_pose(self, side, raw_head_data):
 
-        translation = [float(raw_head_data[" pose_Tx"]),
-                       float(raw_head_data[" pose_Ty"]),
-                       float(raw_head_data[" pose_Tz"])]
+        translation = [float(raw_head_data[" pose_Tx"]/1000.),
+                       float(raw_head_data[" pose_Ty"]/1000.),
+                       float(raw_head_data[" pose_Tz"]/1000.)]
         euler = [float(raw_head_data[" pose_Rx"]),
                  float(raw_head_data[" pose_Ry"]),
                  float(raw_head_data[" pose_Rz"])]
@@ -266,7 +268,7 @@ class Dataset:
 
         _, _, euler_transformed, translation_transformed, _ = transformations.decompose_matrix(transformed)
 
-        return numpy.array(translation_transformed).round(0), numpy.array(euler_transformed).round(3)
+        return numpy.array(translation_transformed).round(3), numpy.array(euler_transformed).round(3)
 
 
 
