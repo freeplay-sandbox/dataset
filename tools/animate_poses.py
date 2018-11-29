@@ -88,13 +88,13 @@ def update(num, data, faces, time_label, ann_labels):
     pgx = data["purple_child_gaze_x"][START_IDX+num] * gaze_magnitude
     pgy = data["purple_child_gaze_y"][START_IDX+num] * gaze_magnitude
     pgz = data["purple_child_gaze_z"][START_IDX+num] * gaze_magnitude
-    faces[4][0].set_data([[px,px+pgx],[py,py+pgz]])
+    faces[4][0].set_data([[px,px+pgx],[py,py+pgy]])
     faces[4][0].set_3d_properties([pz,pz+pgz])
 
     ygx = data["yellow_child_gaze_x"][START_IDX+num] * gaze_magnitude
     ygy = data["yellow_child_gaze_y"][START_IDX+num] * gaze_magnitude
     ygz = data["yellow_child_gaze_z"][START_IDX+num] * gaze_magnitude
-    faces[5][0].set_data([[yx,yx+ygx],[yy,yy+ygz]])
+    faces[5][0].set_data([[yx,yx+ygx],[yy,yy+ygy]])
     faces[5][0].set_3d_properties([yz,yz+ygz])
 
     ####### Heads orientation
@@ -216,7 +216,6 @@ if __name__ == "__main__":
     fig.set_dpi(100)
 
 
-    #ax.set_aspect(540/960.)
     #ax.set_aspect(1.)
     #ax.tick_params(labelbottom=False, bottom=False, left=False, labelleft=False)
     ax.set_xlim3d([-0.200, 0.600])
@@ -287,7 +286,9 @@ if __name__ == "__main__":
                                     interval=1000/FPS, blit=False, repeat=False)
 
     if args.video is not None:
-        print("iGenerating video... please be patient...")
+        print("Generating video... please be patient...")
+
+        ax.set_aspect(540/960.)
         line_ani.save(args.video, writer=writer)
     else:
         plt.show()
