@@ -12,7 +12,7 @@ This dataset contains 75 recordings of free-play interactions between 2 children
 To learn more about the dataset, visit its [web
 site](https://freeplay-sandbox.github.io/).
 
-** You are very welcome to use this dataset for your own research. If you do so,
+**You are very welcome to use this dataset for your own research. If you do so,
 please cite the [The PInSoRo dataset: Supporting the data-driven study of
 child-child and child-robot social
 dynamics](https://doi.org/10.1371/journal.pone.0205999) article.**
