@@ -178,7 +178,7 @@ missing.
   computed by performing a [optical flow computation using the Dual TVL1 algorithm](https://github.com/freeplay-sandbox/analysis/blob/master/src/optical_flow.cpp#L163) and averaging the resulting values on the whole frame
 - [same keys for the yellow camera] **Note that these values are missing in the
   child-robot condition**
-- `audio_{00..15}`: 15 audio features, extracted using [OpenSmile](https://github.com/georgepar/opensmile/). **This values are currently missing**.
+- `audio_{00..15}`: 15 audio features, extracted using [OpenSmile](https://github.com/georgepar/opensmile/). **These values are currently missing**.
 - `{purple,yellow}_child_{task_engagement,social_engagement,social_attitude}`: manual annotations of the social interaction. See the [coding scheme.](https://freeplay-sandbox.github.io/coding-scheme). If more that one annotator annotated this frame, **and the annotators disagreed**, the different annotations are separated by a `+`
 
 ### Cameras extrinsic calibration
@@ -188,7 +188,7 @@ missing.
 The following diagram gives an overview of the orientation and positioning of
 the 2 child-facing cameras with respect to the interactive table centre:
 
-![Configuration and orientation of the cameras](doc/sandtray_frames.png)
+![Configuration and orientation of the cameras](../doc/sandtray_frames.png)
 
 The exact positions of the cameras is as follow:
 
