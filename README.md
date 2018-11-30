@@ -1,6 +1,7 @@
 The Plymouth Interactive Social Robots dataset
 ==============================================
 
+![The dataset, visualised with one of the provided tool](doc/screenshot.png)
 **Important**: *this repository **does not** contain the actual PInSoRo data
 (~2TB would not work with GitHub!), only the meta data. See the [PInSoRo web
 site](https://freeplay-sandbox.github.io/) for details to access the actual

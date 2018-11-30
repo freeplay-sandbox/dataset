@@ -30,6 +30,27 @@ NUM_FACIAL_LANDMARKS=70 * 2
 
 Z_IMAGE_PLANE = 1. #m
 
+def project_gaze_on_plane(gaze_origin, gaze_vector, plane):
+    """ Calculates the 2D coordinate of the intersection between a ray cast
+    from a 3D 'gaze_orgin' along the 'gaze_vector' and the XY plane defined by 'plane'
+    pose ('plane' is a 4x4 transformation matrix, expressed in the
+    same (arbitrary) reference frame as gaze_origin).
+
+    :returns: the [x,y,z] coordinates of the ray intersection, expressed in the
+    'plane' reference frame (as such, the z coordinate should always be 0).
+
+    """
+
+    plane_normal = normalize(numpy.dot(plane, [0,0,1,1])[:3])
+    distance_plane_to_origin = 0
+
+    t = - (numpy.dot(gaze_origin, plane_normal) + distance_plane_to_origin) / (numpy.dot(gaze_vector, plane_normal))
+
+    gaze_projection = gaze_origin + gaze_vector * t
+
+    return gaze_projection
+
+
 def idot(a,b):
     return np.dot(b,a)
 
