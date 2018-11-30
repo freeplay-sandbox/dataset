@@ -115,11 +115,14 @@ issues: # (optional) specific issues with this dataset
 Format of the CSV files
 -----------------------
 
+### General considerations
+
 The `pinsoro-*.csv` files contains 449 fields, explained below.
 The first row contains the columns headers.
 
 The data is sampled at 30Hz. It starts at the first video frame of either of the
-2 cameras filming the children's faces.
+2 cameras filming the children's faces. Details of the cameras configuration and
+calibration are available below.
 
 Note that the children were wearing brightly colored sport bibs (the left child
 had a yellow one, the right child a purple one). The (left) camera filming the
@@ -130,6 +133,7 @@ Besides, in the child-robot condition, the robot was always replacing the
 *yellow child*. Hence, in that condition, all yellow child-related data is
 missing.
 
+### CSV fields
 
 - `timestamp`: UNIX timestamp of the row; the first timestamp is the timestamp
   of the first recorded video frame, on either of the two cameras
@@ -148,7 +152,93 @@ missing.
   Can be used to quickly extract a specific frame or range of frame in the video
   stream
 - `purple_child_face{00..69}_{x,y}`: 2D coordinates of the 70 facial landmarks
-  (including pupils) extracted by [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/). See [OpenPose documentation](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md#face-output-format) for the location of these landmarks.
-- `purple_child_skel{00..17}_{x,y}`: 2D coordinates of the 18 skeleton keypoints
-  extracted by [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/). See [OpenPose documentation](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md#pose-output-format-coco) for the location of these keypoints. Note that, due to the experimental setting generating a lot of occlusion (children sitting in front of a table), the skeletal data is not always reliable
+  (including pupils), normalised in [0.0, 1.0], extracted by
+  [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/). See
+  [OpenPose
+  documentation](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md#face-output-format)
+  for the location of these landmarks.
+- `purple_child_skel{00..17}_{x,y}`: 2D coordinates of the 18 skeleton
+  keypoints, normalised in [0.0,1.0], extracted by
+  [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/). See
+  [OpenPose
+  documentation](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md#pose-output-format-coco)
+  for the location of these keypoints. Note that, due to the experimental
+  setting generating a lot of occlusion (children sitting in front of a table),
+  the skeletal data is not always reliable
+- `purple_child_head_{x,y,z,rx,ry,rz`: head pose estimation, in m and rad, relative to the table centre (see below for the camera extrinsics). Computed using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace).
+- `purple_child_gaze_{x,y,z}`: gaze vector, averaged for both eyes, relative to the table centre. Computed using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace).
+- `purple_child_au{01,02,04,05,06,07,09,10,12,14,15,17,20,23,25,26,28,45}`:
+  Intensity of 18
+  facial action units, extract using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace). See [here](https://github.com/TadasBaltrusaitis/OpenFace/wiki/Action-Units) for the details.
+- `purple_child_motion_intensity_{avg,stdev,max}`: average, standard deviation
+  and maximum of the magnitude of the motion observed in the frame. This is
+  computed by performing a [optical flow computation using the Dual TVL1 algorithm](https://github.com/freeplay-sandbox/analysis/blob/master/src/optical_flow.cpp#L163) and averaging the resulting values on the whole frame
+- `purple_child_motion_direction_{avg,stdev}`: average and standard deviation
+  of the direction of the motion observed in the frame. This is
+  computed by performing a [optical flow computation using the Dual TVL1 algorithm](https://github.com/freeplay-sandbox/analysis/blob/master/src/optical_flow.cpp#L163) and averaging the resulting values on the whole frame
+- [same keys for the yellow camera] **Note that these values are missing in the
+  child-robot condition**
+- `audio_{00..15}`: 15 audio features, extracted using [OpenSmile](https://github.com/georgepar/opensmile/). **This values are currently missing**.
+- `{purple,yellow}_child_{task_engagement,social_engagement,social_attitude}`: manual annotations of the social interaction. See the [coding scheme.](https://freeplay-sandbox.github.io/coding-scheme). If more that one annotator annotated this frame, **and the annotators disagreed**, the different annotations are separated by a `+`
 
+### Cameras extrinsic calibration
+
+#### Pose of cameras
+
+The following diagram gives an overview of the orientation and positioning of
+the 2 child-facing cameras with respect to the interactive table centre:
+
+![Configuration and orientation of the cameras](doc/sandtray_frames.png)
+
+The exact positions of the cameras is as follow:
+
+```python
+YELLOW_CAM_TO_CENTRE_QUATERNION=[-0.530, 0.220, -0.314, 0.757]
+YELLOW_CAM_TO_CENTRE_TRANSLATION=[-0.408, -0.208, 0.035] # m
+
+PURPLE_CAM_TO_CENTRE_QUATERNION=[0.220, -0.530, 0.757, -0.314]
+PURPLE_CAM_TO_CENTRE_TRANSLATION=[-0.408, 0.190, 0.035] # m
+
+# [these values were obtained with the following steps:]
+# $ rosparam set /use_sim_time True
+# $ rosbag play --clock freeplay.bag
+# $ rosrun tf static_transform_publisher -0.3 0.169 0 0 0 0 sandtray_centre sandtray 20
+# $ rosrun tf tf_echo sandtray_centre camera_{purple|yellow}_rgb_optical_frame
+```
+
+They can be used to transform a point (or a vector) from the camera frames to
+the table frame (`sandtray_centre`):
+
+```python
+import numpy
+import transformations # transformations library by Christoph Gohlke
+
+def make_transform_matrix(quaternion, translation):
+    M = numpy.identity(4)
+    T = transformations.translation_matrix(translation)
+    M = numpy.dot(M, T)
+    R = transformations.quaternion_matrix(quaternion)
+    M = numpy.dot(M, R)
+
+    M /= M[3, 3]
+
+    return M
+
+YELLOW_CAM_TO_CENTRE =  make_transform_matrix(YELLOW_CAM_TO_CENTRE_QUATERNION, YELLOW_CAM_TO_CENTRE_TRANSLATION)
+PURPLE_CAM_TO_CENTRE =  make_transform_matrix(PURPLE_CAM_TO_CENTRE_QUATERNION, PURPLE_CAM_TO_CENTRE_TRANSLATION)
+
+# Then:
+# numpy.dot({PURPLE,YELLOW}_CAM_TO_CENTRE, <vector>) transforms
+# a vector <vector> from one of the camera's frame to the centre of the sandtray table frame.
+```
+
+# Focal lens, resolution
+
+The focal lens, optical centre and camera resolution are as follow:
+
+- `fx`: 697.811 
+- `fy`: 697.811 
+- Optical centre `cx`: 479.047
+- Optical centre `cy`: 261.227
+- `rx`: 960 pixels
+- `ry`: 540 pixels
