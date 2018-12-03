@@ -71,15 +71,15 @@ do
     dir="$(dirname $f)"
     
     echo "Processing MD5 checksums for $dir (experiment $((i+1))/${#paths[@]})..."
-    for file in freeplay.bag freeplay.poses.json visual_tracking.bag visual_tracking.poses.json
+    for file in $dir/freeplay.bag $dir/freeplay.poses.json $dir/visual_tracking.bag $dir/visual_tracking.poses.json $dir/pinsoro-*.csv
     do
         if [ "$check" = true ]; then
-                md5sum -c "$dir/$file.md5"
+                md5sum -c "$file.md5"
         else
-            if [[ -e "$dir/$file" ]]; then
-                if [ ! -f "$dir/$file.md5" ] || [ "$force" = true ]; then
+            if [[ -e "$file" ]]; then
+                if [ ! -f "$file.md5" ] || [ "$force" = true ]; then
                     echo "Calculating checksum of $file..."
-                    md5sum "$dir/$file" > "$dir/$file.md5"
+                    md5sum "$file" > "$file.md5"
                 else
                     echo "$file.md5 already exist."
                 fi
