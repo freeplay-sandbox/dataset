@@ -17,7 +17,7 @@ project somewhere. Compile (and optionally, install) the tools by following the
 instruction on the project's `README` page.
 
 
-Most of the commands hereafter assume that you are in the `scripts/` directory.
+Most of the commands hereafter assume that you are in the `tools/` directory.
 
 Besides, most of the scripts take the path to the dataset as parameter,
 typically `/media/<your username>/PInSoRo/freeplay_sandbox/data`. In the
@@ -83,8 +83,19 @@ Example returning only the child-robot sessions:
 $ ./dataset_stats --filter "condition=='childrobot'" $DATASET
 ```
 
-Replaying the dataset
----------------------
+Visualising/replaying the dataset
+---------------------------------
+
+### Replaying the dataset
+
+![The dataset, visualised with one of the provided tool](doc/screenshot.png)
+
+```sh
+$ ./visualise_dataset.py $DATASET/<path of one record>/pinsoro-*.csv
+```
+
+The source code of the `visualise_dataset.py` utility is provided under a CC-0 license: feel free to
+use it exactly as you want in your own code, without any condition.
 
 ### Replaying with rosbag
 
@@ -93,7 +104,6 @@ rosbag play <bag file>
 ```
 
 ### Replaying the pose & facial data overlaid on the videos
-
 
 You can replay the dataset with the skeleton data using the [`replay_with_poses`](https://github.com/freeplay-sandbox/analysis#data-replay) utility.
 

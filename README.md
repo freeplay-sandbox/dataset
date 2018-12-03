@@ -21,12 +21,20 @@ dynamics](https://doi.org/10.1371/journal.pone.0205999) article.**
 Getting started
 ---------------
 
-This repository contains two things:
+1. Download and unzip the [lastest version of the dataset from the Zenodo platform](https://doi.org/10.5281/zenodo.1043507)
+2. Launch `python ./tools/visualise_dataset.py ./data/<record>/pinsoro-*.csv`.
+   If everything is working as expect, this should replay the interaction as
+   seen in the screenshot above.
+3. Have fun! (and do not hesitate to use the source of `visualise_dataset.py` as
+   a starting point for your own research)
+
+
+More in depth, this repository contains two things:
 
 - the dataset **metadata** (and **data** once you have obtained the actual data)
   in the `data/` subdirectory. [Check the README.md](data/README.md) file there
   to know more about how the data is stored.
-- a few tools (mainly `bash` scripts) to explore and manipulate the dataset.
+- a few tools to explore and manipulate the dataset.
   [Check the README.md](tools/README.md) to know more.
 
 Advanced analysis tools are available as well in [a separate
