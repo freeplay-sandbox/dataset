@@ -88,14 +88,14 @@ Visualising/replaying the dataset
 
 ### Replaying the dataset
 
-![The dataset, visualised with one of the provided tool](doc/screenshot.png)
+![The dataset, visualised with one of the provided tool](../doc/screenshot.png)
 
 ```sh
 $ ./visualise_dataset.py $DATASET/<path of one record>/pinsoro-*.csv
 ```
 
-The source code of the `visualise_dataset.py` utility is provided under a CC-0 license: feel free to
-use it exactly as you want in your own code, without any condition.
+The source code of the `visualise_dataset.py` utility is provided under a CC-0
+license: feel free to use it exactly as you like in your own code.
 
 ### Replaying with rosbag
 
@@ -105,14 +105,29 @@ rosbag play <bag file>
 
 ### Replaying the pose & facial data overlaid on the videos
 
-You can replay the dataset with the skeleton data using the [`replay_with_poses`](https://github.com/freeplay-sandbox/analysis#data-replay) utility.
+You can replay the dataset with the skeleton data overlaid on the video using the
+[`replay_with_poses`](https://github.com/freeplay-sandbox/analysis#data-replay)
+utility.
 
-Post-processing
----------------
+Reconstructing the dataset
+--------------------------
 
-The main post-process step consists in extracting the pose and facial features
-using [CMU's OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+The main steps to build the post-processed CSV files from the raw data (ROS
+bagfiles) consist in:
 
+- extracting the pose and facial landmarks using [CMU's
+  OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose). This is
+  done in
+  [`extract_poses.cpp`](https://github.com/freeplay-sandbox/analysis/blob/master/src/extract_poses.cpp)
+  (and the
+  [`extract_poses.sh`](https://github.com/freeplay-sandbox/analysis/blob/master/scripts/extract_poses.sh)
+  to run it in one go on the whole dataset)
+- extracting head pose and action units using [Cambridge's
+  OpenFace](https://github.com/TadasBaltrusaitis/OpenFace). See the script
+  [`extract_gaze_openface`](extract_gaze_openface)
+- motion is quantified using optical flow. See
+  [`analyse_optical_flow.cpp`](https://github.com/freeplay-sandbox/analysis/blob/master/src/analyse_optical_flow.cpp)
+  (and the corresponding script [`analyse_optical_flow`](analyse_optical_flow))
 
 Checking the dataset consistency
 --------------------------------
@@ -167,5 +182,4 @@ file should follow the following steps:
 $ rosbag filter freeplay.bag freeplay.trimmed.bag "t.secs >= (<start time> + <secs to trim>)"
 ```
 4. Re-generate `freeplay.bag.yaml` using `scripts/generate_yaml_bag_description`
-   (
 5. Update the checksum with `md5sum freeplay.bag > freeplay.bag.md5`

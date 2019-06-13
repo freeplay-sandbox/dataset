@@ -62,10 +62,9 @@ notes: # open-ended notes, taken by the experimenter during the experiment. Time
   708: P seeking encouragement from FS
   780: P drawing pictures, Y scribbling
   811: Both seem kind of bored
-postprocess: # (optinal) details of specific post-processing performed on that
-recording
+postprocess: # (optional) details of specific post-processing performed on this recording
     - recompressed sandtray background, start timestamp moved from 1496917354.451842 to 1498168785.467365
-issues: # (optional) specific issues with this dataset
+issues: # (optional) specific issues with this recording
     - skeleton extraction failed
 ```
 
@@ -83,7 +82,7 @@ issues: # (optional) specific issues with this dataset
 
 - `pinsoro-*.csv`: an easy-to-consume CVS file with all the main dataset
   features, sampled at 30Hz. [See below for the
-  details](#format-of-the-csv-files). **THIS IS MOST LIKELY THE FILES YOU WANT
+  details](#format-of-the-csv-files). **THIS IS MOST LIKELY THE FILE YOU WANT
   TO USE**.
 - `freeplay.poses.json`: stores the skeletons and facial features extracted from
   each of the video frames. See here [the format of the poses
