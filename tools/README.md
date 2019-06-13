@@ -129,6 +129,15 @@ bagfiles) consist in:
   [`analyse_optical_flow.cpp`](https://github.com/freeplay-sandbox/analysis/blob/master/src/analyse_optical_flow.cpp)
   (and the corresponding script [`analyse_optical_flow`](analyse_optical_flow))
 
+The final, per-record, datasets are assembled with the [`collate_full_dataset`](collate_full_dataset) tool. The tool offer several options (including duplicating records in case of double-coding), check with `--help`.
+
+The dataset distributed on Zenodo has been created with the default options (no
+duplication of records; frames with no annotations included):
+
+```
+$ collate_full_dataset $DATASET
+```
+
 Checking the dataset consistency
 --------------------------------
 
