@@ -17,7 +17,7 @@ OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
 force=false
 
-while getopts "h?" opt; do
+while getopts "fh?" opt; do
     case "$opt" in
     h|\?)
         display_usage
@@ -44,7 +44,7 @@ fi
 orig_path=$(pwd)
 
 cd "$DATASET_ROOT"
-paths=(data/2017**/videos)
+paths=(2017**/videos)
 
 
 for ((i=0;i<${#paths[@]};i++))
