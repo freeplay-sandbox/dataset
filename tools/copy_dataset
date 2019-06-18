@@ -20,7 +20,7 @@ def subproc_copy(source, dest):
 
 if __name__=="__main__":
 
-    parser = argparse.ArgumentParser(description="Copy the dataset 'big' files from one place to another")
+    parser = argparse.ArgumentParser(description="Copy the dataset 'big' files (the ones with a corresponding md5) from one place to another")
     parser.add_argument("source", help="root path of the source dataset -- recordings are recursively looked for from this path")
     parser.add_argument("dest", default=".", help="root path of the destination dataset")
     parser.add_argument("-f", "--force", action='store_true', help="if true, overwrite existing files. Otherwise, skip them.")
@@ -31,13 +31,13 @@ if __name__=="__main__":
     totalsize = 0
     alreadycopied = 0
 
-    for dirpath, dirs, files in os.walk(args.dest, topdown=False):
+    for dirpath, dirs, files in os.walk(args.source, topdown=False):
         for name in files:
             if name.endswith("md5"):
                 name = name[:-4]
                 sourcepath = os.path.abspath(os.path.join(args.source, dirpath, name))
                 if(os.path.exists(sourcepath)):
-                    destpath = os.path.abspath(os.path.join(dirpath, name))
+                    destpath = os.path.abspath(os.path.join(args.dest, dirpath, name))
                     if(os.path.exists(destpath) and not args.force):
                         print("File %s already exist. Skipping it (use -f to force overwrite)" % destpath)
                         alreadycopied += os.path.getsize(sourcepath)
@@ -48,7 +48,9 @@ if __name__=="__main__":
                     print("Missing expected file: %s" % sourcepath)
 
 
+    print("\n\nCopying from %s to %s." % (os.path.abspath(args.source), os.path.abspath(args.dest)))
     print("%d files to copy. %s in total." % (len(tobecopied), sizeof_fmt(totalsize)))
+    input("Press Return to proceed, Ctrl+C to abort")
 
     i = 1
     for source, dest in tobecopied.items():
