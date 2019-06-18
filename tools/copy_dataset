@@ -50,7 +50,7 @@ if __name__=="__main__":
 
     print("\n\nCopying from %s to %s." % (os.path.abspath(args.source), os.path.abspath(args.dest)))
     print("%d files to copy. %s in total." % (len(tobecopied), sizeof_fmt(totalsize)))
-    input("Press Return to proceed, Ctrl+C to abort")
+    raw_input("Press Return to proceed, Ctrl+C to abort")
 
     i = 1
     for source, dest in tobecopied.items():
