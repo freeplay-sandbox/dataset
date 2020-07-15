@@ -780,10 +780,10 @@ if __name__ == "__main__":
 
     writer=None
     if args.single_csv:
-        if os.path.exist(args.file) and not args.force:
+        if os.path.exists(args.single_csv) and not args.force:
             logging.info("%s already exists. Use --force to force overwrite." % args.file)
             sys.exit(1)
-        f = open(args.file, 'w')
+        f = open(args.single_csv, 'w')
         writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
         writer.writeheader()
 
