@@ -1,0 +1,80 @@
+#! /usr/bin/env python3
+import logging
+logging.basicConfig(level=logging.INFO)
+
+import argparse
+import sys
+import os
+
+import pandas as pd
+
+class Dataset:
+
+    def __init__(self, root):
+
+        self.dataset = []
+
+        self.total_nb_recordings = 0
+        self.paths = []
+
+        logging.info("Looking for recordings...")
+
+        for dirpath, dirs, files in os.walk(root, topdown=False):
+            for name in files:
+                fullpath = os.path.join(dirpath, name)
+                if name == "experiment.yaml":
+                    if dirpath.split(os.sep)[-1].startswith("exclude_"):
+                        logging.debug("%s has been excluded" % fullpath)
+                        continue
+                    self.total_nb_recordings += 1
+                    self.paths.append(dirpath)
+
+        logging.info("Found %d valid recordings" % self.total_nb_recordings)
+
+    def write(self, force, csv, only_complete=False, duplicate_records=False):
+        
+        full_df = pd.DataFrame()
+
+        idx = 0
+        for path in self.paths:
+            idx += 1
+            logging.info("[%02d/%02d] Processing %s" % (idx, len(self.paths), path))
+            
+            id=path.split("/")[-1],
+            filename = os.path.join(path,"pinsoro-%s.csv" % id)
+
+            df = pd.read_csv(filename)
+            if only_complete:
+                df.dropna(inplace=True)
+            full_df = full_df.append(df, ignore_index=True, sort=False)
+            print(len(full_df))
+
+        logging.info("Done concatenating! %d samples in total. Saving to %s..." % (len(full_df),csv))
+
+        full_df.to_csv(csv)
+
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='PInSoRo Dataset -- Full post-processed dataset collator')
+    parser.add_argument("--force", action="store_true", default=False, help="overwrite existing CSV files. By default, records are skipped is CSV already exists")
+    parser.add_argument("--only-complete", action="store_true", help="Only complete datapoints (all features and annotations present) are recorded")
+    #parser.add_argument("--duplicate-records", help="some recordings have multiple annotators. By default, when annotations diverge, they are concatenated with '%s' as separator. If this option is passed, the whole recording is instead duplicated, one per annotator. This is especially useful when the data is used as training dataset." % SEPARATOR)
+    parser.add_argument("path", help="root path of the dataset -- recordings are recursively looked for from this path")
+    parser.add_argument("csv", help="name of the CSV file where the whole dataset should be concatenated.")
+
+    args = parser.parse_args()
+
+    dataset = Dataset(args.path)
+
+    writer=None
+    if os.path.exists(args.csv) and not args.force:
+        logging.info("%s already exists. Use --force to force overwrite." % args.csv)
+        sys.exit(1)
+    f = open(args.csv, 'w')
+
+    dataset.write(args.force, args.csv) #, args.only_complete, args.duplicate_records)
+
+
+
